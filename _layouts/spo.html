@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<article class="post container">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+
+    {% if page.aspo == true %}
+    <div class="alert alert-danger" role="alert">
+      Für diese Studien- und Prüfungsordnung gelten die Regelungen der <a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/aspo_2/aspo.pdf" target="_blank" title="Allgemeinen Studien- und Prüfungsordnung (ASPO)">Allgemeinen Studien- und Prüfungsordnung (ASPO).</a>
+    </div>
+      <p class="text-primary"></p>
+    {% endif %}
+
+    <h1>
+      <small>Studien- und Prüfungsordnung für den<br>
+         <b>{% if page.aaspf_echt == 'B' %}Bachelor{% endif %}studiengang
+      {{ page.fachrich | escape }} ({{ page.fachriche | escape }})</b><br>
+      an der Hochschule für angewandte Wissenschaften München</small>
+    </h1>
+
+    <p>vom {{ page.vom | escape }}
+      {% if page.aenderungssatzung != nil %}
+        <br>(in der Fassung der {{ page.aenderungssatzung }} Änderungssatzung vom {{ page.aenderungssatzung_vom }})
+      {% endif %}
+    </p>
+
+
+
+    <p>Aufgrund von <a href="https://www.gesetze-bayern.de/Content/Document/BayHSchG" target="_blank" title="Bayrisches Hochschulgesetzt auf gesetze-bayern.de">Art. 13 Abs. 1 Satz 2, Art. 58 Abs. 1, Art. 61 Abs. 2 und 3 sowie Art. 66 Abs. 1 Bayerisches Hochschulgesetz (BayHSchG)</a> erlässt die Hochschule für angewandte Wissenschaften München folgende Satzung:</p>
+
+    {{ content }}
+  </div>
+
+</article>

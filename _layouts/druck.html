@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de" moznomarginboxes mozdisallowselectionprint>
+{% include head.html %}
+  <style>
+  {% include princeCss.html %}
+  @page {
+        font-family: Arial, Serif;
+        font-size: 8pt;
+        text-align: justify;
+        margin-top: .3cm;
+        margin-bottom: 0cm;
+        margin-left: 2.5cm;
+        margin-right: 2.5cm;
+    }
+  @page {
+      @bottom {
+          content: "Seite " counter(page) " von " counter(pages)
+      }
+  }
+  </style>
+  <body>
+    <main>
+      <div class="container">
+        {{ content }}
+      </div>
+
+    </main>
+  </body>
+</html>

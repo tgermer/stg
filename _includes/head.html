@@ -1,0 +1,23 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% if page.title != nil %}{{ page.title }} – {% endif %}{{ site.title }} - {{ site.slogan }}</title>
+
+  <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+
+  <!--	Font Awesome -->
+	<!--	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+
+  {% include icons.html %}
+
+  <!-- Download der Termine als .ics – https://github.com/nwcell/ics.js -->
+  <script type="text/javascript" src="{{ site.url }}/assets/js/ics.deps.min.js"></script>
+
+  {% comment %} --- Jekyll-SEO-Tag https://github.com/jekyll/jekyll-seo-tag --- {% endcomment %}
+  {% seo title=false %}
+
+</head>

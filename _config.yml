@@ -1,0 +1,132 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: STG strukturiert
+title_kurz: STG
+slogan: Studiengänge sturkturiert darstellen
+hashtag: stgstruk
+date: 2020-03-28
+email: beratung@hm.edu
+phone: 089 1265-1121
+opening_hours: 10:00–15:00
+description: >- # this means to ignore newlines until "baseurl:"
+  Lerne die Hochschule München kennen und erkundige Dich über die Möglichkeiten
+  eines Bachelor- oder Masterstudiums. Nächster Studieninformationstag am 28. März 2020.
+company: Hochschule&nbsp;München
+author: Studienberatung, Hochschule&nbsp;München
+editorial: Studienberatung
+publisher: |
+  Hochschule München<br>
+  Munich University of Applied Sciences<br>
+  Lothstraße 34<br>
+  80335 München
+president: Prof. Dr. Martin Leitner
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://portal.hm.edu/studieninformationstag/2020"
+url: "https://portal.hm.edu/studieninformationstag"
+url_imprint: https://www.hm.edu/sekundaer_navigation/impressum
+url_pravacy_statement: https://www.hm.edu/sekundaer_navigation/impressum/datenschutz
+webmaster_email: tgermer@hm.edu
+webmaster_name: Tristan Germer
+logo_nav: /assets/img/HM_Deu_RGB_2.svg   #logoLinks.svg
+# logo_black: /assets/img/Studieninformationstag 2020 links black.svg   #logoLinks.svg
+# logo_white: /assets/img/Studieninformationstag 2020 links white.svg   #logoLinks.svg
+twitter_username: HAW_Muenchen
+linkedin_username: hochschule-muenchen
+facebook_username: HochschuleMuenchen
+youtube_username: HochschuleMuenchen1
+instagram_username: HochschuleMuenchen
+
+twitter:
+  username: HAW_Muenchen
+  card: summary
+
+
+social:
+  name: Hochschule&nbsp;München
+  links:
+    - https://twitter.com/HAW_Muenchen
+    - https://www.facebook.com/HochschuleMuenchen
+    - https://www.linkedin.com/school/hochschule-muenchen
+
+lang: de_DE
+
+show_excerpts: true # set to true to show excerpts on the news(post) site
+
+# paginate: 2
+# paginate_path: "/blog/page:num/"
+
+# Build settings
+permalink: :title/
+sass:
+  sass_dir: css
+plugins:
+  - jekyll-seo-tag
+  #- jekyll-paginate
+  - jekyll-feed
+
+
+defaults:
+  # jekyll-seo-tag START
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/FB_01_1200x630.png # Allgemeines OpenGraph Bild
+  # jekyll-seo-tag ENDE
+
+
+collections:
+  schilder:
+    output: true
+
+# Eigene Einstellungen
+# defaults:
+#   - scope:
+#       path: ""
+#     values:
+#       layout: "page"
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Jekyll Data Pages Generator
+# https://github.com/avillafiorita/jekyll-datapage_gen
+page_gen:
+  - index_files: #<<true or false>
+    data: stg
+    template: stg
+    name: stg_kurz #<<field used to generate the filename>>
+    dir: #<<directory in which files are to be generated>>
+    extension: #<<extension used to generate the filename>>
+    filter: #<<property to filter data records by>>
+
+  - index_files: #<<true or false>
+    data: stg_komplett
+    template: stg_komplett
+    name: fachrich #<<field used to generate the filename>>
+    dir: #<<directory in which files are to be generated>>
+    extension: #<<extension used to generate the filename>>
+    filter: #<<property to filter data records by>>

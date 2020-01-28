@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="de">
+  {% include head.html %}
+  <body>
+    {% include nav.html %}
+    <main>
+
+      <div class="container">
+        <h1>{{ page.stg }} ({{ page.grade_kurz }})</h1>
+
+          <p>Grade: {{page.grade}} ({{ page.grade_kurz }})</p>
+      </div>
+
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

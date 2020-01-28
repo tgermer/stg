@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="{{ site.url }}/">{{ site.title }}</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item {% if page.url == "/vorwort/" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/vorwort">Vorwort</a>
+					</li>
+					<!-- <li class="nav-item {% if page.url contains "/blog" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/blog">Blog</a>
+					</li> -->
+					<li class="nav-item {% if page.url == "/thema/" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/thema">{{ site.slogan }}</a>
+					</li>
+					<!-- <li class="nav-item"><a class="nav-link" href="{{ site.url }}/rahmenprogramm">Rahmenprogramm</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="{{ site.url }}/programm-fakultaeten">Programm der Fakultäten</a>
+					</li> -->
+					<li class="nav-item dropdown {% if page.dir contains "/programm/" %}active{% endif %}">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Programm</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item {% if page.url == "/programm/rund_ums_studium/" %}active{% endif %}" href="{{ site.url }}/programm/rund_ums_studium">Rund ums Studium</a>
+							<a class="dropdown-item {% if page.url == "/programm/fakultaeten/" %}active{% endif %}" href="{{ site.url }}/programm/fakultaeten">Programm der Fakultäten</a>
+							<a class="dropdown-item {% if page.url == "/programm/vortraege/" %}active{% endif %}" href="{{ site.url }}/programm/vortraege">Vorträge</a>
+							<a class="dropdown-item {% if page.url == "/programm/fuehrungen/" %}active{% endif %}" href="{{ site.url }}/programm/fuehrungen">(Labor-)Führungen</a>
+							<a class="dropdown-item {% if page.url == "/programm/infostaende/" %}active{% endif %}" href="{{ site.url }}/programm/infostaende">Infostände</a>
+							<a class="dropdown-item {% if page.url == "/programm/dual_lounge/" %}active{% endif %}" href="{{ site.url }}/programm/dual_lounge">Dual Lounge</a>
+							<a class="dropdown-item {% if page.url == "/programm/kino/" %}active{% endif %}" href="{{ site.url }}/programm/kino">SIT – Kino</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item {% if page.url == "/programm/komplett/" %}active{% endif %}" href="{{ site.url }}/programm/komplett">Programm komplett</a>
+						</div>
+					</li>
+					<li class="nav-item {% if page.url == "/fakultaeten/" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/fakultaeten">Fakultäten</a>
+					</li>
+					<li class="nav-item {% if page.url == "/anfahrt/" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/anfahrt">Anfahrt</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
