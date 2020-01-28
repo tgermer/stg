@@ -36,7 +36,7 @@ president: Prof. Dr. Martin Leitner
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # url: "https://portal.hm.edu/studieninformationstag/2020"
-url: "https://portal.hm.edu/studieninformationstag"
+url: "https://stg-strukturiert.netlify.com"
 url_imprint: https://www.hm.edu/sekundaer_navigation/impressum
 url_pravacy_statement: https://www.hm.edu/sekundaer_navigation/impressum/datenschutz
 webmaster_email: tgermer@hm.edu
