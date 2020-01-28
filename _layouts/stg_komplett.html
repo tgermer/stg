@@ -11,12 +11,15 @@
 
           <p>Grade: {{page.grade_lang}} ({{ page.aaspf_echt }}.{{ page.grade }})</p>
 
+          {% if page.url_echt != nil %}
           <p>
             <a href="{{ page.url_echt }}" target="_blank">Link zum Studiengang</a>
           </p>
+          {% endif %}
+
       </div>
 
-      
+
     </main>
     {% include footer.html %}
   </body>

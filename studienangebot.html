@@ -1,0 +1,9 @@
+---
+layout: container
+title: Studiengangebot
+---
+
+
+{% for stg in site.data.stg_komplett %}
+    <h6><a href="{{ stg.fachrich | datapage_url: 'studienangebot' }}">{{ stg.fachrich }} ({{ stg.aaspf_echt }}.{{ stg.grade }})</a></h6>
+{% endfor %}
