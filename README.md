@@ -1,0 +1,2 @@
+# stg
+Studiengänge strukturiert darstellen
