@@ -1,19 +1,313 @@
 <!DOCTYPE html>
 <html lang="de">
-  {% include head.html %}
-  <body>
-    {% include nav.html %}
-    <main>
+{% include head.html %}
 
-      <div class="container">
-        <h1>{{ page.stg }} ({{ page.grade_kurz }})</h1>
+<body>
+  {% include nav.html %}
+  <main>
+    <div class="container">
+      <h1>{{ page.fachrich }} ({{ page.grade_kurz }})
+        <br><small>{{ page.fachriche }}</small>
+      </h1>
 
-          <p>Grade: {{page.grade}} ({{ page.grade_kurz }})</p>
+      <div class="row my-4">
+        <div class="col-lg-6" style="background-image: url(https://source.unsplash.com/random/1000?{{ page.tags | join: "+" }}); background-size: cover; background-position: center center; min-height:200px">
 
-          <p>{{ page.stg_kurz_abschluss_kurz }}</p>
+        </div>
+        <div class="col-lg-6 bg-light py-3">
+          <h2>Steckbrief</h2>
+
+          <!-- {% if page.studien_art != nil %}
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="h6 text-uppercase">Art des Studiums</p>
+            </div>
+            <div class="col-lg-6">
+              <p>{{ page.studien_art }}</p>
+            </div>
+          </div>
+          {% endif %} -->
+
+          <div class="table-responsive">
+            <table class="table table-sm mt-3 bg-transparent">
+              <tbody>
+                {% if page.studien_art != nil %}
+                <tr class="col-md-6">
+                  <th scope="row" class="text-uppercase">Art des Studiums</th>
+                  <td>{{ page.studien_art}}</td>
+                </tr>
+                {% endif %}
+                {% if page.ects != nil %}
+                <tr>
+                  <th scope="row" class="text-uppercase">zu erreichende ECTS</th>
+                  <td>{{ page.ects }}</td>
+                </tr>
+                {% endif %}
+                {% if page.studien_art != nil %}
+                <tr class="col-md-6">
+                  <th scope="row" class="text-uppercase">Regelstudienzeit</th>
+                  <td>
+                    {% if page.regelstudien_zeit.voll_zeit != nil %}
+                    {{ page.regelstudien_zeit.voll_zeit }} Semester Vollzeit
+                    {% endif %}
+                    {% if page.regelstudien_zeit.teil_zeit != nil %}
+                    <br> {{ page.regelstudien_zeit.teil_zeit }} Semester Teilzeit
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endif %}
+                {% if page.studien_begin != nil %}
+                <tr>
+                  <th scope="row" class="text-uppercase">Studienbeginn</th>
+                  <td>{{ page.studien_begin  | join: " und "}}</td>
+                </tr>
+                {% endif %}
+                {% if page.sprachen.haupt_sprache != nil %}
+                <tr>
+                  <th scope="row" class="text-uppercase">Hauptunterrichts&shy;sprache</th>
+                  <td>{{ page.sprachen.haupt_sprache  | join: " und "}}
+                    {% if page.sprachen.weitere_sprachen != nil %}
+                    <p>Weitere Spachen:<br>{{ page.sprachen.weitere_sprachen | join: ", " }}</p>
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endif %}
+                <tr>
+                  <th scope="row" class="text-uppercase">Zulassungs&shy;beschränkt</th>
+                  <td>
+                    {% if page.zulassungs_beschraenkt == true %}
+                    Zulassungsbeschränkt
+                    {% else %}
+                    Zulassungsfrei
+                    {% endif %}
+                  </td>
+                </tr>
+                {% if page.hzb != nil %}
+                <tr>
+                  <th scope="row" class="text-uppercase">Zugangs&shy;berechtigt</th>
+                  <td>
+                    <ul class="list-unstyled">
+                      {% for item in page.hzb %}
+                      <li>{{ item }}</li>
+                      {% endfor %}
+                    </ul>
+                  </td>
+                </tr>
+                {% endif %}
+                <tr>
+                  <th scope="row" class="text-uppercase">Kosten je Semester</th>
+                  <td>
+                    Grundbeitrag Studentenwerk <span class="text-monospace">62,00</span>&nbsp;Euro<br>
+                    Solidarbeitrag Semesterticket <span class="text-monospace">67,00</span>&nbsp;Euro
+                  </td>
+                </tr>
+                {% if page.kosten != nil %}
+                <tr>
+                  <th scope="row" class="text-uppercase">Studiengebühren</th>
+                  <!-- https://github.com/23maverick23/jekyll-humanize -->
+                  <td>
+                    <span class="text-monospace">{{ page.kosten }}</span>&nbsp;Euro<br>
+                    <a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a>
+                  </td>
+                </tr>
+                {% endif %}
+              </tbody>
+            </table>
+          </div>
+          <a class="btn btn-success btn-out line-success btn-block btn-lg my-3 d-print-none" href="https://www3.primuss.de/cgi-bin/bew_anmeldung/index.pl?FH=fhm" role="button" target="_blank">Jetzt bewerben</a>
+        </div>
       </div>
 
-    </main>
-    {% include footer.html %}
-  </body>
+      <div class="row my-4">
+        <div class="col-md-6 my-2">
+          <h2>Kurzbeschreibung</h2>
+          {{ page.teaser }}
+        </div>
+        <div class="col-md-6 my-2">
+          {% if page.studien_schwerpunkte != nil %}
+          <h2>Studienschwerpunkte</h2>
+          <ul>
+            {% for item in page.studien_schwerpunkte %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% if page.studien_richtung != nil %}
+          <h2>Studienrichtungen</h2>
+          <ul>
+            {% for item in page.studien_richtung %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- {% if page.studien_ziel != nil %}
+      <div class="my-4">
+        <h2>Studienziel</h2>
+        {{ page.studien_ziel | markdownify }}
+      </div>
+      {% endif %} -->
+
+      <!-- <h2 class="mt-4">Zu wem passt der Studiengang?</h2>
+      <div class="row mb-4">
+        <div class="col-md-6 my-2">
+          <h5>Wer diesen Studiengang studieren möchte,</h5>
+          <p><strong>… bringt mit:</strong><br>
+          {{ page.interessen.bringt_mit | join: ", " }}
+          </p>
+          <p><strong>… hat Spaß an:</strong><br>
+          {{ page.interessen.hat_spass | join: ", " }}
+          </p>
+          <p><strong>… kämpft sich durch:</strong><br>
+          {{ page.interessen.kaempft | join: ", " }}
+          </p>
+        </div>
+        <div class="col-md-6 my-2">
+          <h5>Wer einen Abschluss in diesem Studiengang hat, arbeitet häufig</h5>
+          <ul>
+            {% for item in page.berufs_perpektiven %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="mt-4">Weiterführende Informationen</h2>
+      <div class="row my-4">
+        <div class="col-md-6 my-2">
+          {% if page.url_stg != nil %}
+          <p><a href="{{ page.url_stg }}" target="_blank">Informationen zum Studiengang auf den Seiten der Fakultät</a></p>
+          {% endif %}
+          {% if page.url_modulhandbuch != nil %}
+          <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Modulhandbuch</a></p>
+          {% endif %}
+          {% if page.url_spo != nil %}
+          <p><a href="{{ page.url_spo }}" target="_blank">Studien- und Prüfungsordnung</a></p>
+          {% endif %}
+        </div>
+        <div class="col-md-6 my-2">
+        </div>
+      </div> -->
+
+
+      <div class="accordion" id="accordionExample">
+        {% if page.studien_ziel != nil %}
+        <div class="card">
+          <div class="card-header" id="heading_studien_ziel">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_studien_ziel" aria-expanded="true" aria-controls="collapse_studien_ziel">
+                Studienziel
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_studien_ziel" class="collapse" aria-labelledby="heading_studien_ziel" data-parent="#accordionExample">
+            <div class="card-body">
+              {{ page.studien_ziel | markdownify }}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% if page.studien_verlauf != nil %}
+        <div class="card">
+          <div class="card-header" id="heading_studien_verlauf">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_studien_verlauf" aria-expanded="true" aria-controls="collapse_studien_verlauf">
+                Studienverlauf
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_studien_verlauf" class="collapse" aria-labelledby="heading_studien_verlauf" data-parent="#accordionExample">
+            <div class="card-body">
+              {{ page.studien_verlauf | markdownify }}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        <div class="card">
+          <div class="card-header" id="heading_bewerbung">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_bewerbung" aria-expanded="true" aria-controls="collapse_bewerbung">
+                Bewerbungsvorraussetzungen und -modalitäten
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_bewerbung" class="collapse" aria-labelledby="heading_bewerbung" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+              aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+              craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="heading2">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                Zu wem passt der Studiengang?
+              </button>
+            </h2>
+          </div>
+          <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="row mb-4">
+                <div class="col-md-6 my-2">
+                  <h5>Wer diesen Studiengang studieren möchte,</h5>
+                  <p><strong>… bringt mit:</strong><br>
+                    {{ page.interessen.bringt_mit | join: ", " }}
+                  </p>
+                  <p><strong>… hat Spaß an:</strong><br>
+                    {{ page.interessen.hat_spass | join: ", " }}
+                  </p>
+                  <p><strong>… kämpft sich durch:</strong><br>
+                    {{ page.interessen.kaempft | join: ", " }}
+                  </p>
+                </div>
+                <div class="col-md-6 my-2">
+                  <h5>Wer einen Abschluss in diesem Studiengang hat, arbeitet häufig</h5>
+                  <ul>
+                    {% for item in page.berufs_perpektiven %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading3">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  Weiterführende Informationen
+                </button>
+              </h2>
+            </div>
+            <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+              <div class="card-body">
+                {% if page.url_stg != nil %}
+                <p><a href="{{ page.url_stg }}" target="_blank">Informationen zum Studiengang auf den Seiten der Fakultät</a></p>
+                {% endif %}
+                {% if page.url_modulhandbuch != nil %}
+                <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Modulhandbuch</a></p>
+                {% endif %}
+                {% if page.url_spo != nil %}
+                <p><a href="{{ page.url_spo }}" target="_blank">Studien- und Prüfungsordnung</a></p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="text-center my-5 d-print-none">
+          <a class="btn btn-s uccess btn-outline-success btn-block btn-lg" href="https://www3.primuss.de/cgi-bin/bew_anmeldung/index.pl?FH=fhm" role="button" target="_blank">Jetzt für {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }})
+            bewerben</a>
+        </div>
+
+      </div>
+  </main>
+  {% include footer.html %}
+</body>
+
 </html>

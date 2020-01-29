@@ -1,14 +1,148 @@
-- stg: Betriebswirtschaftslehre
+- fachrich: Betriebswirtschaftslehre
+  fachriche: Business Arts
   stg_kurz: &stg_kurz BW
   abschluss: Bachelor
   abschluss_kurz: &abschluss_kurz B
   grade: Bachelor of Administration
   grade_kurz: B.A.
   stg_kurz_abschluss_kurz: BW-B #[*stg_kurz, '-', *abschluss_kurz]
-- stg: Maschinenbau
-  stg_kurz: &stg_kurz MA
+  dateiname: Betriebswirtschaftslehre-Bachelor
+  teaser: Bulle oder Bär? Nutzen Sie die Hochschule München als Karrieresprungbrett. Gesucht werden teamfähige Köpfe mit dem Mut, sich den Herausforderungen der Internationalisierung und Globalisierung stellen. Das Studium Bachelor Betriebswirtschaft ist der passende Einstieg in die Wirtschaftswelt.
+  studien_ziel:
+  studien_verlauf:
+  tags:
+    - business
+  studien_art: grundständiges Studium
+  dual: true
+  master_typ:
+  studien_begin:
+    - Sommersemester
+    - Wintersemester
+  studien_form:
+    - VZ
+    - TZ
+    - BB
+  regelstudien_zeit:
+    voll_zeit: 3
+    teil_zeit: 6
+  ects: 210
+  # akkreditierung: true
+  #   - agentur: ASIIN
+  #     siegel_url:
+  #     urkunde_url:
+  sprachen:
+    haupt_sprache: Deutsch
+    weitere_sprachen:
+      - Englisch
+      - Französisch
+  studien_schwerpunkte:
+    - Schwerpunkt 1
+    - Schwerpunkt 2
+  studien_richtung:
+    - Richtung 1
+    - Richtung 2
+  kosten: 16000 # bei weiterbildenden Mastern konkreter Wert
+  url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/fk01/fk01_lokal/2_lehre/0_bachelor/0_studienstruktur/BA_Modulhandbuch_SS2017.pdf
+  url_spo: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/01_bwb_aktuell_spo.pdf
+  url_stg: https://www.bwl.hm.edu/s/b/ba_bwl.de.html
+  ## Formale Voraussetzungen
+  hzb:
+    - allg. Abitur
+    - Fachhochschulreife
+  zulassungs_beschraenkt: true
+  eignungs_pruefung:
+    - Aufnahmegespräch
+    - Prüfung
+  vor_praxis:
+    - Vorpraktikum
+  berufs_perpektiven:
+    - als Steuerberater/Wirtschaftsprüfer
+    - in der Unternehmensberatung
+    - in der Unternehmensführung
+    - in der Unternehmensorganisation
+  interessen:
+    bringt_mit:
+      - gute analytische Fähigkeiten
+      - Grundkenntnisse der englischen Sprache
+    hat_spass:
+      - ökonomischen Fragestellungen von der Bilanzierung bis zur Unternehmensführung
+    kaempft:
+      - die mathematischen und statistischen Grundlagen der modernen Wirtschaftswissenschaft
+
+
+- fachrich: Architektur
+  fachriche: Architecture
+  stg_kurz: &stg_kurz AR
   abschluss: Bachelor
   abschluss_kurz: &abschluss_kurz B
-  grade: Bachelor of Enginering
-  grade_kurz: B.Eng.
-  stg_kurz_abschluss_kurz: MA-B #[*stg_kurz, '-', *abschluss_kurz]
+  grade: Bachelor of Arts
+  grade_kurz: B.A.
+  stg_kurz_abschluss_kurz: AR-B #[*stg_kurz, '-', *abschluss_kurz]
+  dateiname: Architektur-Bachelor
+  teaser: '"Zeige mir, wie du baust, und ich sage dir, wer du bist." (Christian Morgenstern) Lebensbedürfnisse verändern sich. ArchitektInnen reagieren darauf und suchen im Dialog mit Menschen nach Lösungen. Der Studiengang Bachelor Architektur an der Hochschule München bereitet dafür den Weg. Wie bauen Sie?'
+  studien_ziel: |
+    Architektinnen und Architekten sind verantwortlich für die Gestaltqualität unserer baulichen Umwelt. Unter Berücksichtigung der Lebensbedürfnisse des Einzelnen und der Gesellschaft suchen sie im interdisziplinären Dialog mit NutzerInnen und FachberaterInnen nach kreativen Lösungen innerhalb eines komplexen Anforderungskataloges.
+
+    Ziel des Bachelorstudiums ist es, den Studierenden eine, auf das breit gefächerte Berufsspektrum abgestimmte, praxisorientierte Basisausbildung zu geben.
+
+    Das Lehrangebot reicht dabei von architekturgeschichtlichen und architekturtheoretischen Zusammenhängen, über die ästhetisch-künstlerische Gestaltung bis hin zu den funktionalen, technischen, ökologischen, wirtschaftlichen und organisatorischen Aspekten desBauens.
+
+    Neben der fachspezifischen Lehre ist der Erwerb von Schlüssel-qualifikationen erklärtes Ziel. Dies setzt eine Vertiefung und Erweiterung der kulturellen und sozialen Kompetenz und die Befähigung zur interdisziplinären Kooperation voraus.
+  studien_verlauf: |
+    Dem Studium geht ein 8-wöchiges einschlägiges Vorpraktikum voraus. In begründeten Ausnahmefällen kann das Vorpraktikum innerhalb eines Jahres nach Aufnahme des Studiums nachgewiesen werden.
+
+    Die Studiensemester gliedern sich in Projekt-, Grundlagen- und Vertiefungsmodule. Teilweise wird eine Wahlmöglichkeit beim Belegen der Module ermöglicht, dadurch können die StudentInnen gezielt eine individuelle Schwerpunktbildung verfolgen.
+
+    Den Abschluss des Bachelorstudiengangs im 6. Semester bildet eine Bachelorarbeit, in der weitestgehend selbständig eine Entwurfsaufgabe zu bearbeiten ist.
+  tags:
+    - architecture
+  studien_art: grundständiges Studium
+  dual: true
+  master_typ:
+  studien_begin:
+    - Sommersemester
+    - Wintersemester
+  studien_form:
+    - VZ
+    - TZ
+    - BB
+  regelstudien_zeit:
+    voll_zeit: 3
+    teil_zeit: 6
+  ects: 210
+  # akkreditierung: true
+  #   - agentur: ASIIN
+  #     siegel_url:
+  #     urkunde_url:
+  sprachen:
+    haupt_sprache: Deutsch
+    weitere_sprachen:
+  studien_schwerpunkte:
+  studien_richtung:
+  kosten: #16000 # bei weiterbildenden Mastern konkreter Wert
+  url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/fk01/fk01_lokal/2_lehre/0_bachelor/0_studienstruktur/BA_Modulhandbuch_SS2017.pdf
+  url_spo: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/01_arb_aktuell_spo.pdf
+  url_stg: https://www.ar.hm.edu/lehre/bachelor/Bachelor.de.html
+  ## Formale Voraussetzungen
+  hzb:
+    - allg. Abitur
+    - Fachhochschulreife
+  zulassungs_beschraenkt: true
+  eignungs_pruefung:
+    - Aufnahmegespräch
+    - Prüfung
+  vor_praxis:
+    - Vorpraktikum
+  berufs_perpektiven:
+    - als Steuerberater/Wirtschaftsprüfer
+    - in der Unternehmensberatung
+    - in der Unternehmensführung
+    - in der Unternehmensorganisation
+  interessen:
+    bringt_mit:
+      - gute analytische Fähigkeiten
+      - Grundkenntnisse der englischen Sprache
+    hat_spass:
+      - ökonomischen Fragestellungen von der Bilanzierung bis zur Unternehmensführung
+    kaempft:
+      - die mathematischen und statistischen Grundlagen der modernen Wirtschaftswissenschaft

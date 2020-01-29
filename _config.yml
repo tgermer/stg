@@ -122,8 +122,8 @@ page_gen:
   - index_files: #<<true or false>
     data: stg
     template: stg
-    name: stg_kurz_abschluss_kurz #<<field used to generate the filename>>
-    dir: #<<directory in which files are to be generated>>
+    name: dateiname #<<field used to generate the filename>>
+    dir: stg #<<directory in which files are to be generated>>
     extension: #<<extension used to generate the filename>>
     filter: #<<property to filter data records by>>
 
@@ -134,3 +134,7 @@ page_gen:
     dir: studienangebot #<<directory in which files are to be generated>>
     extension: #<<extension used to generate the filename>>
     filter: #<<property to filter data records by>>
+
+
+# gems:
+#   - jekyll-pdf # https://github.com/jekyll-pdf/jekyll-pdf/issues/1

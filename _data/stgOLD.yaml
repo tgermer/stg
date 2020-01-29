@@ -1,0 +1,14 @@
+- stg: Betriebswirtschaftslehre
+  stg_kurz: &stg_kurz BW
+  abschluss: Bachelor
+  abschluss_kurz: &abschluss_kurz B
+  grade: Bachelor of Administration
+  grade_kurz: B.A.
+  stg_kurz_abschluss_kurz: BW-B #[*stg_kurz, '-', *abschluss_kurz]
+- stg: Maschinenbau
+  stg_kurz: &stg_kurz MA
+  abschluss: Bachelor
+  abschluss_kurz: &abschluss_kurz B
+  grade: Bachelor of Enginering
+  grade_kurz: B.Eng.
+  stg_kurz_abschluss_kurz: MA-B #[*stg_kurz, '-', *abschluss_kurz]
