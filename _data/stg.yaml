@@ -1,9 +1,9 @@
 - fachrich: Betriebswirtschaftslehre
-  fachriche: Business Arts
+  fachriche: Business Administration
   stg_kurz: &stg_kurz BW
   abschluss: Bachelor
   abschluss_kurz: &abschluss_kurz B
-  grade: Bachelor of Administration
+  grade: Bachelor of Arts
   grade_kurz: B.A.
   stg_kurz_abschluss_kurz: BW-B #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Betriebswirtschaftslehre-Bachelor
@@ -140,15 +140,15 @@
   vor_praxis:
     - Vorpraktikum
   berufs_perpektiven:
-    - als Steuerberater/Wirtschaftsprüfer
-    - in der Unternehmensberatung
-    - in der Unternehmensführung
-    - in der Unternehmensorganisation
+    - als ArchitektIn
+    - in Architekturbüros
+    - in Bauunternehmen
+    - in Ingenieur- und Planungsbüros
+    - im öffentlichen Dienst
   interessen:
     bringt_mit:
-      - gute analytische Fähigkeiten
-      - Grundkenntnisse der englischen Sprache
+      - Allgemeine Hochschulreife
     hat_spass:
-      - ökonomischen Fragestellungen von der Bilanzierung bis zur Unternehmensführung
+      - technischen Vorgängen und logischem Denken und Handeln
     kaempft:
-      - die mathematischen und statistischen Grundlagen der modernen Wirtschaftswissenschaft
+      - Mathematik und Mechanik
