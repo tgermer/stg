@@ -7,3 +7,5 @@ title: Studiengangebot (STG)
 {% for stg in site.data.stg %}
     <h6><a href="{{ stg.dateiname | datapage_url: 'stg' }}">{{ stg.fachrich }} ({{ stg.grade_kurz }})</a></h6>
 {% endfor %}
+
+<!-- {{ page.url }} -->
