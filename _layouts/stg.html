@@ -192,7 +192,7 @@
       </div> -->
 
 
-      <div class="accordion" id="accordionExample">
+      <div class="accordion" id="accordion_stg_informationen">
         {% if page.studien_ziel != nil %}
         <div class="card">
           <div class="card-header" id="heading_studien_ziel">
@@ -202,7 +202,7 @@
               </button>
             </h2>
           </div>
-          <div id="collapse_studien_ziel" class="collapse" aria-labelledby="heading_studien_ziel" data-parent="#accordionExample">
+          <div id="collapse_studien_ziel" class="collapse" aria-labelledby="heading_studien_ziel" data-parent="#accordion_stg_informationen">
             <div class="card-body">
               {{ page.studien_ziel | markdownify }}
             </div>
@@ -218,7 +218,7 @@
               </button>
             </h2>
           </div>
-          <div id="collapse_studien_verlauf" class="collapse" aria-labelledby="heading_studien_verlauf" data-parent="#accordionExample">
+          <div id="collapse_studien_verlauf" class="collapse" aria-labelledby="heading_studien_verlauf" data-parent="#accordion_stg_informationen">
             <div class="card-body">
               {{ page.studien_verlauf | markdownify }}
             </div>
@@ -233,7 +233,7 @@
               </button>
             </h2>
           </div>
-          <div id="collapse_bewerbung" class="collapse" aria-labelledby="heading_bewerbung" data-parent="#accordionExample">
+          <div id="collapse_bewerbung" class="collapse" aria-labelledby="heading_bewerbung" data-parent="#accordion_stg_informationen">
             <div class="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
               aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
@@ -249,7 +249,7 @@
               </button>
             </h2>
           </div>
-          <div id="collapse_interesse" class="collapse" aria-labelledby="heading_interesse" data-parent="#accordionExample">
+          <div id="collapse_interesse" class="collapse" aria-labelledby="heading_interesse" data-parent="#accordion_stg_informationen">
             <div class="card-body">
               <div class="row mb-4">
                 <div class="col-md-6 my-2">
@@ -284,7 +284,7 @@
                 </button>
               </h2>
             </div>
-            <div id="collapse_weitere_info" class="collapse" aria-labelledby="heading_weitere_info" data-parent="#accordionExample">
+            <div id="collapse_weitere_info" class="collapse" aria-labelledby="heading_weitere_info" data-parent="#accordion_stg_informationen">
               <div class="card-body">
                 {% if page.url_stg != nil %}
                 <p><a href="{{ page.url_stg }}" target="_blank">Informationen zum Studiengang auf den Seiten der Fakultät</a></p>
