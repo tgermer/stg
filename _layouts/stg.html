@@ -119,6 +119,12 @@
       </div>
 
       <div class="row my-4">
+        {% if page.studien_schwerpunkte == nil or page.studien_richtung == nil %}
+        <div class="col-md-12 my-2">
+        <h2>Kurzbeschreibung</h2>
+        {{ page.teaser | markdownify }}
+      </div>
+        {% else %}
         <div class="col-md-6 my-2">
           <h2>Kurzbeschreibung</h2>
           {{ page.teaser | markdownify }}
@@ -141,6 +147,7 @@
           </ul>
           {% endif %}
         </div>
+        {% endif %}
       </div>
 
       <!-- {% if page.studien_ziel != nil %}
