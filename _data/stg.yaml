@@ -11,7 +11,9 @@
   studien_ziel:
   studien_verlauf:
   tags:
-    - business
+    # - banking
+    # - business
+    - money
   studien_art: grundständiges Studium
   dual: true
   master_typ:
@@ -99,6 +101,7 @@
     Den Abschluss des Bachelorstudiengangs im 6. Semester bildet eine Bachelorarbeit, in der weitestgehend selbständig eine Entwurfsaufgabe zu bearbeiten ist.
   tags:
     - architecture
+    - munich
   studien_art: grundständiges Studium
   dual: true
   master_typ:
