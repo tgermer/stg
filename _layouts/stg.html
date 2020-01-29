@@ -121,7 +121,7 @@
       <div class="row my-4">
         <div class="col-md-6 my-2">
           <h2>Kurzbeschreibung</h2>
-          {{ page.teaser }}
+          {{ page.teaser | markdownify }}
         </div>
         <div class="col-md-6 my-2">
           {% if page.studien_schwerpunkte != nil %}

@@ -79,7 +79,10 @@
   grade_kurz: B.A.
   stg_kurz_abschluss_kurz: AR-B #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Architektur-Bachelor
-  teaser: '"Zeige mir, wie du baust, und ich sage dir, wer du bist." (Christian Morgenstern) Lebensbedürfnisse verändern sich. ArchitektInnen reagieren darauf und suchen im Dialog mit Menschen nach Lösungen. Der Studiengang Bachelor Architektur an der Hochschule München bereitet dafür den Weg. Wie bauen Sie?'
+  teaser: |
+    *„Zeige mir, wie du baust, und ich sage dir, wer du bist.“* —&nbsp;Christian Morgenstern
+
+    Lebensbedürfnisse verändern sich. ArchitektInnen reagieren darauf und suchen im Dialog mit Menschen nach Lösungen. Der Studiengang Bachelor Architektur an der Hochschule München bereitet dafür den Weg. Wie bauen Sie?
   studien_ziel: |
     Architektinnen und Architekten sind verantwortlich für die Gestaltqualität unserer baulichen Umwelt. Unter Berücksichtigung der Lebensbedürfnisse des Einzelnen und der Gesellschaft suchen sie im interdisziplinären Dialog mit NutzerInnen und FachberaterInnen nach kreativen Lösungen innerhalb eines komplexen Anforderungskataloges.
 
