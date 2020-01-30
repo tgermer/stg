@@ -97,8 +97,8 @@
                 <tr>
                   <th scope="row" class="text-uppercase">Kosten je Semester</th>
                   <td>
-                    <span class="d-block">Grundbeitrag Studentenwerk <span class="text-monospace">62,00</span>&nbsp;Euro</span>
-                    <span class="d-block">Solidarbeitrag Semesterticket <span class="text-monospace">67,00</span>&nbsp;Euro</span>
+                    <span class="d-block">Grundbeitrag Studentenwerk 62,00&nbsp;Euro</span>
+                    <span class="d-block">Solidarbeitrag Semesterticket 67,00&nbsp;Euro</span>
                   </td>
                 </tr>
                 {% if page.kosten != nil %}
@@ -106,7 +106,7 @@
                   <th scope="row" class="text-uppercase">Studiengebühren</th>
                   <!-- https://github.com/23maverick23/jekyll-humanize -->
                   <td>
-                    <span class="text-monospace">{{ page.kosten }}</span>&nbsp;Euro<br>
+                    {{ page.kosten }}&nbsp;Euro<br>
                     <a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a>
                   </td>
                 </tr>
@@ -134,9 +134,9 @@
       <div class="row my-4">
         {% if page.studien_schwerpunkte == nil or page.studien_richtung == nil %}
         <div class="col-md-12 my-2">
-        <h2>Kurzbeschreibung</h2>
-        {{ page.teaser | markdownify }}
-      </div>
+          <h2>Kurzbeschreibung</h2>
+          {{ page.teaser | markdownify }}
+        </div>
         {% else %}
         <div class="col-md-6 my-2">
           <h2>Kurzbeschreibung</h2>
@@ -298,37 +298,37 @@
             </div>
           </div>
         </div>
-          <div class="card">
-            <div class="card-header" id="heading_weitere_info">
-              <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_weitere_info" aria-expanded="false" aria-controls="collapse_weitere_info">
-                  Weiterführende Informationen
-                </button>
-              </h2>
-            </div>
-            <div id="collapse_weitere_info" class="collapse" aria-labelledby="heading_weitere_info" data-parent="#accordion_stg_informationen">
-              <div class="card-body">
-                {% if page.url_stg != nil %}
-                <p><a href="{{ page.url_stg }}" target="_blank">Informationen zum Studiengang auf den Seiten der Fakultät</a></p>
-                {% endif %}
-                {% if page.url_modulhandbuch != nil %}
-                <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Modulhandbuch</a></p>
-                {% endif %}
-                {% if page.url_spo != nil %}
-                <p><a href="{{ page.url_spo }}" target="_blank">Studien- und Prüfungsordnung</a></p>
-                {% endif %}
-              </div>
+        <div class="card">
+          <div class="card-header" id="heading_weitere_info">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_weitere_info" aria-expanded="false" aria-controls="collapse_weitere_info">
+                Weiterführende Informationen
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_weitere_info" class="collapse" aria-labelledby="heading_weitere_info" data-parent="#accordion_stg_informationen">
+            <div class="card-body">
+              {% if page.url_stg != nil %}
+              <p><a href="{{ page.url_stg }}" target="_blank">Informationen zum Studiengang auf den Seiten der Fakultät</a></p>
+              {% endif %}
+              {% if page.url_modulhandbuch != nil %}
+              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Modulhandbuch</a></p>
+              {% endif %}
+              {% if page.url_spo != nil %}
+              <p><a href="{{ page.url_spo }}" target="_blank">Studien- und Prüfungsordnung</a></p>
+              {% endif %}
             </div>
           </div>
         </div>
-
-
-        <div class="text-center my-5 d-print-none">
-          <a class="btn btn-s uccess btn-outline-success btn-block btn-lg" href="https://www3.primuss.de/cgi-bin/bew_anmeldung/index.pl?FH=fhm" role="button" target="_blank">Jetzt für {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }})
-            bewerben</a>
-        </div>
-
       </div>
+
+
+      <div class="text-center my-5 d-print-none">
+        <a class="btn btn-s uccess btn-outline-success btn-block btn-lg" href="https://www3.primuss.de/cgi-bin/bew_anmeldung/index.pl?FH=fhm" role="button" target="_blank">Jetzt für {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }})
+          bewerben</a>
+      </div>
+
+    </div>
   </main>
   {% include footer.html %}
 </body>
