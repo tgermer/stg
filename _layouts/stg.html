@@ -39,7 +39,7 @@
                 {% endif %}
                 {% if page.ects != nil %}
                 <tr>
-                  <th scope="row" class="text-uppercase">zu erreichende ECTS</th>
+                  <th scope="row" class="text-uppercase">zu erreichende <abbr title="European Credit Transfer and Accumulation System">ECTS</abbr></th>
                   <td>{{ page.ects }}</td>
                 </tr>
                 {% endif %}
@@ -97,8 +97,8 @@
                 <tr>
                   <th scope="row" class="text-uppercase">Kosten je Semester</th>
                   <td>
-                    Grundbeitrag Studentenwerk <span class="text-monospace">62,00</span>&nbsp;Euro<br>
-                    Solidarbeitrag Semesterticket <span class="text-monospace">67,00</span>&nbsp;Euro
+                    <span class="d-block">Grundbeitrag Studentenwerk <span class="text-monospace">62,00</span>&nbsp;Euro</span>
+                    <span class="d-block">Solidarbeitrag Semesterticket <span class="text-monospace">67,00</span>&nbsp;Euro</span>
                   </td>
                 </tr>
                 {% if page.kosten != nil %}
@@ -108,6 +108,19 @@
                   <td>
                     <span class="text-monospace">{{ page.kosten }}</span>&nbsp;Euro<br>
                     <a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a>
+                  </td>
+                </tr>
+                {% endif %}
+                {% if page.studien_anfaenger.sose !=nil or page.studien_anfaenger.wise != nil %}
+                <tr>
+                  <th scope="row" class="text-uppercase">Studienanfänger</th>
+                  <td>
+                    {% if page.studien_anfaenger.sose !=nil %}
+                    <span class="d-block">{{ page.studien_anfaenger.sose }} im Sommersemester</span>
+                    {% endif %}
+                    {% if page.studien_anfaenger.wise !=nil %}
+                    <span class="d-block">{{ page.studien_anfaenger.wise }} im Wintersemester</span>
+                    {% endif %}
                   </td>
                 </tr>
                 {% endif %}
@@ -133,7 +146,8 @@
           {% if page.studien_schwerpunkte != nil %}
           <h2>Studienschwerpunkte</h2>
           <ul>
-            {% for item in page.studien_schwerpunkte %}
+            {% assign items = page.studien_schwerpunkte | sort %}
+            {% for item in items %}
             <li>{{ item }}</li>
             {% endfor %}
           </ul>
@@ -141,7 +155,8 @@
           {% if page.studien_richtung != nil %}
           <h2>Studienrichtungen</h2>
           <ul>
-            {% for item in page.studien_richtung %}
+            {% assign items = page.studien_richtung | sort %}
+            {% for item in items %}
             <li>{{ item }}</li>
             {% endfor %}
           </ul>
