@@ -38,11 +38,21 @@
       - Englisch
       - Französisch
   studien_schwerpunkte:
-    - Schwerpunkt 1
-    - Schwerpunkt 2
+    - Human Resource Management
+    - Bank, Finanz- und Risikomanagement
+    - Projektberatung und Projektmanagement
+    - Logistik- und Produktionsmanagement
+    - Marketingmanagement
+    - Rechnungswesen/Controlling
+    - Steuern
+    - International Marketingmanagement
+    - Supply Chain Management
   studien_richtung:
     - Richtung 1
     - Richtung 2
+  studien_anfaenger:
+    sose: 308
+    wise: 295
   kosten: 16000 # bei weiterbildenden Mastern konkreter Wert
   url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/fk01/fk01_lokal/2_lehre/0_bachelor/0_studienstruktur/BA_Modulhandbuch_SS2017.pdf
   url_spo: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/01_bwb_aktuell_spo.pdf
@@ -125,6 +135,9 @@
     weitere_sprachen:
   studien_schwerpunkte:
   studien_richtung:
+  studien_anfaenger:
+    sose: 94
+    wise: 166
   kosten: #16000 # bei weiterbildenden Mastern konkreter Wert
   url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/fk01/fk01_lokal/2_lehre/0_bachelor/0_studienstruktur/BA_Modulhandbuch_SS2017.pdf
   url_spo: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/01_arb_aktuell_spo.pdf
