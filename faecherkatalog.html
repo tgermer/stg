@@ -1,0 +1,10 @@
+---
+layout: container
+title: Fächerkatalog Test
+---
+{% assign items = site.data.faecherkatalog.faecherkatalog %}
+<ul>
+  {% for item in items %}
+    <li>{{ item.[0] }} | Semester {{ item.[1] }} | {{ item.[2] }} SWS | {{ item.[3] }} | ECTS</li>
+  {% endfor %}
+</ul>
