@@ -1,0 +1,137 @@
+---
+layout: container
+title: Tabellarische Darstellung
+---
+
+<div class="table-responsive">
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        {% for item in site.data.stg %}
+        <th scope="col">{{ item.fachrich }} ({{ item.grade_kurz }}){{ site.badge_p }}
+          <br><small>{{ item.fachriche }}{{ site.badge_p }}</small></th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Art des Studiums</th>
+        {% for item in site.data.stg %}
+        <td>{{ item.studien_art }}</td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row">Zu erreichende ECTS</th>
+        {% for item in site.data.stg %}
+        <td>{{ item.ects }}</td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row">Regelstudienszeit</th>
+        {% for item in site.data.stg %}
+        <td>
+          {% if item.regelstudien_zeit.voll_zeit != nil %}
+          {{ item.regelstudien_zeit.voll_zeit }}{{ site.badge_p }} Semester Vollzeit
+          {% endif %}
+          {% if item.regelstudien_zeit.teil_zeit != nil %}
+          <br> {{ item.regelstudien_zeit.teil_zeit }}{{ site.badge_cms }} Semester Teilzeit
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row">Studienbeginn</th>
+        {% for item in site.data.stg %}
+        <td>{{ item.studien_begin | join: " und "}}{{ site.badge_cms }}</td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row">Hauptunterrichts&shy;sprache</th>
+        {% for item in site.data.stg %}
+        <td>{{ item.sprachen.haupt_sprache  | join: " und "}}{{ site.badge_cms }}
+          {% if item.sprachen.weitere_sprachen != nil %}
+          <p>Weitere Spachen: {{ item.sprachen.weitere_sprachen | join: ", " }}{{ site.badge_cms }}</p>
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row">Zulassungsbeschränkt</th>
+        {% for item in site.data.stg %}
+        <td>
+          {% if item.zulassungs_beschraenkt == true %}
+          Zulassungsbeschränkt{{ site.badge_cms }}
+          {% else %}
+          Zulassungsfrei{{ site.badge_cms }}
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row">Zulassungsberechtig</th>
+        {% for item in site.data.stg %}
+        <td>
+          <ul class="list-unstyled">
+            {% for item in item.hzb %}
+            <li>{{ item }}{{ site.badge_cms }}</li>
+            {% endfor %}
+          </ul>
+        </td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row">Kosten je Semester{{ site.badge_cms }}</th>
+        {% for item in site.data.stg %}
+        <td>
+          <span class="d-block">Grundbeitrag Studentenwerk 62,00&nbsp;Euro</span>
+          <span class="d-block">Solidarbeitrag Semesterticket 67,00&nbsp;Euro</span>
+        </td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row">Studiengebühren{{ site.badge_cms }}</th>
+        <!-- https://github.com/23maverick23/jekyll-humanize -->
+        {% for item in site.data.stg %}
+        <td>
+          {% if item.kosten != nil %}
+          {{ item.kosten }}&nbsp;Euro<br>
+          <a href="{{ item.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a>
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row">Studienanfänger{{ site.badge_p }}</th>
+        {% for item in site.data.stg %}
+        <td>
+          {% if item.studien_anfaenger.sose !=nil or item.studien_anfaenger.wise != nil %}
+          {% if item.studien_anfaenger.sose !=nil %}
+          <span class="d-block">{{ item.studien_anfaenger.sose }} im Sommersemester</span>
+          {% endif %}
+          {% if item.studien_anfaenger.wise !=nil %}
+          <span class="d-block">{{ item.studien_anfaenger.wise }} im Wintersemester</span>
+          {% endif %}
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row">Studienschwerpunkte{{ site.badge_cms }}</th>
+        {% for item in site.data.stg %}
+        {% assign items = item.studien_schwerpunkte %}
+        <td>
+          {% if items != nil %}
+          <ul class="list-unstyled">
+            {% assign items = items | sort %}
+            {% for item in items %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+    </tbody>
+  </table>
+</div>
