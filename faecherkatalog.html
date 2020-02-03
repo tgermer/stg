@@ -41,16 +41,16 @@ title: Fächerkatalog Test
         {% endfor %}
       </tr>
       {% endfor %}
+    </tbody>
+    <tfoot>
       <tr>
-        <td><span class="float-right"><small>Summe Semesterwochenstunden</small></span></td>
+        <th><span class="float-right"><small>Summe Semesterwochenstunden</small></span></th>
         {% for i in (1..6) %}
-        <td align="center" {% if i == 5 %} class="table-info" {% endif %}>
-          {% if item[1] == i %}
-          {{ item[2] }}&nbsp;SWS
-          {% endif %}
-        </td>
+        <th class="text-center" {% if i == 5 %} class="table-info" {% endif %}>
+          ##
+        </th>
         {% endfor %}
       </tr>
-    </tbody>
+    </tfoot>
   </table>
 </div>
