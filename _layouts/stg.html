@@ -23,18 +23,6 @@
         </div>
         <div class="col-lg-6 bg-light py-3">
           <h2>Steckbrief</h2>
-
-          <!-- {% if page.studien_art != nil %}
-          <div class="row">
-            <div class="col-lg-6">
-              <p class="h6 text-uppercase">Art des Studiums</p>
-            </div>
-            <div class="col-lg-6">
-              <p>{{ page.studien_art }}</p>
-            </div>
-          </div>
-          {% endif %} -->
-
           <div class="table-responsive">
             <table class="table table-sm mt-3 bg-transparent">
               <tbody>
@@ -172,54 +160,6 @@
         </div>
         {% endif %}
       </div>
-
-      <!-- {% if page.studien_ziel != nil %}
-      <div class="my-4">
-        <h2>Studienziel</h2>
-        {{ page.studien_ziel | markdownify }}
-      </div>
-      {% endif %} -->
-
-      <!-- <h2 class="mt-4">Zu wem passt der Studiengang?</h2>
-      <div class="row mb-4">
-        <div class="col-md-6 my-2">
-          <h5>Wer diesen Studiengang studieren möchte,</h5>
-          <p><strong>… bringt mit:</strong><br>
-          {{ page.interessen.bringt_mit | join: ", " }}
-          </p>
-          <p><strong>… hat Spaß an:</strong><br>
-          {{ page.interessen.hat_spass | join: ", " }}
-          </p>
-          <p><strong>… kämpft sich durch:</strong><br>
-          {{ page.interessen.kaempft | join: ", " }}
-          </p>
-        </div>
-        <div class="col-md-6 my-2">
-          <h5>Wer einen Abschluss in diesem Studiengang hat, arbeitet häufig</h5>
-          <ul>
-            {% for item in page.berufs_perpektiven %}
-            <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-
-      <h2 class="mt-4">Weiterführende Informationen</h2>
-      <div class="row my-4">
-        <div class="col-md-6 my-2">
-          {% if page.url_stg != nil %}
-          <p><a href="{{ page.url_stg }}" target="_blank">Informationen zum Studiengang auf den Seiten der Fakultät</a></p>
-          {% endif %}
-          {% if page.url_modulhandbuch != nil %}
-          <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Modulhandbuch</a></p>
-          {% endif %}
-          {% if page.url_spo != nil %}
-          <p><a href="{{ page.url_spo }}" target="_blank">Studien- und Prüfungsordnung</a></p>
-          {% endif %}
-        </div>
-        <div class="col-md-6 my-2">
-        </div>
-      </div> -->
 
       <p><a href="#" class="btn btn-default btn-sm openall" style="cursor: pointer;">alle aufklappen</a> <a href="#" class="btn btn-default btn-sm closeall" style="cursor: pointer; display: none;">alle schließen</a>
         <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
