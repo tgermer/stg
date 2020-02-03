@@ -44,6 +44,10 @@ webmaster_name: Tristan Germer
 logo_nav: /assets/img/HM_Deu_RGB_2.svg   #logoLinks.svg
 # logo_black: /assets/img/Studieninformationstag 2020 links black.svg   #logoLinks.svg
 # logo_white: /assets/img/Studieninformationstag 2020 links white.svg   #logoLinks.svg
+
+badge_p: <sup class="toggle"><small><span class="badge badge-pill badge-primary" title="Daten aus PRIMUSS">P</span></small></sup>
+badge_cms: <sup class="toggle"><small><span class="badge badge-pill badge-info" title="Daten im CMS eingegeben">C</span></small></sup>
+
 twitter_username: HAW_Muenchen
 linkedin_username: hochschule-muenchen
 facebook_username: HochschuleMuenchen

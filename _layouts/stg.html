@@ -6,8 +6,19 @@
   {% include nav.html %}
   <main>
     <div class="container">
-      <h1>{{ page.fachrich }} ({{ page.grade_kurz }})
-        <br><small>{{ page.fachriche }}</small>
+
+
+      <nav>
+             <ul>
+                <li><a href="#" onclick="einblenden()">Einblenden</a></li>
+                <li><a href="#" onclick="ausblenden()">Ausblenden</a></li>
+             </ul>
+           </nav>
+
+
+
+      <h1>{{ page.fachrich }} ({{ page.grade_kurz }}){{ site.badge_p }}
+        <br><small>{{ page.fachriche }}{{ site.badge_cms }}</small>
       </h1>
 
       <div class="row my-4">
@@ -34,13 +45,13 @@
                 {% if page.studien_art != nil %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Art des Studiums</th>
-                  <td>{{ page.studien_art}}</td>
+                  <td>{{ page.studien_art}}{{ site.badge_cms }}</td>
                 </tr>
                 {% endif %}
                 {% if page.ects != nil %}
                 <tr>
                   <th scope="row" class="text-uppercase">zu erreichende <abbr title="European Credit Transfer and Accumulation System">ECTS</abbr></th>
-                  <td>{{ page.ects }}</td>
+                  <td>{{ page.ects }}{{ site.badge_p }}</td>
                 </tr>
                 {% endif %}
                 {% if page.studien_art != nil %}
@@ -48,10 +59,10 @@
                   <th scope="row" class="text-uppercase">Regelstudienzeit</th>
                   <td>
                     {% if page.regelstudien_zeit.voll_zeit != nil %}
-                    {{ page.regelstudien_zeit.voll_zeit }} Semester Vollzeit
+                    {{ page.regelstudien_zeit.voll_zeit }}{{ site.badge_p }} Semester Vollzeit
                     {% endif %}
                     {% if page.regelstudien_zeit.teil_zeit != nil %}
-                    <br> {{ page.regelstudien_zeit.teil_zeit }} Semester Teilzeit
+                    <br> {{ page.regelstudien_zeit.teil_zeit }}{{ site.badge_cms }} Semester Teilzeit
                     {% endif %}
                   </td>
                 </tr>
@@ -59,15 +70,15 @@
                 {% if page.studien_begin != nil %}
                 <tr>
                   <th scope="row" class="text-uppercase">Studienbeginn</th>
-                  <td>{{ page.studien_begin  | join: " und "}}</td>
+                  <td>{{ page.studien_begin  | join: " und "}}{{ site.badge_cms }}</td>
                 </tr>
                 {% endif %}
                 {% if page.sprachen.haupt_sprache != nil %}
                 <tr>
                   <th scope="row" class="text-uppercase">Hauptunterrichts&shy;sprache</th>
-                  <td>{{ page.sprachen.haupt_sprache  | join: " und "}}
+                  <td>{{ page.sprachen.haupt_sprache  | join: " und "}}{{ site.badge_cms }}
                     {% if page.sprachen.weitere_sprachen != nil %}
-                    <p>Weitere Spachen:<br>{{ page.sprachen.weitere_sprachen | join: ", " }}</p>
+                    <p>Weitere Spachen:<br>{{ page.sprachen.weitere_sprachen | join: ", " }}{{ site.badge_cms }}</p>
                     {% endif %}
                   </td>
                 </tr>
@@ -76,9 +87,9 @@
                   <th scope="row" class="text-uppercase">Zulassungs&shy;beschränkt</th>
                   <td>
                     {% if page.zulassungs_beschraenkt == true %}
-                    Zulassungsbeschränkt
+                    Zulassungsbeschränkt{{ site.badge_cms }}
                     {% else %}
-                    Zulassungsfrei
+                    Zulassungsfrei{{ site.badge_cms }}
                     {% endif %}
                   </td>
                 </tr>
@@ -88,7 +99,7 @@
                   <td>
                     <ul class="list-unstyled">
                       {% for item in page.hzb %}
-                      <li>{{ item }}</li>
+                      <li>{{ item }}{{ site.badge_cms }}</li>
                       {% endfor %}
                     </ul>
                   </td>
@@ -97,8 +108,8 @@
                 <tr>
                   <th scope="row" class="text-uppercase">Kosten je Semester</th>
                   <td>
-                    <span class="d-block">Grundbeitrag Studentenwerk 62,00&nbsp;Euro</span>
-                    <span class="d-block">Solidarbeitrag Semesterticket 67,00&nbsp;Euro</span>
+                    <span class="d-block">Grundbeitrag Studentenwerk 62,00{{ site.badge_cms }}&nbsp;Euro</span>
+                    <span class="d-block">Solidarbeitrag Semesterticket 67,00{{ site.badge_cms }}&nbsp;Euro</span>
                   </td>
                 </tr>
                 {% if page.kosten != nil %}
@@ -106,7 +117,7 @@
                   <th scope="row" class="text-uppercase">Studiengebühren</th>
                   <!-- https://github.com/23maverick23/jekyll-humanize -->
                   <td>
-                    {{ page.kosten }}&nbsp;Euro<br>
+                    {{ page.kosten }}{{ site.badge_cms }}&nbsp;Euro<br>
                     <a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a>
                   </td>
                 </tr>
@@ -116,10 +127,10 @@
                   <th scope="row" class="text-uppercase">Studienanfänger</th>
                   <td>
                     {% if page.studien_anfaenger.sose !=nil %}
-                    <span class="d-block">{{ page.studien_anfaenger.sose }} im Sommersemester</span>
+                    <span class="d-block">{{ page.studien_anfaenger.sose }}{{ site.badge_p }} im Sommersemester</span>
                     {% endif %}
                     {% if page.studien_anfaenger.wise !=nil %}
-                    <span class="d-block">{{ page.studien_anfaenger.wise }} im Wintersemester</span>
+                    <span class="d-block">{{ page.studien_anfaenger.wise }}{{ site.badge_p }} im Wintersemester</span>
                     {% endif %}
                   </td>
                 </tr>
@@ -134,17 +145,17 @@
       <div class="row my-4">
         {% if page.studien_schwerpunkte == nil or page.studien_richtung == nil %}
         <div class="col-md-12 my-2">
-          <h2>Kurzbeschreibung</h2>
+          <h2>Kurzbeschreibung{{ site.badge_cms }}</h2>
           {{ page.teaser | markdownify }}
         </div>
         {% else %}
         <div class="col-md-6 my-2">
-          <h2>Kurzbeschreibung</h2>
+          <h2>Kurzbeschreibung{{ site.badge_cms }}</h2>
           {{ page.teaser | markdownify }}
         </div>
         <div class="col-md-6 my-2">
           {% if page.studien_schwerpunkte != nil %}
-          <h2>Studienschwerpunkte</h2>
+          <h2>Studienschwerpunkte{{ site.badge_p }}</h2>
           <ul>
             {% assign items = page.studien_schwerpunkte | sort %}
             {% for item in items %}
@@ -153,7 +164,7 @@
           </ul>
           {% endif %}
           {% if page.studien_richtung != nil %}
-          <h2>Studienrichtungen</h2>
+          <h2>Studienrichtungen{{ site.badge_p }}</h2>
           <ul>
             {% assign items = page.studien_richtung | sort %}
             {% for item in items %}
@@ -213,6 +224,9 @@
         </div>
       </div> -->
 
+      <p><a href="#" class="btn btn-default btn-sm openall" style="cursor: pointer;">alle aufklappen</a> <a href="#" class="btn btn-default btn-sm closeall" style="cursor: pointer; display: none;">alle schließen</a>
+        <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
+      </p>
 
       <div class="accordion" id="accordion_stg_informationen">
         {% if page.studien_ziel != nil %}
@@ -220,7 +234,7 @@
           <div class="card-header" id="heading_studien_ziel">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_studien_ziel" aria-expanded="true" aria-controls="collapse_studien_ziel">
-                Studienziel
+                Studienziel{{ site.badge_cms }}
               </button>
             </h2>
           </div>
@@ -236,7 +250,7 @@
           <div class="card-header" id="heading_studien_verlauf">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_studien_verlauf" aria-expanded="true" aria-controls="collapse_studien_verlauf">
-                Studienverlauf
+                Studienverlauf{{ site.badge_cms }}
               </button>
             </h2>
           </div>
@@ -251,7 +265,7 @@
           <div class="card-header" id="heading_bewerbung">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_bewerbung" aria-expanded="true" aria-controls="collapse_bewerbung">
-                Bewerbungsvorraussetzungen und -modalitäten
+                Bewerbungsvorraussetzungen und -modalitäten{{ site.badge_cms }}
               </button>
             </h2>
           </div>
@@ -267,7 +281,7 @@
           <div class="card-header" id="heading_interesse">
             <h2 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_interesse" aria-expanded="false" aria-controls="collapse_interesse">
-                Zu wem passt der Studiengang?
+                Zu wem passt der Studiengang?{{ site.badge_cms }}
               </button>
             </h2>
           </div>
@@ -302,7 +316,7 @@
           <div class="card-header" id="heading_weitere_info">
             <h2 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_weitere_info" aria-expanded="false" aria-controls="collapse_weitere_info">
-                Weiterführende Informationen
+                Weiterführende Informationen{{ site.badge_cms }}
               </button>
             </h2>
           </div>
