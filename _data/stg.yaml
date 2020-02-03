@@ -22,38 +22,87 @@
     - Wintersemester
   studien_form:
     - VZ
-    - TZ
-    - BB
+    # - TZ
+    # - BB
   regelstudien_zeit:
-    voll_zeit: 6
-    teil_zeit: 12
-  praxis_semester: 5
+    voll_zeit: 7
+    # teil_zeit: 12
+  praxis_semester: 4
   faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
-    - ["Grundlagen der Betriebswirtschaftslehre", 1, 2, 5]
-    - ["Wirtschaftsmathematik", 2, 2, 4]
-    - ["Deskriptive Statistik", 4, 3, 5]
-    - ["Grundlagen der Mikroökonomie", 6, 2, 4]
-    - ["Bachelorarbeit", 0, 0, 20]
+    - ["Allgemeine Betriebswirtschaftslehre", 1, 4, 5, "schrP"]
+    - ["Marketing", 1, 4, 5, "schrP"]
+    - ["Bilanzierung und Jahresabschluss", 1, 4, 5 , "schrP"]
+    - ["Unternehmensorganisation", 1, 4, 5, "schrP"]
+    - ["Human Resource Management", 1, 4, 5, "schrP"]
+    - ["Grundlagen der Mathematik und Statistik", 1, 4, 5, "schrP"]
+    - ["Grundlagen der Mikroökonomik", 2, 4, 5, "schrP"]
+    - ["Wirtschaftsenglisch im Unternehmenskontext", 2, 4, 5, "schrP"]
+    - ["Kosten- und Leistungsrechnung", 2, 4, 5, "schrP"]
+    - ["Wirtschaftsprivatrecht", 2, 4, 5, "schrP"]
+    - ["Methoden und Konzepte von Informationssystemen", 2, 4, 5, "schrP"]
+    - ["Methoden und Modelle der Optimierung", 2, 4, 5, "schrP"]
+    - ["Unternehmensbesteuerung", 3, 4, 5, "schrP"]
+    - ["Wirtschaftsenglisch im volkswirtschaftlichen Kontext", 3, 2, 5, "schrP"]
+    - ["Finanzierung und Investition", 3, 4, 5, "schrP"]
+    - ["Produktions- und Logistikmanagement", 3, 4, 5, "schrP"]
+    - ["Informationssysteme für digitalisierte Unternehmen", 3, 4, 5, "schrP"]
+    - ["Methoden und Modelle der Statistik", 3, 4, 5, "schrP"]
+    - ["Praktikum", 4, 0, 25]
+    - ["Sozial- und Persönlichkeitskompetenzen", 4, 4, 5]
+    - ["Grundlagen der Makroökonomik", 5, 4, 5]
+    - ["Interkulturelle Kommunikation", 5, 4, 5]
+    - ["Seminar", 5, 4, 5]
+    - ["Fächer aus den Studienschwerpunkten", 5, 12, 15]
+    - ["Methodische Kompetenzen", 6, 4, 5]
+    - ["Außenwirtschaft, Wirtschaftspolitik und empirische Wirtschaftsforschung", 6, 4, 5]
+    - ["Seminar", 6, 4, 5]
+    - ["Fächer aus den Studienschwerpunkten", 6, 12, 15]
+    - ["Entrepreneurship", 7, 4, 5]
+    - ["Unternehmensführung", 7, 4, 5]
+    - ["Allgemeinwissenschaftliche Module", 7, 4, 5]
+    - ["Bachelorarbeit", 7, 0, 12]
+    - ["Bachelorkolloquium", 7, 0, 3]
   ects: 210
   # akkreditierung: true
-  #   - agentur: ASIIN
+  #   - agentur: FIBAA
   #     siegel_url:
   #     urkunde_url:
   sprachen:
     haupt_sprache: Deutsch
     weitere_sprachen:
       - Englisch
-      - Französisch
+  studien_schwerpunkte_ablegen: 2
   studien_schwerpunkte:
-    - Human Resource Management
-    - Bank, Finanz- und Risikomanagement
-    - Projektberatung und Projektmanagement
-    - Logistik- und Produktionsmanagement
-    - Marketingmanagement
-    - Rechnungswesen/Controlling
-    - Steuern
-    - International Marketingmanagement
-    - Supply Chain Management
+    - Agiles Projektmanagement
+    - Bank-, Finanz- und Risikomanagement I
+    - Bank-, Finanz- und Risikomanagement II
+    - Digital Business Transformation
+    - Einkaufs- und Beschaffungsmanagement
+    - Human Resource Management I
+    - Human Resource Management II
+    - International Management I
+    - International Management II
+    - Marketingmanagement I
+    - Marketingmanagement II
+    - Rechnungswesen/Controlling I
+    - Rechnungswesen/Controlling II
+    - Servicemanagement
+    - Steuern I
+    - Steuern II
+    - Supply Chain Management I
+    - Supply Chain Management II
+    - Unternehmen und Recht
+    - Versicherungsmanagement
+    # Alten Schwerpunkte
+    # - Human Resource Management
+    # - Bank, Finanz- und Risikomanagement
+    # - Projektberatung und Projektmanagement
+    # - Logistik- und Produktionsmanagement
+    # - Marketingmanagement
+    # - Rechnungswesen/Controlling
+    # - Steuern
+    # - International Marketingmanagement
+    # - Supply Chain Management
   studien_richtung:
     - Richtung 1
     - Richtung 2
@@ -61,7 +110,7 @@
     sose: 308
     wise: 295
   kosten: 16000 # bei weiterbildenden Mastern konkreter Wert
-  url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/fk01/fk01_lokal/2_lehre/0_bachelor/0_studienstruktur/BA_Modulhandbuch_SS2017.pdf
+  url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/fk10/fk10_lokal/04_studienangebot/02_bachelorstudiengnge/neuespo/Studienplan_neue_SPO_WiSe1920_1811.pdf
   url_spo: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/01_bwb_aktuell_spo.pdf
   url_stg: https://www.bwl.hm.edu/s/b/ba_bwl.de.html
   ## Formale Voraussetzungen
