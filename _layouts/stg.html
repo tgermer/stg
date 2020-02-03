@@ -7,18 +7,14 @@
   <main>
     <div class="container">
 
-
-      <nav>
-             <ul>
-                <li><a href="#" onclick="einblenden()">Einblenden</a></li>
-                <li><a href="#" onclick="ausblenden()">Ausblenden</a></li>
-             </ul>
-           </nav>
-
+      <p class="float-right d-print-none"><a href="#" class="btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="btn btn-link btn-sm hidebadges" style="cursor: pointer; display: none;">Datenherkunft
+          verstecken</a>
+        <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
+      </p>
 
 
       <h1>{{ page.fachrich }} ({{ page.grade_kurz }}){{ site.badge_p }}
-        <br><small>{{ page.fachriche }}{{ site.badge_cms }}</small>
+        <br><small>{{ page.fachriche }}{{ site.badge_p }}</small>
       </h1>
 
       <div class="row my-4">
@@ -336,15 +332,34 @@
         </div>
       </div>
 
-
       <div class="text-center my-5 d-print-none">
         <a class="btn btn-s uccess btn-outline-success btn-block btn-lg" href="https://www3.primuss.de/cgi-bin/bew_anmeldung/index.pl?FH=fhm" role="button" target="_blank">Jetzt für {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }})
           bewerben</a>
       </div>
 
+      <p class="text-center d-print-none"><a href="#" class="btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="btn btn-link btn-sm hidebadges" style="cursor: pointer; display: none;">Datenherkunft
+          verstecken</a>
+        <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
+      </p>
+
     </div>
   </main>
   {% include footer.html %}
+
+  <script type="text/javascript">
+    $('.hidebadges').click(function() {
+      // $('.collapse').collapse('hide');
+      $('.toggle').toggle('none');
+      $('.hidebadges').hide();
+      $('.showbadges').show();
+    });
+    $('.showbadges').click(function() {
+      // $('.collapse').collapse('show');
+      $('.toggle').toggle('inline');
+      $('.hidebadges').show();
+      $('.showbadges').hide();
+    });
+  </script>
 </body>
 
 </html>
