@@ -5,6 +5,52 @@ title: Fächerkatalog Test
 {% assign items = site.data.faecherkatalog.faecherkatalog %}
 <ul>
   {% for item in items %}
-    <li>{{ item[0] }} | Semester {{ item[1] }} | {{ item[2] }} SWS | {{ item[3] }} | ECTS</li>
+  <li>{{ item[0] }} | Semester {{ item[1] }} | {{ item[2] }} SWS | {{ item[3] }} ECTS</li>
   {% endfor %}
 </ul>
+
+
+{% assign items = site.data.faecherkatalog.faecherkatalog %}
+<ul>
+  {% for item in items %}
+  <li>{{ item[0] }} | Semester {{ item[1] }} | {{ item[2] }} SWS | {{ item[3] }} ECTS</li>
+  {% endfor %}
+</ul>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Modul/Fach<span class="float-right"><small>Semester</small></span></th>
+        {% for i in (1..6) %}
+        <th scope="col" class="text-center" {% if i == 5 %} class="table-info" {% endif %}>{% if i == 5 %} <small>Praxissemester</small><br> {% endif %}{{ i }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    {% assign items = site.data.faecherkatalog.faecherkatalog %}
+    <tbody>
+      {% for item in items %}
+      <tr>
+        <td scope="row">{{ item[0] }} <small>({{ item[3] }}&nbsp;ECTS)</small></td>
+        {% for i in (1..6) %}
+        <td align="center" {% if i == 5 %} class="table-info" {% endif %}>
+          {% if item[1] == i %}
+          {{ item[2] }}&nbsp;SWS
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+      <tr>
+        <td><span class="float-right"><small>Summe Semesterwochenstunden</small></span></td>
+        {% for i in (1..6) %}
+        <td align="center" {% if i == 5 %} class="table-info" {% endif %}>
+          {% if item[1] == i %}
+          {{ item[2] }}&nbsp;SWS
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+    </tbody>
+  </table>
+</div>

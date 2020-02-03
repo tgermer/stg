@@ -241,7 +241,7 @@
           </div>
         </div>
         {% endif %}
-        {% if page.studien_verlauf != nil %}
+        {% if page.studien_verlauf != nil or page.faecherkatalog != nil %}
         <div class="card">
           <div class="card-header" id="heading_studien_verlauf">
             <h2 class="mb-0">
@@ -253,6 +253,44 @@
           <div id="collapse_studien_verlauf" class="collapse" aria-labelledby="heading_studien_verlauf" data-parent="#accordion_stg_informationen">
             <div class="card-body">
               {{ page.studien_verlauf | markdownify }}
+              <h4>Modul-/Fächerkatalog</h4>
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered table-sm">
+                  <thead>
+                    <tr>
+                      <th scope="col">Modul/Fach<span class="float-right"><small>Semester</small></span></th>
+                      {% for i in (1..{{page.regelstudien_zeit.voll_zeit}}) %}
+                      <th scope="col" class="text-center" {% if i == page.praxis_semester %} class="table-info" {% endif %}>{% if i == page.praxis_semester %} <small>Praxissemester</small><br> {% endif %}{{ i }}</th>
+                      {% endfor %}
+                    </tr>
+                  </thead>
+                  {% assign items = page.faecherkatalog %}
+                  <tbody>
+                    {% for item in items %}
+                    <tr>
+                      <td scope="row">{{ item[0] }} <small>({{ item[3] }}&nbsp;ECTS)</small></td>
+                      {% for i in (1..6) %}
+                      <td align="center" {% if i == page.praxis_semester %} class="table-info" {% endif %}>
+                        {% if item[1] == i %}
+                        {{ item[2] }}&nbsp;SWS
+                        {% endif %}
+                      </td>
+                      {% endfor %}
+                    </tr>
+                    {% endfor %}
+                    <tr>
+                      <td><span class="float-right"><small>Summe Semesterwochenstunden</small></span></td>
+                      {% for i in (1..6) %}
+                      <td align="center" {% if i == page.praxis_semester %} class="table-info" {% endif %}>
+                        {% if item[1] == i %}
+                        {{ item[2] }}&nbsp;SWS
+                        {% endif %}
+                      </td>
+                      {% endfor %}
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
-# - ["Fachname", Semester, SWS, ECTS]
-
-faecherkatalog:
+# - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
+faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
   - ["Grundlagen der Betriebswirtschaftslehre", 1, 2, 5]
   - ["Wirtschaftsmathematik", 2, 2, 4]
-  - ["Deskriptive Statistik"]
-  - ["Grundlagen der Mikroökonomie"]
+  - ["Deskriptive Statistik", 4, 3, 5]
+  - ["Grundlagen der Mikroökonomie", 6, 2, 4]
+  - ["Bachelorarbeit", 0, 0, 20]
 # Kosten- und Leistungsrechnung
 # Wahrscheinlichkeitstheorie und induktive Statistik
 # Methoden & Konzepte der Wirtschaftsinformatik

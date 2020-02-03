@@ -25,8 +25,15 @@
     - TZ
     - BB
   regelstudien_zeit:
-    voll_zeit: 3
-    teil_zeit: 6
+    voll_zeit: 6
+    teil_zeit: 12
+  praxis_semester: 5
+  faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
+    - ["Grundlagen der Betriebswirtschaftslehre", 1, 2, 5]
+    - ["Wirtschaftsmathematik", 2, 2, 4]
+    - ["Deskriptive Statistik", 4, 3, 5]
+    - ["Grundlagen der Mikroökonomie", 6, 2, 4]
+    - ["Bachelorarbeit", 0, 0, 20]
   ects: 210
   # akkreditierung: true
   #   - agentur: ASIIN
@@ -123,8 +130,15 @@
     - TZ
     - BB
   regelstudien_zeit:
-    voll_zeit: 3
-    teil_zeit: 6
+    voll_zeit: 6
+    teil_zeit:
+  praxis_semester: 4
+  faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
+    - ["Grundlagen der Betriebswirtschaftslehre", 1, 2, 5]
+    - ["Wirtschaftsmathematik", 2, 2, 4]
+    - ["Deskriptive Statistik", 4, 3, 5]
+    - ["Grundlagen der Mikroökonomie", 6, 2, 4]
+    - ["Bachelorarbeit", 0, 0, 20]
   ects: 210
   # akkreditierung: true
   #   - agentur: ASIIN
