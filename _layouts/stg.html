@@ -200,7 +200,7 @@
                   <thead>
                     <tr>
                       <th scope="col">Modul/Fach<span class="float-right"><small>Semester</small></span></th>
-                      {% for i in (1..{{page.regelstudien_zeit.voll_zeit}}) %}
+                      {% for i in (1..page.regelstudien_zeit.voll_zeit) %}
                       <th scope="col" class="text-center" {% if i == page.praxis_semester %} class="table-info" {% endif %}>{% if i == page.praxis_semester %} <small>Praxissemester</small><br> {% endif %}{{ i }}</th>
                       {% endfor %}
                     </tr>
@@ -210,7 +210,7 @@
                     {% for item in items %}
                     <tr>
                       <td scope="row">{{ item[0] }} <small>({{ item[3] }}&nbsp;ECTS)</small></td>
-                      {% for i in (1..{{page.regelstudien_zeit.voll_zeit}}) %}
+                      {% for i in (1..page.regelstudien_zeit.voll_zeit) %}
                       <td align="center" {% if i == page.praxis_semester %} class="table-warning" {% endif %}>
                         {% if item[1] == i and item[2] > 0 %}
                         {{ item[2] }}&nbsp;SWS
@@ -225,7 +225,7 @@
                   <tfoot>
                     <tr>
                       <th><span class="float-right"><small>Summe Semesterwochenstunden</small></span></th>
-                      {% for i in (1..{{page.regelstudien_zeit.voll_zeit}}) %}
+                      {% for i in (1..page.regelstudien_zeit.voll_zeit) %}
                       <th class="text-center" {% if i == page.praxis_semester %} class="table-info" {% endif %}>
                         ##
                       </th>
