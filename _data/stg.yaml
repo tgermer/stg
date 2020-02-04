@@ -25,6 +25,7 @@
     # - TZ
     # - BB
   regelstudien_zeit:
+    faecherkatalog: 7
     voll_zeit: 7
     # teil_zeit: 12
   praxis_semester: 4
@@ -120,10 +121,7 @@
     - Fachhochschulreife
   zulassungs_beschraenkt: true
   eignungs_pruefung:
-    - Aufnahmegespräch
-    - Prüfung
   vor_praxis:
-    - Vorpraktikum
   berufs_perpektiven:
     - als Steuerberater/Wirtschaftsprüfer
     - in der Unternehmensberatung
@@ -178,13 +176,13 @@
   dual: true
   master_typ:
   studien_begin:
-    - Sommersemester
     - Wintersemester
   studien_form:
     - VZ
     - TZ
     - BB
   regelstudien_zeit:
+    faecherkatalog: 6
     voll_zeit: 6
     teil_zeit:
   praxis_semester:
@@ -216,10 +214,10 @@
   hzb:
     - allg. Abitur
     - Fachhochschulreife
-  zulassungs_beschraenkt: true
+  zulassungs_beschraenkt: false
   eignungs_pruefung:
-    - Aufnahmegespräch
-    - Prüfung
+    - Eignungsprüfung (1. Teil)
+    - Persönliches Gespräch (2. Teil)
   vor_praxis:
     - Vorpraktikum
   vor_praxis_wochen: 8 # in Wochen
@@ -236,3 +234,114 @@
       - technischen Vorgängen und logischem Denken und Handeln
     kaempft:
       - Mathematik und Mechanik
+
+- fachrich: Wirtschaftsingenieurwesen (Weiterbildung)
+  fachriche: Business Administration and Engineering
+  stg_kurz: &stg_kurz WW
+  abschluss: Master
+  abschluss_kurz: &abschluss_kurz M
+  grade: Business Administration and Engineering
+  grade_kurz: MBA & Eng.
+  stg_kurz_abschluss_kurz: WW-M #[*stg_kurz, '-', *abschluss_kurz]
+  dateiname: Wirtschaftsingenieurwesen-Weiterbildung-Master
+  teaser: Teaser
+  studien_ziel:
+  studien_verlauf:
+  tags:
+    # - banking
+    # - business
+    - money
+    - engineering
+  studien_art: weiterbildendes Master-Studium
+  dual: true
+  master_typ:
+  studien_begin:
+    - Sommersemester
+    - Wintersemester
+  studien_form:
+    - TZ
+  regelstudien_zeit:
+    faecherkatalog: 5
+    # voll_zeit:
+    teil_zeit: 5
+  praxis_semester:
+  praxis_semester_dauer:  # in Wochen
+  faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
+    - ["Allgemeine Betriebswirtschaftslehre", 1, 4, 5, "schrP"]
+    - ["Marketing", 1, 4, 5, "schrP"]
+    - ["Bilanzierung und Jahresabschluss", 1, 4, 5 , "schrP"]
+    - ["Unternehmensorganisation", 1, 4, 5, "schrP"]
+    - ["Human Resource Management", 1, 4, 5, "schrP"]
+    - ["Grundlagen der Mathematik und Statistik", 1, 4, 5, "schrP"]
+    - ["Grundlagen der Mikroökonomik", 2, 4, 5, "schrP"]
+    - ["Wirtschaftsenglisch im Unternehmenskontext", 2, 4, 5, "schrP"]
+    - ["Kosten- und Leistungsrechnung", 2, 4, 5, "schrP"]
+    - ["Wirtschaftsprivatrecht", 2, 4, 5, "schrP"]
+    - ["Methoden und Konzepte von Informationssystemen", 2, 4, 5, "schrP"]
+    - ["Methoden und Modelle der Optimierung", 2, 4, 5, "schrP"]
+    - ["Unternehmensbesteuerung", 3, 4, 5, "schrP"]
+    - ["Wirtschaftsenglisch im volkswirtschaftlichen Kontext", 3, 2, 5, "schrP"]
+    - ["Finanzierung und Investition", 3, 4, 5, "schrP"]
+    - ["Produktions- und Logistikmanagement", 3, 4, 5, "schrP"]
+    - ["Informationssysteme für digitalisierte Unternehmen", 3, 4, 5, "schrP"]
+    - ["Methoden und Modelle der Statistik", 3, 4, 5, "schrP"]
+    - ["Praktikum", 4, 0, 25]
+    - ["Sozial- und Persönlichkeitskompetenzen", 4, 4, 5]
+    - ["Grundlagen der Makroökonomik", 5, 4, 5]
+    - ["Interkulturelle Kommunikation", 5, 4, 5]
+    - ["Seminar", 5, 4, 5]
+    - ["Masterarbeit", 5, 0, 12]
+  ects: 90
+  akkreditierung: true
+  akkreditierung_agentur: ASIIN
+  akkreditierung_siegel_url:
+  akkreditierung_urkunde_url:
+  sprachen:
+    haupt_sprache: Deutsch
+    weitere_sprachen:
+      - Englisch
+  studien_schwerpunkte_ablegen: 1
+  studien_schwerpunkte:
+    - Zugangstyp Bauingenieurwesen
+    - Zugangstyp Ingenieur- oder Naturwissenschaften
+    - Zugangstyp Wirtschaftsingenierwesen
+  studien_richtung:
+    # - Richtung 1
+    # - Richtung 2
+  studien_anfaenger:
+    # sose: 308
+    # wise: 295
+  kosten: 7900 # bei weiterbildenden Mastern konkreter Wert
+  url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/fk10/fk10_lokal/04_studienangebot/02_bachelorstudiengnge/neuespo/Studienplan_neue_SPO_WiSe1920_1811.pdf
+  url_spo: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/01_bwb_aktuell_spo.pdf
+  url_stg: https://www.wi.hm.edu/03_studieninteressierte/studienangebot/mba___engineering/informationen_fuer_studierende_und_studieninteressierte/studiumaufeinenblick.de.html
+  ## Formale Voraussetzungen
+  hzb:
+    - 1. abgeschlossenes Hochschulstudium (mind. 6 Semester) mit Abschlussnote gut (2,5) oder besser
+    - 2. mind. einjährige qualifizierte Berufstätigkeit nach dem ersten Hochschulabschluss
+    - 3. Teilnahme und Bestehen der Eignungsprüfung
+    # - Abgeschlossenes Bahelor-Studium in Wirtschaftsingenierwesen
+    # - Abgeschlossenes Bahelor-Studium in Bauingenieurwesen
+    # - Abgeschlossenes Bahelor-Studium in Ingenieur-/Naturwissenschaften
+  zulassungs_beschraenkt: true
+  eignungs_pruefung:
+    - Eignungsprüfung
+  vor_praxis:
+  berufs_perpektiven:
+    # - als Steuerberater/Wirtschaftsprüfer
+    # - in der Unternehmensberatung
+    # - in der Unternehmensführung
+    # - in der Unternehmensorganisation
+  interessen:
+    bringt_mit:
+      - gute analytische Fähigkeiten
+      - Grundkenntnisse der englischen Sprache
+    hat_spass:
+      - ökonomischen Fragestellungen von der Bilanzierung bis zur Unternehmensführung
+    kaempft:
+      - die mathematischen und statistischen Grundlagen der modernen Wirtschaftswissenschaft
+  youtube-id:
+    # - NtoaNge652o
+    # - NtoaNge652o
+  vimeo-id:
+    # - 207284089
