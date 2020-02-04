@@ -8,19 +8,27 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 
-					<li class="nav-item dropdown {% if page.url == "/stg.html" %}active{% endif %}">
+					<li class="nav-item {% if page.url == "/stg.html" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/stg.html">Studienangebote</a>
+					</li>
+
+					<!-- <li class="nav-item dropdown {% if page.url == "/stg.html" %}active{% endif %}">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Studienangebote (STG)</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<a class="dropdown-item {% if page.url == "/stg.html" %}active{% endif %}" href="{{ site.url }}/stg.html">Übersicht</a>
 							{% for item in site.data.stg %}
 							<a class="dropdown-item {% if page.url == "{{ item.dateiname | datapage_url: 'stg' }}" %}active{% endif %}" href="{{ item.dateiname | datapage_url: 'stg' }}">{{ item.fachrich }} ({{ item.grade_kurz }})</a>
 							{% endfor %}
+					</li> -->
+					
+					<li class="nav-item {% if page.url == "/vergleichen.html" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/vergleichen.html">Vergleichen (Merkliste)</a>
 					</li>
 
-					<li class="nav-item {% if page.url == "/stg.html" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/stg.html">Studienangebote (STG)</a>
-					</li>
-					<li class="nav-item {% if page.url == "/studienangebot.html" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/studienangebot.html">Studienangebote</a>
-					</li>
+					<!-- <li class="nav-item {% if page.url == "/stg.html" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/stg.html">Studienangebote (STG)</a>
+					</li> -->
+
+					<!-- <li class="nav-item {% if page.url == "/studienangebot.html" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/studienangebot.html">Studienangebote</a>
+					</li> -->
+
 					<!-- <li class="nav-item {% if page.url == "/thema/" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/thema">{{ site.slogan }}</a>
 					</li> -->
 					<!-- <li class="nav-item dropdown {% if page.dir contains "/programm/" %}active{% endif %}">
