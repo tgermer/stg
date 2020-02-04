@@ -19,9 +19,12 @@
 
       <div class="row my-4">
         <div class="col-lg-6" style="background-image: url(https://source.unsplash.com/random/1000?{{ page.tags | join: "+" }}); background-size: cover; background-position: center center; min-height:200px">
-
         </div>
         <div class="col-lg-6 bg-light py-3">
+
+          <p class="float-right d-print-none"><a href="#" class="btn btn-outline-secondary btn-sm showSaveStg" style="cursor: pointer;"><i class="fas fa-plus"></i> Studiengang merken</a> <a href="#" class="btn btn-outline-secondary btn-sm hideSaveStg" style="cursor: pointer; display: none;"><i class="fas fa-minus"></i> von Merkzettel löschen</a>
+            <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
+          </p>
           <h2>Steckbrief</h2>
           <div class="table-responsive">
             <table class="table table-sm mt-3 bg-transparent">
