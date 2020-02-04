@@ -258,16 +258,20 @@
                   <tbody>
                     {% for item in items %}
                     <tr>
-                      <td scope="row">{{ item[0] }} <small>({{ item[3] }}&nbsp;ECTS)</small></td>
-                      {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
-                      <td align="center" {% if i == page.praxis_semester %} class="table-warning" {% endif %}>
-                        {% if item[1] == i and item[2] > 0 %}
-                        {{ item[2] }}&nbsp;SWS
-                        {% elsif item[1] == i and item[2] == 0 or item[2] == nil %}
-                        &#10003;
-                        {% endif %}
-                      </td>
+                      {% if item[1] == nil and item[2] == nil and item[3] == nil %}
+                        <th scope="row" colspan="{{ page.regelstudien_zeit.faecherkatalog | plus: 1 }}">{{ item[0] }}</th>
+                      {% else %}
+                        <td scope="row">{{ item[0] }} <small>({{ item[3] }}&nbsp;ECTS)</small></td>
+                        {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
+                          <td align="center" {% if i == page.praxis_semester %} class="table-warning" {% endif %}>
+                            {% if item[1] == i and item[2] > 0 %}
+                              {{ item[2] }}&nbsp;SWS
+                            {% elsif item[1] == i and item[2] == 0 or item[2] == nil %}
+                              &#10003;
+                            {% endif %}
+                          </td>
                       {% endfor %}
+                    {% endif %}
                     </tr>
                     {% endfor %}
                   </tbody>
@@ -353,6 +357,9 @@
               {% endif %}
               {% if page.url_modulhandbuch != nil %}
               <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Modulhandbuch</a></p>
+              {% endif %}
+              {% if page.url_studienplan != nil %}
+              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Studienplan</a></p>
               {% endif %}
               {% if page.url_spo != nil %}
               <p><a href="{{ page.url_spo }}" target="_blank">Studien- und Prüfungsordnung</a></p>
