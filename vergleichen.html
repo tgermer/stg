@@ -11,9 +11,9 @@ title: Studiengänge vergleichen (Merkliste)
   <table class="table table-sm">
     <thead>
       <tr>
-        <th scope="col" width="25%">{{ site.badge_p }}</th>
+        <th scope="col" width="25%" style="min-width:250px">{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
-        <th scope="col" width="25%">
+        <th scope="col" width="25%" style="min-width:250px">
           <a href="{{ site.url }}/stg/{{ item.dateiname }}" class="">
           {{ item.fachrich }} ({{ item.grade_kurz }})
           </a>
