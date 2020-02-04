@@ -30,6 +30,8 @@
     # teil_zeit: 12
   praxis_semester: 4
   praxis_semester_dauer: 18 # in Wochen
+  auslands_semester: true
+  auslands_semester_semester: 5
   faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
     - ["Allgemeine Betriebswirtschaftslehre", 1, 4, 5]
     - ["Marketing", 1, 4, 5]
@@ -187,6 +189,8 @@
     teil_zeit:
   praxis_semester:
   praxis_semester_dauer: # in Wochen
+  auslands_semester: true
+  auslands_semester_semester:
   faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
     - ["Grundlagen der Betriebswirtschaftslehre", 1, 2, 5]
     - ["Wirtschaftsmathematik", 2, 2, 4]
@@ -244,7 +248,8 @@
   grade_kurz: MBA & Eng.
   stg_kurz_abschluss_kurz: WW-M #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Wirtschaftsingenieurwesen-Weiterbildung-Master
-  teaser: Teaser
+  teaser: |
+    Dieser Studiengang richtet sich an berufstätige Akademiker, die sich parallel zum Job weiterbilden möchten. Über zehn Jahre Erfahrung, hochqualifizierte nationale und internationale Dozenten aus Hochschule und Industrie sowie viel Engagement machen unseren Master of Business Administration and Engineering zum Erfolgsrezept für Ihre Zukunft!
   studien_ziel: |
     Ziel des Masterstudiums ist es, die im vorherigen Studium erworbenen Kompetenzen zu vertiefen und zu erweitern. Die Absolventinnen und Absolventen des Masterstudiengangs sind in der Lage, durch selbständige und kompetente Anwendung wissenschaftlicher und praktischer Erkenntnisse aus Technik und Wirtschaft Managementaufgaben in der betrieblichen Praxis in einem internationalen Arbeitsfeld zu übernehmen.
 
@@ -280,6 +285,8 @@
     teil_zeit: 5
   praxis_semester:
   praxis_semester_dauer:  # in Wochen
+  auslands_semester: false
+  auslands_semester_semester:
   faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
     - ["Qualifikationsvoraussetzung: Abgeschlossenes Hochschulstudium in Wirtschaftsingenieurwesen"]
     - ["Masterprüfung (Technische Module)"]
