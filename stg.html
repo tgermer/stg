@@ -3,9 +3,11 @@ layout: container
 title: Studiengangebot (STG)
 ---
 
+<p>Hier müssen noch Filter zu verschiedenen Kriterien eingebaut werden..</p>
 
 <div class="my-5">
   {% for stg in site.data.stg %}
-      <h6><a href="{{ stg.dateiname | datapage_url: 'stg' }}">{{ stg.fachrich }} ({{ stg.grade_kurz }})</a></h6>
+      <h6 class="mb-0"><a href="{{ stg.dateiname | datapage_url: 'stg' }}">{{ stg.fachrich }}-{{ stg.abschluss }} ({{ stg.grade_kurz }})</a></h6>
+      <p>{{ stg.studien_art }}</p>
   {% endfor %}
 </div>
