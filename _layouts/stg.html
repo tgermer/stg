@@ -67,6 +67,15 @@
                   </td>
                 </tr>
                 {% endif %}
+                {% if page.auslands_semester == true %}
+                <tr class="col-md-6">
+                  <th scope="row" class="text-uppercase">Auslandssemester</th>
+                  <td>
+                    Auslandsemester möglich{% if page.auslands_semester_semester != nil %}; empfohlen im {{ page.auslands_semester_semester}}&nbsp;Semester
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endif %}
                 {% if page.studien_begin != nil %}
                 <tr>
                   <th scope="row" class="text-uppercase">Studienbeginn</th>
@@ -244,13 +253,27 @@
 
               {{ page.studien_verlauf | markdownify }}
               <h4>Modul-/Fächerkatalog{{ site.badge_cms}}</h4>
+              {% if page.studien_form contains "TZ" %}
+              <div class="alert alert-warning" role="alert">
+                <p>
+                  <span class="d-block font-weight-bolder">Information zum Studium in Teilzeit</span>
+                  Der Modul-/Fächerkatalog bildet immer ein Vollzeitstudium ab. Sollten Sie den Studiengang in Teilzeit studieren, können Sie die Fächer auf i.&nbsp;d.&nbsp;R. {{ page.regelstudien_zeit.teil_zeit }}&nbsp;Semester verteilen.
+                </p>
+              </div>
+              {% endif %}
               <div class="table-responsive">
                 <table class="table table-striped table-bordered table-sm">
                   <thead>
                     <tr>
                       <th scope="col">Modul/Fach<span class="float-right"><small>Semester</small></span></th>
                       {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
-                      <th scope="col" class="text-center" {% if i == page.praxis_semester %} class="table-info" {% endif %}>{% if i == page.praxis_semester %} <small>Praxissemester</small><br> {% endif %}{{ i }}</th>
+                      <th scope="col"
+                        {% if i == page.praxis_semester %} class="table-warning text-center"
+                        {% elsif i == page.auslands_semester_semester %} class="table-info text-center"
+                        {% else %}class="text-center"
+                        {% endif %}>
+                        {% if i == page.praxis_semester %} <small>Praxissemester</small><br> {% endif %}{% if i == page.auslands_semester_semester %} <small>empfohlenes Auslandssemester</small><br> {% endif %}{{ i }}
+                      </th>
                       {% endfor %}
                     </tr>
                   </thead>
@@ -263,7 +286,11 @@
                       {% else %}
                         <td scope="row">{{ item[0] }} <small>({{ item[3] }}&nbsp;ECTS)</small></td>
                         {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
-                          <td align="center" {% if i == page.praxis_semester %} class="table-warning" {% endif %}>
+                          <td align="center"
+                          {% if i == page.praxis_semester %} class="table-warning text-center"
+                          {% elsif i == page.auslands_semester_semester %} class="table-info text-center"
+                          {% else %}class="text-center"
+                          {% endif %}>
                             {% if item[1] == i and item[2] > 0 %}
                               {{ item[2] }}&nbsp;SWS
                             {% elsif item[1] == i and item[2] == 0 or item[2] == nil %}
@@ -275,7 +302,7 @@
                     </tr>
                     {% endfor %}
                   </tbody>
-                  <tfoot>
+                  <!-- <tfoot>
                     <tr>
                       <th><span class="float-right"><small>Summe Semesterwochenstunden</small></span></th>
                       {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
@@ -284,7 +311,7 @@
                       </th>
                       {% endfor %}
                     </tr>
-                  </tfoot>
+                  </tfoot> -->
                 </table>
               </div>
             </div>

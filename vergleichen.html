@@ -48,7 +48,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr class="col-md-6">
-        <th scope="row" class="text-uppercase">Praxissemester</th>
+        <th scope="row" class="text-uppercase">Praxissemester{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
         <td>
           {% if item.praxis_semester != nil %}
@@ -57,6 +57,19 @@ title: Studiengänge vergleichen (Merkliste)
               {{ item.praxis_semester_dauer }}-wöchiges
             {% endif %}
            Praktikum absolviert werden.
+          {% else %}
+          —
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      <tr class="col-md-6">
+        <th scope="row" class="text-uppercase">Auslandssemester{{ site.badge_cms }}</th>
+        {% for item in site.data.stg %}
+        <td>
+          {% if item.auslands_semester == true %}
+          Auslandsemester möglich{% if item.auslands_semester_semester != nil %}; empfohlen im {{ item.auslands_semester_semester}}&nbsp;Semester
+          {% endif %}
           {% else %}
           —
           {% endif %}
