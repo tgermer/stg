@@ -22,7 +22,8 @@
         </div>
         <div class="col-lg-6 bg-light py-3">
 
-          <p class="float-right d-print-none"><a href="#" class="btn btn-outline-secondary btn-sm showSaveStg" style="cursor: pointer;"><i class="fas fa-plus"></i> Studiengang merken</a> <a href="#" class="btn btn-outline-secondary btn-sm hideSaveStg" style="cursor: pointer; display: none;"><i class="fas fa-minus"></i> von Merkzettel löschen</a>
+          <p class="float-right d-print-none"><a href="#" class="btn btn-outline-secondary btn-sm showSaveStg" style="cursor: pointer;"><i class="fas fa-plus"></i> Studiengang merken</a> <a href="#"
+              class="btn btn-outline-secondary btn-sm hideSaveStg" style="cursor: pointer; display: none;"><i class="fas fa-minus"></i> von Merkzettel löschen</a>
             <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
           </p>
           <h2>Steckbrief</h2>
@@ -96,11 +97,30 @@
                 <tr>
                   <th scope="row" class="text-uppercase">Zugangs&shy;berechtigt</th>
                   <td>
-                    <ul class="list-unstyled">
-                      {% for item in page.hzb %}
-                      <li>{{ item }}{{ site.badge_cms }}</li>
-                      {% endfor %}
-                    </ul>
+                    {% for item in page.hzb %}
+                    <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
+                    {% endfor %}
+                  </td>
+                </tr>
+                {% endif %}
+                {% if page.eignungs_pruefung != nil %}
+                <tr>
+                  <th scope="row" class="text-uppercase">Eignungs&shy;prüfung</th>
+                  <td>
+                    {% for item in page.eignungs_pruefung %}
+                    <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
+                    {% endfor %}
+                  </td>
+                </tr>
+                {% endif %}
+                {% if page.vor_praxis != nil %}
+                <tr>
+                  <th scope="row" class="text-uppercase">Vorpraxis</th>
+                  <td>
+                    {% for item in page.vor_praxis %}
+                    <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
+                    {% endfor %}
+                    Die Vorpraxis besteht aus insgesamt {{ page.vor_praxis_wochen }}&nbsp;Wochen.
                   </td>
                 </tr>
                 {% endif %}
@@ -211,15 +231,15 @@
 
               {% if page.praxis_semester != nil %}
               <h4>Praxissemester</h4>
-                <p>
-                  {% if page.praxis_semester != nil %}
-                  Im {{ page.praxis_semester }} Semester muss ein
-                    {% if page.praxis_semester_dauer != nil %}
-                      {{ page.praxis_semester_dauer }}-wöchiges
-                    {% endif %}
-                   Praktikum absolviert werden.
-                  {% endif %}
-                </p>
+              <p>
+                {% if page.praxis_semester != nil %}
+                Im {{ page.praxis_semester }} Semester muss ein
+                {% if page.praxis_semester_dauer != nil %}
+                {{ page.praxis_semester_dauer }}-wöchiges
+                {% endif %}
+                Praktikum absolviert werden.
+                {% endif %}
+              </p>
               {% endif %}
 
               {{ page.studien_verlauf | markdownify }}
@@ -229,7 +249,7 @@
                   <thead>
                     <tr>
                       <th scope="col">Modul/Fach<span class="float-right"><small>Semester</small></span></th>
-                      {% for i in (1..page.regelstudien_zeit.voll_zeit) %}
+                      {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
                       <th scope="col" class="text-center" {% if i == page.praxis_semester %} class="table-info" {% endif %}>{% if i == page.praxis_semester %} <small>Praxissemester</small><br> {% endif %}{{ i }}</th>
                       {% endfor %}
                     </tr>
@@ -239,7 +259,7 @@
                     {% for item in items %}
                     <tr>
                       <td scope="row">{{ item[0] }} <small>({{ item[3] }}&nbsp;ECTS)</small></td>
-                      {% for i in (1..page.regelstudien_zeit.voll_zeit) %}
+                      {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
                       <td align="center" {% if i == page.praxis_semester %} class="table-warning" {% endif %}>
                         {% if item[1] == i and item[2] > 0 %}
                         {{ item[2] }}&nbsp;SWS
@@ -254,7 +274,7 @@
                   <tfoot>
                     <tr>
                       <th><span class="float-right"><small>Summe Semesterwochenstunden</small></span></th>
-                      {% for i in (1..page.regelstudien_zeit.voll_zeit) %}
+                      {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
                       <th class="text-center" {% if i == page.praxis_semester %} class="table-info" {% endif %}>
                         ##
                       </th>
@@ -340,6 +360,7 @@
             </div>
           </div>
         </div>
+        {% if page.youtube-id != nil or page.vimeo-id != nil %}
         <div class="card d-print-none">
           <div class="card-header" id="heading_video">
             <h2 class="mb-0">
@@ -367,6 +388,7 @@
             </div>
           </div>
         </div>
+        {% endif %}
       </div>
 
       <div class="text-center my-5 d-print-none">

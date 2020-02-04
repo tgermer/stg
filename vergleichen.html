@@ -11,9 +11,9 @@ title: Studiengänge vergleichen (Merkliste)
   <table class="table table-sm">
     <thead>
       <tr>
-        <th scope="col">{{ site.badge_p }}</th>
+        <th scope="col" width="25%">{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
-        <th scope="col">
+        <th scope="col" width="25%">
           <a href="{{ site.url }}/stg/{{ item.dateiname }}" class="">
           {{ item.fachrich }} ({{ item.grade_kurz }})
           </a>
@@ -23,32 +23,32 @@ title: Studiengänge vergleichen (Merkliste)
     </thead>
     <tbody>
       <tr>
-        <th scope="row">Art des Studiums{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Art des Studiums{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>{{ item.studien_art }}</td>
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Zu erreichende ECTS{{ site.badge_p }}</th>
+        <th scope="row" class="text-uppercase">Zu erreichende ECTS{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
         <td>{{ item.ects }}</td>
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Regelstudienszeit{{ site.badge_p }}</th>
+        <th scope="row" class="text-uppercase">Regelstudienszeit{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
         <td>
           {% if item.regelstudien_zeit.voll_zeit != nil %}
-          {{ item.regelstudien_zeit.voll_zeit }} Semester Vollzeit
+          <span class="d-blocj">{{ item.regelstudien_zeit.voll_zeit }} Semester Vollzeit</span>
           {% endif %}
           {% if item.regelstudien_zeit.teil_zeit != nil %}
-          <br> {{ item.regelstudien_zeit.teil_zeit }} Semester Teilzeit
+          <span class="d-block">{{ item.regelstudien_zeit.teil_zeit }} Semester Teilzeit</span>
           {% endif %}
         </td>
         {% endfor %}
       </tr>
       <tr class="col-md-6">
-        <th scope="row">Praxissemester</th>
+        <th scope="row" class="text-uppercase">Praxissemester</th>
         {% for item in site.data.stg %}
         <td>
           {% if item.praxis_semester != nil %}
@@ -64,13 +64,13 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Studienbeginn{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Studienbeginn{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>{{ item.studien_begin | join: " und "}}</td>
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Hauptunterrichts&shy;sprache{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Hauptunterrichts&shy;sprache{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>{{ item.sprachen.haupt_sprache  | join: " und "}}
           {% if item.sprachen.weitere_sprachen != nil %}
@@ -80,31 +80,60 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Zulassungsbeschränkt{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Zulassungsbeschränkt{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>
           {% if item.zulassungs_beschraenkt == true %}
           Zulassungsbeschränkt
           {% else %}
-          Zulassungsfrei{{ site.badge_cms }}
+          Zulassungsfrei
           {% endif %}
         </td>
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Zulassungsberechtig{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Eignungs&shy;prüfung{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>
-          <ul class="list-unstyled">
-            {% for item in item.hzb %}
-            <li>{{ item }}</li>
+          {% if item.eignungs_pruefung != nil %}
+            {% for item in item.eignungs_pruefung %}
+            <span class="d-block">{{ item }}</span>
             {% endfor %}
-          </ul>
+          {% else %}
+          —
+          {% endif %}
         </td>
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Kosten je Semester{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Vorpraxis{{ site.badge_cms }}</th>
+        {% for item in site.data.stg %}
+        <td>
+          {% if item.vor_praxis != nil %}
+            {% for item in item.vor_praxis %}
+              <span class="d-block">{{ item }}</span>
+            {% endfor %}
+            {% if item.vor_praxis_wochen != nil%}
+              Die Vorpraxis besteht aus insgesamt {{ item.vor_praxis_wochen }}&nbsp;Wochen.
+            {% endif %}
+          {% else %}
+          —
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row" class="text-uppercase">Zulassungsberechtig{{ site.badge_cms }}</th>
+        {% for item in site.data.stg %}
+        <td>
+            {% for item in item.hzb %}
+            <span class="d-block">{{ item }}</span>
+            {% endfor %}
+        </td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row" class="text-uppercase">Kosten je Semester{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>
           <span class="d-block">Grundbeitrag Studentenwerk 62,00&nbsp;Euro</span>
@@ -113,7 +142,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Studiengebühren{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Studiengebühren{{ site.badge_cms }}</th>
         <!-- https://github.com/23maverick23/jekyll-humanize -->
         {% for item in site.data.stg %}
         <td>
@@ -127,7 +156,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Studienanfänger{{ site.badge_p }}</th>
+        <th scope="row" class="text-uppercase">Studienanfänger{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
         <td>
           {% if item.studien_anfaenger.sose !=nil or item.studien_anfaenger.wise != nil %}
@@ -144,7 +173,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Studienschwerpunkte{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Studienschwerpunkte{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         {% assign items = item.studien_schwerpunkte %}
         <td>
@@ -162,7 +191,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Studienrichtungen{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Studienrichtungen{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         {% assign items = item.studien_richtung %}
         <td>
@@ -181,7 +210,7 @@ title: Studiengänge vergleichen (Merkliste)
       </tr>
 
       <tr>
-        <th scope="row"></th>
+        <th scope="row" class="text-uppercase"></th>
         {% for item in site.data.stg %}
         <td><a href="{{ site.url }}/stg/{{ item.dateiname }}" class="">
         Studiengang im Detail anzeigen
