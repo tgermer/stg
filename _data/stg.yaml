@@ -31,24 +31,24 @@
   praxis_semester: 4
   praxis_semester_dauer: 18 # in Wochen
   faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
-    - ["Allgemeine Betriebswirtschaftslehre", 1, 4, 5, "schrP"]
-    - ["Marketing", 1, 4, 5, "schrP"]
-    - ["Bilanzierung und Jahresabschluss", 1, 4, 5 , "schrP"]
-    - ["Unternehmensorganisation", 1, 4, 5, "schrP"]
-    - ["Human Resource Management", 1, 4, 5, "schrP"]
-    - ["Grundlagen der Mathematik und Statistik", 1, 4, 5, "schrP"]
-    - ["Grundlagen der Mikroökonomik", 2, 4, 5, "schrP"]
-    - ["Wirtschaftsenglisch im Unternehmenskontext", 2, 4, 5, "schrP"]
-    - ["Kosten- und Leistungsrechnung", 2, 4, 5, "schrP"]
-    - ["Wirtschaftsprivatrecht", 2, 4, 5, "schrP"]
-    - ["Methoden und Konzepte von Informationssystemen", 2, 4, 5, "schrP"]
-    - ["Methoden und Modelle der Optimierung", 2, 4, 5, "schrP"]
-    - ["Unternehmensbesteuerung", 3, 4, 5, "schrP"]
-    - ["Wirtschaftsenglisch im volkswirtschaftlichen Kontext", 3, 2, 5, "schrP"]
-    - ["Finanzierung und Investition", 3, 4, 5, "schrP"]
-    - ["Produktions- und Logistikmanagement", 3, 4, 5, "schrP"]
-    - ["Informationssysteme für digitalisierte Unternehmen", 3, 4, 5, "schrP"]
-    - ["Methoden und Modelle der Statistik", 3, 4, 5, "schrP"]
+    - ["Allgemeine Betriebswirtschaftslehre", 1, 4, 5]
+    - ["Marketing", 1, 4, 5]
+    - ["Bilanzierung und Jahresabschluss", 1, 4, 5 ]
+    - ["Unternehmensorganisation", 1, 4, 5]
+    - ["Human Resource Management", 1, 4, 5]
+    - ["Grundlagen der Mathematik und Statistik", 1, 4, 5]
+    - ["Grundlagen der Mikroökonomik", 2, 4, 5]
+    - ["Wirtschaftsenglisch im Unternehmenskontext", 2, 4, 5]
+    - ["Kosten- und Leistungsrechnung", 2, 4, 5]
+    - ["Wirtschaftsprivatrecht", 2, 4, 5]
+    - ["Methoden und Konzepte von Informationssystemen", 2, 4, 5]
+    - ["Methoden und Modelle der Optimierung", 2, 4, 5]
+    - ["Unternehmensbesteuerung", 3, 4, 5]
+    - ["Wirtschaftsenglisch im volkswirtschaftlichen Kontext", 3, 2, 5]
+    - ["Finanzierung und Investition", 3, 4, 5]
+    - ["Produktions- und Logistikmanagement", 3, 4, 5]
+    - ["Informationssysteme für digitalisierte Unternehmen", 3, 4, 5]
+    - ["Methoden und Modelle der Statistik", 3, 4, 5]
     - ["Praktikum", 4, 0, 25]
     - ["Sozial- und Persönlichkeitskompetenzen", 4, 4, 5]
     - ["Grundlagen der Makroökonomik", 5, 4, 5]
@@ -245,8 +245,22 @@
   stg_kurz_abschluss_kurz: WW-M #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Wirtschaftsingenieurwesen-Weiterbildung-Master
   teaser: Teaser
-  studien_ziel:
-  studien_verlauf:
+  studien_ziel: |
+    Ziel des Masterstudiums ist es, die im vorherigen Studium erworbenen Kompetenzen zu vertiefen und zu erweitern. Die Absolventinnen und Absolventen des Masterstudiengangs sind in der Lage, durch selbständige und kompetente Anwendung wissenschaftlicher und praktischer Erkenntnisse aus Technik und Wirtschaft Managementaufgaben in der betrieblichen Praxis in einem internationalen Arbeitsfeld zu übernehmen.
+
+    Die Weiterbildung ist als Teilzeitstudium in Form von Abend-, Wochenend- und Blockkursen angelegt. Die Regelstudienzeit beträgt fünf Semester.
+  studien_verlauf: |
+    Der Studienplan differiert je nach vorherigem Studium: Wir unterscheiden dabei die Vorqualifikation in einem Studium des Wirtschaftsingenieurwesens, der Ingenieur- oder Naturwissenschaften sowie des Bauingenieurwesens. Dafür bieten wir differenzierte Studienpläne an. Ihren eigenen Schwerpunkt setzen Sie durch die Belegung von Wahlpflichtmodulen aus einem breiten Angebot deutscher und internationaler (englischsprachiger) Referenten aus der Hochschule und der Praxis.
+
+    Für Studierende des Zugangstyps Wirtschaftsingenieurwesen oder Bauingenieurwesen ist der Studienstart jeweils zum Wintersemester möglich. Das Studium für den Zugangstyp Ingenieur- oder Naturwissenschaften bieten wir jedes Semester an.
+
+    Die Arbeitssprache ist i.d.R. Deutsch. Fremdsprachen (insbesondere Englisch) sind integraler Bestandteil des Studiums. Einige Materialien und einzelne Lehrveranstaltungen sind in englischer Sprache.
+
+    In der Regel finden die Vorlesungen an drei Tagen der Woche statt. Vorlesungszeiten regelmäßiger Veranstaltungen sind Montag bis Donnerstag zwischen 17:45 und 21:00 Uhr und Freitag ab 15:45 Uhr. Einzelne Kurse werden in Blockveranstaltungen am Wochenende durchgeführt. Sie sollten mit einer zeitlichen Belastung von mindestens drei Abenden pro Woche rechnen, an denen Sie möglichst auch an der Hochschule anwesend sein sollten. Unsere Dozenten wissen, dass Sie nebenberuflich studieren und gehen nicht davon aus, dass Sie an allen Vorlesungsterminen teilnehmen können.
+
+    Wir bieten die Möglichkeit zu einem **fakultativen Auslandsaufenthalt** an einer französischen Universität, mit der wir kooperieren. Dabei können Studienleistungen erbracht werden, die im Studium an der Hochschule München angerechnet werden.
+
+    Das Studium wird mit einer **wissenschaftlichen Masterarbeit** abgeschlossen, die oft in Zusammenarbeit mit einem Unternehmen entsteht.
   tags:
     # - banking
     # - business
@@ -267,30 +281,69 @@
   praxis_semester:
   praxis_semester_dauer:  # in Wochen
   faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
-    - ["Allgemeine Betriebswirtschaftslehre", 1, 4, 5, "schrP"]
-    - ["Marketing", 1, 4, 5, "schrP"]
-    - ["Bilanzierung und Jahresabschluss", 1, 4, 5 , "schrP"]
-    - ["Unternehmensorganisation", 1, 4, 5, "schrP"]
-    - ["Human Resource Management", 1, 4, 5, "schrP"]
-    - ["Grundlagen der Mathematik und Statistik", 1, 4, 5, "schrP"]
-    - ["Grundlagen der Mikroökonomik", 2, 4, 5, "schrP"]
-    - ["Wirtschaftsenglisch im Unternehmenskontext", 2, 4, 5, "schrP"]
-    - ["Kosten- und Leistungsrechnung", 2, 4, 5, "schrP"]
-    - ["Wirtschaftsprivatrecht", 2, 4, 5, "schrP"]
-    - ["Methoden und Konzepte von Informationssystemen", 2, 4, 5, "schrP"]
-    - ["Methoden und Modelle der Optimierung", 2, 4, 5, "schrP"]
-    - ["Unternehmensbesteuerung", 3, 4, 5, "schrP"]
-    - ["Wirtschaftsenglisch im volkswirtschaftlichen Kontext", 3, 2, 5, "schrP"]
-    - ["Finanzierung und Investition", 3, 4, 5, "schrP"]
-    - ["Produktions- und Logistikmanagement", 3, 4, 5, "schrP"]
-    - ["Informationssysteme für digitalisierte Unternehmen", 3, 4, 5, "schrP"]
-    - ["Methoden und Modelle der Statistik", 3, 4, 5, "schrP"]
-    - ["Praktikum", 4, 0, 25]
-    - ["Sozial- und Persönlichkeitskompetenzen", 4, 4, 5]
-    - ["Grundlagen der Makroökonomik", 5, 4, 5]
-    - ["Interkulturelle Kommunikation", 5, 4, 5]
-    - ["Seminar", 5, 4, 5]
-    - ["Masterarbeit", 5, 0, 12]
+    - ["Qualifikationsvoraussetzung: Abgeschlossenes Hochschulstudium in Wirtschaftsingenieurwesen"]
+    - ["Masterprüfung (Technische Module)"]
+    - ["Industrielle Digitalisierung", 1, 4, 4]
+    - ["Neue Technologien I", 1, 3, 4]
+    - ["Neue Technologien II", 1, 4, 4 ]
+    - ["Digitale Fabrikplanung", 1, 4, 4]
+    - ["Masterprüfung (Betriebswirtschaftliche Module)"]
+    - ["Controlling", 2, 4, 5]
+    - ["Volkswirtschaftslehre und Wirtschaftspolitik", 2, 3, 4]
+    - ["Betriebliche Steuerlehre", 2, 4, 4]
+    - ["Produktmanagement und Technischer Vertrieb", 2, 4, 5]
+    - ["Masterprüfung (Integrationsmodule)"]
+    - ["Information Engineering", 3, 4, 5]
+    - ["Innovationsmanagement", 3, 3, 4]
+    - ["Personalführung und Unternehmensorganisationsrecht", 3, 7, 7]
+    - ["Supply Chain Management und Einkauf", 3, 7, 7]
+    - ["Masterprüfung (Allgemeine Module)"]
+    - ["Wahlpflichtmodul I", 4, 4, 4]
+    - ["Wahlpflichtmodul II", 4, 4, 4]
+    - ["Wahlpflichtmodul III", 4, 4, 4]
+    - ["Masterarbeit", 5, 0, 20]
+    - ["Qualifikationsvoraussetzung: Abgeschlossenes Hochschulstudium in Ingenieur- oder Naturwissenschaften"]
+    - ["Masterprüfung (Technische Module)"]
+    - ["Betriebswirtschaftslehre", 1, 4, 4]
+    - ["Volkswirtschaftslehre", 1, 4, 4]
+    - ["Rechnungswesen", 1, 6, 6 ]
+    - ["Finanzierung und Investition", 1, 3, 4]
+    - ["Masterprüfung (Betriebswirtschaftliche Module)"]
+    - ["Controlling", 2, 4, 5]
+    - ["Volkswirtschaftslehre und Wirtschaftspolitik", 2, 3, 4]
+    - ["Recht für Ingenieure", 2, 3, 4]
+    - ["Strategie", 2, 3, 4]
+    - ["Masterprüfung (Integrationsmodule)"]
+    - ["Technical Marketing", 3, 4, 5]
+    - ["Innovationsmanagement", 3, 3, 4]
+    - ["Personalführung und Unternehmensorganisationsrecht", 3, 7, 7]
+    - ["Supply Chain Management und Einkauf", 3, 7, 7]
+    - ["Masterprüfung (Allgemeine Module)"]
+    - ["Wahlpflichtmodul I", 4, 4, 4]
+    - ["Wahlpflichtmodul II", 4, 4, 4]
+    - ["Wahlpflichtmodul III", 4, 4, 4]
+    - ["Masterarbeit", 5, 0, 20]
+    - ["Qualifikationsvoraussetzung: Abgeschlossenes Hochschulstudium in Bauingenieurwesen"]
+    - ["Masterprüfung (Technische Module)"]
+    - ["Betriebswirtschaftslehre", 1, 4, 4]
+    - ["Volkswirtschaftslehre", 1, 4, 4]
+    - ["Rechnungswesen", 1, 6, 6 ]
+    - ["Finanzierung und Investition", 1, 3, 4]
+    - ["Masterprüfung (Betriebswirtschaftliche Module)"]
+    - ["Controlling", 2, 4, 5]
+    - ["Volkswirtschaftslehre und Wirtschaftspolitik", 2, 3, 4]
+    - ["Europäisches Bauvertrags- und Vergaberecht", 2, 4, 4]
+    - ["Immobilienprojektentwicklung", 2, 4, 4]
+    - ["Masterprüfung (Integrationsmodule)"]
+    - ["Technical Marketing", 3, 4, 5]
+    - ["Innovationsmanagement", 3, 3, 4]
+    - ["Personalführung und Unternehmensorganisationsrecht", 3, 7, 7]
+    - ["Supply Chain Management und Einkauf", 3, 7, 7]
+    - ["Masterprüfung (Allgemeine Module)"]
+    - ["Wahlpflichtmodul I", 4, 4, 4]
+    - ["Wahlpflichtmodul II", 4, 4, 4]
+    - ["Wahlpflichtmodul III", 4, 4, 4]
+    - ["Masterarbeit", 5, 0, 20]
   ects: 90
   akkreditierung: true
   akkreditierung_agentur: ASIIN
@@ -311,9 +364,10 @@
   studien_anfaenger:
     # sose: 308
     # wise: 295
-  kosten: 7900 # bei weiterbildenden Mastern konkreter Wert
-  url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/fk10/fk10_lokal/04_studienangebot/02_bachelorstudiengnge/neuespo/Studienplan_neue_SPO_WiSe1920_1811.pdf
-  url_spo: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/01_bwb_aktuell_spo.pdf
+  kosten: 7900.00 # bei weiterbildenden Mastern konkreter Wert
+  url_modulhandbuch:
+  url_studienplan: https://w3-mediapool.hm.edu/mediapool/media/fk09/fk09_lokal/03_studieninteressierte/01_studienangebot/02_masterstudiengaenge/mba___eng_/Studienplan_Master_of_Business_Administration_and_Engineering.pdf
+  url_spo: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/09_wwm_aktuell_spo.pdf
   url_stg: https://www.wi.hm.edu/03_studieninteressierte/studienangebot/mba___engineering/informationen_fuer_studierende_und_studieninteressierte/studiumaufeinenblick.de.html
   ## Formale Voraussetzungen
   hzb:
