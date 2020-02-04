@@ -14,7 +14,7 @@
     # - banking
     # - business
     - money
-  studien_art: grundständiges Studium
+  studien_art: grundständiges Bachelor-Studium
   dual: true
   master_typ:
   studien_begin:
@@ -174,7 +174,7 @@
   tags:
     - architecture
     - munich
-  studien_art: grundständiges Studium
+  studien_art: grundständiges Bachelor-Studium
   dual: true
   master_typ:
   studien_begin:
