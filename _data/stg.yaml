@@ -28,6 +28,7 @@
     voll_zeit: 7
     # teil_zeit: 12
   praxis_semester: 4
+  praxis_semester_dauer: 18 # in Wochen
   faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
     - ["Allgemeine Betriebswirtschaftslehre", 1, 4, 5, "schrP"]
     - ["Marketing", 1, 4, 5, "schrP"]
@@ -186,14 +187,15 @@
   regelstudien_zeit:
     voll_zeit: 6
     teil_zeit:
-  praxis_semester: 4
+  praxis_semester:
+  praxis_semester_dauer: # in Wochen
   faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
     - ["Grundlagen der Betriebswirtschaftslehre", 1, 2, 5]
     - ["Wirtschaftsmathematik", 2, 2, 4]
     - ["Deskriptive Statistik", 4, 3, 5]
     - ["Grundlagen der Mikroökonomie", 6, 2, 4]
     - ["Bachelorarbeit", 0, 0, 20]
-  ects: 210
+  ects: 180
   # akkreditierung: true
   #   - agentur: ASIIN
   #     siegel_url:
@@ -220,6 +222,7 @@
     - Prüfung
   vor_praxis:
     - Vorpraktikum
+  vor_praxis_wochen: 8 # in Wochen
   berufs_perpektiven:
     - als ArchitektIn
     - in Architekturbüros

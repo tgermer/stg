@@ -1,6 +1,6 @@
 ---
-layout: container
-title: Studiengänge vergleichen
+layout: container-fluid
+title: Studiengänge vergleichen (Merkliste)
 ---
 <p class="float-right d-print-none"><a href="#" class="btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="btn btn-link btn-sm hidebadges" style="cursor: pointer; display: none;">Datenherkunft
     verstecken</a>
@@ -11,61 +11,80 @@ title: Studiengänge vergleichen
   <table class="table table-sm">
     <thead>
       <tr>
-        <th scope="col"></th>
+        <th scope="col">{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
-        <th scope="col">{{ item.fachrich }} ({{ item.grade_kurz }}){{ site.badge_p }}
-          <br><small>{{ item.fachriche }}{{ site.badge_p }}</small></th>
+        <th scope="col">
+          <a href="{{ site.url }}/stg/{{ item.dateiname }}" class="">
+          {{ item.fachrich }} ({{ item.grade_kurz }})
+          </a>
+          <br><small>{{ item.fachriche }}</small></th>
         {% endfor %}
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row">Art des Studiums</th>
+        <th scope="row">Art des Studiums{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>{{ item.studien_art }}</td>
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Zu erreichende ECTS</th>
+        <th scope="row">Zu erreichende ECTS{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
         <td>{{ item.ects }}</td>
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Regelstudienszeit</th>
+        <th scope="row">Regelstudienszeit{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
         <td>
           {% if item.regelstudien_zeit.voll_zeit != nil %}
-          {{ item.regelstudien_zeit.voll_zeit }}{{ site.badge_p }} Semester Vollzeit
+          {{ item.regelstudien_zeit.voll_zeit }} Semester Vollzeit
           {% endif %}
           {% if item.regelstudien_zeit.teil_zeit != nil %}
-          <br> {{ item.regelstudien_zeit.teil_zeit }}{{ site.badge_cms }} Semester Teilzeit
+          <br> {{ item.regelstudien_zeit.teil_zeit }} Semester Teilzeit
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      <tr class="col-md-6">
+        <th scope="row">Praxissemester</th>
+        {% for item in site.data.stg %}
+        <td>
+          {% if item.praxis_semester != nil %}
+          Im {{ item.praxis_semester }} Semester muss ein
+            {% if item.praxis_semester_dauer != nil %}
+              {{ item.praxis_semester_dauer }}-wöchiges
+            {% endif %}
+           Praktikum absolviert werden.
+          {% else %}
+          —
           {% endif %}
         </td>
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Studienbeginn</th>
+        <th scope="row">Studienbeginn{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
-        <td>{{ item.studien_begin | join: " und "}}{{ site.badge_cms }}</td>
+        <td>{{ item.studien_begin | join: " und "}}</td>
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Hauptunterrichts&shy;sprache</th>
+        <th scope="row">Hauptunterrichts&shy;sprache{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
-        <td>{{ item.sprachen.haupt_sprache  | join: " und "}}{{ site.badge_cms }}
+        <td>{{ item.sprachen.haupt_sprache  | join: " und "}}
           {% if item.sprachen.weitere_sprachen != nil %}
-          <p>Weitere Spachen: {{ item.sprachen.weitere_sprachen | join: ", " }}{{ site.badge_cms }}</p>
+          <p>Weitere Spachen: {{ item.sprachen.weitere_sprachen | join: ", " }}</p>
           {% endif %}
         </td>
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Zulassungsbeschränkt</th>
+        <th scope="row">Zulassungsbeschränkt{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>
           {% if item.zulassungs_beschraenkt == true %}
-          Zulassungsbeschränkt{{ site.badge_cms }}
+          Zulassungsbeschränkt
           {% else %}
           Zulassungsfrei{{ site.badge_cms }}
           {% endif %}
@@ -73,12 +92,12 @@ title: Studiengänge vergleichen
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row">Zulassungsberechtig</th>
+        <th scope="row">Zulassungsberechtig{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>
           <ul class="list-unstyled">
             {% for item in item.hzb %}
-            <li>{{ item }}{{ site.badge_cms }}</li>
+            <li>{{ item }}</li>
             {% endfor %}
           </ul>
         </td>
@@ -101,6 +120,8 @@ title: Studiengänge vergleichen
           {% if item.kosten != nil %}
           {{ item.kosten }}&nbsp;Euro<br>
           <a href="{{ item.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a>
+          {% else %}
+          —
           {% endif %}
         </td>
         {% endfor %}
@@ -116,6 +137,8 @@ title: Studiengänge vergleichen
           {% if item.studien_anfaenger.wise !=nil %}
           <span class="d-block">{{ item.studien_anfaenger.wise }} im Wintersemester</span>
           {% endif %}
+          {% else %}
+          —
           {% endif %}
         </td>
         {% endfor %}
@@ -132,8 +155,37 @@ title: Studiengänge vergleichen
             <li>{{ item }}</li>
             {% endfor %}
           </ul>
+          {% else %}
+          —
           {% endif %}
         </td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row">Studienrichtungen{{ site.badge_cms }}</th>
+        {% for item in site.data.stg %}
+        {% assign items = item.studien_richtung %}
+        <td>
+          {% if items != nil %}
+          <ul class="list-unstyled">
+            {% assign items = items | sort %}
+            {% for item in items %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          —
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+
+      <tr>
+        <th scope="row"></th>
+        {% for item in site.data.stg %}
+        <td><a href="{{ site.url }}/stg/{{ item.dateiname }}" class="">
+        Studiengang im Detail anzeigen
+        </a></td>
         {% endfor %}
       </tr>
     </tbody>
