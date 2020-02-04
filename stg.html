@@ -4,8 +4,8 @@ title: Studiengangebot (STG)
 ---
 
 
-{% for stg in site.data.stg %}
-    <h6><a href="{{ stg.dateiname | datapage_url: 'stg' }}">{{ stg.fachrich }} ({{ stg.grade_kurz }})</a></h6>
-{% endfor %}
-
-<!-- {{ page.url }} -->
+<div class="my-5">
+  {% for stg in site.data.stg %}
+      <h6><a href="{{ stg.dateiname | datapage_url: 'stg' }}">{{ stg.fachrich }} ({{ stg.grade_kurz }})</a></h6>
+  {% endfor %}
+</div>
