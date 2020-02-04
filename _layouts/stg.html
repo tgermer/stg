@@ -54,6 +54,18 @@
                   </td>
                 </tr>
                 {% endif %}
+                {% if page.praxis_semester != nil %}
+                <tr class="col-md-6">
+                  <th scope="row" class="text-uppercase">Praxissemester</th>
+                  <td>
+                    {% if page.praxis_semester_dauer != nil %}
+                    Im {{ page.praxis_semester }} Semester muss ein {{ page.praxis_semester_dauer }}-wöchiges Praktikum absolviert werden.
+                    {% else %}
+                    Im {{ page.praxis_semester }} Semester muss ein Praktikum absolviert werden.
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endif %}
                 {% if page.studien_begin != nil %}
                 <tr>
                   <th scope="row" class="text-uppercase">Studienbeginn</th>
@@ -196,6 +208,20 @@
           </div>
           <div id="collapse_studien_verlauf" class="collapse" aria-labelledby="heading_studien_verlauf" data-parent="#accordion_stg_informationen">
             <div class="card-body">
+
+              {% if page.praxis_semester != nil %}
+              <h4>Praxissemester</h4>
+                <p>
+                  {% if page.praxis_semester != nil %}
+                  Im {{ page.praxis_semester }} Semester muss ein
+                    {% if page.praxis_semester_dauer != nil %}
+                      {{ page.praxis_semester_dauer }}-wöchiges
+                    {% endif %}
+                   Praktikum absolviert werden.
+                  {% else %}
+                </p>
+              {% endif %}
+
               {{ page.studien_verlauf | markdownify }}
               <h4>Modul-/Fächerkatalog{{ site.badge_cms}}</h4>
               <div class="table-responsive">
