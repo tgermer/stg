@@ -119,8 +119,8 @@
   url_stg: https://www.bwl.hm.edu/s/b/ba_bwl.de.html
   ## Formale Voraussetzungen
   hzb:
-    - allg. Abitur
-    - Fachhochschulreife
+    - Allgemeine Hochschulreife
+    - Fachgebunde Hochschulreife
   zulassungs_beschraenkt: true
   eignungs_pruefung:
   vor_praxis:
@@ -216,9 +216,9 @@
   url_stg: https://www.ar.hm.edu/lehre/bachelor/Bachelor.de.html
   ## Formale Voraussetzungen
   hzb:
-    - allg. Abitur
-    - Fachhochschulreife
-  zulassungs_beschraenkt: false
+    - Allgemeine Hochschulreife
+    - Fachgebunde Hochschulreife
+  zulassungs_beschraenkt: true
   eignungs_pruefung:
     - Eignungsprüfung (1. Teil)
     - Persönliches Gespräch (2. Teil)
@@ -234,6 +234,7 @@
   interessen:
     bringt_mit:
       - Allgemeine Hochschulreife
+      - Fachgebunde Hochschulreife
     hat_spass:
       - technischen Vorgängen und logischem Denken und Handeln
     kaempft:
