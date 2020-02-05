@@ -3,11 +3,65 @@ layout: container
 title: Studiengangebot (STG)
 ---
 
-<p>Hier müssen noch Filter zu verschiedenen Kriterien eingebaut werden..</p>
+<!-- <form class="mt-5 mb-5">
+  <div class="row">
+  <div id="myBtnContainer" class="form-group">
+    <label class="text-muted" for="myBtnContainer">Zulassungsbeschränkt</label>
+    <select class="form-control" id="myBtnContainer" onchange="filterSelection(value)">
+      <option value="all">Alles anzeigen</option>
+      <option value="zulassungsfrei">Zuslassungsfrei</option>
+      <option value="zulassungsbeschraenkt">Zulassungsbeschränkt</option>
+    </select>
+  </div>
+  <div id="myBtnContainer" class="form-group">
+    <label class="text-muted" for="myBtnContainer">Art</label>
+    <select class="form-control" id="myBtnContainer" onchange="filterSelection(value)">
+      <option value="all">Alles anzeigen</option>
+      <option value="bachelor">Bachelor-Studium</option>
+      <option value="master">Master-Studium</option>
+    </select>
+  </div>
+  <div id="myBtnContainer" class="form-group">
+    <label class="text-muted" for="myBtnContainer">Studienbeginn</label>
+    <select class="form-control" id="myBtnContainer" onchange="filterSelection(value)">
+      <option value="">Filter wählen</option>
+      <option value="sommersemester">Sommersemester</option>
+      <option value="wintersemester">Wintersemester</option>
+    </select>
+  </div>
+  </div>
+  <button type="filterSelection(value)" class="btn my-1 btn-sm btn-primary">Filter zurücksetzen</button>
+</form> -->
 
-<div class="my-5">
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".bachelor">Bachelor</button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".master">Master</button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".zulassungsbeschraenkt">zulassungsbeschränkt</button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".zulassungsfrei">zulassungsfrei</button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".sommersemester">Start im Sommersemester</button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".wintersemester">Start im Wintersemester</button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".allgemeine">Allgemeine Hochschulreife</button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".fachgebundene">Fachgebundene Hochschulreife</button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".hochschulstudium">Abgeschlossnes Hochschulstudium</button>
+<button type="button" class="btn my-1 btn-sm btn-primary" data-filter="all">Filter zurücksetzen</button>
+
+<hr>
+Reihenfolge
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-sort="order:asc">A–Z</button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-sort="order:descending">Z–A</button>
+<!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-sort="random">Random</button> -->
+
+
+<div class="my-5 mix-studienangebot">
   {% for stg in site.data.stg %}
-      <h6 class="mb-0"><a href="{{ stg.dateiname | datapage_url: 'stg' }}">{{ stg.fachrich }}-{{ stg.abschluss }} ({{ stg.grade_kurz }})</a></h6>
-      <p>{{ stg.studien_art }}</p>
+  <div data-order="{{ stg.fachrich }}-{{ stg.abschluss }} ({{ stg.grade_kurz }})" class="
+        mb-0 mix
+        {{ stg.abschluss | downcase }}
+        {{ stg.studien_begin | join: " " | downcase }}
+        {% if stg.zulassungs_beschraenkt == true %}zulassungsbeschraenkt{% else %}zulassungsfrei{% endif %}
+        {{ stg.hzb | join: " " | downcase }}
+      ">
+    <h6><a href="{{ stg.dateiname | datapage_url: 'stg' }}">{{ stg.fachrich }}-{{ stg.abschluss }} ({{ stg.grade_kurz }})</a></h6>
+    <p>{{ stg.studien_art }}</p>
+  </div>
   {% endfor %}
 </div>
