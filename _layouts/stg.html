@@ -36,13 +36,6 @@
                   <td>{{ page.studien_art}}{{ site.badge_cms }}</td>
                 </tr>
                 {% endif %}
-                {% if page.ects != nil %}
-                <tr>
-                  <th scope="row" class="text-uppercase">zu erreichende <abbr title="European Credit Transfer and Accumulation System">ECTS</abbr></th>
-                  <td>{{ page.ects }}{{ site.badge_p }}</td>
-                </tr>
-                {% endif %}
-                {% if page.studien_art != nil %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Regelstudienzeit</th>
                   <td>
@@ -54,26 +47,10 @@
                     {% endif %}
                   </td>
                 </tr>
-                {% endif %}
-                {% if page.praxis_semester != nil %}
-                <tr class="col-md-6">
-                  <th scope="row" class="text-uppercase">Praxissemester</th>
-                  <td>
-                    {% if page.praxis_semester_dauer != nil %}
-                    Im {{ page.praxis_semester }} Semester muss ein {{ page.praxis_semester_dauer }}-wöchiges Praktikum absolviert werden.
-                    {% else %}
-                    Im {{ page.praxis_semester }} Semester muss ein Praktikum absolviert werden.
-                    {% endif %}
-                  </td>
-                </tr>
-                {% endif %}
-                {% if page.auslands_semester == true %}
-                <tr class="col-md-6">
-                  <th scope="row" class="text-uppercase">Auslandssemester</th>
-                  <td>
-                    Auslandsemester möglich{% if page.auslands_semester_semester != nil %}; empfohlen im {{ page.auslands_semester_semester}}&nbsp;Semester
-                    {% endif %}
-                  </td>
+                {% if page.ects != nil %}
+                <tr>
+                  <th scope="row" class="text-uppercase">zu erreichende <abbr title="European Credit Transfer and Accumulation System">ECTS</abbr></th>
+                  <td>{{ page.ects }}{{ site.badge_p }}</td>
                 </tr>
                 {% endif %}
                 {% if page.studien_begin != nil %}
@@ -82,13 +59,13 @@
                   <td>{{ page.studien_begin  | join: " und "}}{{ site.badge_cms }}</td>
                 </tr>
                 {% endif %}
-                {% if page.sprachen.haupt_sprache != nil %}
+                {% if page.hzb != nil %}
                 <tr>
-                  <th scope="row" class="text-uppercase">Hauptunterrichts&shy;sprache</th>
-                  <td>{{ page.sprachen.haupt_sprache  | join: " und "}}{{ site.badge_cms }}
-                    {% if page.sprachen.weitere_sprachen != nil %}
-                    <p>Weitere Spachen:<br>{{ page.sprachen.weitere_sprachen | join: ", " }}{{ site.badge_cms }}</p>
-                    {% endif %}
+                  <th scope="row" class="text-uppercase">Zugangs&shy;berechtigt</th>
+                  <td>
+                    {% for item in page.hzb %}
+                    <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
+                    {% endfor %}
                   </td>
                 </tr>
                 {% endif %}
@@ -102,13 +79,16 @@
                     {% endif %}
                   </td>
                 </tr>
-                {% if page.hzb != nil %}
+                {% if page.studien_anfaenger.sose !=nil or page.studien_anfaenger.wise != nil %}
                 <tr>
-                  <th scope="row" class="text-uppercase">Zugangs&shy;berechtigt</th>
+                  <th scope="row" class="text-uppercase">Studien&shy;begin&shy;nende</th>
                   <td>
-                    {% for item in page.hzb %}
-                    <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
-                    {% endfor %}
+                    {% if page.studien_anfaenger.sose !=nil %}
+                    <span class="d-block">{{ page.studien_anfaenger.sose }}{{ site.badge_p }} im Sommersemester</span>
+                    {% endif %}
+                    {% if page.studien_anfaenger.wise !=nil %}
+                    <span class="d-block">{{ page.studien_anfaenger.wise }}{{ site.badge_p }} im Wintersemester</span>
+                    {% endif %}
                   </td>
                 </tr>
                 {% endif %}
@@ -134,6 +114,37 @@
                   </td>
                 </tr>
                 {% endif %}
+                {% if page.sprachen.haupt_sprache != nil %}
+                <tr>
+                  <th scope="row" class="text-uppercase">Hauptunterrichts&shy;sprache</th>
+                  <td>{{ page.sprachen.haupt_sprache  | join: " und "}}{{ site.badge_cms }}
+                    {% if page.sprachen.weitere_sprachen != nil %}
+                    <p>Weitere Spachen:<br>{{ page.sprachen.weitere_sprachen | join: ", " }}{{ site.badge_cms }}</p>
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endif %}
+                {% if page.praxis_semester != nil %}
+                <tr class="col-md-6">
+                  <th scope="row" class="text-uppercase">Praxissemester</th>
+                  <td>
+                    {% if page.praxis_semester_dauer != nil %}
+                    Im {{ page.praxis_semester }} Semester muss ein {{ page.praxis_semester_dauer }}-wöchiges Praktikum absolviert werden.
+                    {% else %}
+                    Im {{ page.praxis_semester }} Semester muss ein Praktikum absolviert werden.
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endif %}
+                {% if page.auslands_semester == true %}
+                <tr class="col-md-6">
+                  <th scope="row" class="text-uppercase">Auslandssemester</th>
+                  <td>
+                    Auslandsemester möglich{% if page.auslands_semester_semester != nil %}; empfohlen im {{ page.auslands_semester_semester}}&nbsp;Semester
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endif %}
                 <tr>
                   <th scope="row" class="text-uppercase">Kosten je Semester</th>
                   <td>
@@ -148,19 +159,6 @@
                   <td>
                     {{ page.kosten }}{{ site.badge_cms }}&nbsp;Euro<br>
                     <a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a>
-                  </td>
-                </tr>
-                {% endif %}
-                {% if page.studien_anfaenger.sose !=nil or page.studien_anfaenger.wise != nil %}
-                <tr>
-                  <th scope="row" class="text-uppercase">Studienbeginnende</th>
-                  <td>
-                    {% if page.studien_anfaenger.sose !=nil %}
-                    <span class="d-block">{{ page.studien_anfaenger.sose }}{{ site.badge_p }} im Sommersemester</span>
-                    {% endif %}
-                    {% if page.studien_anfaenger.wise !=nil %}
-                    <span class="d-block">{{ page.studien_anfaenger.wise }}{{ site.badge_p }} im Wintersemester</span>
-                    {% endif %}
                   </td>
                 </tr>
                 {% endif %}
