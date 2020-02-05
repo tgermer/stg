@@ -15,7 +15,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% for item in site.data.stg %}
         <th scope="col" width="25%" style="min-width:250px">
           <a href="{{ site.url }}/stg/{{ item.dateiname }}" class="">
-          {{ item.fachrich }} ({{ item.grade_kurz }})
+          {{ item.fachrich }} ({{ item.grade_kurz | replace: " ", "&nbsp;" }})
           </a>
           <br><small>{{ item.fachriche }}</small></th>
         {% endfor %}
