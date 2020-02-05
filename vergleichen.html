@@ -119,7 +119,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Vorpraxis{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Vorpraxis (Vorpraktikum){{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>
           {% if item.vor_praxis != nil %}
@@ -127,7 +127,8 @@ title: Studiengänge vergleichen (Merkliste)
               <span class="d-block">{{ item }}</span>
             {% endfor %}
             {% if item.vor_praxis_wochen != nil%}
-              Die Vorpraxis besteht aus insgesamt {{ item.vor_praxis_wochen }}&nbsp;Wochen.
+              <span class="d-block">Die Vorpraxis (Vorpraktikum) besteht aus insgesamt {{ item.vor_praxis_wochen }}&nbsp;Wochen.</span>
+              <span class="d-block"><a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Hinweise_Vorpraktikum.pdf" target="_blank">Weitere Informationen zur Vorpraxis (Vorpraktikum)</a> </span>
             {% endif %}
           {% else %}
           —
@@ -169,7 +170,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Studienanfänger{{ site.badge_p }}</th>
+        <th scope="row" class="text-uppercase">Studienbeginnende{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
         <td>
           {% if item.studien_anfaenger.sose !=nil or item.studien_anfaenger.wise != nil %}
