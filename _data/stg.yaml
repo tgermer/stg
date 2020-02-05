@@ -120,7 +120,7 @@
   ## Formale Voraussetzungen
   hzb:
     - Allgemeine Hochschulreife
-    - Fachgebunde Hochschulreife
+    - Fachgebundene Hochschulreife
   zulassungs_beschraenkt: true
   eignungs_pruefung:
   vor_praxis:
@@ -217,7 +217,7 @@
   ## Formale Voraussetzungen
   hzb:
     - Allgemeine Hochschulreife
-    - Fachgebunde Hochschulreife
+    - Fachgebundene Hochschulreife
   zulassungs_beschraenkt: true
   eignungs_pruefung:
     - Eignungsprüfung (1. Teil)
@@ -234,7 +234,7 @@
   interessen:
     bringt_mit:
       - Allgemeine Hochschulreife
-      - Fachgebunde Hochschulreife
+      - Fachgebundene Hochschulreife
     hat_spass:
       - technischen Vorgängen und logischem Denken und Handeln
     kaempft:
