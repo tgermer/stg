@@ -124,12 +124,13 @@
                 {% endif %}
                 {% if page.vor_praxis != nil %}
                 <tr>
-                  <th scope="row" class="text-uppercase">Vorpraxis</th>
+                  <th scope="row" class="text-uppercase">Vorpraxis (Vorpraktikum)</th>
                   <td>
                     {% for item in page.vor_praxis %}
                     <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
                     {% endfor %}
-                    Die Vorpraxis besteht aus insgesamt {{ page.vor_praxis_wochen }}&nbsp;Wochen.
+                    <span class="d-block">Die Vorpraxis (Vorpraktikum) besteht aus insgesamt {{ page.vor_praxis_wochen }}&nbsp;Wochen.</span>
+                    <span class="d-block"><a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Hinweise_Vorpraktikum.pdf" target="_blank">Weitere Informationen zur Vorpraxis (Vorpraktikum)</a> </span>
                   </td>
                 </tr>
                 {% endif %}
@@ -152,7 +153,7 @@
                 {% endif %}
                 {% if page.studien_anfaenger.sose !=nil or page.studien_anfaenger.wise != nil %}
                 <tr>
-                  <th scope="row" class="text-uppercase">Studienanfänger</th>
+                  <th scope="row" class="text-uppercase">Studienbeginnende</th>
                   <td>
                     {% if page.studien_anfaenger.sose !=nil %}
                     <span class="d-block">{{ page.studien_anfaenger.sose }}{{ site.badge_p }} im Sommersemester</span>
