@@ -40,10 +40,10 @@
                   <th scope="row" class="text-uppercase">Regelstudienzeit</th>
                   <td>
                     {% if page.regelstudien_zeit.voll_zeit != nil %}
-                    {{ page.regelstudien_zeit.voll_zeit }}{{ site.badge_p }} Semester Vollzeit
+                    <span class="d-blocj">{{ page.regelstudien_zeit.voll_zeit }} Semester Vollzeit</span>
                     {% endif %}
                     {% if page.regelstudien_zeit.teil_zeit != nil %}
-                    <br> {{ page.regelstudien_zeit.teil_zeit }}{{ site.badge_cms }} Semester Teilzeit
+                    <span class="d-block">{{ page.regelstudien_zeit.teil_zeit }} Semester Teilzeit</span>
                     {% endif %}
                   </td>
                 </tr>
