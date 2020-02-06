@@ -1,0 +1,268 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link href="../reset.css" rel="stylesheet" /> -->
+  <!-- <link href="./style.css" rel="stylesheet" /> -->
+
+  <title>MixItUp Demo - Toggle Filtering AND Logic</title>
+
+  <style media="screen">
+    html,
+    body {
+      height: 100%;
+      background: #f2f2f2;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    /* Controls
+---------------------------------------------------------------------- */
+
+    .controls {
+      padding: 1rem;
+      background: #333;
+      font-size: 0.1px;
+    }
+
+    .control {
+      position: relative;
+      display: inline-block;
+      width: 2.7rem;
+      height: 2.7rem;
+      background: #444;
+      cursor: pointer;
+      font-size: 0.1px;
+      color: white;
+      transition: background 150ms;
+    }
+
+    .control:hover {
+      background: #3f3f3f;
+    }
+
+    .control[data-filter]:after,
+    .control[data-toggle]:after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: calc(50% - 6px);
+      left: calc(50% - 6px);
+      border: 2px solid currentColor;
+      border-radius: 2px;
+      background: currentColor;
+      transition: background-color 150ms, border-color 150ms;
+    }
+
+    .mixitup-control-active {
+      background: #393939;
+    }
+
+    .mixitup-control-active[data-toggle]:after {
+      background: transparent;
+    }
+
+    .control:first-of-type {
+      border-radius: 3px 0 0 3px;
+    }
+
+    .control:last-of-type {
+      border-radius: 0 3px 3px 0;
+    }
+
+    .control[data-filter=".green"],
+    .control[data-toggle=".green"] {
+      color: #91e6c7;
+    }
+
+    .control[data-filter=".blue"],
+    .control[data-toggle=".blue"] {
+      color: #5ecdde;
+    }
+
+    .control[data-filter=".pink"],
+    .control[data-toggle=".pink"] {
+      color: #d595aa;
+    }
+
+    /* Container
+---------------------------------------------------------------------- */
+
+    .container {
+      padding: 1rem;
+      text-align: justify;
+      font-size: 0.1px;
+    }
+
+    .container:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+
+    /* Target Elements
+---------------------------------------------------------------------- */
+
+    .mix,
+    .gap {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .mix {
+      background: #fff;
+      border-top: .5rem solid currentColor;
+      border-radius: 2px;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .mix:before {
+      content: '';
+      display: inline-block;
+      padding-top: 56.25%;
+      border-top: .5rem solid transparent;
+    }
+
+    .mix.green {
+      color: #91e6c7;
+    }
+
+    .mix.pink {
+      color: #d595aa;
+    }
+
+    .mix.blue {
+      color: #5ecdde;
+    }
+
+    .mix.pink.green:before {
+      width: 100%;
+      border-top-color: #91e6c7;
+    }
+
+    .mix.green.blue:before {
+      width: 100%;
+      border-top-color: #91e6c7;
+    }
+
+    .mix.blue.pink:before {
+      width: 100%;
+      border-top-color: #d595aa;
+    }
+
+    /* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+    /* 2 Columns */
+
+    .mix,
+    .gap {
+      width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+    }
+
+    /* 3 Columns */
+
+    @media screen and (min-width: 541px) {
+
+      .mix,
+      .gap {
+        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+      }
+    }
+
+    /* 4 Columns */
+
+    @media screen and (min-width: 961px) {
+
+      .mix,
+      .gap {
+        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+      }
+    }
+
+    /* 5 Columns */
+
+    @media screen and (min-width: 1281px) {
+
+      .mix,
+      .gap {
+        width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="controls">
+    <button type="button" class="control" data-filter="all">All</button>
+    <button type="button" class="control" data-toggle=".green">Green</button>
+    <button type="button" class="control" data-toggle=".blue">Blue</button>
+    <button type="button" class="control" data-toggle=".pink">Pink</button>
+  </div>
+
+  <div class="container">
+    <div class="mix blue green"></div>
+    <div class="mix green"></div>
+    <div class="mix blue"></div>
+    <div class="mix pink"></div>
+    <div class="mix green pink"></div>
+    <div class="mix blue"></div>
+    <div class="mix pink"></div>
+    <div class="mix blue pink"></div>
+
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+  </div>
+
+  <script src="{{ site.url }}/assets/js/mixitup.min.js" type="text/javascript"></script>
+
+
+  <script>
+    var containerEl = document.querySelector('.container');
+
+    var mixer = mixitup(containerEl, {
+      animation: {
+            // duration: 300,
+            enable: false
+          },
+      controls: {
+        toggleLogic: 'and'
+      }
+    //   animation: {
+    //   //     // duration: 300,
+    //       enable: true
+    });
+  </script>
+
+  <!-- <script>
+    // Create a configuration object with desired values
+
+    var config = {
+      animation: {
+        enable: false
+      },
+      selectors: {
+        target: '.container'
+      }
+    };
+
+    // Pass the configuration object to the mixitup factory function
+
+    var mixer = mixitup(containerEl, config);
+  </script> -->
+
+</body>
+
+</html>
