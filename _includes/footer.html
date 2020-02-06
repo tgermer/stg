@@ -10,7 +10,7 @@
           <p>&copy; 2014–{{ "now" | date: "%Y" }}</p>
           <p>
             <a href="https://app.netlify.com/sites/stg-strukturiert/deploys"><img src="https://api.netlify.com/api/v1/badges/7d509ec2-19cb-402b-ba94-516e4b7ecbde/deploy-status" alt="Netlify Status"></a>
-            </p>
+          </p>
         </div>
         <div class="col-md-3 col-sm-6">
           <h4>Herausgeber</h4>
@@ -85,7 +85,7 @@
 <!-- Filter mit MixItUp https://www.kunkalabs.com/mixitup/docs/get-started/ -->
 <script src="{{ site.url }}/assets/js/mixitup.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-  var mixer = mixitup('.mix-studienangebot');
+  // var mixer = mixitup('.mix-studienangebot');
   // var mixer = mixitup(containerEl, {
   //   selectors: {
   //     target: '.mix-studienangebot'
@@ -96,6 +96,45 @@
   //   }
   // });
 </script>
+
+<script>
+  // $(document).ready(function() {
+  //       var containerEl = document.querySelector('.mix-studienangebot');
+  //
+  //       var mixer = mixitup(containerEl, {
+  //           controls: {
+  //             toggleLogic: 'and'
+  //           },
+  //           animation: {
+  //             //     // duration: 300,
+  //             enable: false
+  //           });
+  //       });
+</script>
+
+<script>
+  var containerEl = document.querySelector('.mix-studienangebot');
+
+  var mixer = mixitup(containerEl, {
+    classNames: {
+      modifierActive: 'active'
+    },
+    // modifierActive: {
+    //     modifier: 'active'
+    //   },
+    animation: {
+          // duration: 300,
+          enable: false
+        },
+    controls: {
+      toggleLogic: 'and'
+    }
+  //   animation: {
+  //   //     // duration: 300,
+  //       enable: true
+  });
+</script>
+
 
 <!-- <script type="text/javascript">
   // $('.collapse').collapse()
