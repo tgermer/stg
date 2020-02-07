@@ -42,6 +42,8 @@ title: Studiengangebot (STG)
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".allgemeine">Allgemeine Hochschulreife</button>
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".fachgebundene">Fachgebundene Hochschulreife</button>
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".hochschulstudium">Abgeschlossnes Hochschulstudium</button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".dual">Dual studieren</button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-filter=".doppelabschluss">Doppelabschluss</button>
 <button type="button" class="btn my-1 btn-sm btn-primary" data-filter="all">Filter zurücksetzen</button>
 
 <hr>
@@ -59,6 +61,8 @@ Reihenfolge
         {{ stg.studien_begin | join: " " | downcase }}
         {% if stg.zulassungs_beschraenkt == true %}zulassungsbeschraenkt{% else %}zulassungsfrei{% endif %}
         {{ stg.hzb | join: " " | downcase }}
+        {% if stg.dual == true %}dual{% endif %}
+        {% if stg.doppel_abschluss == true %}doppelabschluss{% endif %}
       ">
     <h6><a href="{{ stg.dateiname | datapage_url: 'stg' }}">{{ stg.fachrich }}-{{ stg.abschluss }} ({{ stg.grade_kurz }})</a></h6>
     <p>{{ stg.studien_art }}</p>

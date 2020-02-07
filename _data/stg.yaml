@@ -16,6 +16,10 @@
     - money
   studien_art: grundständiges Bachelor-Studium
   dual: true
+  doppel_abschluss: true
+  doppel_abschluss_partner_uni:
+    - University of Lincoln
+    - Edinburgh Napier University
   master_typ:
   studien_begin:
     - Sommersemester
@@ -175,7 +179,9 @@
     - architecture
     - munich
   studien_art: grundständiges Bachelor-Studium
-  dual: true
+  dual: false
+  doppel_abschluss: false
+  doppel_abschluss_partner_uni:
   master_typ:
   studien_begin:
     - Wintersemester
@@ -273,7 +279,9 @@
     - money
     - engineering
   studien_art: weiterbildendes Master-Studium
-  dual: true
+  dual: false
+  doppel_abschluss: false
+  doppel_abschluss_partner_uni:
   master_typ:
   studien_begin:
     - Sommersemester

@@ -36,6 +36,12 @@
                   <td>{{ page.studien_art}}{{ site.badge_cms }}</td>
                 </tr>
                 {% endif %}
+                {% if page.dual == true %}
+                <tr class="col-md-6">
+                  <th scope="row" class="text-uppercase">Dual studierbar</th>
+                  <td><i class="fas fa-check-circle text-success"></i></td>
+                </tr>
+                {% endif %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Regelstudienzeit</th>
                   <td>
@@ -133,6 +139,14 @@
                     {% else %}
                     Im {{ page.praxis_semester }} Semester muss ein Praktikum absolviert werden.
                     {% endif %}
+                  </td>
+                </tr>
+                {% endif %}
+                {% if page.doppel_abschluss == true %}
+                <tr class="col-md-6">
+                  <th scope="row" class="text-uppercase">Doppelabschluss</th>
+                  <td><i class="fas fa-check-circle text-success"></i>
+                    <span class="d-block">{{ page.doppel_abschluss_partner_uni | join: '</span><span class="d-block">'}}</span>
                   </td>
                 </tr>
                 {% endif %}

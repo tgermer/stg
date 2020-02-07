@@ -15,7 +15,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% for item in site.data.stg %}
         <th scope="col" width="25%" style="min-width:250px">
           <a href="{{ site.url }}/stg/{{ item.dateiname }}" class="">
-          {{ item.fachrich }} ({{ item.grade_kurz | replace: " ", "&nbsp;" }})
+            {{ item.fachrich }} ({{ item.grade_kurz | replace: " ", "&nbsp;" }})
           </a>
           <br><small>{{ item.fachriche }}</small></th>
         {% endfor %}
@@ -26,6 +26,18 @@ title: Studiengänge vergleichen (Merkliste)
         <th scope="row" class="text-uppercase">Art des Studiums{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>{{ item.studien_art }}</td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th scope="row" class="text-uppercase">Dual studierbar</th>
+        {% for item in site.data.stg %}
+        <td>
+          {% if item.dual == true %}
+          <i class="fas fa-check-circle text-success"></i>
+          {% else %}
+          <i class="fas fa-times-circle text-primary"></i>
+          {% endif %}
+        </td>
         {% endfor %}
       </tr>
       <tr>
@@ -57,9 +69,9 @@ title: Studiengänge vergleichen (Merkliste)
         <th scope="row" class="text-uppercase">Zugangsberechtig{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>
-            {% for item in item.hzb %}
-            <span class="d-block">{{ item }}</span>
-            {% endfor %}
+          {% for item in item.hzb %}
+          <span class="d-block">{{ item }}</span>
+          {% endfor %}
         </td>
         {% endfor %}
       </tr>
@@ -97,9 +109,9 @@ title: Studiengänge vergleichen (Merkliste)
         {% for item in site.data.stg %}
         <td>
           {% if item.eignungs_pruefung != nil %}
-            {% for item in item.eignungs_pruefung %}
-            <span class="d-block">{{ item }}</span>
-            {% endfor %}
+          {% for item in item.eignungs_pruefung %}
+          <span class="d-block">{{ item }}</span>
+          {% endfor %}
           {% else %}
           —
           {% endif %}
@@ -111,13 +123,14 @@ title: Studiengänge vergleichen (Merkliste)
         {% for item in site.data.stg %}
         <td>
           {% if item.vor_praxis != nil %}
-            {% for item in item.vor_praxis %}
-              <span class="d-block">{{ item }}</span>
-            {% endfor %}
-            {% if item.vor_praxis_wochen != nil%}
-              <span class="d-block">Die Vorpraxis (Vorpraktikum) besteht aus insgesamt {{ item.vor_praxis_wochen }}&nbsp;Wochen.</span>
-              <span class="d-block"><a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Hinweise_Vorpraktikum.pdf" target="_blank">Weitere Informationen zur Vorpraxis (Vorpraktikum)</a> </span>
-            {% endif %}
+          {% for item in item.vor_praxis %}
+          <span class="d-block">{{ item }}</span>
+          {% endfor %}
+          {% if item.vor_praxis_wochen != nil%}
+          <span class="d-block">Die Vorpraxis (Vorpraktikum) besteht aus insgesamt {{ item.vor_praxis_wochen }}&nbsp;Wochen.</span>
+          <span class="d-block"><a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Hinweise_Vorpraktikum.pdf" target="_blank">Weitere Informationen zur Vorpraxis
+              (Vorpraktikum)</a> </span>
+          {% endif %}
           {% else %}
           —
           {% endif %}
@@ -140,16 +153,31 @@ title: Studiengänge vergleichen (Merkliste)
         <td>
           {% if item.praxis_semester != nil %}
           Im {{ item.praxis_semester }} Semester muss ein
-            {% if item.praxis_semester_dauer != nil %}
-              {{ item.praxis_semester_dauer }}-wöchiges
-            {% endif %}
-           Praktikum absolviert werden.
+          {% if item.praxis_semester_dauer != nil %}
+          {{ item.praxis_semester_dauer }}-wöchiges
+          {% endif %}
+          Praktikum absolviert werden.
           {% else %}
           —
           {% endif %}
         </td>
         {% endfor %}
       </tr>
+
+      <tr class="col-md-6">
+        <th scope="row" class="text-uppercase">Doppelabschluss</th>
+        {% for item in site.data.stg %}
+        <td>
+          {% if item.doppel_abschluss == true %}
+          <i class="fas fa-check-circle text-success"></i>
+          <span class="d-block">{{ item.doppel_abschluss_partner_uni | join: '</span><span class="d-block">'}}</span>
+          {% else %}
+          <i class="fas fa-times-circle text-primary"></i>
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+
       <tr class="col-md-6">
         <th scope="row" class="text-uppercase">Auslandssemester{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
@@ -226,8 +254,8 @@ title: Studiengänge vergleichen (Merkliste)
         <th scope="row" class="text-uppercase"></th>
         {% for item in site.data.stg %}
         <td><a href="{{ site.url }}/stg/{{ item.dateiname }}" class="">
-        Studiengang im Detail anzeigen
-        </a></td>
+            Studiengang im Detail anzeigen
+          </a></td>
         {% endfor %}
       </tr>
     </tbody>
