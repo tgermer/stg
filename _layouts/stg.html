@@ -383,6 +383,57 @@
           </div>
         </div>
         <div class="card">
+          <div class="card-header" id="heading_kontakt">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_kontakt" aria-expanded="false" aria-controls="collapse_kontakt">
+                Kontakt{{ site.badge_p }}
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_kontakt" class="collapse" aria-labelledby="heading_kontakt" data-parent="#accordion_stg_informationen">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Fachstudienberater</h3>
+                  {% for item in page.ansprechpartner.fachstudienberater %}
+                  <p class="">
+                    <span class="d-block lead">{{ item.name }}</span>
+                    <span class="d-block">Raum: {{ item.raum }}</span>
+                    <span class="d-block">Tel: {{ item.tel }}</span>
+                    <span class="d-block">E-Mail: <a href="mailto:{{ item.email }}">{{ item.email }}</a></span>
+                    {% if item.url != nil %}
+                    <span class="d-block">Profil: <a href="{{ item.url }}" target="_blank">Profil aufrufen</a></span>
+                    {% endif %}
+                  </p>
+                  {% endfor %}
+                </div>
+                <div class="col-md-6">
+                  <h3>Zentrale Studienberatung</h3>
+                  <p class="">
+                    <span class="d-block lead">Erstanlaufstelle</span>
+                    <span class="d-block">STUDIENINFORMATION in der Lothstraße&nbsp;64</span>
+                    <span class="d-block">Tel: 089 1265-1121</span>
+                    <span class="d-block">E-Mail: <a href="mailto:beratung@hm.edu">beratung@hm.edu</a></span>
+                    <span class="d-block"> <a href="https://online-studienberatung.hm.edu/" target="_blank">Online-Studienberatung und Terminvereinbarung</a></span>
+                    <span class="d-block mt-2">TELEFONZEITEN<br>
+                      Mo–Do <span class="float-right">9:00–12:00 Uhr</span> <br>
+                      <span class="float-right">+ 14:00–16:00 Uhr</span><br>
+                      Fr <span class="float-right">9:00–15:00 Uhr</span>
+                    </span>
+                    <span class="d-block mt-2">ÖFFNUNGSZEITEN<br>
+                      Mo–Do<br>
+                      Vorlesungszeit <span class="float-right">8:00–17:00 Uhr</span><br>
+                      vorlesungsfreie Zeit <span class="float-right">8:00–16:00 Uhr</span><br>
+                      Fr (generell) <span class="float-right">8:00–15:00 Uhr</span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
           <div class="card-header" id="heading_weitere_info">
             <h2 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_weitere_info" aria-expanded="false" aria-controls="collapse_weitere_info">

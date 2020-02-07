@@ -146,6 +146,19 @@
     - NtoaNge652o
   vimeo-id:
     - 207284089
+  ansprechpartner:
+    fachstudienberater:
+      - name: Prof. Dr. Wilhelm Maier
+        raum: LO 319
+        tel: 089 1265-2738
+        email: bachelor-bwl-fk10@hm.edu
+        url: https://www.bwl.hm.edu/p/maier.de.html
+      - name: Prof. Dr. Tristan Germer
+        raum: LO 1910
+        tel: 089 1265-1418
+        email: tgermer@hm.edu
+        url: https://hm.edu/allgemein/hochschule_muenchen/zentrale_services/studienberatung_2/studienberatung_ansprechpartner/tristan_germer.de.html
+
 
 
 - fachrich: Architektur
