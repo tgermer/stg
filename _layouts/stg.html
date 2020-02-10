@@ -397,8 +397,9 @@
                 <div class="col-md-6">
                   <h3>Fachstudienberater{{ site.badge_cms }}</h3>
                   {% for item in page.ansprechpartner.fachstudienberater %}
-                  <p class="">
-                    <span class="d-block lead">{{ item.name }}</span>
+                  <p class="mb-4">
+                    <img src="{{ item.bild | default: "https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/importueberarbeitet/personen_16/Silhouette_Neutral_ContactBild.png" }}" class="rounded float-left mr-2" alt="Kontaktbild von {{ item.name }}">
+                    <span class="d-block lead mb-3">{{ item.name }}</span>
                     <span class="d-block">Raum: {{ item.raum }}</span>
                     <span class="d-block">Tel: {{ item.tel }}</span>
                     <span class="d-block">E-Mail: <a href="mailto:{{ item.email }}">{{ item.email }}</a></span>
@@ -410,12 +411,16 @@
                     {% endif %}
                     {% if item.zeiten != nil %}
                     <span class="d-block lead mt-2">Sprechzeiten</span>
+                    {% if item.zeiten == "nine" %}
+                    Sprechtzeiten über <a href="https://nine.hm.edu" target="_blank">NINE</a> buchen.
+                    {% else %}
                     {% for item in item.zeiten %}
                     <span class="d-block">{{ item[0] | append: "&nbsp;" }}<span class="float-right">{{ item[1] | replace: " ", "&nbsp;" }}</span></span>
                     {% if item[2] != nil %}
                     <span class="d-block font-italic mb-2">{{ item[2] }}</span>
                     {% endif %}
                     {% endfor %}
+                    {% endif %}
                     {% endif %}
                   </p>
                   {% endfor %}
@@ -479,7 +484,7 @@
                 <div class="col-md-6">
                   <h3>Prüfungsamt{{ site.badge_cms }}</h3>
                   <p class="">
-                    Sie studieren den Studiengang {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) schon und haben Fragen zu Prüfungen oder Praktikum, dann nutzen Sie bitte die Seite <a href="https://www.hm.edu/pruefung-praktikum" target="_blank">www.hm.edu/pruefung-praktikum</a>
+                    Sie studieren den Studiengang {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) schon und haben Fragen zu Prüfungen oder Praktikum? Dann nutzen Sie bitte die Seite <a href="https://www.hm.edu/pruefung-praktikum" target="_blank">www.hm.edu/pruefung-praktikum</a>
                   </p>
                 </div>
               </div>
