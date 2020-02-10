@@ -153,6 +153,7 @@
         tel: 089 1265-2738
         email: bachelor-bwl-fk10@hm.edu
         url: https://www.bwl.hm.edu/p/maier.de.html
+        bild: https://w3-mediapool.hm.edu/mediapool/media/fk10/fk10_lokal/05_diefakultt/03_personen/maier/maier_neu_477x568_ContactBild.jpg
         infos: Persönliche Infos des Fachstudienberaters.
         zeiten:
           - ["Mo–Mi","14:30–17:00 Uhr", "persönlich oder telefonisch möglich"]
@@ -163,6 +164,7 @@
         tel: 089 1265-1418
         email: tgermer@hm.edu
         url: https://hm.edu/allgemein/hochschule_muenchen/zentrale_services/studienberatung_2/studienberatung_ansprechpartner/tristan_germer.de.html
+        bild:
 
 
 
@@ -433,3 +435,33 @@
     # - NtoaNge652o
   vimeo-id:
     # - 207284089
+  ansprechpartner:
+    fachstudienberater:
+      - name: Prof. Dr. Andreas Englbrecht
+        raum: R 3.074
+        tel: 089 1265-3914
+        email: andreas.englbrecht@hm.edu
+        url: https://www.wi.hm.edu/02_fakultaet/personen/professorinnen/englbrecht.de.html
+        bild: https://w3-mediapool.hm.edu/mediapool/media/fk09/fk09_lokal/02_fakultaet/personen_6/professorinnen/englbrecht_1/P1100432_englbrecht_web_neu_ContactBild.jpg
+        infos: Ich freue mich auf Ihre Fragen.
+        zeiten: nine
+    studiengangsreferent:
+      - name: Tina Grangl
+        raum: R 2.065
+        tel: 089 1265-3982
+        email: andreas.englbrecht@hm.edu
+        url: https://www.wi.hm.edu/02_fakultaet/personen/mitarbeiter/grangl.de.html
+        bild: https://w3-mediapool.hm.edu/mediapool/media/fk09/fk09_lokal/02_fakultaet/personen_6/mitarbeiterinnen/grangl_1/Grangl~1_ContactBild.jpg
+        infos:
+        zeiten:
+    sekretariat:
+      - name: Monika Wünsche
+        raum: R 2.060
+        tel: 089 1265-3901
+        email: sekretariat-fk09@hm.edu
+        zeiten:
+          - ["Mo–Fr", "8:00–12:00 Uhr"]
+      - name: Doris Konrad
+        raum: R 2.060
+        tel: 089 1265-3904
+        email: sekretariat-fk09@hm.edu
