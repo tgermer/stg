@@ -117,22 +117,26 @@
 
   var mixer = mixitup(containerEl, {
     classNames: {
-      modifierActive: 'active'
+      modifierActive: ' active'
     },
-    // modifierActive: {
-    //     modifier: 'active'
-    //   },
     animation: {
-          // duration: 300,
-          enable: false
-        },
+        enable: false,
+        // effects: 'fade',
+        // easing: 'cubic-bezier(1, 0, 0, 1)',
+        // duration: 400,
+    },
     controls: {
-      toggleLogic: 'and'
-    }
-  //   animation: {
-  //   //     // duration: 300,
-  //       enable: true
-  });
+        scope: 'global',
+        live: false,
+        toggleLogic: 'and'
+    },
+    load: {
+      filter: 'all',
+      sort: 'random'
+    },
+});
+
+
 </script>
 
 
