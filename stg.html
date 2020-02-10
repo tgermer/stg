@@ -33,6 +33,8 @@ title: Studiengangebot (STG)
   <button type="filterSelection(value)" class="btn my-1 btn-sm btn-primary">Filter zurücksetzen</button>
 </form> -->
 
+<p class="text-muted small"><i class="fas fa-filter"></i> Die Filter funktionieren als UND-Filter (logischer UND-Operator). Somit schränkt jeder zusätzlich hinzugefügte Filter die Ergebnisliste ein.</p>
+
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".bachelor">Bachelor</button>
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".master">Master</button>
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zulassungsbeschraenkt">zulassungsbeschränkt</button>
@@ -45,13 +47,11 @@ title: Studiengangebot (STG)
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".dual">Dual studieren</button>
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".doppelabschluss">Doppelabschluss</button>
 <hr>
-<button type="button" class="btn my-1 btn-sm btn-primary" data-filter="all">Filter zurücksetzen</button>
 
-<hr>
-Reihenfolge
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-sort="order:asc">A–Z</button>
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-sort="order:descending">Z–A</button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-sort="order:asc"><i class="fas fa-sort-alpha-down"></i></button>
+<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-sort="order:descending"><i class="fas fa-sort-alpha-up"></i></button>
 <!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-sort="random">Random</button> -->
+<button type="button" class="ml-4 btn my-1 btn-sm btn-primary float-right" data-filter="all">Filter zurücksetzen</button>
 
 
 <div id="filter" class="my-5 mix-studienangebot">
