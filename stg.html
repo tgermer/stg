@@ -34,6 +34,12 @@ title: Studiengangebot (STG)
 </form> -->
 
 <p class="text-muted small"><i class="fas fa-filter"></i> Die Filter funktionieren als UND-Filter (logischer UND-Operator). Somit schränkt jeder zusätzlich hinzugefügte Filter die Ergebnisliste ein.</p>
+<p class="text-muted small">Es sind Filter via URL möglich.</p>
+<ul class="text-muted small">
+  <li><a href="{{site.url}}{{page.url}}#bachelor.dual">{{site.url}}{{page.url}}<strong>#bachelor.dual</strong></a></li>
+  <li><a href="{{site.url}}{{page.url}}#master">{{site.url}}{{page.url}}<strong>#master</strong></a></li>
+  <li><a href="{{site.url}}{{page.url}}#hochschulstudium">{{site.url}}{{page.url}}<strong>#hochschulstudium</strong></a></li>
+</ul>
 
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".bachelor">Bachelor</button>
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".master">Master</button>
@@ -60,6 +66,7 @@ title: Studiengangebot (STG)
         mb-0 mix
         {{ stg.abschluss | downcase }}
         {{ stg.studien_begin | join: " " | downcase }}
+        <!-- {% assign begin = stg.studien_begin %}{% case begin %}{% when "Sommersemester" %}sose{% when "Wintersemester"%}wise{% else %}fehler{% endcase %} -->
         {% if stg.zulassungs_beschraenkt == true %}zulassungsbeschraenkt{% else %}zulassungsfrei{% endif %}
         {{ stg.hzb | join: " " | downcase }}
         {% if stg.dual == true %}dual{% endif %}
