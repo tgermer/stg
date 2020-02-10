@@ -44,6 +44,7 @@ title: Studiengangebot (STG)
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".hochschulstudium">Abgeschlossnes Hochschulstudium</button>
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".dual">Dual studieren</button>
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".doppelabschluss">Doppelabschluss</button>
+<hr>
 <button type="button" class="btn my-1 btn-sm btn-primary" data-filter="all">Filter zurücksetzen</button>
 
 <hr>
@@ -68,4 +69,7 @@ Reihenfolge
     <p>{{ stg.studien_art }}</p>
   </div>
   {% endfor %}
+  <!-- <div class="failed" data-order="">
+    Dieser Filter liefert keinen Ergebnisse zurück.
+  </div> -->
 </div>

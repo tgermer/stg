@@ -128,15 +128,20 @@
     controls: {
         scope: 'global',
         live: false,
-        toggleLogic: 'and'
+        toggleLogic: 'and',
     },
     load: {
       filter: 'all',
-      sort: 'random'
+      sort: 'random',
+      // sort: 'asc',
+      // sort: 'desc',
     },
+    callbacks: {
+        onMixFail: function(state) {
+             console.log('No items could be found matching the requested filter');
+        },
+      },
 });
-
-
 </script>
 
 
