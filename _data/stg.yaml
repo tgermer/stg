@@ -153,6 +153,11 @@
         tel: 089 1265-2738
         email: bachelor-bwl-fk10@hm.edu
         url: https://www.bwl.hm.edu/p/maier.de.html
+        infos: Persönliche Infos des Fachstudienberaters.
+        zeiten:
+          - ["Mo–Mi","14:30–17:00 Uhr", "persönlich oder telefonisch möglich"]
+          - ["Do","10:00–11:00 Uhr","Anmeldung via E-Mail"]
+
       - name: Prof. Dr. Tristan Germer
         raum: LO 1910
         tel: 089 1265-1418

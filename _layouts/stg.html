@@ -393,8 +393,9 @@
           <div id="collapse_kontakt" class="collapse" aria-labelledby="heading_kontakt" data-parent="#accordion_stg_informationen">
             <div class="card-body">
               <div class="row">
+                {% if page.ansprechpartner.fachstudienberater != nil %}
                 <div class="col-md-6">
-                  <h3>Fachstudienberater</h3>
+                  <h3>Fachstudienberater{{ site.badge_cms }}</h3>
                   {% for item in page.ansprechpartner.fachstudienberater %}
                   <p class="">
                     <span class="d-block lead">{{ item.name }}</span>
@@ -404,28 +405,81 @@
                     {% if item.url != nil %}
                     <span class="d-block">Profil: <a href="{{ item.url }}" target="_blank">Profil aufrufen</a></span>
                     {% endif %}
+                    {% if item.infos != nil %}
+                    <span class="d-block">{{ item.infos }}</span>
+                    {% endif %}
+                    {% if item.zeiten != nil %}
+                    <span class="d-block lead mt-2">Sprechzeiten</span>
+                    {% for item in item.zeiten %}
+                    <span class="d-block">{{ item[0] | append: "&nbsp;" }}<span class="float-right">{{ item[1] | replace: " ", "&nbsp;" }}</span></span>
+                    {% if item[2] != nil %}
+                    <span class="d-block font-italic mb-2">{{ item[2] }}</span>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
                   </p>
                   {% endfor %}
                 </div>
+                {% endif %}
                 <div class="col-md-6">
-                  <h3>Zentrale Studienberatung</h3>
+                  <h3>Zentrale Studienberatung{{ site.badge_cms }}</h3>
                   <p class="">
                     <span class="d-block lead">Erstanlaufstelle</span>
-                    <span class="d-block">STUDIENINFORMATION in der Lothstraße&nbsp;64</span>
+                    <span class="d-block">STUDIENINFORMATION in der Lothstraße&nbsp;34</span>
                     <span class="d-block">Tel: 089 1265-1121</span>
                     <span class="d-block">E-Mail: <a href="mailto:beratung@hm.edu">beratung@hm.edu</a></span>
-                    <span class="d-block"> <a href="https://online-studienberatung.hm.edu/" target="_blank">Online-Studienberatung und Terminvereinbarung</a></span>
-                    <span class="d-block mt-2">TELEFONZEITEN<br>
-                      Mo–Do <span class="float-right">9:00–12:00 Uhr</span> <br>
-                      <span class="float-right">+ 14:00–16:00 Uhr</span><br>
-                      Fr <span class="float-right">9:00–15:00 Uhr</span>
-                    </span>
-                    <span class="d-block mt-2">ÖFFNUNGSZEITEN<br>
-                      Mo–Do<br>
-                      Vorlesungszeit <span class="float-right">8:00–17:00 Uhr</span><br>
-                      vorlesungsfreie Zeit <span class="float-right">8:00–16:00 Uhr</span><br>
-                      Fr (generell) <span class="float-right">8:00–15:00 Uhr</span>
-                    </span>
+                    <span class="d-block mt-2"> <a href="https://online-studienberatung.hm.edu/" class="btn btn-outline-dark btn-block" role="button" target="_blank">Online-Studienberatung und Terminvereinbarung</a></span>
+
+                    {% if site.studienberatung.telefonzeiten != nil %}
+                    <span class="d-block lead mt-2">Telefonzeiten</span>
+                    {% for item in site.studienberatung.telefonzeiten %}
+                    <span class="d-block">{{ item[0] | append: "&nbsp;" }}<span class="float-right">{{ item[1] | replace: " ", "&nbsp;" }}</span></span>
+                    {% if item[2] != nil %}
+                    <span class="d-block font-italic mb-2">{{ item[2] }}</span>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+
+                    {% if site.studienberatung.oeffungszeiten != nil %}
+                    <span class="d-block lead mt-2">Öffnungszeiten</span>
+                    {% for item in site.studienberatung.oeffungszeiten %}
+                    <span class="d-block">{{ item[0] }}<span class="float-right">{{ item[1] | replace: " ", "&nbsp;" }}</span></span>
+                    {% if item[2] != nil %}
+                    <span class="d-block font-italic mb-2">{{ item[2] }}</span>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <h3>Immatrikulation{{ site.badge_cms }}</h3>
+                  <p class="">
+                    {% if page.abschluss == "Bachelor" %}
+                    <span class="d-block lead">für Bachelor-Studiengänge</span>
+                    <span class="d-block">Raum: {{ site.immatrikulation.raum.bachelor | join: " & " }}</span>
+                    <span class="d-block">Tel: {{ site.immatrikulation.phone.bachelor | prepend: "089 1265-" | join: " & " }}</span>
+                    <span class="d-block">E-Mail: <a href="mailto:{{ site.immatrikulation.email }}">{{ site.immatrikulation.email }}</a></span>
+                    {% elsif page.abschluss == "Master" %}
+                    <span class="d-block lead">für Master-Studiengänge</span>
+                    <span class="d-block">Raum: {{ site.immatrikulation.raum.master | join: " & " }}</span>
+                    <span class="d-block">Tel: {{ site.immatrikulation.phone.master | join: " & "| prepend: "089 1265-"  }}</span>
+                    <span class="d-block">E-Mail: <a href="mailto:{{ site.immatrikulation.email }}">{{ site.immatrikulation.email }}</a></span>
+                    {% endif %}
+                    {% if site.immatrikulation.oeffungszeiten != nil %}
+                    <span class="d-block lead mt-2">Öffnungszeiten</span>
+                    {% for item in site.immatrikulation.oeffungszeiten %}
+                    <span class="d-block">{{ item[0] | default: "&nbsp;" }}<span class="float-right">{{ item[1] | replace: " ", "&nbsp;" }}</span></span>
+                    {% if item[2] != nil %}
+                    <span class="d-block font-italic mb-2">{{ item[2] }}</span>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <h3>Prüfungsamt{{ site.badge_cms }}</h3>
+                  <p class="">
+                    Sie studieren den Studiengang {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) schon und haben Fragen zu Prüfungen oder Praktikum, dann nutzen Sie bitte die Seite <a href="https://www.hm.edu/pruefung-praktikum" target="_blank">www.hm.edu/pruefung-praktikum</a>
                   </p>
                 </div>
               </div>
