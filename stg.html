@@ -39,6 +39,7 @@ title: Studiengangebot (STG)
   <li><a href="{{site.url}}{{page.url}}#bachelor.dual">{{site.url}}{{page.url}}<strong>#bachelor.dual</strong></a></li>
   <li><a href="{{site.url}}{{page.url}}#master">{{site.url}}{{page.url}}<strong>#master</strong></a></li>
   <li><a href="{{site.url}}{{page.url}}#hochschulstudium">{{site.url}}{{page.url}}<strong>#hochschulstudium</strong></a></li>
+  <li><a href="{{site.url}}{{page.url}}#bw-b">{{site.url}}{{page.url}}<strong>#bw-b</strong></a> <em>Die STG-Kurzbezeichnung mit Abschluss ist ein unsichtbarer Filter für uns.</em></li>
 </ul>
 
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".bachelor">Bachelor</button>
@@ -64,6 +65,8 @@ title: Studiengangebot (STG)
   {% for stg in site.data.stg %}
   <div data-order="{{ stg.fachrich }}-{{ stg.abschluss }} ({{ stg.grade_kurz }})" class="
         mb-0 mix
+        {{ stg.stg_kurz_abschluss_kurz | downcase  }}
+        {{ stg.stg_kurz_abschluss_kurz }}
         {{ stg.abschluss | downcase }}
         {{ stg.studien_begin | join: " " | downcase }}
         <!-- {% assign begin = stg.studien_begin %}{% case begin %}{% when "Sommersemester" %}sose{% when "Wintersemester"%}wise{% else %}fehler{% endcase %} -->
