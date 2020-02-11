@@ -23,7 +23,6 @@
   doppel_abschluss_partner_uni:
     - University of Lincoln
     - Edinburgh Napier University
-  master_typ:
   studien_begin:
     - Sommersemester
     - Wintersemester
@@ -117,7 +116,7 @@
   studien_richtung:
     - Richtung 1
     - Richtung 2
-  kosten: "1.6000,00" # bei weiterbildenden Mastern konkreter Wert
+  kosten: "16.000,00" # bei weiterbildenden Mastern konkreter Wert
   url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/fk10/fk10_lokal/04_studienangebot/02_bachelorstudiengnge/neuespo/Studienplan_neue_SPO_WiSe1920_1811.pdf
   url_spo: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/01_bwb_aktuell_spo.pdf
   url_stg: https://www.bwl.hm.edu/s/b/ba_bwl.de.html
@@ -204,7 +203,6 @@
   dual: false
   doppel_abschluss: false
   doppel_abschluss_partner_uni:
-  master_typ:
   studien_begin:
     - Wintersemester
   studien_form:
@@ -265,6 +263,7 @@
     kaempft:
       - Mathematik und Mechanik
 
+
 - fachrich: Wirtschaftsingenieurwesen (Weiterbildung)
   fachriche: Business Administration and Engineering
   stg_kurz: &stg_kurz WW
@@ -303,7 +302,6 @@
   dual: false
   doppel_abschluss: false
   doppel_abschluss_partner_uni:
-  master_typ:
   studien_begin:
     - Sommersemester
     - Wintersemester
