@@ -1,0 +1,107 @@
+- fachrich: # z. B. Betriebswirtschaftslehre
+  fachriche: # z. B. Business Administration
+  stg_kurz: # z. B. &stg_kurz BW
+  abschluss: # z. B. Bachelor
+  abschluss_kurz: # z. B. &abschluss_kurz B
+  grade: # z. B. Bachelor of Arts
+  grade_kurz: # z. B. B.A.
+  stg_kurz_abschluss_kurz: # z. B. BW-B #[*stg_kurz, '-', *abschluss_kurz]
+  dateiname: # z. B. Betriebswirtschaftslehre-Bachelor
+  teaser:
+  studien_ziel:
+  studien_verlauf:
+  tags: # für die Auswahl des Bildes in der STG-Detail Ansicht
+  studien_art: # grundständiges Bachelor-Studium
+  dual: true #false
+  doppel_abschluss: true #false
+  doppel_abschluss_partner_uni:
+    # - Uni 1
+  master_typ:
+  studien_begin:
+    # - Sommersemester
+    # - Wintersemester
+  studien_form:
+    # - VZ
+    # - TZ
+    # - BB
+  regelstudien_zeit:
+    faecherkatalog:
+    voll_zeit:
+    # teil_zeit:
+  praxis_semester:
+  praxis_semester_dauer:  # in Wochen
+  auslands_semester: true # false
+  auslands_semester_semester: 5 # in welchem Semester
+  faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
+  ects:
+  # akkreditierung: true
+  #   - agentur: FIBAA
+  #     siegel_url:
+  #     urkunde_url:
+  sprachen:
+    haupt_sprache: # Deutsch
+    weitere_sprachen:
+      # - Englisch
+  studien_schwerpunkte_ablegen: # wieviele Schwerpunkte kann man wählen
+  studien_schwerpunkte:
+    # - Schwerpunkt
+  studien_richtung:
+    # - Richtung
+  studien_anfaenger:
+    sose: #308
+    wise: #295
+  kosten: #16000 # bei weiterbildenden Mastern konkreter Wert
+  url_modulhandbuch:
+  url_spo:
+  url_stg:
+  ## Formale Voraussetzungen
+  hzb:
+    # - Allgemeine Hochschulreife
+    # - Fachgebundene Hochschulreife
+  zulassungs_beschraenkt: true # false
+  eignungs_pruefung:
+  vor_praxis:
+  berufs_perpektiven:
+    # - Perspektive 1
+  interessen:
+    bringt_mit:
+      # -
+    hat_spass:
+      # -
+    kaempft:
+      # -
+  youtube-id:
+    # -
+  vimeo-id:
+    # -
+  ansprechpartner:
+    fachstudienberater:
+      - name:
+        raum:
+        tel:
+        email:
+        url:
+        bild:
+        infos:
+        zeiten:
+          # - ["Mo–Mi","14:30–17:00 Uhr", "persönlich oder telefonisch möglich"]
+    studiengangsreferent:
+      - name:
+        raum:
+        tel:
+        email:
+        url:
+        bild:
+        infos:
+        zeiten:
+          # - ["Mo–Mi","14:30–17:00 Uhr", "persönlich oder telefonisch möglich"]
+    sekretariat:
+      - name:
+        raum:
+        tel:
+        email:
+        url:
+        bild:
+        infos:
+        zeiten:
+          # - ["Mo–Mi","14:30–17:00 Uhr", "persönlich oder telefonisch möglich"]
