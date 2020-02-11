@@ -396,8 +396,8 @@
               <div class="row">
                 <!-- Fachstudienberater -->
                 {% if page.ansprechpartner.fachstudienberater != nil %}
-                <div class="col-md-6">
-                  <h3>Fachstudienberater{{ site.badge_cms }}</h3>
+                <div id="fachstudienberaterinnen" class="col-md-6">
+                  <h3>FachstudienberaterInnen{{ site.badge_cms }}</h3>
                   {% for item in page.ansprechpartner.fachstudienberater %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
@@ -433,8 +433,8 @@
                 {% endif %}
                 <!-- Studiengangsrefetenten -->
                 {% if page.ansprechpartner.studiengangsreferent != nil %}
-                <div class="col-md-6">
-                  <h3>Studiengangsreferenten{{ site.badge_cms }}</h3>
+                <div id="studiengangsrefetentinnen" class="col-md-6">
+                  <h3>StudiengangsreferentInnen{{ site.badge_cms }}</h3>
                   {% for item in page.ansprechpartner.studiengangsreferent %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
@@ -473,7 +473,7 @@
                 {% endif %}
                 <!-- Sekretariat -->
                 {% if page.ansprechpartner.sekretariat != nil %}
-                <div class="col-md-6">
+                <div id="sekretariat" class="col-md-6">
                   <h3>Sekretariat{{ site.badge_cms }}</h3>
                   {% for item in page.ansprechpartner.sekretariat %}
                     <div class="row">
@@ -511,7 +511,7 @@
                   {% endfor %}
                 </div>
                 {% endif %}
-                <div class="col-md-6">
+                <div id="studienberatung" class="col-md-6">
                   <h3>Zentrale Studienberatung{{ site.badge_cms }}</h3>
                   <p class="">
                     <span class="d-block lead">Erstanlaufstelle</span>
@@ -541,7 +541,7 @@
                     {% endif %}
                   </p>
                 </div>
-                <div class="col-md-6">
+                <div id="immatrikulation" class="col-md-6">
                   <h3>Immatrikulation{{ site.badge_cms }}</h3>
                   <p class="">
                     {% if page.abschluss == "Bachelor" %}
@@ -566,7 +566,7 @@
                     {% endif %}
                   </p>
                 </div>
-                <div class="col-md-6">
+                <div id="pruefungsamt" class="col-md-6">
                   <h3>Prüfungsamt{{ site.badge_cms }}</h3>
                   <p class="">
                     Sie studieren den Studiengang {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) schon und haben Fragen zu Prüfungen oder Praktikum? Dann nutzen Sie bitte die Seite <a href="https://www.hm.edu/pruefung-praktikum" target="_blank">www.hm.edu/pruefung-praktikum</a>
