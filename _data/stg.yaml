@@ -114,9 +114,6 @@
   studien_richtung:
     - Richtung 1
     - Richtung 2
-  studien_anfaenger:
-    sose: 308
-    wise: 295
   kosten: "1.6000,00" # bei weiterbildenden Mastern konkreter Wert
   url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/fk10/fk10_lokal/04_studienangebot/02_bachelorstudiengnge/neuespo/Studienplan_neue_SPO_WiSe1920_1811.pdf
   url_spo: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/01_bwb_aktuell_spo.pdf
@@ -233,9 +230,6 @@
     weitere_sprachen:
   studien_schwerpunkte:
   studien_richtung:
-  studien_anfaenger:
-    sose: 94
-    wise: 166
   kosten: #16000 # bei weiterbildenden Mastern konkreter Wert
   url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/fk01/fk01_lokal/2_lehre/0_bachelor/0_studienstruktur/BA_Modulhandbuch_SS2017.pdf
   url_spo: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/01_arb_aktuell_spo.pdf
@@ -397,9 +391,6 @@
   studien_richtung:
     # - Richtung 1
     # - Richtung 2
-  studien_anfaenger:
-    # sose: 308
-    # wise: 295
   kosten: "7.900,00" # bei weiterbildenden Mastern konkreter Wert
   url_modulhandbuch:
   url_studienplan: https://w3-mediapool.hm.edu/mediapool/media/fk09/fk09_lokal/03_studieninteressierte/01_studienangebot/02_masterstudiengaenge/mba___eng_/Studienplan_Master_of_Business_Administration_and_Engineering.pdf

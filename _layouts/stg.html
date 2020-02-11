@@ -85,16 +85,11 @@
                     {% endif %}
                   </td>
                 </tr>
-                {% if page.studien_anfaenger.sose !=nil or page.studien_anfaenger.wise != nil %}
+                {% if page.zulassungs_beschraenkt == true %}
                 <tr>
-                  <th scope="row" class="text-uppercase">Studien&shy;begin&shy;nende</th>
+                  <th scope="row" class="text-uppercase">Zulassungs&shy;zahlen</th>
                   <td>
-                    {% if page.studien_anfaenger.sose !=nil %}
-                    <span class="d-block">{{ page.studien_anfaenger.sose }}{{ site.badge_p }} im Sommersemester</span>
-                    {% endif %}
-                    {% if page.studien_anfaenger.wise !=nil %}
-                    <span class="d-block">{{ page.studien_anfaenger.wise }}{{ site.badge_p }} im Wintersemester</span>
-                    {% endif %}
+                    <a href="{{ site.zulassungszahlen_url }}" target="_blank">{{ site.zulassungszahlen_url_text }}</a>
                   </td>
                 </tr>
                 {% endif %}

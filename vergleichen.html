@@ -88,16 +88,11 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Studienbeginnende{{ site.badge_p }}</th>
+        <th scope="row" class="text-uppercase">Zulassungs&shy;zahlen{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
         <td>
-          {% if item.studien_anfaenger.sose !=nil or item.studien_anfaenger.wise != nil %}
-          {% if item.studien_anfaenger.sose !=nil %}
-          <span class="d-block">{{ item.studien_anfaenger.sose }} im Sommersemester</span>
-          {% endif %}
-          {% if item.studien_anfaenger.wise !=nil %}
-          <span class="d-block">{{ item.studien_anfaenger.wise }} im Wintersemester</span>
-          {% endif %}
+          {% if item.zulassungs_beschraenkt == true %}
+          <a href="{{ site.zulassungszahlen_url }}" target="_blank">{{ site.zulassungszahlen_url_text }}</a>
           {% else %}
           —
           {% endif %}
