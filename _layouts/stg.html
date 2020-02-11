@@ -546,23 +546,32 @@
                   <p class="">
                     {% if page.abschluss == "Bachelor" %}
                     <span class="d-block lead">für Bachelor-Studiengänge</span>
-                    <span class="d-block">Raum: {{ site.immatrikulation.raum.bachelor | join: " & " }}</span>
-                    <span class="d-block">Tel: {{ site.immatrikulation.phone.bachelor | prepend: "089 1265-" | join: " & " }}</span>
-                    <span class="d-block">E-Mail: <a href="mailto:{{ site.immatrikulation.email }}">{{ site.immatrikulation.email }}</a></span>
-                    {% elsif page.abschluss == "Master" %}
-                    <span class="d-block lead">für Master-Studiengänge</span>
-                    <span class="d-block">Raum: {{ site.immatrikulation.raum.master | join: " & " }}</span>
-                    <span class="d-block">Tel: {{ site.immatrikulation.phone.master | join: " & "| prepend: "089 1265-"  }}</span>
-                    <span class="d-block">E-Mail: <a href="mailto:{{ site.immatrikulation.email }}">{{ site.immatrikulation.email }}</a></span>
-                    {% endif %}
-                    {% if site.immatrikulation.oeffungszeiten != nil %}
+                    <span class="d-block">Raum: {{ site.immatrikulation.bachlor.raum | join: " & " }}</span>
+                    <span class="d-block">Tel: {{ site.immatrikulation.bachelor.phone | prepend: "089 1265-" | join: " & " }}</span>
+                    <span class="d-block">E-Mail: <a href="mailto:{{ site.immatrikulation.bachelor.email }}">{{ site.immatrikulation.bachelor.email }}</a></span>
+                    {% if site.immatrikulation.bachelor.oeffungszeiten != nil %}
                     <span class="d-block lead mt-2">Öffnungszeiten</span>
-                    {% for item in site.immatrikulation.oeffungszeiten %}
+                    {% for item in site.immatrikulation.bachelor.oeffungszeiten %}
                     <span class="d-block">{{ item[0] | default: "&nbsp;" }}<span class="float-right">{{ item[1] | replace: " ", "&nbsp;" }}</span></span>
                     {% if item[2] != nil %}
                     <span class="d-block font-italic mb-2">{{ item[2] }}</span>
                     {% endif %}
                     {% endfor %}
+                    {% endif %}
+                    {% elsif page.abschluss == "Master" %}
+                    <span class="d-block lead">für Master-Studiengänge</span>
+                    <span class="d-block">Raum: {{ site.immatrikulation.master.raum | join: " & " }}</span>
+                    <span class="d-block">Tel: {{ site.immatrikulation.master.phone | join: " & "| prepend: "089 1265-"  }}</span>
+                    <span class="d-block">E-Mail: <a href="mailto:{{ site.immatrikulation.master.email }}">{{ site.immatrikulation.master.email }}</a></span>
+                    {% if site.immatrikulation.bachelor.oeffungszeiten != nil %}
+                    <span class="d-block lead mt-2">Öffnungszeiten</span>
+                    {% for item in site.immatrikulation.bachelor.oeffungszeiten %}
+                    <span class="d-block">{{ item[0] | default: "&nbsp;" }}<span class="float-right">{{ item[1] | replace: " ", "&nbsp;" }}</span></span>
+                    {% if item[2] != nil %}
+                    <span class="d-block font-italic mb-2">{{ item[2] }}</span>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
                     {% endif %}
                   </p>
                 </div>
