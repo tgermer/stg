@@ -1,22 +1,27 @@
-- fachrich: # z. B. Betriebswirtschaftslehre
-  fachriche: # z. B. Business Administration
-  stg_kurz: # z. B. &stg_kurz BW
-  abschluss: # z. B. Bachelor
-  abschluss_kurz: # z. B. &abschluss_kurz B
-  grade: # z. B. Bachelor of Arts
-  grade_kurz: # z. B. B.A.
-  stg_kurz_abschluss_kurz: # z. B. BW-B #[*stg_kurz, '-', *abschluss_kurz]
-  dateiname: # z. B. Betriebswirtschaftslehre-Bachelor
-  teaser:
-  studien_ziel:
-  studien_verlauf:
+- fachrich: # z.B. Betriebswirtschaftslehre
+  fachriche: # z.B. Business Administration
+  stg_kurz: # z.B. &stg_kurz BW
+  abschluss: # z.B. Bachelor
+  abschluss_kurz: # z.B. &abschluss_kurz B
+  grade: # z.B. Bachelor of Arts
+  grade_kurz: # z.B. B.A.
+  stg_kurz_abschluss_kurz: # z.B. BW-B #[*stg_kurz, '-', *abschluss_kurz]
+  dateiname: # z.B. Betriebswirtschaftslehre-Bachelor
+  teaser: # Kurzbeschreibung, Fließtext, gerne mit Absätzen oder Formatierung in Markdown
+  studien_ziel: # Beschreibung, Fließtext, gerne mit Absätzen oder Formatierung in Markdown
+  studien_verlauf: # Beschreibung, Fließtext, gerne mit Absätzen oder Formatierung in Markdown
   tags: # für die Auswahl des Bildes in der STG-Detail Ansicht
+  studien_ort:
+    # - HM, Campus Lothstraße
+    # - HM, Campus Karlstraße
+    # - HM, Campus Pasing
+    # - (und weitere anderer Hochschulen)
   studien_art: # grundständiges Bachelor-Studium
   dual: true #false
   doppel_abschluss: true #false
-  doppel_abschluss_partner_uni:
+  doppel_abschluss_partner_uni: # Uni an denen der z.B. Doppelabschluss abgelegt wird.
     # - Uni 1
-  master_typ:
+    # - Uni 2
   studien_begin:
     # - Sommersemester
     # - Wintersemester
@@ -24,33 +29,37 @@
     # - VZ
     # - TZ
     # - BB
-  regelstudien_zeit:
-    faecherkatalog:
-    voll_zeit:
-    # teil_zeit:
-  praxis_semester:
+  ## Studienverlauf
+  regelstudien_zeit: # nichts antragen
+    faecherkatalog: # Angezeigte Semester im Fächerkatalog. Inressant, für die Voll-Zeit-Darstellung. Muss aber nochmal überprüft werden.
+    voll_zeit: # Semester in Vollzeit
+    # teil_zeit: # Semester in Teilzeit
+  praxis_semester: # Semester in welchem das Praxissemester laut SPO stattfindet
   praxis_semester_dauer:  # in Wochen
   auslands_semester: true # false
-  auslands_semester_semester: 5 # in welchem Semester
-  faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
-  ects:
-  # akkreditierung: true
-  #   - agentur: FIBAA
-  #     siegel_url:
-  #     urkunde_url:
-  sprachen:
-    haupt_sprache: # Deutsch
+  auslands_semester_semester: # in welchem Semester das Auslandsemester günstig ist
+  faecherkatalog:
+    # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
+    # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
+  ects: # Max ECTS des Studiengangs
+  akkreditierung: # mehrere Eintragungen möglich, dazu einfach agentur–urkunde_url kopieren
+    - agentur: # z.B. FIBAA
+      siegel_url: #
+      urkunde_url: #
+  sprachen: #nichts eintragen
+    haupt_sprache: # z.B. Deutsch
     weitere_sprachen:
       # - Englisch
+      # - Französisch
+      # - Spanisch
   studien_schwerpunkte_ablegen: # wieviele Schwerpunkte kann man wählen
   studien_schwerpunkte:
-    # - Schwerpunkt
+    # - Schwerpunkt 1
+    # - Schwerpunkt 2
   studien_richtung:
-    # - Richtung
-  studien_anfaenger:
-    sose: #308
-    wise: #295
-  kosten: #16000 # bei weiterbildenden Mastern konkreter Wert
+    # - Richtung 1
+    # - Richtung 2
+  kosten: # bei weiterbildenden Mastern konkreter Wert
   url_modulhandbuch:
   url_spo:
   url_stg:
@@ -61,21 +70,30 @@
   zulassungs_beschraenkt: true # false
   eignungs_pruefung:
   vor_praxis:
+  ## Zu wem passt der Studiengang?
   berufs_perpektiven:
     # - Perspektive 1
+    # - Perspektive 2
   interessen:
     bringt_mit:
       # -
+      # -
     hat_spass:
+      # -
       # -
     kaempft:
       # -
+      # -
+  ## Videos zum und über den Studiengang
   youtube-id:
+    # -
     # -
   vimeo-id:
     # -
+    # -
+ ## Ansprechpartner/Kontakt
   ansprechpartner:
-    fachstudienberater:
+    fachstudienberater: # mehrere möglich, dazu einfach name–zeiten kopieren
       - name:
         raum:
         tel:
@@ -85,7 +103,7 @@
         infos:
         zeiten:
           # - ["Mo–Mi","14:30–17:00 Uhr", "persönlich oder telefonisch möglich"]
-    studiengangsreferent:
+    studiengangsreferent: # mehrere möglich, dazu einfach name–zeiten kopieren
       - name:
         raum:
         tel:
@@ -95,7 +113,7 @@
         infos:
         zeiten:
           # - ["Mo–Mi","14:30–17:00 Uhr", "persönlich oder telefonisch möglich"]
-    sekretariat:
+    sekretariat: # mehrere möglich, dazu einfach name–zeiten kopieren
       - name:
         raum:
         tel:
