@@ -42,11 +42,17 @@
                   <td><i class="fas fa-check-circle text-success"></i></td>
                 </tr>
                 {% endif %}
+                {% if page.studien_ort != nil %}
+                <tr class="col-md-6">
+                  <th scope="row" class="text-uppercase">Studienort</th>
+                  <td><span class="d-block">{{ page.studien_ort | join: '</span><span class="d-block">'}}</span></td>
+                </tr>
+                {% endif %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Regelstudienzeit</th>
                   <td>
                     {% if page.regelstudien_zeit.voll_zeit != nil %}
-                    <span class="d-blocj">{{ page.regelstudien_zeit.voll_zeit }} Semester Vollzeit</span>
+                    <span class="d-block">{{ page.regelstudien_zeit.voll_zeit }} Semester Vollzeit</span>
                     {% endif %}
                     {% if page.regelstudien_zeit.teil_zeit != nil %}
                     <span class="d-block">{{ page.regelstudien_zeit.teil_zeit }} Semester Teilzeit</span>

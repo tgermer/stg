@@ -14,6 +14,9 @@
     # - banking
     # - business
     - money
+  studien_ort:
+    - HM, Campus Pasing
+    - Hochschule Mittweida
   studien_art: grundständiges Bachelor-Studium
   dual: true
   doppel_abschluss: true
@@ -195,6 +198,8 @@
   tags:
     - architecture
     - munich
+  studien_ort:
+    - HM, Campus Karlstraße
   studien_art: grundständiges Bachelor-Studium
   dual: false
   doppel_abschluss: false
@@ -292,6 +297,8 @@
     # - business
     - money
     - engineering
+  studien_ort:
+    - HM, Campus Lothstraße
   studien_art: weiterbildendes Master-Studium
   dual: false
   doppel_abschluss: false

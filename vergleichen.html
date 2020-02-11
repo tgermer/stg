@@ -40,6 +40,18 @@ title: Studiengänge vergleichen (Merkliste)
         </td>
         {% endfor %}
       </tr>
+      <tr class="col-md-6">
+        <th scope="row" class="text-uppercase">Studienort</th>
+        {% for item in site.data.stg %}
+        <td>
+          {% if item.studien_ort != nil %}
+          <span class="d-block">{{ item.studien_ort | join: '</span><span class="d-block">' }}</span>
+          {% else %}
+          —
+          {% endif %}
+      </td>
+      {% endfor %}
+      </tr>
       <tr>
         <th scope="row" class="text-uppercase">Regelstudienszeit{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
