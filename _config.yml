@@ -64,6 +64,18 @@ immatrikulation:
       - ["Mo, Di, Do", "9:00–12:00 Uhr"]
       - ["", "+ 13:00–15:00 Uhr"]
       - ["Fr", "8:00–12:00 Uhr"]
+begin_sose: |
+  Der Studienbeginn ist vrsl. zum Sommersemester möglich. Die Bewerbung für das Sommersemester erfolgt von Mitte November bis 15. Januar eines Jahres.
+begin_wise: |
+  Der Studienbeginn ist vrsl. zum Wintersemester möglich. Die Bewerbung für das Wintersemester erfolgt von Anfang Mai bis 15. Juli eines Jahres.
+begin_sose_wise: |
+    Der Studienbeginn ist vrsl. zum Winter- und Sommersemester möglich. Die Bewerbung für das Sommersemester erfolgt von Mitte November bis 15. Januar, für das Wintersemester von Anfang Mai bis 15. Juli eines Jahres.
+begin_arb: |
+  Der Studienbeginn ist vrsl. zum Wintersemester möglich. Die Bewerbung für das Wintersemester erfolgt von Anfang Mai bis 15. Juni eines Jahres.
+begin_arb_zusatz: Zudem muss im Studiengang Design bis Ende Mai eine Mappe an der Fakultät abgegeben werden.
+begin_dsb: |
+  Der Studienbeginn ist vrsl. zum Wintersemester möglich. Die Bewerbung für das Wintersemester erfolgt von Anfang Mai bis 15. Juni eines Jahres.
+begin_dsb_zusatz: Zudem muss im Studiengang Design bis Ende Mai eine Mappe an der Fakultät abgegeben werden.
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # url: "https://portal.hm.edu/studieninformationstag/2020"
