@@ -7,6 +7,11 @@
   grade_kurz: # z.B. B.A.
   stg_kurz_abschluss_kurz: # z.B. BW-B #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: # z.B. Betriebswirtschaftslehre-Bachelor
+  studien_richtung:
+    # - Technik
+    # - Soziales
+    # - Wirtschaft
+    # - Gestaltung
   teaser: # Kurzbeschreibung, Fließtext, gerne mit Absätzen oder Formatierung in Markdown
   studien_ziel: # Beschreibung, Fließtext, gerne mit Absätzen oder Formatierung in Markdown
   studien_verlauf: # Beschreibung, Fließtext, gerne mit Absätzen oder Formatierung in Markdown
