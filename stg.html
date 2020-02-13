@@ -42,12 +42,43 @@ title: Studiengangebot (STG)
   <li><a href="{{site.url}}{{page.url}}#bw-b">{{site.url}}{{page.url}}<strong>#bw-b</strong></a> <em>Die STG-Kurzbezeichnung mit Abschluss ist ein unsichtbarer Filter für uns.</em></li>
 </ul>
 
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".bachelor">Bachelor</button>
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".master">Master</button>
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zulassungsbeschraenkt">zulassungsbeschränkt</button>
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zulassungsfrei">zulassungsfrei</button>
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".sommersemester">Start im Sommersemester</button>
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".wintersemester">Start im Wintersemester</button>
+<div class="row">
+  <div class="col-xl-3 co-md-4 col-sm-6">
+    <p class="h6 mt-4">Abschluss</p>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".bachelor">Bachelor</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".master">Master</button>
+  </div>
+  <div class="col-xl-3 co-md-4 col-sm-6">
+    <p class="h6 mt-4">Studienformat</p>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".bachelor">Bachelor</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".master">Master</button>
+  </div>
+  <div class="col-xl-3 co-md-4 col-sm-6">
+    <p class="h6 mt-4">Studienbeginn</p>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".sommersemester">Start im Sommersemester</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".wintersemester">Start im Wintersemester</button>
+  </div>
+  <div class="col-xl-3 co-md-4 col-sm-6">
+    <p class="h6 mt-4">Studienrichtung</p>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".technik">Technik</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".soziales">Soziales</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".wirtschaft">Wirtschaft</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".gestaltung">Gestaltung</button>
+  </div>
+  <div class="col-xl-3 co-md-4 col-sm-6">
+    <p class="h6 mt-4">Hauptunterrichtssprache</p>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".deutsch">Deutsch</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".englisch">Englisch</button>
+  </div>
+  <div class="col-xl-3 co-md-4 col-sm-6">
+    <p class="h6 mt-4">Zulassungsvorraussetzungen</p>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zulassungsbeschraenkt">zulassungsbeschränkt</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zulassungsfrei">zulassungsfrei</button>
+  </div>
+</div>
+
+<hr>
+
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".allgemeine">Allgemeine Hochschulreife</button>
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".fachgebundene">Fachgebundene Hochschulreife</button>
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".hochschulstudium">Abgeschlossnes Hochschulstudium</button>
@@ -69,7 +100,8 @@ title: Studiengangebot (STG)
         {{ stg.stg_kurz_abschluss_kurz }}
         {{ stg.abschluss | downcase }}
         {{ stg.studien_begin | join: " " | downcase }}
-        <!-- {% assign begin = stg.studien_begin %}{% case begin %}{% when "Sommersemester" %}sose{% when "Wintersemester"%}wise{% else %}fehler{% endcase %} -->
+        {{ stg.studien_richtung | join: " " | downcase }}
+        {{ stg.sprachen.haupt_sprache | join: " " | downcase }}
         {% if stg.zulassungs_beschraenkt == true %}zulassungsbeschraenkt{% else %}zulassungsfrei{% endif %}
         {{ stg.hzb | join: " " | downcase }}
         {% if stg.dual == true %}dual{% endif %}
