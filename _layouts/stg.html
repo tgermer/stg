@@ -185,7 +185,7 @@
       </div>
 
       <div class="row my-4">
-        {% if page.studien_schwerpunkte == nil or page.studien_richtung == nil %}
+        {% if page.studien_schwerpunkte == nil or page.studien_richtungen == nil %}
         <div class="col-md-12 my-2">
           <h2>Kurzbeschreibung{{ site.badge_cms }}</h2>
           {{ page.teaser | markdownify }}
@@ -206,10 +206,10 @@
           </ul>
           <p>Sie müssen im laufe Ihres Studiums {{ page.studien_schwerpunkte_ablegen }} Studienschwerpunkte aus den angebotenen {{ page.studien_schwerpunkte.size }} Studienschwerpunkten belegen.</p>
           {% endif %}
-          {% if page.studien_richtung != nil %}
+          {% if page.studien_richtungen != nil %}
           <h2>Studienrichtungen{{ site.badge_p }}</h2>
           <ul>
-            {% assign items = page.studien_richtung | sort %}
+            {% assign items = page.studien_richtungen | sort %}
             {% for item in items %}
             <li>{{ item }}</li>
             {% endfor %}
