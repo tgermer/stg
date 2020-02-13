@@ -7,6 +7,7 @@
   grade_kurz: B.A.
   stg_kurz_abschluss_kurz: BW-B #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Betriebswirtschaftslehre-Bachelor
+  studien_richtung: Wirtschaft
   teaser: Bulle oder Bär? Nutzen Sie die Hochschule München als Karrieresprungbrett. Gesucht werden teamfähige Köpfe mit dem Mut, sich den Herausforderungen der Internationalisierung und Globalisierung stellen. Das Studium Bachelor Betriebswirtschaft ist der passende Einstieg in die Wirtschaftswelt.
   studien_ziel:
   studien_verlauf:
@@ -113,7 +114,7 @@
     # - Steuern
     # - International Marketingmanagement
     # - Supply Chain Management
-  studien_richtung:
+  studien_richtungen:
     - Richtung 1
     - Richtung 2
   kosten: "16.000,00" # bei weiterbildenden Mastern konkreter Wert
@@ -176,6 +177,7 @@
   grade_kurz: B.A.
   stg_kurz_abschluss_kurz: AR-B #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Architektur-Bachelor
+  studien_richtung: Technik
   teaser: |
     *„Zeige mir, wie du baust, und ich sage dir, wer du bist.“* —&nbsp;Christian Morgenstern
 
@@ -232,7 +234,7 @@
     haupt_sprache: Deutsch
     weitere_sprachen:
   studien_schwerpunkte:
-  studien_richtung:
+  studien_richtungen:
   kosten: #16000 # bei weiterbildenden Mastern konkreter Wert
   url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/fk01/fk01_lokal/2_lehre/0_bachelor/0_studienstruktur/BA_Modulhandbuch_SS2017.pdf
   url_spo: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/01_arb_aktuell_spo.pdf
@@ -273,6 +275,7 @@
   grade_kurz: MBA & Eng.
   stg_kurz_abschluss_kurz: WW-M #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Wirtschaftsingenieurwesen-Weiterbildung-Master
+  studien_richtung: Technik
   teaser: |
     Dieser Studiengang richtet sich an berufstätige Akademiker, die sich parallel zum Job weiterbilden möchten. Über zehn Jahre Erfahrung, hochqualifizierte nationale und internationale Dozenten aus Hochschule und Industrie sowie viel Engagement machen unseren Master of Business Administration and Engineering zum Erfolgsrezept für Ihre Zukunft!
   studien_ziel: |
@@ -393,7 +396,7 @@
     - Zugangstyp Bauingenieurwesen
     - Zugangstyp Ingenieur- oder Naturwissenschaften
     - Zugangstyp Wirtschaftsingenierwesen
-  studien_richtung:
+  studien_richtungen:
     # - Richtung 1
     # - Richtung 2
   kosten: "7.900,00" # bei weiterbildenden Mastern konkreter Wert

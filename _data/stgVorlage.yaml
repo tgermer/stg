@@ -61,7 +61,7 @@
   studien_schwerpunkte:
     # - Schwerpunkt 1
     # - Schwerpunkt 2
-  studien_richtung:
+  studien_richtungen:
     # - Richtung 1
     # - Richtung 2
   kosten: # bei weiterbildenden Mastern konkreter Wert

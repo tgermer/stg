@@ -242,7 +242,7 @@ title: Studiengänge vergleichen (Merkliste)
       <tr>
         <th scope="row" class="text-uppercase">Studienrichtungen{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
-        {% assign items = item.studien_richtung %}
+        {% assign items = item.studien_richtungen %}
         <td>
           {% if items != nil %}
           <ul class="list-unstyled">
