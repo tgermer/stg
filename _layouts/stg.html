@@ -30,6 +30,22 @@
           <div class="table-responsive">
             <table class="table table-sm mt-3 bg-transparent">
               <tbody>
+                <tr>
+                  <th></th>
+                  <td>
+                    {% assign stg_richtung = page.studien_richtung %}
+                    {% case stg_richtung %}
+                    {% when "Technik" %}
+                    {{ site.badge_technik }}
+                    {% when "Soziales" %}
+                    {{ site.badge_soziales }}
+                    {% when "Wirtschaft" %}
+                    {{ site.badge_wirtschaft }}
+                    {% when "Gestaltung" %}
+                    {{ site.badge_gestaltung }}
+                    {% endcase %}{{ site.badge_cms }}
+                  </td>
+                </tr>
                 {% if page.studien_art != nil %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Art des Studiums</th>
@@ -117,7 +133,8 @@
                     <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
                     {% endfor %}
                     <span class="d-block">Die Vorpraxis (Vorpraktikum) besteht aus insgesamt {{ page.vor_praxis_wochen }}&nbsp;Wochen.</span>
-                    <span class="d-block"><a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Hinweise_Vorpraktikum.pdf" target="_blank">Weitere Informationen zur Vorpraxis (Vorpraktikum)</a> </span>
+                    <span class="d-block"><a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Hinweise_Vorpraktikum.pdf" target="_blank">Weitere Informationen zur Vorpraxis
+                        (Vorpraktikum)</a> </span>
                   </td>
                 </tr>
                 {% endif %}
@@ -281,11 +298,7 @@
                     <tr>
                       <th scope="col">Modul/Fach<span class="float-right"><small>Semester</small></span></th>
                       {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
-                      <th scope="col"
-                        {% if i == page.praxis_semester %} class="table-warning text-center"
-                        {% elsif i == page.auslands_semester_semester %} class="table-info text-center"
-                        {% else %}class="text-center"
-                        {% endif %}>
+                      <th scope="col" {% if i == page.praxis_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
                         {% if i == page.praxis_semester %} <small>Praxissemester</small><br> {% endif %}{% if i == page.auslands_semester_semester %} <small>empfohlenes Auslandssemester</small><br> {% endif %}{{ i }}
                       </th>
                       {% endfor %}
@@ -296,23 +309,19 @@
                     {% for item in items %}
                     <tr>
                       {% if item[1] == nil and item[2] == nil and item[3] == nil %}
-                        <th scope="row" colspan="{{ page.regelstudien_zeit.faecherkatalog | plus: 1 }}">{{ item[0] }}</th>
+                      <th scope="row" colspan="{{ page.regelstudien_zeit.faecherkatalog | plus: 1 }}">{{ item[0] }}</th>
                       {% else %}
-                        <td scope="row">{{ item[0] }} <small>({{ item[3] }}&nbsp;ECTS)</small></td>
-                        {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
-                          <td align="center"
-                          {% if i == page.praxis_semester %} class="table-warning text-center"
-                          {% elsif i == page.auslands_semester_semester %} class="table-info text-center"
-                          {% else %}class="text-center"
-                          {% endif %}>
-                            {% if item[1] == i and item[2] > 0 %}
-                              {{ item[2] }}&nbsp;SWS
-                            {% elsif item[1] == i and item[2] == 0 or item[2] == nil %}
-                              &#10003;
-                            {% endif %}
-                          </td>
+                      <td scope="row">{{ item[0] }} <small>({{ item[3] }}&nbsp;ECTS)</small></td>
+                      {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
+                      <td align="center" {% if i == page.praxis_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
+                        {% if item[1] == i and item[2] > 0 %}
+                        {{ item[2] }}&nbsp;SWS
+                        {% elsif item[1] == i and item[2] == 0 or item[2] == nil %}
+                        &#10003;
+                        {% endif %}
+                      </td>
                       {% endfor %}
-                    {% endif %}
+                      {% endif %}
                     </tr>
                     {% endfor %}
                   </tbody>
@@ -346,24 +355,24 @@
                 <h4>Wichtige Termine</h4>
                 <p>
                   {% if page.stg_kurz_abschluss_kurz == "AR-B" %}
-                    {{ site.begin_arb }}
+                  {{ site.begin_arb }}
                   {% elsif page.stg_kurz_abschluss_kurz == "DS-B"%}
-                    {{ site.begin_dsb }}
+                  {{ site.begin_dsb }}
                   {% else %}
-                    {% assign begin = page.studien_begin | join: " " %}
-                    {% if begin == "Sommersemester" %}
-                      {{ site.begin_sose }}
-                    {% elsif begin == "Wintersemester" %}
-                      {{ site.begin_wise }}
-                    {% else  %}
-                      {{ site.begin_sose_wise }}
-                    {% endif %}
+                  {% assign begin = page.studien_begin | join: " " %}
+                  {% if begin == "Sommersemester" %}
+                  {{ site.begin_sose }}
+                  {% elsif begin == "Wintersemester" %}
+                  {{ site.begin_wise }}
+                  {% else  %}
+                  {{ site.begin_sose_wise }}
+                  {% endif %}
                   {% endif %}
                   <br>
                   Die Bewerbung erfolgt ausschließlich online unter <a href="https://www.hm.edu/{{ page.abschluss | downcase }}-bewerbung" target="
                   ">www.hm.edu/{{ page.abschluss | downcase }}-bewerbung</a>
                   {% if page.stg_kurz_abschluss_kurz == "DS-B" %}
-                    {{ site.begin_arb_zusatz }}
+                  {{ site.begin_arb_zusatz }}
                   {% endif %}
                 </p>
               </div>
@@ -498,21 +507,21 @@
                 <div id="sekretariat" class="col-md-6">
                   <h3>Sekretariat{{ site.badge_cms }}</h3>
                   {% for item in page.ansprechpartner.sekretariat %}
-                    <div class="row">
-                      <div class="col-lg-4 col-xl-3">
-                        <img src="{{ item.bild | default: "https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/importueberarbeitet/personen_16/Silhouette_Neutral_ContactBild.png" }}" class="rounded" alt="Kontaktbild von {{ item.name }}">
-                      </div>
-                      <div class="col-lg-8 col-xl-9">
-                        <span class="d-block lead mb-3">{{ item.name }}</span>
-                        <span class="d-block">Raum: {{ item.raum }}</span>
-                        <span class="d-block">Tel: {{ item.tel }}</span>
-                        <span class="d-block">E-Mail: <a href="mailto:{{ item.email }}">{{ item.email }}</a></span>
-                        {% if item.url != nil %}
-                        <span class="d-block">Profil: <a href="{{ item.url }}" target="_blank">Profil aufrufen</a></span>
-                        {% endif %}
-                      </div>
+                  <div class="row">
+                    <div class="col-lg-4 col-xl-3">
+                      <img src="{{ item.bild | default: "https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/importueberarbeitet/personen_16/Silhouette_Neutral_ContactBild.png" }}" class="rounded" alt="Kontaktbild von {{ item.name }}">
                     </div>
-                    <p class="mb-4">
+                    <div class="col-lg-8 col-xl-9">
+                      <span class="d-block lead mb-3">{{ item.name }}</span>
+                      <span class="d-block">Raum: {{ item.raum }}</span>
+                      <span class="d-block">Tel: {{ item.tel }}</span>
+                      <span class="d-block">E-Mail: <a href="mailto:{{ item.email }}">{{ item.email }}</a></span>
+                      {% if item.url != nil %}
+                      <span class="d-block">Profil: <a href="{{ item.url }}" target="_blank">Profil aufrufen</a></span>
+                      {% endif %}
+                    </div>
+                  </div>
+                  <p class="mb-4">
                     {% if item.infos != nil %}
                     <span class="d-block">{{ item.infos }}</span>
                     {% endif %}
@@ -600,7 +609,8 @@
                 <div id="pruefungsamt" class="col-md-6">
                   <h3>Prüfungsamt{{ site.badge_cms }}</h3>
                   <p class="">
-                    Sie studieren den Studiengang {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) schon und haben Fragen zu Prüfungen oder Praktikum? Dann nutzen Sie bitte die Seite <a href="https://www.hm.edu/pruefung-praktikum" target="_blank">www.hm.edu/pruefung-praktikum</a>
+                    Sie studieren den Studiengang {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) schon und haben Fragen zu Prüfungen oder Praktikum? Dann nutzen Sie bitte die Seite <a href="https://www.hm.edu/pruefung-praktikum"
+                      target="_blank">www.hm.edu/pruefung-praktikum</a>
                   </p>
                 </div>
               </div>

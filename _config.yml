@@ -90,6 +90,10 @@ logo_nav: /assets/img/logo_full_fb5555.svg   #logoLinks.svg
 
 badge_p: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-primary" title="Daten aus PRIMUSS">P</span></small></sup>'
 badge_cms: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-info" title="Daten im CMS eingegeben">C</span></small></sup>'
+badge_technik: <span class="badge badge-info text-uppercase">Technik</span>
+badge_soziales: <span class="badge badge-warning text-uppercase">Soziales</span>
+badge_wirtschaft: <span class="badge badge-secondary text-uppercase">Wirtschaft</span>
+badge_gestaltung: <span class="badge badge-light text-uppercase">Gestaltung</span>
 
 twitter_username: HAW_Muenchen
 linkedin_username: hochschule-muenchen

@@ -17,7 +17,18 @@ title: Studiengänge vergleichen (Merkliste)
           <a href="{{ site.url }}/stg/{{ item.dateiname }}" class="">
             {{ item.fachrich }} ({{ item.grade_kurz | replace: " ", "&nbsp;" }})
           </a>
-          <br><small>{{ item.fachriche }}</small></th>
+          <br><small>{{ item.fachriche }}</small>
+          <br><small>{% assign stg_richtung = item.studien_richtung %}
+            {% case stg_richtung %}
+            {% when "Technik" %}
+            {{ site.badge_technik }}
+            {% when "Soziales" %}
+            {{ site.badge_soziales }}
+            {% when "Wirtschaft" %}
+            {{ site.badge_wirtschaft }}
+            {% when "Gestaltung" %}
+            {{ site.badge_gestaltung }}
+            {% endcase %}</small></th>
         {% endfor %}
       </tr>
     </thead>
@@ -49,8 +60,8 @@ title: Studiengänge vergleichen (Merkliste)
           {% else %}
           —
           {% endif %}
-      </td>
-      {% endfor %}
+        </td>
+        {% endfor %}
       </tr>
       <tr>
         <th scope="row" class="text-uppercase">Regelstudienszeit{{ site.badge_p }}</th>

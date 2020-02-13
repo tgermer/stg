@@ -50,8 +50,10 @@ title: Studiengangebot (STG)
   </div>
   <div class="col-xl-3 co-md-4 col-sm-6">
     <p class="h6 mt-4">Studienformat</p>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".bachelor">Bachelor</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".master">Master</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".technik">Technik</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".soziales">Soziales</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".wirtschaft">Wirtschaft</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".gestaltung">Gestaltung</button>
   </div>
   <div class="col-xl-3 co-md-4 col-sm-6">
     <p class="h6 mt-4">Studienbeginn</p>
@@ -76,6 +78,17 @@ title: Studiengangebot (STG)
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zulassungsfrei">zulassungsfrei</button>
   </div>
 </div>
+
+
+<!-- <form class=""> -->
+  <!-- <div class="form-group">
+    <label for="exampleFormControlSelect2">Zulassungsvorraussetzungen</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option type="button" data-toggle=".zulassungsfrei">zulassungsfrei</option>
+      <option type="button" data-toggle=".zulassungsbeschraenkt">Zulassungsbeschränkt</option>
+    </select>
+  </div> -->
+<!-- </form> -->
 
 <hr>
 
@@ -108,7 +121,18 @@ title: Studiengangebot (STG)
         {% if stg.doppel_abschluss == true %}doppelabschluss{% endif %}
       ">
     <h6><a href="{{ stg.dateiname | datapage_url: 'stg' }}">{{ stg.fachrich }}-{{ stg.abschluss }} ({{ stg.grade_kurz }})</a></h6>
-    <p>{{ stg.studien_art }}</p>
+    <p>{{ stg.studien_art }}
+      {% assign stg_richtung = stg.studien_richtung %}
+      {% case stg_richtung %}
+        {% when "Technik" %}
+          {{ site.badge_technik }}
+        {% when "Soziales" %}
+          {{ site.badge_soziales }}
+        {% when "Wirtschaft" %}
+          {{ site.badge_wirtschaft }}
+        {% when "Gestaltung" %}
+          {{ site.badge_gestaltung }}
+      {% endcase %}
   </div>
   {% endfor %}
   <!-- <div class="failed" data-order="">
