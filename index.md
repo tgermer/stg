@@ -129,9 +129,9 @@ Damit Sie sich einen ersten Eindruck von unserem Prototyp machen können, gebe i
 
 Wir haben den Button `Datensatzherkunf anzeigen` sowohl oben rechts als auch unten hinzugefügt, um zu zeigen, wo unserer Meinung nach die Daten herkommen.
 
-P = PRIMUSS
+{{ site.badge_p }} PRIMUSS = PRIMUSS
 
-C = Content Management System, das heißt, diese müssten von der Fakultät gepflegt werden.
+{{ site.badge_cms }} CMS = Content Management System, das heißt, diese müssten von der Fakultät gepflegt werden.
 
 
 **Studiengang merken**
