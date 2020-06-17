@@ -13,7 +13,7 @@ $gray-900: #212529 !default;
 $black:    #000 !default;
 
 
-$primary: #FC5555; // HM-Rot NEU // #cc0000; // HM-Rot
+$primary: #3E46D9; // HM-Blau
 
 body {
   padding-top: 80px;
@@ -29,3 +29,12 @@ footer {
   background-color: $gray-300; //rgba(0, 0, 0, .1);
   padding: 10px 0 2px;
 }
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:       Arial, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$line-height-base:            1.2 !default;
