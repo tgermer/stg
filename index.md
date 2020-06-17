@@ -136,7 +136,7 @@ C = Content Management System, das heißt, diese müssten von der Fakultät gepf
 
 **Studiengang merken**
 
-Der Button `Studiengang merken` ist außer Funktion, soll aber Studiengänge auf eine Merkliste setzen, welche ich dann über `Vergleichen (Merkliste)` ansehen kann. --> <a href="{{site.url}}/vergleichen.html">Studiengänge vergleichen (Merkliste)</a>
+Der Button `Studiengang merken` ist außer Funktion, soll aber Studiengänge auf eine Merkliste setzen, welche ich dann über `Vergleichen (Merkliste)` ansehen kann. &rarr; <a href="{{site.url}}/vergleichen.html">Studiengänge vergleichen (Merkliste)</a>
 
 
 **Vollstädigkeit/Richtigkeit**
