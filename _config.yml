@@ -88,8 +88,8 @@ logo_nav: /assets/img/HM_Schriftzug_Logo_kein_Weissraum_rot_RGB.svg   #logoLinks
 # logo_black: /assets/img/Studieninformationstag 2020 links black.svg   #logoLinks.svg
 # logo_white: /assets/img/Studieninformationstag 2020 links white.svg   #logoLinks.svg
 
-badge_p: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-primary" title="Daten aus PRIMUSS">P</span></small></sup>'
-badge_cms: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-info" title="Daten im CMS eingegeben">C</span></small></sup>'
+badge_p: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-danger ml-1" title="Daten aus PRIMUSS">P</span></small></sup>'
+badge_cms: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-info ml-1" title="Daten im CMS eingegeben">C</span></small></sup>'
 badge_technik: <span class="badge badge-info text-uppercase">Technik</span>
 badge_soziales: <span class="badge badge-warning text-uppercase">Soziales</span>
 badge_wirtschaft: <span class="badge badge-secondary text-uppercase">Wirtschaft</span>
