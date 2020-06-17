@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="{{ site.url }}/">{{ site.title }}</a>
+			<a class="navbar-brand" href="{{ site.url }}/"><img src="{{ site.url }}/assets/img/HM_Logo_kein_Weissraum_rot_RGB.svg" height="27" alt="" loading="lazy" class="mr-3">{{ site.title }}</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -19,7 +19,7 @@
 							<a class="dropdown-item {% if page.url == "{{ item.dateiname | datapage_url: 'stg' }}" %}active{% endif %}" href="{{ item.dateiname | datapage_url: 'stg' }}">{{ item.fachrich }} ({{ item.grade_kurz }})</a>
 							{% endfor %}
 					</li> -->
-					
+
 					<li class="nav-item {% if page.url == "/vergleichen.html" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/vergleichen.html">Vergleichen (Merkliste)</a>
 					</li>
 
