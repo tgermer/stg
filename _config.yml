@@ -79,12 +79,12 @@ begin_dsb_zusatz: Zudem muss im Studiengang Design bis Ende Mai eine Mappe an de
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # url: "https://portal.hm.edu/studieninformationstag/2020"
-url: "https://stg-strukturiert.netlify.com"
+url: "https://stg-strukturiert.netlify.app"
 url_imprint: https://www.hm.edu/sekundaer_navigation/impressum
 url_pravacy_statement: https://www.hm.edu/sekundaer_navigation/impressum/datenschutz
 webmaster_email: tgermer@hm.edu
 webmaster_name: Tristan Germer
-logo_nav: /assets/img/HM_Schriftzug_Logo_kein_Weissraum_rot_RGB.svg   #logoLinks.svg
+logo_nav: /assets/img/HM_Logo_kein_Weissraum_rot_RGB.svg   #logoLinks.svg
 # logo_black: /assets/img/Studieninformationstag 2020 links black.svg   #logoLinks.svg
 # logo_white: /assets/img/Studieninformationstag 2020 links white.svg   #logoLinks.svg
 
