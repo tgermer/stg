@@ -189,7 +189,11 @@
                   <th scope="row" class="text-uppercase">Studiengebühren</th>
                   <!-- https://github.com/23maverick23/jekyll-humanize -->
                   <td>
-                    {{ page.kosten }}{{ site.badge_cms }}&nbsp;Euro<br>
+                    {{ page.kosten }}{{ site.badge_cms }}&nbsp;Euro
+                      {% if page.kosten_intervall != nil %}
+                        {{ page.kosten_intervall }}
+                      {% endif %}
+                    <br>
                     <a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a>
                   </td>
                 </tr>
@@ -539,6 +543,46 @@
                   {% endfor %}
                 </div>
                 {% endif %}
+                <!-- Programmassistenz -->
+                {% if page.ansprechpartner.programmassistenz != nil %}
+                <div id="programmassistenz" class="col-md-6">
+                  <h3>Programmassistzen{{ site.badge_cms }}</h3>
+                  {% for item in page.ansprechpartner.programmassistenz %}
+                  <div class="row">
+                    <div class="col-lg-4 col-xl-3">
+                      <img src="{{ item.bild | default: "https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/importueberarbeitet/personen_16/Silhouette_Neutral_ContactBild.png" }}" class="rounded" alt="Kontaktbild von {{ item.name }}">
+                    </div>
+                    <div class="col-lg-8 col-xl-9">
+                      <span class="d-block lead mb-3">{{ item.name }}</span>
+                      <span class="d-block">Raum: {{ item.raum }}</span>
+                      <span class="d-block">Tel: {{ item.tel }}</span>
+                      <span class="d-block">E-Mail: <a href="mailto:{{ item.email }}">{{ item.email }}</a></span>
+                      {% if item.url != nil %}
+                      <span class="d-block">Profil: <a href="{{ item.url }}" target="_blank">Profil aufrufen</a></span>
+                      {% endif %}
+                    </div>
+                  </div>
+                  <p class="mb-4">
+                    {% if item.infos != nil %}
+                    <span class="d-block">{{ item.infos }}</span>
+                    {% endif %}
+                    {% if item.zeiten != nil %}
+                    <span class="d-block lead mt-2">Sprechzeiten</span>
+                    {% if item.zeiten == "nine" %}
+                    Sprechtzeiten über <a href="https://nine.hm.edu" target="_blank">NINE</a> buchen.
+                    {% else %}
+                    {% for item in item.zeiten %}
+                    <span class="d-block">{{ item[0] | append: "&nbsp;" }}<span class="float-right">{{ item[1] | replace: " ", "&nbsp;" }}</span></span>
+                    {% if item[2] != nil %}
+                    <span class="d-block font-italic mb-2">{{ item[2] }}</span>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                    {% endif %}
+                  </p>
+                  {% endfor %}
+                </div>
+                  {% endif %}
                 <!-- Sekretariat -->
                 {% if page.ansprechpartner.sekretariat != nil %}
                 <div id="sekretariat" class="col-md-6">
