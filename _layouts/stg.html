@@ -462,6 +462,43 @@
                   {% endfor %}
                 </div>
                 {% endif %}
+                <!-- Zertifikatsleitung -->
+                {% if page.ansprechpartner.zertifikatsleitung != nil %}
+                <div id="zertifikatsleitung" class="col-md-6">
+                  <h3>Zertifikatsleitung{{ site.badge_cms }}</h3>
+                  {% for item in page.ansprechpartner.zertifikatsleitung %}
+                  <div class="row">
+                    <div class="col-lg-4 col-xl-3">
+                      <img src="{{ item.bild | default: "https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/importueberarbeitet/personen_16/Silhouette_Neutral_ContactBild.png" }}" class="rounded" alt="Kontaktbild von {{ item.name }}">
+                    </div>
+                    <div class="col-lg-8 col-xl-9">
+                      <span class="d-block lead mb-3">{{ item.name }}</span>
+                      <span class="d-block">Raum: {{ item.raum }}</span>
+                      <span class="d-block">Tel: {{ item.tel }}</span>
+                      <span class="d-block">E-Mail: <a href="mailto:{{ item.email }}">{{ item.email }}</a></span>
+                      {% if item.url != nil %}
+                      <span class="d-block">Profil: <a href="{{ item.url }}" target="_blank">Profil aufrufen</a></span>
+                      {% endif %}
+                    </div>
+                  </div>
+                  <p class="mb-4">
+                    {% if item.zeiten != nil %}
+                    <span class="d-block lead mt-2">Sprechzeiten</span>
+                    {% if item.zeiten == "nine" %}
+                    Sprechtzeiten über <a href="https://nine.hm.edu" target="_blank">NINE</a> buchen.
+                    {% else %}
+                    {% for item in item.zeiten %}
+                    <span class="d-block">{{ item[0] | append: "&nbsp;" }}<span class="float-right">{{ item[1] | replace: " ", "&nbsp;" }}</span></span>
+                    {% if item[2] != nil %}
+                    <span class="d-block font-italic mb-2">{{ item[2] }}</span>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                    {% endif %}
+                  </p>
+                  {% endfor %}
+                </div>
+                {% endif %}
                 <!-- Studiengangsrefetenten -->
                 {% if page.ansprechpartner.studiengangsreferent != nil %}
                 <div id="studiengangsrefetentinnen" class="col-md-6">
@@ -639,6 +676,12 @@
               {% endif %}
               {% if page.url_spo != nil %}
               <p><a href="{{ page.url_spo }}" target="_blank">Studien- und Prüfungsordnung</a></p>
+              {% endif %}
+              {% if page.url_satzung != nil %}
+              <p><a href="{{ page.url_satzung }}" target="_blank">Satzung</a></p>
+              {% endif %}
+              {% if page.url_gebuehrenordnung != nil %}
+              <p><a href="{{ page.url_gebuehrenordnung }}" target="_blank">Gebührenordnung</a></p>
               {% endif %}
             </div>
           </div>
