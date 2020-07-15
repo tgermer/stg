@@ -46,7 +46,7 @@ title: Studiengänge vergleichen (Merkliste)
           {% if item.dual == true %}
           <i class="fas fa-check-circle text-success"></i>
           {% else %}
-          <i class="fas fa-times-circle text-primary"></i>
+          <i class="fas fa-times-circle text-danger"></i>
           {% endif %}
         </td>
         {% endfor %}
@@ -197,7 +197,7 @@ title: Studiengänge vergleichen (Merkliste)
           <i class="fas fa-check-circle text-success"></i>
           <span class="d-block">{{ item.doppel_abschluss_partner_uni | join: '</span><span class="d-block">'}}</span>
           {% else %}
-          <i class="fas fa-times-circle text-primary"></i>
+          <i class="fas fa-times-circle text-danger"></i>
           {% endif %}
         </td>
         {% endfor %}
