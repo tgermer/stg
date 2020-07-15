@@ -9,6 +9,14 @@ Diese Seite soll als Beispiel dienen, wie Studiengänge an der Hochschule Münch
 
 Um einfacher den für sich passenden Studiengang zu finden und mit anderen Studiengängen der Hochschule München zu vergleichen müssen die Informationen der Studiengänge auf den Webseiten **klar strukturiert, umfassend** und **ansprechen gestaltet** sein.
 
+---
+> ##### HINWEIS
+> **Das Layout dient nur als Beispiel und stellt nicht das Layout nach dem Redesign der Webseite da.**  
+> Dieser Prototyp dient lediglich der Ausarbeitung der Funktionen und stellt nicht das Layout da, welches nach dem Redesign der Webseite benutzt werden wird. Dieses steht bis jetzt noch nicht fest.
+
+Lediglich Schriftart, sowie der Zeilen- und Wortabstand entsprechen den Angaben der HM Designrichtlinien vom 6. April 2020.
+
+---
 
 ## Ausgangslage/Problemstellung
 Die Hochschule München bietet zur Zeit lediglich eine Liste für Bachelor- und Masterstudiengänge. Weiterhin gibt es eine Seite, die alle dual studierbare Studiengänge auflistet.
@@ -19,7 +27,7 @@ Die Hochschule München bietet zur Zeit lediglich eine Liste für Bachelor- und 
 Diese Seiten enthalten keine klar strukturierten und umfassenden Informationen für die Studiengänge sondern lediglich:
 - den Namen des Studiengangs,
 - den Abschluss,
-- teilweise ob der Studiengang akkredieirt ist,
+- teilweise ob der Studiengang akkreditiert ist,
 - die Zugehörigkeit zur entsprechenden Fakultät,
 - einen kurzen Teaser
 - sowie einen Link auf die Fakultäts-Studiengangsseite.
@@ -64,7 +72,7 @@ Mögliche Kriterien für Filter:
 
 ### Detailseiten
 
-Die Detailseiten zu den einzelnen Studiengänge müssen eine bessere Aufbereitung der studiengansbezogen Informationen für die Zielgruppen Studieninteressierte, Studierende und Studienberater bieten. Bei Studieninteressierten geht es um die Unterstützung bei der Entscheidungsfindung und Bewerbung.
+Die Detailseiten zu den einzelnen Studiengänge müssen eine bessere Aufbereitung der studiengansbezogenen Informationen für die Zielgruppen Studieninteressierte, Studierende und Studienberater bieten. Bei Studieninteressierten geht es um die Unterstützung bei der Entscheidungsfindung und Bewerbung.
 
 
 #### Studienverlauf

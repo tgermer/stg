@@ -89,12 +89,19 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Zulassungs&shy;vorraussetzungen{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Zulassungs&shy;vorraussetzungen{{ site.badge_cms }}
+          <br><small><em>Ein punkt muss zutreffen</em></small>
+        </th>
         {% for item in site.data.stg %}
         <td>
-          {% for item in item.hzb %}
+            <ul style="padding-left:15px">
+              {% for item in item.hzb %}
+              <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          <!-- {% for item in item.hzb %}
           <span class="d-block">{{ item }}</span>
-          {% endfor %}
+          {% endfor %} -->
         </td>
         {% endfor %}
       </tr>
@@ -224,7 +231,11 @@ title: Studiengänge vergleichen (Merkliste)
         {% for item in site.data.stg %}
         <td>
           {% if item.kosten != nil %}
-          {{ item.kosten }}&nbsp;Euro<br>
+          {{ item.kosten }}&nbsp;Euro
+          {% if item.kosten_intervall != nil %}
+            {{ item.kosten_intervall }}
+          {% endif %}
+          <br>
           <a href="{{ item.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a>
           {% else %}
           —

@@ -91,9 +91,17 @@
                 <tr>
                   <th scope="row" class="text-uppercase">Zulassungs&shy;vorraussetzungen</th>
                   <td>
+                    {% if page.hzb.size > 1%}
+                      <ul style="padding-left:15px">
+                        {% for item in page.hzb %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                      </ul>
+                    {% else %}
                     {% for item in page.hzb %}
                     <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
                     {% endfor %}
+                    {% endif %}
                   </td>
                 </tr>
                 {% endif %}
@@ -345,6 +353,40 @@
           </div>
         </div>
         {% endif %}
+
+
+        <div class="card">
+          <div class="card-header" id="heading_gebuehren">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_gebuehren" aria-expanded="true" aria-controls="collapse_gebuehren">
+                Gebühren{{ site.badge_cms }}
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_gebuehren" class="collapse" aria-labelledby="heading_gebuehren" data-parent="#accordion_stg_informationen">
+            <div class="card-body">
+              <div class="">
+                {% if page.kosten != nil %}
+                <h4>Studiengebühren</h4>
+                {% if page.kosten_info != nil %}
+                  {{ page.kosten_info | markdownify }}
+                {% else %}
+                {{ page.kosten }}{{ site.badge_cms }}&nbsp;Euro
+                  {% if page.kosten_intervall != nil %}
+                    {{ page.kosten_intervall }}
+                  {% endif %}
+                {% endif %}
+                <p><a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a></p>
+                {% endif %}
+                <h4>Kosten je Semester (allgemein)</h4>
+                <span class="d-block">Grundbeitrag Studentenwerk 75,00{{ site.badge_cms }}&nbsp;Euro</span>
+                <span class="d-block">Solidarbeitrag Semesterticket 67,40{{ site.badge_cms }}&nbsp;Euro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <div class="card">
           <div class="card-header" id="heading_bewerbung">
             <h2 class="mb-0">
@@ -356,6 +398,22 @@
           <div id="collapse_bewerbung" class="collapse" aria-labelledby="heading_bewerbung" data-parent="#accordion_stg_informationen">
             <div class="card-body">
               <div class="">
+                {% if page.hzb_info != nil %}
+                {{ page.hzb_info | markdownify }}
+                {% else %}
+                <h4>Zulassungs&shy;vorraussetzungen</h4>
+                {% if page.hzb.size > 1%}
+                  <ul style="padding-left:15px">
+                    {% for item in page.hzb %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                {% for item in page.hzb %}
+                <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
+                {% endfor %}
+                {% endif %}
+                {% endif %}
                 <h4>Wichtige Termine</h4>
                 <p>
                   {% if page.stg_kurz_abschluss_kurz == "AR-B" %}
