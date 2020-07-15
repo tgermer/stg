@@ -786,7 +786,7 @@
     #- TZ
     - BB
   regelstudien_zeit:
-    faecherkatalog: 0
+    faecherkatalog: 1
     # voll_zeit: 7
     teil_zeit: 1
   praxis_semester:
@@ -794,7 +794,7 @@
   auslands_semester: false
   auslands_semester_semester:
   faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
-    - ["Modulstudium Fahrzeugakustik"]
+    - ["Modulstudium Fahrzeugakustik", 1,0,30]
   ects: 30
   # akkreditierung: true
   #   - agentur: FIBAA
