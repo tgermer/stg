@@ -2,7 +2,8 @@
 <html lang="de">
 {% include head.html %}
 
-<body>
+<body onLoad="checkCookieNEW();">
+<!-- <body> -->
   {% include nav.html %}
   <main>
     <div class="container">
@@ -14,7 +15,32 @@
 
 
       <h1>{{ page.fachrich }} ({{ page.grade_kurz | replace: " ", "&nbsp;" }}){{ site.badge_p }}
-        <br><small>{{ page.fachriche }}{{ site.badge_p }}</small>
+        <br><small>{{ page.fachriche }}{{ site.badge_p }}
+
+
+<!-- https://stackoverflow.com/questions/25917745/check-if-cookie-is-set-then-load-the-page-else-redirect-page -->
+<!-- https://www.w3schools.com/js/js_cookies.asp -->
+
+
+          <script>
+function checkCookieNEW() {
+    if (document.cookie == "stg={{ page.stg_kurz_abschluss_kurz }}") {
+        $('#taste').text("Studiengang merken");
+        console.log("Vorhanden");
+    } else if (document.cookie.indexOf("expires") >= 0) {
+        $('#taste').text("von Merkzettel löschen");
+        console.log("nicht Vorhanden");
+    }
+}
+</script>
+
+            <div id='taste' class="float-right d-print-none"></div>
+            <!-- <a href="#" onclick='document.cookie="stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2023 12:00:00 GMT"' class="btn btn-outline-dark btn-sm showSaveStg" style="cursor: pointer;"><i class="fas fa-plus mr-1"></i>Studiengang merken</a> <a href="#"
+              class="btn btn-outline-dark btn-sm hideSaveStg" style="cursor: pointer; display: none;"><i class="fas fa-minus mr-1"></i>von Merkzettel löschen</a> -->
+
+          <!-- <a href="#" onclick='document.cookie="stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2000 12:00:00 GMT"' class="btn btn-outline-dark btn-sm" style="cursor: pointer; display: none;"><i class="fas fa-minus mr-1"></i>von Merkzettel löschen</a> -->
+          <!-- <a href="#" onclick='document.cookie="stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2023 12:00:00 GMT"' class="btn btn-outline-dark btn-sm" style="cursor: pointer;"><i class="fas fa-plus mr-1"></i>Studiengang merken</a> -->
+        </small>
       </h1>
 
       <div class="row my-4">
@@ -22,8 +48,7 @@
         </div>
         <div class="col-lg-6 bg-light py-3">
 
-          <p class="float-right d-print-none"><a href="#" class="btn btn-outline-dark btn-sm showSaveStg" style="cursor: pointer;"><i class="fas fa-plus mr-1"></i>Studiengang merken</a> <a href="#"
-              class="btn btn-outline-dark btn-sm hideSaveStg" style="cursor: pointer; display: none;"><i class="fas fa-minus mr-1"></i>von Merkzettel löschen</a>
+          <p class="float-right d-print-none"><a href="#" class="btn btn-outline-dark btn-sm showSaveStg" onclick='document.cookie="stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2023 12:00:00 GMT; SameSite=Lax"' style="cursor: pointer;"><i class="fas fa-plus mr-1"></i>Studiengang merken</a><a href="#" class="btn btn-outline-dark btn-sm hideSaveStg" onclick='document.cookie="stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2000 12:00:00 GMT; SameSite=Lax"' style="cursor: pointer; display: none;"><i class="fas fa-minus mr-1"></i>von Merkzettel löschen</a>
             <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
           </p>
           <h2>Steckbrief</h2>
