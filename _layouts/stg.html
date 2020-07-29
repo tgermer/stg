@@ -2,7 +2,7 @@
 <html lang="de">
 {% include head.html %}
 
-<body onLoad="checkCookieNEW();">
+<body onLoad="checkCookieNEW(); checkDates();">
 <!-- <body> -->
   {% include nav.html %}
   <main>
@@ -186,7 +186,7 @@
                 </tr>
                 {% endif %}
                 <tr>
-                  <th scope="row" class="text-uppercase">Kosten je Semester</th>
+                  <th scope="row" class="text-uppercase">Semesterbeiträge</th>
                   <td>
                     <span class="d-block">Grundbeitrag Studentenwerk 75,00{{ site.badge_cms }}&nbsp;Euro</span>
                     <span class="d-block">Solidarbeitrag Semesterticket 67,40{{ site.badge_cms }}&nbsp;Euro</span>
@@ -378,7 +378,7 @@
                 {% endif %}
                 <p><a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a></p>
                 {% endif %}
-                <h4>Kosten je Semester (allgemein)</h4>
+                <h4>Semesterbeiträge (allgemein)</h4>
                 <span class="d-block">Grundbeitrag Studentenwerk 75,00{{ site.badge_cms }}&nbsp;Euro</span>
                 <span class="d-block">Solidarbeitrag Semesterticket 67,40{{ site.badge_cms }}&nbsp;Euro</span>
               </div>
@@ -746,7 +746,7 @@
                   </p>
                 </div>
                 <div id="pruefungsamt" class="col-md-6">
-                  <h3>Prüfungsamt{{ site.badge_cms }}</h3>
+                  <h3>Prüfung und Praktikum{{ site.badge_cms }}</h3>
                   <p class="">
                     Sie studieren den Studiengang {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) schon und haben Fragen zu Prüfungen oder Praktikum? Dann nutzen Sie bitte die Seite <a href="https://www.hm.edu/pruefung-praktikum"
                       target="_blank">www.hm.edu/pruefung-praktikum</a>
@@ -820,8 +820,16 @@
       </div>
 
       <div class="text-center my-5 d-print-none">
-        <a class="btn btn-s uccess btn-outline-success btn-block btn-lg" href="https://www3.primuss.de/cgi-bin/bew_anmeldung/index.pl?FH=fhm" role="button" target="_blank">Jetzt für {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }})
-          bewerben</a>
+        <div class="text-muted mb-2"><small>Testdatum: Bewerbung bis {% if page.bewerbung_bis == nil %}<u>kein Datum festgelegt</u> {% else %}{{ page.bewerbung_bis | date: "%e. %B %Y %H:%M Uhr" }}{% endif %}</small></div>
+        <div id="bewerben"></div>
+        <hr>
+        <p>Die neue Bewerbungsphaste startet am {{ "15.11.2020" | date: "%e. %B" }} {{ "now" | date: "%Y" }}</p>
+        <p>Die neue Bewerbungsphaste startet am {{ "2.5.2020" | date: "%e. %B %Y" }}</p>
+        <p>Bewerbung bis {{ page.bewerbung_bis | date: "%e. %B %Y" }} möglich.</p>
+        {% if page.dosv == true %}
+        {% endif %}
+        <a class="btn btn-s uccess btn-outline-success btn-block btn-lg" href="https://www.hm.edu/{% if page.stg_kurz_abschluss_kurz contains "-B" %}bachelor-bewerbung/{% elsif page.stg_kurz_abschluss_kurz contains "-M" %}master-bewerbung/{% else %}bewerbung/{% endif %}" role="button" target="_blank">Jetzt für {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) bewerben</a>
+        <a class="btn btn-s uccess btn-outline-success btn-block btn-lg" href="https://www.hm.edu/{% if page.stg_kurz_abschluss_kurz contains "-B" %}bachelor-bewerbung/{% elsif page.stg_kurz_abschluss_kurz contains "-M" %}master-bewerbung/{% else %}bewerbung/{% endif %}" role="button" target="_blank">Informationen zur Bewerbung</a>
       </div>
 
       <p class="text-center d-print-none"><a href="#" class="btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="btn btn-link btn-sm hidebadges" style="cursor: pointer; display: none;">Datenherkunft

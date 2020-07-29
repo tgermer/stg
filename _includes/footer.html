@@ -240,6 +240,26 @@
   }
   </script>
 
+  <script>
+    //https://stackoverflow.com/questions/9456138/how-can-i-get-seconds-since-epoch-in-javascript
+    var d = new Date.now();
+    var secondsSince1970 = Math.round(d.getTime() / 1000);
+
+  function checkDates() {
+  console.log(Date.now() + " = " + secondsSince1970 );
+    if ({{ page.bewerbung_bis | date: '%s' }} > secondsSince1970 ) {
+      console.log("Bewerbung möglich bis einschließlich {{ page.bewerbung_bis }}; {{ page.bewerbung_bis | date: '%s' }} > " + seconsecondsSince1970ds );
+      var jetztBewerben = "<a class=\"btn btn-s uccess btn-outline-success btn-block btn-lg\" href=\"https://www.hm.edu/{% if page.stg_kurz_abschluss_kurz contains \"-B\" %}bachelor-bewerbung/{% elsif page.stg_kurz_abschluss_kurz contains \"-M\" %}master-bewerbung/{% else %}bewerbung/{% endif %}\" role=\"button\" target=\"_blank\">Jetzt für {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) bewerben</a>";
+      document.getElementById('bewerben').innerHTML = jetztBewerben;
+    }
+    else if ({{ page.bewerbung_bis | date: '%s' }} < secondsSince1970 ) {
+      console.log("Bewerbung nicht mehr möglich. Endete am {{ page.bewerbung_bis }}; {{ page.bewerbung_bis | date: '%s' }} < " + secondsSince1970 );
+      var jetztInformieren = "  <a class=\"btn btn-s uccess btn-outline-success btn-block btn-lg\" href=\"https://www.hm.edu/{% if page.stg_kurz_abschluss_kurz contains \"-B\" %}bewerbung-bachelor/{% elsif page.stg_kurz_abschluss_kurz contains \"-M\" %}master-bewerbung/{% else %}bewerbung/{% endif %}\" role=\"button\" target=\"_blank\">Informationen zur Bewerbung</a>";
+      document.getElementById('bewerben').innerHTML = jetztInformieren;
+    }
+  }
+  </script>
+
 
 <!-- <script type="text/javascript">
   // $('.collapse').collapse()

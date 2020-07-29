@@ -7,6 +7,8 @@
   grade_kurz: B.A.
   stg_kurz_abschluss_kurz: BW-B #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Betriebswirtschaftslehre-Bachelor
+  bewerbung_bis: 28.07.2020 23:59
+  dosv: true
   studien_richtung: Wirtschaft
   teaser: Bulle oder Bär? Nutzen Sie die Hochschule München als Karrieresprungbrett. Gesucht werden teamfähige Köpfe mit dem Mut, sich den Herausforderungen der Internationalisierung und Globalisierung stellen. Das Studium Bachelor Betriebswirtschaft ist der passende Einstieg in die Wirtschaftswelt.
   studien_ziel:
@@ -166,8 +168,6 @@
         url: https://hm.edu/allgemein/hochschule_muenchen/zentrale_services/studienberatung_2/studienberatung_ansprechpartner/tristan_germer.de.html
         bild:
 
-
-
 - fachrich: Architektur
   fachriche: Architecture
   stg_kurz: &stg_kurz AR
@@ -177,6 +177,7 @@
   grade_kurz: B.A.
   stg_kurz_abschluss_kurz: AR-B #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Architektur-Bachelor
+  bewerbung_bis: 30.08.2020 23:59
   studien_richtung: Technik
   teaser: |
     *„Zeige mir, wie du baust, und ich sage dir, wer du bist.“* —&nbsp;Christian Morgenstern
@@ -264,7 +265,6 @@
       - technischen Vorgängen und logischem Denken und Handeln
     kaempft:
       - Mathematik und Mechanik
-
 
 - fachrich: Wirtschaftsingenieurwesen (Weiterbildung)
   fachriche: Business Administration and Engineering
@@ -616,141 +616,141 @@
         zeiten:
           - ["Di–Fr", "vormittags"]
 
-- fachrich: Ingenierakustik (Modulstudium)
-  fachriche:
-  stg_kurz: &stg_kurz IA
-  abschluss: Zertifikat
-  abschluss_kurz: &abschluss_kurz Z
-  grade: Hochschulzertifikat
-  grade_kurz: Hochschulzertifikat
-  stg_kurz_abschluss_kurz: IA-Z #[*stg_kurz, '-', *abschluss_kurz]
-  dateiname: Ingenierakustik-Modulstudium-Hochschulzertifikat
-  studien_richtung: Technik
-  teaser: |
-    Passgenaue Fokussierung auf ein bestimmtes Thema und Weiterbildung auf Hochschulniveau bieten die Modulstudien der Hochschule München. Sie sind reguläre Lehrveranstaltungen des betreffenden Masterstudiengangs und gewährleisten daher eine professionelle Ausbildung auf wissenschaftlichen Niveau.
-  studien_ziel: |
-    Das Hochschulzertifikat „Bahntechnik - Antrieb, Bremse, Fahrdynamik” richtet sich an Berufstätige, die sich in der Bahntechnik weiterbilden und einen Einstieg in die Simulation fahrdynamischer Prozesse mit der mathematischen Software MATLAB unternehmen wollen. Dabei erwerben die Teilnehmer neben einem vertieften theoretischen Verständnis der einzelnen Fachgebiete die Fähigkeit, praxisorientiert und interdisziplinär eisenbahnspezifische Problemstellungen zu lösen. Das Zertifikat richtet sich dabei sowohl an Berufsanfänger als auch an erfahrene Berufstätige mit Arbeitsschwerpunkten außerhalb der Zertifikatsthemen.
-  studien_verlauf: |
-    Ingenierakustik (Modulstudium) bietet Ihnen 4 mögliche Module an, die Sie einzeln oder auch in Kombination ablegen können.
+# - fachrich: Ingenierakustik #(Modulstudium)
+#   fachriche:
+#   stg_kurz: &stg_kurz IA
+#   abschluss: Zertifikat
+#   abschluss_kurz: &abschluss_kurz Z
+#   grade: Hochschulzertifikat
+#   grade_kurz: Hochschulzertifikat
+#   stg_kurz_abschluss_kurz: IA-Z #[*stg_kurz, '-', *abschluss_kurz]
+#   dateiname: Ingenierakustik-Modulstudium-Hochschulzertifikat
+#   studien_richtung: Technik
+#   teaser: |
+#     Passgenaue Fokussierung auf ein bestimmtes Thema und Weiterbildung auf Hochschulniveau bieten die Modulstudien der Hochschule München. Sie sind reguläre Lehrveranstaltungen des betreffenden Masterstudiengangs und gewährleisten daher eine professionelle Ausbildung auf wissenschaftlichen Niveau.
+#   studien_ziel: |
+#     Das Hochschulzertifikat „Bahntechnik - Antrieb, Bremse, Fahrdynamik” richtet sich an Berufstätige, die sich in der Bahntechnik weiterbilden und einen Einstieg in die Simulation fahrdynamischer Prozesse mit der mathematischen Software MATLAB unternehmen wollen. Dabei erwerben die Teilnehmer neben einem vertieften theoretischen Verständnis der einzelnen Fachgebiete die Fähigkeit, praxisorientiert und interdisziplinär eisenbahnspezifische Problemstellungen zu lösen. Das Zertifikat richtet sich dabei sowohl an Berufsanfänger als auch an erfahrene Berufstätige mit Arbeitsschwerpunkten außerhalb der Zertifikatsthemen.
+#   studien_verlauf: |
+#     Ingenierakustik (Modulstudium) bietet Ihnen 4 mögliche Module an, die Sie einzeln oder auch in Kombination ablegen können.
+#
+#     Die einzelnen Module finden sie im folgenden Modul-/Fächerkatalog.
+#   tags:
+#     #- acoustics
+#     - speaker
+#     - sound
+#     - audio
+#     #- lautsprecher
+#     #- klang
+#     #- ton
+#     #- stereo
+#     #- sound
+#   studien_ort:
+#     - HM, Campus Lothstraße
+#   studien_art: Hochschulzertifikat, berufsbegleitend
+#   dual: false
+#   doppel_abschluss: false
+#   doppel_abschluss_partner_uni:
+#   studien_begin:
+#     - Sommersemester
+#     - Wintersemester
+#   studien_form:
+#     # - VZ
+#     #- TZ
+#     - BB
+#   regelstudien_zeit:
+#     faecherkatalog: 0
+#     # voll_zeit: 7
+#     teil_zeit: 1
+#   praxis_semester:
+#   praxis_semester_dauer:  # in Wochen
+#   auslands_semester: false
+#   auslands_semester_semester:
+#   faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
+#     - ["Modulstudium Fahrzeugakustik"]
+#     - ["Modulstudium Lärmarme Konstruktion und Schallschutz"]
+#     - ["Modulstudium Simulationsmethoden der Akustik"]
+#   ects: 30
+#   # akkreditierung: true
+#   #   - agentur: FIBAA
+#   #     siegel_url:
+#   #     urkunde_url:
+#   sprachen:
+#     haupt_sprache: Deutsch
+#     weitere_sprachen:
+#       - Englisch
+#   studien_schwerpunkte_ablegen: #2
+#   studien_schwerpunkte:
+#     # -
+#   studien_richtungen:
+#     # -
+#   kosten: "980,00" # bei weiterbildenden Mastern konkreter Wert
+#   kosten_intervall: je Modul
+#   kosten_info:
+#   url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/weiterbildung/masterstudiennge/ingenieurakustik/mia_dokumente/2020-01-Modulhandbuch.pdf
+#   url_spo: https://www.rektorat.hs-mittweida.de/webs/ordnungen/fakultaeten/medien.html
+#   url_satzung:
+#   url_gebuehrenordnung: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/gebuehrenordnungen/fk_1/ma_ingenieurakustik/Gebuehrenordnung_Ausfertigung_Bekanntmachung.pdf
+#   url_stg: https://www.hm.edu/allgemein/studienangebote/wissenschaftliche_weiterbildung/master/ingenieurakustik/mia_module_lehre.de.html#modul_fahrzeugakustik_und_verkehrslaerm
+#   ## Formale Voraussetzungen
+#   hzb:
+#     - Natur- oder ingenieurwissenschaftliches Studium
+#     - Bachelor- oder Diplomabschluss
+#     - Min. sechs theoretische Studiensemester
+#     - Min. 180 ECTS
+#     - Oder gleichwertiger Abschluss
+#   zulassungs_beschraenkt: false
+#   eignungs_pruefung:
+#   vor_praxis:
+#   berufs_perpektiven:
+#     - als Steuerberater/Wirtschaftsprüfer
+#     - in der Unternehmensberatung
+#     - in der Unternehmensführung
+#     - in der Unternehmensorganisation
+#   interessen:
+#     bringt_mit:
+#       - gute analytische Fähigkeiten
+#       - Grundkenntnisse der englischen Sprache
+#     hat_spass:
+#       - ökonomischen Fragestellungen von der Bilanzierung bis zur Unternehmensführung
+#     kaempft:
+#       - die mathematischen und statistischen Grundlagen der modernen Wirtschaftswissenschaft
+#   youtube-id:
+#     # - NtoaNge652o
+#     # - NtoaNge652o
+#   vimeo-id:
+#     # - 207284089
+#   ansprechpartner:
+#     zertifikatsleitung:
+#       - name: Dr. Hans-Christoph Kotzsch
+#         raum: T 0.004
+#         tel: 089 1265-4373
+#         email: hans-christoph.kotzsch@hm.edu
+#         url: https://www.hm.edu/allgemein/studienangebote/wissenschaftliche_weiterbildung/weiterbildungszentrum/ansprechpartner_4/inhaltsseite_14.de.html
+#         bild: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/weiterbildung/kontakte/Hans-Christoph_ContactBild.jpg
+#         infos:
+#         zeiten:
+#           # - ["","", "Bitte via E-Mail anmelden."]
+#     fachstudienberater:
+#     studiengangsreferent:
+#       # - name: Tina Grangl
+#       #   raum: R 2.065
+#       #   tel: 089 1265-3982
+#       #   email: andreas.englbrecht@hm.edu
+#       #   url: https://www.wi.hm.edu/02_fakultaet/personen/mitarbeiter/grangl.de.html
+#       #   bild: https://w3-mediapool.hm.edu/mediapool/media/fk09/fk09_lokal/02_fakultaet/personen_6/mitarbeiterinnen/grangl_1/Grangl~1_ContactBild.jpg
+#       #   infos:
+#       #   zeiten:
+#     sekretariat:
+#       # - name: Caroline Tesch
+#       #   raum: T 0.004
+#       #   tel: 089 1265-4289
+#       #   email: bahntechnik@hm.edu
+#       #   bild: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/weiterbildung/kontakte/IMG_0439_ContactBild.jpg
+#       #   url: https://www.hm.edu/allgemein/studienangebote/wissenschaftliche_weiterbildung/weiterbildungszentrum/ansprechpartner_4/inhaltsseite_24.de.html
+#       #   zeiten:
+#       #     - ["Di–Fr", "vormittags"]
 
-    Die einzelnen Module finden sie im folgenden Modul-/Fächerkatalog.
-  tags:
-    #- acoustics
-    - speaker
-    - sound
-    - audio
-    #- lautsprecher
-    #- klang
-    #- ton
-    #- stereo
-    #- sound
-  studien_ort:
-    - HM, Campus Lothstraße
-  studien_art: Hochschulzertifikat, berufsbegleitend
-  dual: false
-  doppel_abschluss: false
-  doppel_abschluss_partner_uni:
-  studien_begin:
-    - Sommersemester
-    - Wintersemester
-  studien_form:
-    # - VZ
-    #- TZ
-    - BB
-  regelstudien_zeit:
-    faecherkatalog: 0
-    # voll_zeit: 7
-    teil_zeit: 1
-  praxis_semester:
-  praxis_semester_dauer:  # in Wochen
-  auslands_semester: false
-  auslands_semester_semester:
-  faecherkatalog: # - ["Fachname" [0], Semester [1], SWS [2], ECTS [3]]
-    - ["Modulstudium Fahrzeugakustik"]
-    - ["Modulstudium Lärmarme Konstruktion und Schallschutz"]
-    - ["Modulstudium Simulationsmethoden der Akustik"]
-  ects: 30
-  # akkreditierung: true
-  #   - agentur: FIBAA
-  #     siegel_url:
-  #     urkunde_url:
-  sprachen:
-    haupt_sprache: Deutsch
-    weitere_sprachen:
-      - Englisch
-  studien_schwerpunkte_ablegen: #2
-  studien_schwerpunkte:
-    # -
-  studien_richtungen:
-    # -
-  kosten: "980,00" # bei weiterbildenden Mastern konkreter Wert
-  kosten_intervall: je Modul
-  kosten_info:
-  url_modulhandbuch: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/weiterbildung/masterstudiennge/ingenieurakustik/mia_dokumente/2020-01-Modulhandbuch.pdf
-  url_spo: https://www.rektorat.hs-mittweida.de/webs/ordnungen/fakultaeten/medien.html
-  url_satzung:
-  url_gebuehrenordnung: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/gebuehrenordnungen/fk_1/ma_ingenieurakustik/Gebuehrenordnung_Ausfertigung_Bekanntmachung.pdf
-  url_stg: https://www.hm.edu/allgemein/studienangebote/wissenschaftliche_weiterbildung/master/ingenieurakustik/mia_module_lehre.de.html#modul_fahrzeugakustik_und_verkehrslaerm
-  ## Formale Voraussetzungen
-  hzb:
-    - Natur- oder ingenieurwissenschaftliches Studium
-    - Bachelor- oder Diplomabschluss
-    - Min. sechs theoretische Studiensemester
-    - Min. 180 ECTS
-    - Oder gleichwertiger Abschluss
-  zulassungs_beschraenkt: false
-  eignungs_pruefung:
-  vor_praxis:
-  berufs_perpektiven:
-    - als Steuerberater/Wirtschaftsprüfer
-    - in der Unternehmensberatung
-    - in der Unternehmensführung
-    - in der Unternehmensorganisation
-  interessen:
-    bringt_mit:
-      - gute analytische Fähigkeiten
-      - Grundkenntnisse der englischen Sprache
-    hat_spass:
-      - ökonomischen Fragestellungen von der Bilanzierung bis zur Unternehmensführung
-    kaempft:
-      - die mathematischen und statistischen Grundlagen der modernen Wirtschaftswissenschaft
-  youtube-id:
-    # - NtoaNge652o
-    # - NtoaNge652o
-  vimeo-id:
-    # - 207284089
-  ansprechpartner:
-    zertifikatsleitung:
-      - name: Dr. Hans-Christoph Kotzsch
-        raum: T 0.004
-        tel: 089 1265-4373
-        email: hans-christoph.kotzsch@hm.edu
-        url: https://www.hm.edu/allgemein/studienangebote/wissenschaftliche_weiterbildung/weiterbildungszentrum/ansprechpartner_4/inhaltsseite_14.de.html
-        bild: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/weiterbildung/kontakte/Hans-Christoph_ContactBild.jpg
-        infos:
-        zeiten:
-          # - ["","", "Bitte via E-Mail anmelden."]
-    fachstudienberater:
-    studiengangsreferent:
-      # - name: Tina Grangl
-      #   raum: R 2.065
-      #   tel: 089 1265-3982
-      #   email: andreas.englbrecht@hm.edu
-      #   url: https://www.wi.hm.edu/02_fakultaet/personen/mitarbeiter/grangl.de.html
-      #   bild: https://w3-mediapool.hm.edu/mediapool/media/fk09/fk09_lokal/02_fakultaet/personen_6/mitarbeiterinnen/grangl_1/Grangl~1_ContactBild.jpg
-      #   infos:
-      #   zeiten:
-    sekretariat:
-      # - name: Caroline Tesch
-      #   raum: T 0.004
-      #   tel: 089 1265-4289
-      #   email: bahntechnik@hm.edu
-      #   bild: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/weiterbildung/kontakte/IMG_0439_ContactBild.jpg
-      #   url: https://www.hm.edu/allgemein/studienangebote/wissenschaftliche_weiterbildung/weiterbildungszentrum/ansprechpartner_4/inhaltsseite_24.de.html
-      #   zeiten:
-      #     - ["Di–Fr", "vormittags"]
-
-- fachrich: Fahrzeugakustik (Modulstudium aus Ingenierakustik)
+- fachrich: Fahrzeugakustik #(Modulstudium aus Ingenierakustik)
   fachriche:
   stg_kurz: &stg_kurz IAF
   abschluss: Zertifikat

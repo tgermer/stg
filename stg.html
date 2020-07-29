@@ -55,6 +55,7 @@ title: Studiengangebot (STG)
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".teilzeit">Teilzeit</button>
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".berufsbegleitend">Berufsbegleitend</button>
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".dual">Dual</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".weiterbildend">Weiterbildend</button>
   </div>
   <div class="col-xl-3 co-md-4 col-sm-6">
     <p class="h6 mt-4">Studienbeginn</p>
@@ -91,13 +92,12 @@ title: Studiengangebot (STG)
   </div> -->
 <!-- </form> -->
 
-<hr>
-
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".allgemeine">Allgemeine Hochschulreife</button>
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".fachgebundene">Fachgebundene Hochschulreife</button>
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".hochschulstudium">Abgeschlossnes Hochschulstudium</button>
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".dual">Dual studieren</button>
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".doppelabschluss">Doppelabschluss</button>
+<!-- <hr> -->
+<!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".allgemeine">Allgemeine Hochschulreife</button> -->
+<!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".fachgebundene">Fachgebundene Hochschulreife</button> -->
+<!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".hochschulstudium">Abgeschlossnes Hochschulstudium</button> -->
+<!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".dual">Dual studieren</button> -->
+<!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".doppelabschluss">Doppelabschluss</button> -->
 <hr>
 
 <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-sort="order:asc"><i class="fas fa-sort-alpha-down"></i></button>
@@ -123,6 +123,8 @@ title: Studiengangebot (STG)
         {% if stg.studien_form contains "BB" %}berufsbegleitend{% endif %}
         {% if stg.studien_form contains "TZ" %}teilzeit{% endif %}
         {% if stg.studien_form contains "VZ" %}vollzeit{% endif %}
+        {% if stg.fachrich contains "eiterbild" %}weiterbildend{% endif %}
+
       ">
     <h6><a href="{{ stg.dateiname | datapage_url: 'stg' }}">{{ stg.fachrich }} {{ stg.abschluss | upcase }} ({{ stg.grade_kurz }})</a></h6>
     <p>{{ stg.studien_art }}
