@@ -3,7 +3,7 @@
 {% include head.html %}
 
 <body onLoad="checkCookieNEW(); checkDates();">
-<!-- <body> -->
+  <!-- <body> -->
   {% include nav.html %}
   <main>
     <div class="container">
@@ -23,7 +23,9 @@
         </div>
         <div class="col-lg-6 bg-light py-3">
           <span id="taste" class="float-right d-print-none"></span>
-          <p class="float-right d-print-none"><a href="#" class="btn btn-outline-dark btn-sm showSaveStg" onclick='document.cookie="stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2023 12:00:00 GMT; SameSite=Lax"' style="cursor: pointer;"><i class="fas fa-plus mr-1"></i>Studiengang merken OLD</a><a href="#" class="btn btn-outline-dark btn-sm hideSaveStg" onclick='document.cookie="stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2000 12:00:00 GMT; SameSite=Lax"' style="cursor: pointer; display: none;"><i class="fas fa-minus mr-1"></i>von Merkzettel löschen OLD</a>
+          <p class="float-right d-print-none"><a href="#" class="btn btn-outline-dark btn-sm showSaveStg" onclick='document.cookie="stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2023 12:00:00 GMT; SameSite=Lax"'
+              style="cursor: pointer;"><i class="fas fa-plus mr-1"></i>Studiengang merken OLD</a><a href="#" class="btn btn-outline-dark btn-sm hideSaveStg"
+              onclick='document.cookie="stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2000 12:00:00 GMT; SameSite=Lax"' style="cursor: pointer; display: none;"><i class="fas fa-minus mr-1"></i>von Merkzettel löschen OLD</a>
           </p>
           <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
           <h2>Steckbrief</h2>
@@ -92,11 +94,11 @@
                   <th scope="row" class="text-uppercase">Zulassungs&shy;vorraussetzungen</th>
                   <td>
                     {% if page.hzb.size > 1%}
-                      <ul style="padding-left:15px">
-                        {% for item in page.hzb %}
-                        <li>{{ item }}</li>
-                        {% endfor %}
-                      </ul>
+                    <ul style="padding-left:15px">
+                      {% for item in page.hzb %}
+                      <li>{{ item }}</li>
+                      {% endfor %}
+                    </ul>
                     {% else %}
                     {% for item in page.hzb %}
                     <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
@@ -198,9 +200,9 @@
                   <!-- https://github.com/23maverick23/jekyll-humanize -->
                   <td>
                     {{ page.kosten }}{{ site.badge_cms }}&nbsp;Euro
-                      {% if page.kosten_intervall != nil %}
-                        {{ page.kosten_intervall }}
-                      {% endif %}
+                    {% if page.kosten_intervall != nil %}
+                    {{ page.kosten_intervall }}
+                    {% endif %}
                     <br>
                     <a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a>
                   </td>
@@ -209,6 +211,16 @@
               </tbody>
             </table>
           </div>
+          <!-- <div>
+            <form>
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Bewerbungsende</label>
+                <div class="col-sm-8">
+                  <input type="date" class="form-control" id="fromBewerbungBis" value="{{ page.bewerbung_bis | date:"%Y-%m-%d"}}">
+                </div>
+              </div>
+            </form>
+          </div> -->
           <div id="bewerbenSteckbriefCallTo"></div>
           <!-- <a class="btn btn-success btn-out line-success btn-block btn-lg my-3 d-print-none" href="https://www3.primuss.de/cgi-bin/bew_anmeldung/index.pl?FH=fhm" role="button" target="_blank">Jetzt bewerben</a> -->
         </div>
@@ -370,12 +382,12 @@
                 {% if page.kosten != nil %}
                 <h4>Studiengebühren</h4>
                 {% if page.kosten_info != nil %}
-                  {{ page.kosten_info | markdownify }}
+                {{ page.kosten_info | markdownify }}
                 {% else %}
                 {{ page.kosten }}{{ site.badge_cms }}&nbsp;Euro
-                  {% if page.kosten_intervall != nil %}
-                    {{ page.kosten_intervall }}
-                  {% endif %}
+                {% if page.kosten_intervall != nil %}
+                {{ page.kosten_intervall }}
+                {% endif %}
                 {% endif %}
                 <p><a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a></p>
                 {% endif %}
@@ -404,11 +416,11 @@
                 {% else %}
                 <h4>Zulassungs&shy;vorraussetzungen</h4>
                 {% if page.hzb.size > 1%}
-                  <ul style="padding-left:15px">
-                    {% for item in page.hzb %}
-                    <li>{{ item }}</li>
-                    {% endfor %}
-                  </ul>
+                <ul style="padding-left:15px">
+                  {% for item in page.hzb %}
+                  <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
                 {% else %}
                 {% for item in page.hzb %}
                 <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
@@ -641,7 +653,7 @@
                   </p>
                   {% endfor %}
                 </div>
-                  {% endif %}
+                {% endif %}
                 <!-- Sekretariat -->
                 {% if page.ansprechpartner.sekretariat != nil %}
                 <div id="sekretariat" class="col-md-6">
@@ -833,12 +845,13 @@
         <a class="btn btn-s uccess btn-outline-success btn-block btn-lg" href="https://www.hm.edu/{% if page.stg_kurz_abschluss_kurz contains "-B" %}bachelor-bewerbung/{% elsif page.stg_kurz_abschluss_kurz contains "-M" %}master-bewerbung/{% else %}bewerbung/{% endif %}" role="button" target="_blank">Informationen zur Bewerbung</a>
       </div> -->
 
-      <p class="text-center d-print-none mt-5"><a href="#" class="btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="btn btn-link btn-sm hidebadges" style="cursor: pointer; display: none;">Datenherkunft
-          verstecken</a>
-        <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
-      </p>
+        <p class="text-center d-print-none mt-5"><a href="#" class="btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="btn btn-link btn-sm hidebadges"
+            style="cursor: pointer; display: none;">Datenherkunft
+            verstecken</a>
+          <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
+        </p>
 
-    </div>
+      </div>
   </main>
   {% include footer.html %}
 </body>

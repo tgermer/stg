@@ -246,6 +246,12 @@
     var secondsSince1970 = Math.round(d.getTime() / 1000);
     console.log("seit 1970: " + secondsSince1970);
 
+    // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date
+    var dateControl = document.getElementById("fromBewerbungBis").value;
+    var dateControlNr = dateControl.valueAsNumber;
+    console.log(dateControl);
+    console.log(dateControlNr);
+
   // Escape – https://www.the-art-of-web.com/javascript/escape/ > AddSlaches
   function checkDates() {
     if ({{ page.bewerbung_bis | date: '%s' }} > secondsSince1970 ) {
