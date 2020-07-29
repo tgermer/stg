@@ -209,7 +209,8 @@
               </tbody>
             </table>
           </div>
-          <a class="btn btn-success btn-out line-success btn-block btn-lg my-3 d-print-none" href="https://www3.primuss.de/cgi-bin/bew_anmeldung/index.pl?FH=fhm" role="button" target="_blank">Jetzt bewerben</a>
+          <div id="bewerbenSteckbriefCallTo"></div>
+          <!-- <a class="btn btn-success btn-out line-success btn-block btn-lg my-3 d-print-none" href="https://www3.primuss.de/cgi-bin/bew_anmeldung/index.pl?FH=fhm" role="button" target="_blank">Jetzt bewerben</a> -->
         </div>
       </div>
 
@@ -820,9 +821,9 @@
       </div>
 
       <div class="text-center my-5 d-print-none">
-        <div class="text-muted mb-2"><small>Testdatum: Bewerbung bis {% if page.bewerbung_bis == nil %}<u>kein Datum festgelegt</u> {% else %}{{ page.bewerbung_bis | date: "%e. %B %Y %H:%M Uhr" }}{% endif %}</small></div>
-        <div id="bewerben"></div>
-        <hr>
+        <div class="text-muted mb-2 font-italic"><small>Testdatum: Bewerbung bis {% if page.bewerbung_bis == nil %}<u>kein Datum festgelegt</u> {% else %}{{ page.bewerbung_bis | date: "%e. %B %Y %H:%M Uhr" }}{% endif %}</small></div>
+        <div id="bewerbenCallTo"></div>
+        <!-- <hr>
         <p>Die neue Bewerbungsphaste startet am {{ "15.11.2020" | date: "%e. %B" }} {{ "now" | date: "%Y" }}</p>
         <p>Die neue Bewerbungsphaste startet am {{ "2.5.2020" | date: "%e. %B %Y" }}</p>
         <p>Bewerbung bis {{ page.bewerbung_bis | date: "%e. %B %Y" }} möglich.</p>
@@ -830,9 +831,9 @@
         {% endif %}
         <a class="btn btn-s uccess btn-outline-success btn-block btn-lg" href="https://www.hm.edu/{% if page.stg_kurz_abschluss_kurz contains "-B" %}bachelor-bewerbung/{% elsif page.stg_kurz_abschluss_kurz contains "-M" %}master-bewerbung/{% else %}bewerbung/{% endif %}" role="button" target="_blank">Jetzt für {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) bewerben</a>
         <a class="btn btn-s uccess btn-outline-success btn-block btn-lg" href="https://www.hm.edu/{% if page.stg_kurz_abschluss_kurz contains "-B" %}bachelor-bewerbung/{% elsif page.stg_kurz_abschluss_kurz contains "-M" %}master-bewerbung/{% else %}bewerbung/{% endif %}" role="button" target="_blank">Informationen zur Bewerbung</a>
-      </div>
+      </div> -->
 
-      <p class="text-center d-print-none"><a href="#" class="btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="btn btn-link btn-sm hidebadges" style="cursor: pointer; display: none;">Datenherkunft
+      <p class="text-center d-print-none mt-5"><a href="#" class="btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="btn btn-link btn-sm hidebadges" style="cursor: pointer; display: none;">Datenherkunft
           verstecken</a>
         <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
       </p>

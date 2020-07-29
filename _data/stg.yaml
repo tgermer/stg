@@ -275,6 +275,7 @@
   grade_kurz: MBA & Eng.
   stg_kurz_abschluss_kurz: WW-M #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Wirtschaftsingenieurwesen-Weiterbildung-Master
+  bewerbung_bis: 30.08.2020 23:59
   studien_richtung: Technik
   teaser: |
     Dieser Studiengang richtet sich an berufstätige Akademiker, die sich parallel zum Job weiterbilden möchten. Über zehn Jahre Erfahrung, hochqualifizierte nationale und internationale Dozenten aus Hochschule und Industrie sowie viel Engagement machen unseren Master of Business Administration and Engineering zum Erfolgsrezept für Ihre Zukunft!
@@ -475,6 +476,7 @@
   grade_kurz: Hochschulzertifikat
   stg_kurz_abschluss_kurz: BT-Z #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Bahntechnik-Antrieb-Bremse-Fahrdynamik-Hochschulzertifikat
+  bewerbung_bis: 30.08.2020 23:59
   studien_richtung: Technik
   teaser: |
     Die Bahnindustrie bildet mit einem weltweiten Marktvolumen von mehr als 100 Mrd. EUR pro Jahr einen wirtschaftsstarken Industriezweig. Damit dies auch in Zukunft so bleibt, muss die Bahnindustrie aktuelle Trends wie
@@ -759,6 +761,7 @@
   grade_kurz: Hochschulzertifikat
   stg_kurz_abschluss_kurz: IAF-Z #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Fahrzeugakustik-Modulstudium-aus-Ingenierakustik-Hochschulzertifikat
+  bewerbung_bis: 30.08.2020 23:59
   studien_richtung: Technik
   teaser: |
     Passgenaue Fokussierung auf ein bestimmtes Thema und Weiterbildung auf Hochschulniveau bieten die Modulstudien der Hochschule München. Sie sind reguläre Lehrveranstaltungen des betreffenden Masterstudiengangs und gewährleisten daher eine professionelle Ausbildung auf wissenschaftlichen Niveau.
