@@ -216,7 +216,7 @@
               <div class="form-group row">
                 <label for="inputPassword" class="col-sm-4 col-form-label">Bewerbungsende</label>
                 <div class="col-sm-8">
-                  <input type="date" class="form-control" id="fromBewerbungBis" value="{{ page.bewerbung_bis | date:"%Y-%m-%d"}}">
+                  <input type="date" class="form-control" id="fromBewerbungBis" value="{{ page.bewerbung_bis | date:"%Y-%m-%d"}}" onLoad="checkDates();">
                 </div>
               </div>
             </form>
@@ -833,7 +833,7 @@
       </div>
 
       <div class="text-center my-5 d-print-none">
-        <div class="text-muted mb-2 font-italic"><small>Testdatum: Bewerbung bis {% if page.bewerbung_bis == nil %}<u>kein Datum festgelegt</u> {% else %}{{ page.bewerbung_bis | date: "%e. %B %Y %H:%M Uhr" }}{% endif %}</small></div>
+        <div class="text-muted mb-2 font-italic"><small>Testdatum: Bewerbung bis {% if page.bewerbung_bis == nil %}<u>kein Datum festgelegt</u> {% else %}<form><input type="date" class="form-control-sm col-2" id="formBewerbungBis" value="{{ page.bewerbung_bis | date:"%Y-%m-%d"}}" onChange="checkDates();"></form>{% endif %}</small></div>
         <div id="bewerbenCallTo"></div>
         <!-- <hr>
         <p>Die neue Bewerbungsphaste startet am {{ "15.11.2020" | date: "%e. %B" }} {{ "now" | date: "%Y" }}</p>

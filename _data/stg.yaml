@@ -7,7 +7,8 @@
   grade_kurz: B.A.
   stg_kurz_abschluss_kurz: BW-B #[*stg_kurz, '-', *abschluss_kurz]
   dateiname: Betriebswirtschaftslehre-Bachelor
-  bewerbung_bis: 28.07.2020 23:59
+  bewerbung_bis: 27.07.2020 23:59:00
+  # bewerbung_bis: 2020-07-28 23:59:00 GMT+0200 (CEST)
   dosv: true
   studien_richtung: Wirtschaft
   teaser: Bulle oder Bär? Nutzen Sie die Hochschule München als Karrieresprungbrett. Gesucht werden teamfähige Köpfe mit dem Mut, sich den Herausforderungen der Internationalisierung und Globalisierung stellen. Das Studium Bachelor Betriebswirtschaft ist der passende Einstieg in die Wirtschaftswelt.

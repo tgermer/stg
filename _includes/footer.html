@@ -76,6 +76,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+<!-- Parse, validate, manipulate, and display dates and times in JavaScript. -->
+<!-- https://momentjs.com/ -->
+<!-- https://t3n.de/news/momentjs-zeitberechnungen-mint-javascript-562592/ -->
+<script src="{{ site.url }}/assets/js/moment.js" type="text/javascript"></script>
+<script>
+  moment.locale('de');
+</script>
+
 <!-- <script src="{{ site.url }}/assets/js/cardHoverShadow.js" type="text/javascript"></script> -->
 
 <script src="{{ site.url }}/assets/js/openCloseAll.js" type="text/javascript"></script>
@@ -243,26 +251,40 @@
   <script>
     //https://stackoverflow.com/questions/9456138/how-can-i-get-seconds-since-epoch-in-javascript
     var d = new Date();
-    var secondsSince1970 = Math.round(d.getTime() / 1000);
-    console.log("seit 1970: " + secondsSince1970);
+    // var secondsSince1970 = Math.round(d.getTime() / 1000);
+    var secondsSince1970 = Date.parse(d);
+    console.log("Aktuelles Datum: " + d);
+    console.log("Aktuelles Datum seit 1970: " + secondsSince1970);
+    var bewerbungBisNr = "{{ page.bewerbung_bis | date: "%s" }}000";
+    console.log("Bewerbung bis: {{ page.bewerbung_bis | date: "%e. %B %Y" }} | " + bewerbungBisNr);
 
     // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date
-    var dateControl = document.getElementById("fromBewerbungBis").value;
-    var dateControlNr = dateControl.valueAsNumber;
-    console.log(dateControl);
-    console.log(dateControlNr);
+    // var dateControl = new Date(document.getElementById("formBewerbungBis").value);
+    // var dateControlFormat = dateControl.getDate() + "." + dateControl.getMonth() + "." + dateControl.getFullYear();
+    // var dateControlNr = Date.parse(document.getElementById("formBewerbungBis").value);
+    // console.log("Datum aus Feld: " + dateControl);
+    // console.log("Datum aus Feld seit 1970: " + dateControlNr);
 
   // Escape – https://www.the-art-of-web.com/javascript/escape/ > AddSlaches
   function checkDates() {
-    if ({{ page.bewerbung_bis | date: '%s' }} > secondsSince1970 ) {
-      console.log("Bewerbung möglich bis einschließlich {{ page.bewerbung_bis }}; {{ page.bewerbung_bis | date: '%s' }} > " + secondsSince1970 );
+
+    // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date
+    var dateControl = new Date(document.getElementById("formBewerbungBis").value);
+    var dateControlFormat = dateControl.getDate() + "." + dateControl.getMonth() + "." + dateControl.getFullYear();
+    var dateControlNr = Date.parse(document.getElementById("formBewerbungBis").value);
+    console.log("Datum aus Feld: " + dateControl);
+    console.log("Datum aus Feld seit 1970: " + dateControlNr);
+
+    if (dateControlNr > secondsSince1970 ) {
+      // console.log("Bewerbung möglich bis einschließlich {{ page.bewerbung_bis }}; {{ page.bewerbung_bis | date: '%s' }} > " + secondsSince1970 );
+      console.log("Bewerbung möglich bis einschließlich " + dateControl + "; " + dateControlNr + " > " + secondsSince1970 );
       var bewerbungsDatum = "{{ page.bewerbung_bis | date: "%e. %B %Y" }}";
-      var jetztBewerben = "<p>Bewerbung möglich bis " + bewerbungsDatum + "</p><a class=\"btn btn-s uccess btn-outline-success btn-block btn-lg\" href=\"https://www.hm.edu/{% if page.stg_kurz_abschluss_kurz contains \"-B\" %}bachelor-bewerbung/{% elsif page.stg_kurz_abschluss_kurz contains \"-M\" %}master-bewerbung/{% else %}bewerbung/{% endif %}\" role=\"button\" target=\"_blank\">Jetzt für {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) bewerben</a>";
+      var jetztBewerben = "<p>Bewerbung möglich bis " + moment(dateControl).format('dddd, DD. MMMM YYYY') + "</p><a class=\"btn btn-s uccess btn-outline-success btn-block btn-lg\" href=\"https://www.hm.edu/{% if page.stg_kurz_abschluss_kurz contains \"-B\" %}bachelor-bewerbung/{% elsif page.stg_kurz_abschluss_kurz contains \"-M\" %}master-bewerbung/{% else %}bewerbung/{% endif %}\" role=\"button\" target=\"_blank\">Jetzt für {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) bewerben</a>";
       var jetztBewerbenSteckbrief = "<a class=\"btn btn-success btn-block btn-lg my-3 d-print-none\" href=\"https://www.hm.edu/{% if page.stg_kurz_abschluss_kurz contains \"-B\" %}bachelor-bewerbung/{% elsif page.stg_kurz_abschluss_kurz contains \"-M\" %}master-bewerbung/{% else %}bewerbung/{% endif %}\" role=\"button\" target=\"_blank\">Jetzt bewerben</a>";
       document.getElementById('bewerbenCallTo').innerHTML = jetztBewerben;
       document.getElementById('bewerbenSteckbriefCallTo').innerHTML = jetztBewerbenSteckbrief;
     }
-    else if ({{ page.bewerbung_bis | date: '%s' }} < secondsSince1970 ) {
+    else if (dateControlNr < secondsSince1970 ) {
       console.log("Bewerbung nicht mehr möglich. Endete am {{ page.bewerbung_bis }}; {{ page.bewerbung_bis | date: '%s' }} < " + secondsSince1970 );
       var bewerbungsPhase = "15. November 2020";
       var jetztInformieren = "<p>Die neue Bewerbungsphaste startet am " + bewerbungsPhase + "</p><a class=\"btn btn-s uccess btn-outline-success btn-block btn-lg\" href=\"https://www.hm.edu/{% if page.stg_kurz_abschluss_kurz contains \"-B\" %}bewerbung-bachelor/{% elsif page.stg_kurz_abschluss_kurz contains \"-M\" %}master-bewerbung/{% else %}bewerbung/{% endif %}\" role=\"button\" target=\"_blank\">Informationen zur Bewerbung</a>";
@@ -270,7 +292,14 @@
       document.getElementById('bewerbenCallTo').innerHTML = jetztInformieren;
       document.getElementById('bewerbenSteckbriefCallTo').innerHTML = jetztInformierenSteckbrief;
     }
-  }
+  };
+
+    let formBewerbungBis = document.getElementById("formBewerbungBis");
+    formBewerbungBis.addEventListener("change", checkDates);
+    // formBewerbungBis.addEventListener ("change", test() {
+      // checkDates();
+      // console.log("Datum geändert");
+    // });
   </script>
 
 
