@@ -36,15 +36,11 @@
                   <th></th>
                   <td>
                     {% assign stg_richtung = page.studien_richtung %}
-                    {% case stg_richtung %}
-                    {% when "Technik" %}
-                    {{ site.badge_technik }}
-                    {% when "Soziales" %}
-                    {{ site.badge_soziales }}
-                    {% when "Wirtschaft" %}
-                    {{ site.badge_wirtschaft }}
-                    {% when "Gestaltung" %}
-                    {{ site.badge_gestaltung }}
+                      {% case stg_richtung %}
+                      {% when "Technik" %}{{ site.badge_technik }}
+                      {% when "Soziales" %}{{ site.badge_soziales }}
+                      {% when "Wirtschaft" %}{{ site.badge_wirtschaft }}
+                      {% when "Gestaltung" %}{{ site.badge_gestaltung }}
                     {% endcase %}{{ site.badge_cms }}
                   </td>
                 </tr>
@@ -108,13 +104,14 @@
                 </tr>
                 {% endif %}
                 <tr>
-                  <th scope="row" class="text-uppercase">Zulassungs&shy;beschränkt</th>
+                  <th scope="row" class="text-uppercase"><abbr title="Dieser Begriff muss noch angepasst werden.">Zulassungs&shy;vorraussetzungen</abbr></th>
                   <td>
-                    {% if page.zulassungs_beschraenkt == true %}
-                    Zulassungsbeschränkt{{ site.badge_cms }}
-                    {% else %}
-                    Zulassungsfrei{{ site.badge_cms }}
-                    {% endif %}
+                    {% case page.zulassungs_beschraenkt %}
+                      {% when 1 %}Zulassungsfrei
+                      {% when 2 %}Zulassungsbeschränkt
+                      {% when 3 %}Eignungsprüfung
+                      {% when 4 %}Eignungsfeststellungsverfahren
+                    {% endcase %}
                   </td>
                 </tr>
                 {% if page.zulassungs_beschraenkt == true %}

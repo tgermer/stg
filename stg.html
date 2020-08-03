@@ -48,7 +48,7 @@ title: Studiengangebot (STG)
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".bachelor">Bachelor</button>
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".master">Master</button>
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zertifikat">Zertifikat</button>
-  </div>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".seminar"><abbr title="Seminar anstatt 'kein Abschluss'">Seminar</abbr></button>  </div>
   <div class="col-xl-3 co-md-4 col-sm-6">
     <p class="h6 mt-4">Studienformat</p>
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".vollzeit">Vollzeit</button>
@@ -56,6 +56,7 @@ title: Studiengangebot (STG)
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".berufsbegleitend">Berufsbegleitend</button>
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".dual">Dual</button>
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".weiterbildend">Weiterbildend</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".seminar">Seminar</button>
   </div>
   <div class="col-xl-3 co-md-4 col-sm-6">
     <p class="h6 mt-4">Studienbeginn</p>
@@ -75,9 +76,11 @@ title: Studiengangebot (STG)
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".englisch">Englisch</button>
   </div>
   <div class="col-xl-3 co-md-4 col-sm-6">
-    <p class="h6 mt-4">Zulassungsvorraussetzungen</p>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zulassungsbeschraenkt">zulassungsbeschränkt</button>
+    <p class="h6 mt-4 underline"><abbr title="Dieser Begriff muss noch angepasst werden.">Zulassungsvorraussetzungen</abbr></p>
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zulassungsfrei">zulassungsfrei</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zulassungsbeschraenkt">zulassungsbeschränkt</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".eignungspruefung">Eignungsprüfung</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".eignungsfeststellungsverfahren">Eignungsfeststellungsverfahren</button>
   </div>
 </div>
 
@@ -116,7 +119,12 @@ title: Studiengangebot (STG)
         {{ stg.studien_begin | join: " " | downcase }}
         {{ stg.studien_richtung | join: " " | downcase }}
         {{ stg.sprachen.haupt_sprache | join: " " | downcase }}
-        {% if stg.zulassungs_beschraenkt == true %}zulassungsbeschraenkt{% else %}zulassungsfrei{% endif %}
+        {% case stg.zulassungs_beschraenkt %}
+          {% when 1 %}zulassungsfrei
+          {% when 2 %}zulassungsbeschraenkt
+          {% when 3 %}eignungspruefung
+          {% when 4 %}eignungsfeststellungsverfahren
+        {% endcase %}
         {{ stg.hzb | join: " " | downcase }}
         {% if stg.dual == true %}dual{% endif %}
         {% if stg.doppel_abschluss == true %}doppelabschluss{% endif %}
@@ -124,20 +132,15 @@ title: Studiengangebot (STG)
         {% if stg.studien_form contains "TZ" %}teilzeit{% endif %}
         {% if stg.studien_form contains "VZ" %}vollzeit{% endif %}
         {% if stg.fachrich contains "eiterbild" %}weiterbildend{% endif %}
-
       ">
     <h6><a href="{{ stg.dateiname | datapage_url: 'stg' }}">{{ stg.fachrich }} {{ stg.abschluss | upcase }} ({{ stg.grade_kurz }})</a></h6>
     <p>{{ stg.studien_art }}
       {% assign stg_richtung = stg.studien_richtung %}
       {% case stg_richtung %}
-        {% when "Technik" %}
-          {{ site.badge_technik }}
-        {% when "Soziales" %}
-          {{ site.badge_soziales }}
-        {% when "Wirtschaft" %}
-          {{ site.badge_wirtschaft }}
-        {% when "Gestaltung" %}
-          {{ site.badge_gestaltung }}
+        {% when "Technik" %}{{ site.badge_technik }}
+        {% when "Soziales" %}{{ site.badge_soziales }}
+        {% when "Wirtschaft" %}{{ site.badge_wirtschaft }}
+        {% when "Gestaltung" %}{{ site.badge_gestaltung }}
       {% endcase %}
   </div>
   {% endfor %}
