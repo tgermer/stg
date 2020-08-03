@@ -20,14 +20,10 @@ title: Studiengänge vergleichen (Merkliste)
           <br><small>{{ item.fachriche }}</small>
           <br><small>{% assign stg_richtung = item.studien_richtung %}
             {% case stg_richtung %}
-            {% when "Technik" %}
-            {{ site.badge_technik }}
-            {% when "Soziales" %}
-            {{ site.badge_soziales }}
-            {% when "Wirtschaft" %}
-            {{ site.badge_wirtschaft }}
-            {% when "Gestaltung" %}
-            {{ site.badge_gestaltung }}
+            {% when "Technik" %}{{ site.badge_technik }}
+            {% when "Soziales" %}{{ site.badge_soziales }}
+            {% when "Wirtschaft" %}{{ site.badge_wirtschaft }}
+            {% when "Gestaltung" %}{{ site.badge_gestaltung }}
             {% endcase %}</small></th>
         {% endfor %}
       </tr>
@@ -106,14 +102,15 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Zulassungsbeschränkt{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Zulassungmodus{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>
-          {% if item.zulassungs_beschraenkt == true %}
-          Zulassungsbeschränkt
-          {% else %}
-          Zulassungsfrei
-          {% endif %}
+          {% case item.zulassungs_beschraenkt %}
+            {% when 1 %}Zulassungsfrei
+            {% when 2 %}Zulassungsbeschränkt
+            {% when 3 %}Eignungsprüfung
+            {% when 4 %}Eignungsfeststellungsverfahren
+          {% endcase %}
         </td>
         {% endfor %}
       </tr>
