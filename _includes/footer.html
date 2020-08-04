@@ -72,7 +72,10 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script> -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -233,20 +236,20 @@
   <!-- https://www.w3schools.com/js/js_cookies.asp -->
 
   function checkCookieNEW() {
+    var minus = "<a href='javascript:checkCookieNEW()' class='btn btn-outline-dark btn-sm taste-loeschen' style='cursor: pointer' onclick='document.cookie=\"stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 1 Jan 2000 12:00:00 GMT; SameSite=Lax\"'><i class='fas fa-minus mr-1'></i>von Merkzettel löschen</a>";
+    var plus = "<a href='javascript:checkCookieNEW()' class='btn btn-outline-dark btn-sm taste-merken' style='cursor: pointer' onclick='document.cookie=\"stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 31 Dec 2030 12:00:00 GMT; SameSite=Lax\"'><i class='fas fa-plus mr-1'></i>Studiengang merken</a>";
   if (document.cookie == "stg={{ page.stg_kurz_abschluss_kurz }}") {
       // $('#taste').text("Studiengang merken");
-      var minus = "<a href='#' class='btn btn-outline-dark btn-sm loeschen' style='cursor: pointer' onclick='document.cookie=\"stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2000 12:00:00 GMT; SameSite=Lax\"'><i class='fas fa-minus mr-1'></i>von Merkzettel löschen</a><a href='#' class='btn btn-outline-dark btn-sm merken' style='cursor: pointer; display: none;' onclick='document.cookie=\"stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2023 12:00:00 GMT; SameSite=Lax\"'><i class='fas fa-plus mr-1'></i>Studiengang merken</a>";
       document.getElementById('taste').innerHTML = minus;
       console.log("Coockie STG vorhanden");
   // } else if (document.cookie.indexOf("expires") >= 0) {
   } else {
       // $('#taste').text("von Merkzettel löschen");
-      var plus = "<a href='#' class='btn btn-outline-dark btn-sm merken' style='cursor: pointer' onclick='document.cookie=\"stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2023 12:00:00 GMT; SameSite=Lax\"'><i class='fas fa-plus mr-1'></i>Studiengang merken</a><a href='#' class='btn btn-outline-dark btn-sm loeschen' style='cursor: pointer; display: none' onclick='document.cookie=\"stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2000 12:00:00 GMT; SameSite=Lax\"'><i class='fas fa-minus mr-1'></i>von Merkzettel löschen</a>";
       document.getElementById('taste').innerHTML = plus;
       console.log("Coockie STG nicht vorhanden");
   }
-  }
-  </script>
+};
+</script>
 
   <script>
     //https://stackoverflow.com/questions/9456138/how-can-i-get-seconds-since-epoch-in-javascript
