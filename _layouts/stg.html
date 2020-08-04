@@ -111,6 +111,7 @@
                       {% when 2 %}Zulassungsbeschränkt
                       {% when 3 %}Eignungsprüfung
                       {% when 4 %}Eignungsfeststellungsverfahren
+                      {% when 5 %}Eignungsverfahren
                     {% endcase %}
                   </td>
                 </tr>
@@ -122,11 +123,11 @@
                   </td>
                 </tr>
                 {% endif %}
-                {% if page.eignungs_pruefung != nil %}
+                {% if page.eignungs_verfahren != nil %}
                 <tr>
-                  <th scope="row" class="text-uppercase">Eignungs&shy;prüfung</th>
+                  <th scope="row" class="text-uppercase">Eignungs&shy;verfahren</th>
                   <td>
-                    {% for item in page.eignungs_pruefung %}
+                    {% for item in page.eignungs_verfahren %}
                     <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
                     {% endfor %}
                   </td>

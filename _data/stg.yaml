@@ -128,8 +128,8 @@
   hzb:
     - Allgemeine Hochschulreife
     - Fachgebundene Hochschulreife
-  zulassungs_beschraenkt: 2 # 1 zulassungsfrei | 2 zulassungsbeschränkt | 3 Eignungsprüfung | 4 Eignungsfeststellungsverfahren
-  eignungs_pruefung:
+  zulassungs_beschraenkt: 2 # 1 zulassungsfrei | 2 zulassungsbeschränkt | 3 Eignungsprüfung | 4 Eignungsfeststellungsverfahren | 5 Eignungsverfahren
+  eignungs_verfahren:
   vor_praxis:
   berufs_perpektiven:
     - als Steuerberater/Wirtschaftsprüfer
@@ -245,8 +245,8 @@
   hzb:
     - Allgemeine Hochschulreife
     - Fachgebundene Hochschulreife
-  zulassungs_beschraenkt: 3 # 1 zulassungsfrei | 2 zulassungsbeschränkt | 3 Eignungsprüfung | 4 Eignungsfeststellungsverfahren
-  eignungs_pruefung:
+  zulassungs_beschraenkt: 3 # 1 zulassungsfrei | 2 zulassungsbeschränkt | 3 Eignungsprüfung | 4 Eignungsfeststellungsverfahren | 5 Eignungsverfahren
+  eignungs_verfahren:
     - Eignungsprüfung (1. Teil)
     - Persönliches Gespräch (2. Teil)
   vor_praxis:
@@ -415,8 +415,8 @@
     # - Abgeschlossenes Bahelor-Studium in Wirtschaftsingenierwesen
     # - Abgeschlossenes Bahelor-Studium in Bauingenieurwesen
     # - Abgeschlossenes Bahelor-Studium in Ingenieur-/Naturwissenschaften
-  zulassungs_beschraenkt: 1 # 1 zulassungsfrei | 2 zulassungsbeschränkt | 3 Eignungsprüfung | 4 Eignungsfeststellungsverfahren
-  eignungs_pruefung:
+  zulassungs_beschraenkt: 5 # 1 zulassungsfrei | 2 zulassungsbeschränkt | 3 Eignungsprüfung | 4 Eignungsfeststellungsverfahren | 5 Eignungsverfahren
+  eignungs_verfahren:
     - Eignungsprüfung (Gespräch in Form einer Gruppendiskussion mit anschließender Präsentation)
   vor_praxis:
   berufs_perpektiven:
@@ -558,8 +558,8 @@
     - ein erfolgreich abgeschlossenes, mind. sechs theoretische Studiensemester (180 ECTS-Kreditpunkte) umfassendes ingenieurwissenschaftliches Studium (z. B. Maschinenbau, Mechatronik, Fahrzeugtechnik oder vergleichbar)
     - eine mind. einjährige, einschlägige, praktische Berufstätigkeit (in Ausnahmefällen kann diese erst nach Studienbeginn erworben werden)
     - eine als gleichwertig anzuerkennende berufliche Qualifikation wie beispielsweise ein Abschluss als Techniker oder Meister mit anschließender mehrjähriger Vollzeit-Berufstätigkeit nachgewiesen werden
-  zulassungs_beschraenkt: 1 # 1 zulassungsfrei | 2 zulassungsbeschränkt | 3 Eignungsprüfung | 4 Eignungsfeststellungsverfahren
-  eignungs_pruefung:
+  zulassungs_beschraenkt: 1 # 1 zulassungsfrei | 2 zulassungsbeschränkt | 3 Eignungsprüfung | 4 Eignungsfeststellungsverfahren | 5 Eignungsverfahren
+  eignungs_verfahren:
   vor_praxis:
   berufs_perpektiven:
     - als Steuerberater/Wirtschaftsprüfer
@@ -702,7 +702,7 @@
 #     - Min. 180 ECTS
 #     - Oder gleichwertiger Abschluss
 #   zulassungs_beschraenkt: false
-#   eignungs_pruefung:
+#   eignungs_verfahren:
 #   vor_praxis:
 #   berufs_perpektiven:
 #     - als Steuerberater/Wirtschaftsprüfer
@@ -828,8 +828,8 @@
     - Min. sechs theoretische Studiensemester
     - Min. 180 ECTS
     - Oder gleichwertiger Abschluss
-  zulassungs_beschraenkt: 1 # 1 zulassungsfrei | 2 zulassungsbeschränkt | 3 Eignungsprüfung | 4 Eignungsfeststellungsverfahren
-  eignungs_pruefung:
+  zulassungs_beschraenkt: 1 # 1 zulassungsfrei | 2 zulassungsbeschränkt | 3 Eignungsprüfung | 4 Eignungsfeststellungsverfahren | 5 Eignungsverfahren
+  eignungs_verfahren:
   vor_praxis:
   berufs_perpektiven:
     - als Steuerberater/Wirtschaftsprüfer

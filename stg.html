@@ -81,6 +81,7 @@ title: Studiengangebot (STG)
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zulassungsbeschraenkt">zulassungsbeschränkt</button>
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".eignungspruefung">Eignungsprüfung</button>
     <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".eignungsfeststellungsverfahren">Eignungsfeststellungsverfahren</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".eignungsverfahren">Eignungsverfahren</button>
   </div>
 </div>
 
@@ -124,6 +125,7 @@ title: Studiengangebot (STG)
           {% when 2 %}zulassungsbeschraenkt
           {% when 3 %}eignungspruefung
           {% when 4 %}eignungsfeststellungsverfahren
+          {% when 5 %}eignungsverfahren
         {% endcase %}
         {{ stg.hzb | join: " " | downcase }}
         {% if stg.dual == true %}dual{% endif %}

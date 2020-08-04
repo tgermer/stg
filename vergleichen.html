@@ -110,6 +110,7 @@ title: Studiengänge vergleichen (Merkliste)
             {% when 2 %}Zulassungsbeschränkt
             {% when 3 %}Eignungsprüfung
             {% when 4 %}Eignungsfeststellungsverfahren
+            {% when 5 %}Eignungsverfahren
           {% endcase %}
         </td>
         {% endfor %}
@@ -127,11 +128,11 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Eignungs&shy;prüfung{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase"><abbr title="Möglichkeit einer Eignungsprüfung, eines Eignungsfeststellungsverfahrens bzw. eines Eignungsgesprächs.">Eignungs&shy;verfahren</abbr>{{ site.badge_cms }}</th>
         {% for item in site.data.stg %}
         <td>
-          {% if item.eignungs_pruefung != nil %}
-          {% for item in item.eignungs_pruefung %}
+          {% if item.eignungs_verfahren != nil %}
+          {% for item in item.eignungs_verfahren %}
           <span class="d-block">{{ item }}</span>
           {% endfor %}
           {% else %}
