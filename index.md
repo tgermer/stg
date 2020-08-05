@@ -14,7 +14,7 @@ Um einfacher den für sich passenden Studiengang zu finden und mit anderen Studi
 > **Das Layout dient nur als Beispiel und stellt nicht das Layout nach dem Redesign der Webseite da.**  
 > Dieser Prototyp dient lediglich der Ausarbeitung der Funktionen und stellt nicht das Layout da, welches nach dem Redesign der Webseite benutzt werden wird. Dieses steht bis jetzt noch nicht fest.
 
-Lediglich Schriftart, sowie der Zeilen- und Wortabstand entsprechen den Angaben der HM Designrichtlinien vom 6. April 2020.
+Lediglich Schriftart, sowie der Zeilen- und Wortabstand entsprechen den Angaben der [HM Designrichtlinien vom 6. April 2020.](https://w3-mediapool.hm.edu/mediapool/media/intranet/lokal/pr_und_kommunikation/ci_portal/HM_CD_Guideline_E_28.pdf)
 
 ---
 
@@ -42,28 +42,33 @@ Um eine Verbesserung zu erreichen ist es in Zukunft unumgänglich standardisiert
 Weiterhin bietet die standardisierte und strukturierte Erfassung die Möglichkeit auf Übersichtsseiten zu unseren Studiengänge Filter einzubauen, sodass nach verschiedenen Kriterien gefiltert werden kann, um die Ergebnisliste einzuschränken.
 
 Mögliche Kriterien für Filter:
-- AbschlussBachelor
+- Abschluss
+  - Bachelor
   - Master
   - Zertifikat
+  - Seminar
 
 - Studienbeginn
-  - Sommersemester
-  - Wintersemester
+  - Start im Sommersemester
+  - Start im Wintersemester
 
 - Fachrichtung
-   - StudienrichtungTechnik
+- Studienrichtung
+  - Technik
   - Wirtschaft
   - Soziales
   - Design
 
 - Zulassungsmodus
-  - Zulassungsbeschränkt
-  - Zulassungsfrei
+  - zulassungsbeschränkt
+  - zulassungsfrei
+  - Eignungsprüfung
+  - Eignungsverfahren
+  - Eignungsfeststellungsverfahren
 
 - Hauptunterrichtssprache
   - Deutsch
   - Englisch
-  - Französisch
 
 - Fakultät
   - alle Fakultäten aufgelistet
@@ -79,7 +84,7 @@ Die Detailseiten zu den einzelnen Studiengänge müssen eine bessere Aufbereitun
 
 Ein besonderes Augenmerk möchten wir auch auf den Studienverlauf legen.
 
-Dieser sollte aus unserer Sicht auch standardiesiert dargestellt sein, sodass auch hier ein Vergleich mit anderen Studiengängen möglich ist. Weiterhin bietet diese tabellarische Studienverlaufsdarstellung einen guten Überblick, wann was gelehrt wird bzw. i. d. R. stattfindet (Praxissemester usw.). Ausgearbeitet sind diese in den Studiengängen Betriebswirtschaft Bachelor und Wirtschaftsingenieurwesen (Weiterbildung)-Master (MBA & Eng.) des Prototyps.
+Dieser sollte aus unserer Sicht auch standardisiert dargestellt sein, sodass auch hier ein Vergleich mit anderen Studiengängen möglich ist. Weiterhin bietet diese tabellarische Studienverlaufsdarstellung einen guten Überblick, wann was gelehrt wird bzw. i. d. R. stattfindet (Praxissemester usw.). Ausgearbeitet sind diese in den Studiengängen Betriebswirtschaft Bachelor und Wirtschaftsingenieurwesen (Weiterbildung)-Master (MBA & Eng.) des Prototyps.
 
 
 ### Infoblätter/Handouts
@@ -93,7 +98,7 @@ Für jegliche digitale Ankündigung von Studiengängen oder Formaten usw. muss e
 
 - Für Studiengänge
    - `www.hm.edu/studium/ww-m`
-   - `www.hm.edu/studieum/wirtschaftsingenieurwesen-weiterbildung-master`
+   - `www.hm.edu/studiem/wirtschaftsingenieurwesen-weiterbildung-master`
    - `www.hm.edu/studium/bw-b`
    - `www.hm.edu/studium/betriebswirtschaftslehre-bachelor`
    - usw.
@@ -111,23 +116,21 @@ Wir haben uns in der Studienberatung schon viele Gedanken gemacht, wie wir uns d
 Dazu haben wir zur besseren „Validierung“ einen Prototypen gebaut, welchen wir immer weiter angepasst haben.
 
 
-Über diesen Prototypen würde ich gerne mit Ihnen sprechen, um ein erstes Feedback bzw. Eindruck von Ihnen zu bekommen. Weiterhin möchte ich mit Ihnen besprechen, wie das weitere Vorgehen aussehen könnte. Dazu ist Ihre Sicht als _Sprecher der Studiengangsleiter_ essenziell, weil wir glauben, dass Sie gut einschätzen können, wie Ihre KollegInnen auf die neue Darstellung reagieren werden und ob bzw. wie wir sie mit ins _Boot_ holen können.
+Über diesen Prototypen würde ich gerne mit Ihnen sprechen, um ein erstes Feedback bzw. Eindruck von Ihnen zu bekommen. Weiterhin möchte ich mit Ihnen besprechen, wie das weitere Vorgehen aussehen könnte.
 
 
 ### Protoptyp
 
 Damit Sie sich einen ersten Eindruck von unserem Prototyp machen können, gebe ich Ihnen die Möglichkeit diesen schon vorweg zu begutachten. Wir haben zu Testzwecken die drei Studiengängen Architektur Bachelor, Betriebswirtschaft Bachelor und Wirtschaftsingenieurwesen (Weiterbildung)-Master (MBA & Eng.) eingebunden.
 
-- <a href="{{site.url}}/stg.html">Studienangebot</a>
-<!-- - Studienangebot -> https://stg-strukturiert.netlify.app/stg.html -->
-- <a href="{{site.url}}/stg/architektur-bachelor">Architektur Bachelor</a>
-<!-- - Architektur Bachelor -> https://stg-strukturiert.netlify.app/stg/architektur-bachelor/ -->
-- <a href="{{site.url}}/stg/betriebswirtschaftslehre-bachelor">Betriebswirtschaft Bachelor</a>
-<!-- - Betriebswirtschaft Bachelor -> https://stg-strukturiert.netlify.app/stg/betriebswirtschaftslehre-bachelor/ -->
-- <a href="{{site.url}}/stg/wirtschaftsingenieurwesen-weiterbildung-master/">Wirtschaftsingenieurwesen (Weiterbildung)-Master (MBA & Eng.)</a>
-<!-- - Wirtschaftsingenieurwesen (Weiterbildung)-Master (MBA & Eng.) -> https://stg-strukturiert.netlify.app/stg/wirtschaftsingenieurwesen-weiterbildung-master/ -->
-- <a href="{{site.url}}/vergleichen.html">Studiengänge vergleichen (Merkliste)</a>
-<!-- - Studiengänge vergleichen (Merkliste) -> https://stg-strukturiert.netlify.app/vergleichen.html -->
+*   [Betriebswirtschaftslehre BACHELOR (B.A.)]({{site.url}}/stg/betriebswirtschaftslehre-bachelor/)
+*   [Architektur BACHELOR (B.A.)]({{site.url}}/stg/architektur-bachelor/)
+*   [Wirtschaftsingenieurwesen (Weiterbildung) MASTER (MBA & Eng.)]({{site.url}}/stg/wirtschaftsingenieurwesen-weiterbildung-master/)
+*   [Bahntechnik - Antrieb, Bremse, Fahrdynamik ZERTIFIKAT (Hochschulzertifikat)]({{site.url}}/stg/bahntechnik-antrieb-bremse-fahrdynamik-hochschulzertifikat/)
+*   [Fahrzeugakustik ZERTIFIKAT (Hochschulzertifikat)]({{site.url}}/stg/fahrzeugakustik-modulstudium-aus-ingenierakustik-hochschulzertifikat/)
+
+
+*   [Studiengänge vergleichen (Merkliste))]({{site.url}}/vergleichen.html)
 
 
 #### Was geht, was geht nicht
@@ -146,6 +149,10 @@ Wir haben den Button `Datensatzherkunf anzeigen` sowohl oben rechts als auch unt
 
 Der Button `Studiengang merken` ist außer Funktion, soll aber Studiengänge auf eine Merkliste setzen, welche ich dann über `Vergleichen (Merkliste)` ansehen kann. &rarr; <a href="{{site.url}}/vergleichen.html">Studiengänge vergleichen (Merkliste)</a>
 
+
+**Unterschiedliche Beschriftung der Call-To-Action Buttons abhängig vom Datum**
+
+Die Beschriftung der Call-To-Action Buttons ist abhängig vom Bewerbungsdatum auf einen Studiengang und kann über das Datumsfeld im Prototyp verändert werden, um die Auswirkung zu sehen.
 
 **Vollstädigkeit/Richtigkeit**
 
