@@ -1,0 +1,572 @@
+-
+    stg: AR
+    aaspf_echt: B
+    stg_kurz: AR-B
+    url: 'https://www.hm.edu/ar-b'
+    url_echt: 'https://www.ar.hm.edu/lehre/bachelor/Bachelor.de.html'
+-
+    stg: AR
+    aaspf_echt: M
+    stg_kurz: AR-M
+    url: 'https://www.hm.edu/ar-m'
+    url_echt: 'https://www.ar.hm.edu/lehre/master/Master.de.html'
+-
+    stg: BI
+    aaspf_echt: B
+    stg_kurz: BI-B
+    url: 'https://www.hm.edu/bi-b'
+    url_echt: 'https://www.bau.hm.edu/studienangebot/bachelor_1/bachelor.de.html'
+-
+    stg: BN
+    aaspf_echt: M
+    stg_kurz: BN-M
+    url: 'https://www.hm.edu/bn-m'
+    url_echt: 'https://www.bau.hm.edu/studienangebot/masterallgemeineringenieurbau_1/index.de.html'
+-
+    stg: FC
+    aaspf_echt: M
+    stg_kurz: FC-M
+    url: 'https://www.hm.edu/fc-m'
+    url_echt: 'https://www.bau.hm.edu/studienangebot/weiterbildung/masterfacilitymanagement_2/master_facility_management.de.html'
+-
+    stg: RS
+    aaspf_echt: M
+    stg_kurz: RS-M
+    url: 'https://www.hm.edu/rs-m'
+    url_echt: 'https://www.me.hm.edu/studienangebot/master/master_applied_research_in_engineering_sciences/index.de.html'
+-
+    stg: FE
+    aaspf_echt: M
+    stg_kurz: FE-M
+    url: 'https://www.hm.edu/fe-m'
+    url_echt: 'https://www.me.hm.edu/studienangebot/master/master_fe/index.de.html'
+-
+    stg: FA
+    aaspf_echt: B
+    stg_kurz: FA-B
+    url: 'https://www.hm.edu/fa-b'
+    url_echt: 'https://www.me.hm.edu/studienangebot/bachelor/bachelor_fa/index.de.html'
+-
+    stg: FA
+    aaspf_echt: M
+    stg_kurz: FA-M
+    url: 'https://www.hm.edu/fa-m'
+    url_echt: 'https://www.me.hm.edu/studienangebot/master/master_fahrzeugtechnik/index.de.html'
+-
+    stg: IA
+    aaspf_echt: M
+    stg_kurz: IA-M
+    url: 'https://www.hm.edu/ia-m'
+    url_echt: 'https://www.hm.edu/allgemein/studienangebote/wissenschaftliche_weiterbildung/master/ingenieurakustik/index.de.html'
+-
+    stg: IA
+    aaspf_echt: Z
+    stg_kurz: IA-Z
+    url: 'https://www.hm.edu/ia-z'
+    url_echt: ""
+-
+    stg: LR
+    aaspf_echt: B
+    stg_kurz: LR-B
+    url: 'https://www.hm.edu/lr-b'
+    url_echt: 'https://www.me.hm.edu/studienangebot/bachelor/bachelor_lrt/index.de.html'
+-
+    stg: LR
+    aaspf_echt: M
+    stg_kurz: LR-M
+    url: 'https://www.hm.edu/lr-m'
+    url_echt: 'https://www.me.hm.edu/studienangebot/master/master_luft_und_raumfahrttechnik/index.de.html'
+-
+    stg: MB
+    aaspf_echt: B
+    stg_kurz: MB-B
+    url: 'https://www.hm.edu/mb-b'
+    url_echt: 'https://www.me.hm.edu/studienangebot/bachelor/bachelor_mb/index.de.html'
+-
+    stg: MB
+    aaspf_echt: M
+    stg_kurz: MB-M
+    url: 'https://www.hm.edu/mb-m'
+    url_echt: 'https://www.me.hm.edu/studienangebot/master/master_maschinenbau/index.de.html'
+-
+    stg: TB
+    aaspf_echt: M
+    stg_kurz: TB-M
+    url: 'https://www.hm.edu/tb-m'
+    url_echt: 'https://www.me.hm.edu/studienangebot/master/tbm/index.de.html'
+-
+    stg: EL
+    aaspf_echt: M
+    stg_kurz: EL-M
+    url: 'https://www.hm.edu/el-m'
+    url_echt: 'https://www.ee.hm.edu/master/master_et/Elektrotechnik.de.html'
+-
+    stg: EM
+    aaspf_echt: B
+    stg_kurz: EM-B
+    url: 'https://www.hm.edu/em-b'
+    url_echt: 'https://www.ee.hm.edu/bachelor/elektromobilitaet/index.de.html'
+-
+    stg: EI
+    aaspf_echt: B
+    stg_kurz: EI-B
+    url: 'https://www.hm.edu/ei-b'
+    url_echt: 'https://www.ee.hm.edu/bachelor/bachelorelektrotechnik/index.de.html'
+-
+    stg: RE
+    aaspf_echt: B
+    stg_kurz: RE-B
+    url: 'https://www.hm.edu/re-b'
+    url_echt: 'https://www.ee.hm.edu/bachelor/bachelor_regenerative_energien/index.de.html'
+-
+    stg: SM
+    aaspf_echt: M
+    stg_kurz: SM-M
+    url: 'https://www.hm.edu/sm-m'
+    url_echt: 'https://www.ee.hm.edu/master/master_se/Startseite.de.html'
+-
+    stg: DR
+    aaspf_echt: B
+    stg_kurz: DR-B
+    url: 'https://www.hm.edu/dr-b'
+    url_echt: 'http://www.pm.hm.edu/studienangebot/bachelor/uebersicht.html'
+-
+    stg: VS
+    aaspf_echt: B
+    stg_kurz: VS-B
+    url: 'https://www.hm.edu/vs-b'
+    url_echt: 'https://www.bs.hm.edu/studienangebot/bachelorstudiengang_1/index.de.html'
+-
+    stg: GT
+    aaspf_echt: M
+    stg_kurz: GT-M
+    url: 'https://www.hm.edu/gt-m'
+    url_echt: 'https://www.bs.hm.edu/studienangebot/masterstudiengang_1/index.de.html'
+-
+    stg: PK
+    aaspf_echt: M
+    stg_kurz: PK-M
+    url: 'https://www.hm.edu/pk-m'
+    url_echt: 'https://www.pp.hm.edu/papier_6/master_paper_technologie_4/index.de.jsp'
+-
+    stg: PW
+    aaspf_echt: M
+    stg_kurz: PW-M
+    url: 'https://www.hm.edu/pw-m'
+    url_echt: 'https://www.pp.hm.edu/papier_6/master_paper_technologie_4/index.de.jsp'
+-
+    stg: PR
+    aaspf_echt: M
+    stg_kurz: PR-M
+    url: 'https://www.hm.edu/pr-m'
+    url_echt: 'http://www.printmedien-master.de'
+-
+    stg: TN
+    aaspf_echt: B
+    stg_kurz: TN-B
+    url: 'https://www.hm.edu/tn-b'
+    url_echt: 'http://www.hm.edu/trk'
+-
+    stg: TK
+    aaspf_echt: Z
+    stg_kurz: TK-Z
+    url: 'https://www.hm.edu/tk-z'
+    url_echt: ""
+-
+    stg: VF
+    aaspf_echt: M
+    stg_kurz: VF-M
+    url: 'https://www.hm.edu/vf-m'
+    url_echt: 'https://www.pp.hm.edu/verpackung_4/master_paper_technologie_5/index.de.jsp'
+-
+    stg: VV
+    aaspf_echt: B
+    stg_kurz: VV-B
+    url: 'https://www.hm.edu/vv-b'
+    url_echt: 'https://www.pp.hm.edu/index.de.html'
+-
+    stg: AO
+    aaspf_echt: B
+    stg_kurz: AO-B
+    url: 'https://www.hm.edu/ao-b'
+    url_echt: 'https://w3pe-n.hm.edu/studienangebote/bachelor/aob/index.de.html'
+-
+    stg: BO
+    aaspf_echt: B
+    stg_kurz: BO-B
+    url: 'https://www.hm.edu/bo-b'
+    url_echt: 'http://www.fb06.fh-muenchen.de/fb/index.php/bachelorstudium/bob.html'
+-
+    stg: BO
+    aaspf_echt: M
+    stg_kurz: BO-M
+    url: 'https://www.hm.edu/bo-m'
+    url_echt: 'http://www.fb06.fh-muenchen.de/fb/index.php/de/masterstudium/bbm.html'
+-
+    stg: CH
+    aaspf_echt: B
+    stg_kurz: CH-B
+    url: 'https://www.hm.edu/ch-b'
+    url_echt: 'http://www.fb06.fh-muenchen.de/fb/index.php/bachelorstudium/ctb.html'
+-
+    stg: MF
+    aaspf_echt: B
+    stg_kurz: MF-B
+    url: 'https://www.hm.edu/mf-b'
+    url_echt: 'http://www.fb06.fh-muenchen.de/fb/index.php/bachelorstudium/mfb.html'
+-
+    stg: MF
+    aaspf_echt: M
+    stg_kurz: MF-M
+    url: 'https://www.hm.edu/mf-m'
+    url_echt: 'http://www.fb06.fh-muenchen.de/fb/index.php/masterstudium/mfm.html'
+-
+    stg: MT
+    aaspf_echt: B
+    stg_kurz: MT-B
+    url: 'https://www.hm.edu/mt-b'
+    url_echt: 'http://www.fb06.fh-muenchen.de/fb/index.php/bachelorstudium/mfb.html'
+-
+    stg: MN
+    aaspf_echt: M
+    stg_kurz: MN-M
+    url: 'https://www.hm.edu/mn-m'
+    url_echt: 'http://www.fb06.fh-muenchen.de/fb/index.php/masterstudium/mnm.html'
+-
+    stg: PO
+    aaspf_echt: M
+    stg_kurz: PO-M
+    url: 'https://www.hm.edu/po-m'
+    url_echt: 'http://www.fb06.fh-muenchen.de/fb/index.php/masterstudium/pom.html'
+-
+    stg: PH
+    aaspf_echt: B
+    stg_kurz: PH-B
+    url: 'https://www.hm.edu/ph-b'
+    url_echt: 'http://www.fb06.fh-muenchen.de/fb/index.php/bachelorstudium/phb.html'
+-
+    stg: PN
+    aaspf_echt: B
+    stg_kurz: PN-B
+    url: 'https://www.hm.edu/pn-b'
+    url_echt: 'http://www.fb06.fh-muenchen.de/fb/index.php/bachelorstudium/pnb.html'
+-
+    stg: PA
+    aaspf_echt: B
+    stg_kurz: PA-B
+    url: 'https://www.hm.edu/pa-b'
+    url_echt: 'http://www.fb06.fh-muenchen.de/fb/index.php/internationaler-studiengang/pab.html'
+-
+    stg: PA
+    aaspf_echt: M
+    stg_kurz: PA-M
+    url: 'https://www.hm.edu/pa-m'
+    url_echt: 'http://www.fb06.fh-muenchen.de/fb/index.php/de/internationaler-studiengang/pab.html'
+-
+    stg: IF
+    aaspf_echt: B
+    stg_kurz: IF-B
+    url: 'https://www.hm.edu/if-b'
+    url_echt: 'https://www.cs.hm.edu/studienangebote/studiengaenge/if_informatik/index.de.html'
+-
+    stg: IG
+    aaspf_echt: M
+    stg_kurz: IG-M
+    url: 'https://www.hm.edu/ig-m'
+    url_echt: 'https://www.cs.hm.edu/studienangebote/studiengaenge/ig_informatik/index.de.html'
+-
+    stg: IC
+    aaspf_echt: B
+    stg_kurz: IC-B
+    url: 'https://www.hm.edu/ic-b'
+    url_echt: 'https://www.cs.hm.edu/studienangebote/studiengaenge/ic_scientific_computing/index.de.html'
+-
+    stg: IS
+    aaspf_echt: M
+    stg_kurz: IS-M
+    url: 'https://www.hm.edu/is-m'
+    url_echt: 'https://www.cs.hm.edu/studienangebote/studiengaenge/is_stochastic_engineering/index.de.html'
+-
+    stg: IB
+    aaspf_echt: B
+    stg_kurz: IB-B
+    url: 'https://www.hm.edu/ib-b'
+    url_echt: 'https://www.cs.hm.edu/studienangebote/studiengaenge/ib_wirtschaftsinformatik/index.de.html'
+-
+    stg: IN
+    aaspf_echt: M
+    stg_kurz: IN-M
+    url: 'https://www.hm.edu/in-m'
+    url_echt: 'https://www.cs.hm.edu/studienangebote/studiengaenge/in_wirtschaftsinformatik/index.de.html'
+-
+    stg: GD
+    aaspf_echt: B
+    stg_kurz: GD-B
+    url: 'https://www.hm.edu/gd-b'
+    url_echt: 'https://www.geo.hm.edu/studienangebote/angewandte_geodaesie_und_geoinformatik/index.de.jsp'
+-
+    stg: GN
+    aaspf_echt: B
+    stg_kurz: GN-B
+    url: 'https://www.hm.edu/gn-b'
+    url_echt: 'https://www.geo.hm.edu/studienangebote/geoinformatik_und_navigation/index.de.html'
+-
+    stg: GO
+    aaspf_echt: M
+    stg_kurz: GO-M
+    url: 'https://www.hm.edu/go-m'
+    url_echt: 'https://www.geo.hm.edu/studienangebote/geomatik/index.de.html'
+-
+    stg: KG
+    aaspf_echt: B
+    stg_kurz: KG-B
+    url: 'https://www.hm.edu/kg-b'
+    url_echt: 'https://www.geo.hm.edu/studienangebote/kartographie_und_geomedientechnik/index.de.html'
+-
+    stg: DT
+    aaspf_echt: M
+    stg_kurz: DT-M
+    url: 'https://www.hm.edu/dt-m'
+    url_echt: 'http://www.hm.edu/deepdive'
+-
+    stg: GS
+    aaspf_echt: Z
+    stg_kurz: GS-Z
+    url: 'https://www.hm.edu/gs-z'
+    url_echt: 'https://www.wi.hm.edu/03_studieninteressierte/studienangebot/hochschulzertifikat__gruendung_eines_eigenen_start_ups_/startseitehochschulzertifikat.de.html'
+-
+    stg: WI
+    aaspf_echt: B
+    stg_kurz: WI-B
+    url: 'https://www.hm.edu/wi-b'
+    url_echt: 'https://www.wi.hm.edu/03_studieninteressierte/studienangebot/bachelorstudiengaenge/bachelor_wirtschaftsingenieurwesen_1/neue_startseite_bachelor_wi.de.html'
+-
+    stg: AU
+    aaspf_echt: B
+    stg_kurz: AU-B
+    url: 'https://www.hm.edu/au-b'
+    url_echt: 'https://www.wi.hm.edu/03_studieninteressierte/studienangebot/bachelorstudiengaenge/bachelor_wi_automobilindustrie_1/Startseite_Bachelor_AU.de.html'
+-
+    stg: WI
+    aaspf_echt: M
+    stg_kurz: WI-M
+    url: 'https://www.hm.edu/wi-m'
+    url_echt: 'https://www.wi.hm.edu/03_studieninteressierte/studienangebot/masterstudiengang/master_wi_konsekutiv/index.de.html'
+-
+    stg: LM
+    aaspf_echt: B
+    stg_kurz: LM-B
+    url: 'https://www.hm.edu/lm-b'
+    url_echt: 'https://www.wi.hm.edu/03_studieninteressierte/studienangebot/bachelorstudiengaenge/bachelor_wi_logistik_1/Startseite_Bachelor_LM.de.html'
+-
+    stg: WW
+    aaspf_echt: M
+    stg_kurz: WW-M
+    url: 'https://www.hm.edu/ww-m'
+    url_echt: 'https://www.wi.hm.edu/03_studieninteressierte/studienangebot/mba___engineering/index.de.html'
+-
+    stg: BS
+    aaspf_echt: M
+    stg_kurz: BS-M
+    url: 'https://www.hm.edu/bs-m'
+    url_echt: 'https://www.bwl.hm.edu/s/m/ma_tax.de.html'
+-
+    stg: BW
+    aaspf_echt: B
+    stg_kurz: BW-B
+    url: 'https://www.hm.edu/bw-b'
+    url_echt: 'https://www.bwl.hm.edu/s/b/ba_bwl.de.html'
+-
+    stg: BW
+    aaspf_echt: M
+    stg_kurz: BW-M
+    url: 'https://www.hm.edu/bw-m'
+    url_echt: 'https://www.bwl.hm.edu/s/m/msc_bwl.de.html'
+-
+    stg: UB
+    aaspf_echt: B
+    stg_kurz: UB-B
+    url: 'https://www.hm.edu/ub-b'
+    url_echt: 'https://www.bwl.hm.edu/s/b/ba_bwl_uf/uebersicht.de.html'
+-
+    stg: GR
+    aaspf_echt: M
+    stg_kurz: GR-M
+    url: 'https://www.hm.edu/gr-m'
+    url_echt: 'https://www.bwl.hm.edu/s/m/mba_green_economy/einstiegsseite_14.de.html'
+-
+    stg: MS
+    aaspf_echt: M
+    stg_kurz: MS-M
+    url: 'https://www.hm.edu/ms-m'
+    url_echt: 'https://www.bwl.hm.edu/s/m/mba/einstiegsseite_10.de.html'
+-
+    stg: PM
+    aaspf_echt: M
+    stg_kurz: PM-M
+    url: 'https://www.hm.edu/pm-m'
+    url_echt: 'https://www.bwl.hm.edu/s/m/ma_hr.de.html'
+-
+    stg: PF
+    aaspf_echt: M
+    stg_kurz: PF-M
+    url: 'https://www.hm.edu/pf-m'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/master/angewandte_forschung_in_der_sozialen_arbeit_2/index.de.jsp'
+-
+    stg: PF
+    aaspf_echt: Z
+    stg_kurz: PF-Z
+    url: 'https://www.hm.edu/pf-z'
+    url_echt: ""
+-
+    stg: SF
+    aaspf_echt: M
+    stg_kurz: SF-M
+    url: 'https://www.hm.edu/sf-m'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/master/angewandte_forschung_in_der_sozialen_arbeit/index.de.html'
+-
+    stg: SK
+    aaspf_echt: B
+    stg_kurz: SK-B
+    url: 'https://www.hm.edu/sk-b'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/bachelor/bildung_und_erziehung_im_kindesalter/index.de.html'
+-
+    stg: SD
+    aaspf_echt: M
+    stg_kurz: SD-M
+    url: 'https://www.hm.edu/sd-m'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/master/angewandte_forschung_in_der_sozialen_arbeit_1/mdbi.de.html'
+-
+    stg: GW
+    aaspf_echt: M
+    stg_kurz: GW-M
+    url: 'https://www.hm.edu/gw-m'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/master/gemeinwesenentwicklung_und_lokale_oekonomie/index.de.html'
+-
+    stg: GE
+    aaspf_echt: M
+    stg_kurz: GE-M
+    url: 'https://www.hm.edu/ge-m'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/master/master_gesellschaftlicher_wandel_und_teilhabe/index.de.html'
+-
+    stg: SI
+    aaspf_echt: B
+    stg_kurz: SI-B
+    url: 'https://www.hm.edu/si-b'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/bachelor/management_sozialer_innovation/index.de.html'
+-
+    stg: SY
+    aaspf_echt: M
+    stg_kurz: SY-M
+    url: 'https://www.hm.edu/sy-m'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/master/mental_health/index.de.html'
+-
+    stg: PF
+    aaspf_echt: B
+    stg_kurz: PF-B
+    url: 'https://www.hm.edu/pf-b'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/bachelor/pflege/index.de.html'
+-
+    stg: PY
+    aaspf_echt: M
+    stg_kurz: PY-M
+    url: 'https://www.hm.edu/py-m'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/master/weiterbildender_master_psychotherapie/index.de.html'
+-
+    stg: SW
+    aaspf_echt: B
+    stg_kurz: SW-B
+    url: 'https://www.hm.edu/sw-b'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/bachelor/soziale_arbeit/index.de.html'
+-
+    stg: SB
+    aaspf_echt: B
+    stg_kurz: SB-B
+    url: 'https://www.hm.edu/sb-b'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/bachelor/soziale_arbeit_basa_online/index.de.html'
+-
+    stg: SE
+    aaspf_echt: Z
+    stg_kurz: SE-Z
+    url: 'https://www.hm.edu/se-z'
+    url_echt: 'https://www.hm.edu/allgemein/studienangebote/wissenschaftliche_weiterbildung/zertifikate/berufstaetige/sae_uebersicht/sae_uebersicht.de.html'
+-
+    stg: SR
+    aaspf_echt: B
+    stg_kurz: SR-B
+    url: 'https://www.hm.edu/sr-b'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/bachelor/soziale_arbeit_tz/index.de.html'
+-
+    stg: SO
+    aaspf_echt: M
+    stg_kurz: SO-M
+    url: 'https://www.hm.edu/so-m'
+    url_echt: 'https://www.sw.hm.edu/studienangebot/master/sozialmanagement/index.de.html'
+-
+    stg: DS
+    aaspf_echt: M
+    stg_kurz: DS-M
+    url: 'https://www.hm.edu/ds-m'
+    url_echt: 'https://w3design-n.hm.edu/studienangebote/master/masterofartsinadvanceddesign.de.html'
+-
+    stg: DS
+    aaspf_echt: B
+    stg_kurz: DS-B
+    url: 'https://www.hm.edu/ds-b'
+    url_echt: 'https://w3design-n.hm.edu/studienangebote/bachelor_struktur/index.de.html'
+-
+    stg: IK
+    aaspf_echt: M
+    stg_kurz: IK-M
+    url: 'https://www.hm.edu/ik-m'
+    url_echt: 'https://www.gs.hm.edu/interkulturelle_kommunikation_kooperation/master/index.de.html'
+-
+    stg: IK
+    aaspf_echt: Z
+    stg_kurz: IK-Z
+    url: 'https://www.hm.edu/ik-z'
+    url_echt: 'https://www.gs.hm.edu/interkulturelle_kommunikation_kooperation/zusatzqualifikation/index.de.html'
+-
+    stg: PI
+    aaspf_echt: B
+    stg_kurz: PI-B
+    url: 'https://www.hm.edu/pi-b'
+    url_echt: 'https://www.gs.hm.edu/bachelor_internationales_projektmanagement/index.de.jsp'
+-
+    stg: PZ
+    aaspf_echt: Z
+    stg_kurz: PZ-Z
+    url: 'https://www.hm.edu/pz-z'
+    url_echt: ""
+-
+    stg: TH
+    aaspf_echt: M
+    stg_kurz: TH-M
+    url: 'https://www.hm.edu/th-m'
+    url_echt: 'https://www.tourismus.hm.edu/studienangebot/master_tourismus/hospitality_management/index.de.html'
+-
+    stg: TR
+    aaspf_echt: B
+    stg_kurz: TR-B
+    url: 'https://www.hm.edu/tr-b'
+    url_echt: 'https://www.tourismus.hm.edu/studienangebot/bachelor/tourismus_management_1/index.de.html'
+-
+    stg: TR
+    aaspf_echt: M
+    stg_kurz: TR-M
+    url: 'https://www.hm.edu/tr-m'
+    url_echt: 'https://www.tourismus.hm.edu/studienangebot/master_tourismus/tourismus_management/index.de.html'
+-
+    stg: CE
+    aaspf_echt: Z
+    stg_kurz: CE-Z
+    url: 'https://www.hm.edu/ce-z'
+    url_echt: 'https://www.gs.hm.edu/studienangebot/courses_in_english/Index.de.html'
+-
+    stg: SC
+    aaspf_echt: Z
+    stg_kurz: SC-Z
+    url: 'https://www.hm.edu/sc-z'
+    url_echt: ""
+-
+    stg: ""

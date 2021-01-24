@@ -8,18 +8,27 @@
   <main>
     <div class="container">
 
+      {% assign stg = site.data.3478_fachrichtung | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+      {% assign urls = site.data.stg_urls | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+      {% assign extras = site.data.extra | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+      <!-- extra[1].feld -->
+      {% assign extra = stg | concat: extras %}
+      <!-- extra[2].feld -->
+      {% assign extra = extra | concat: urls %}
+
+
       <p class="float-right d-print-none"><a href="#" class="btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="btn btn-link btn-sm hidebadges" style="cursor: pointer; display: none;">Datenherkunft
           verstecken</a>
         <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
       </p>
 
 
-      <h1>{{ page.fachrich }} ({{ page.grade_kurz | replace: " ", "&nbsp;" }}){{ site.badge_p }}
+      <h1>{{ page.fachrich }} ({{ page.text }}{% if page.titelkz_m_vz != "" %}, {{ page.titelkz_m_vz }}{% else %}{% endif %}) {{ site.badge_p }}
         <br><small>{{ page.fachriche }}{{ site.badge_p }}</small>
       </h1>
-
       <div class="row my-4">
-        <div class="col-lg-6" style="background-image: url(https://source.unsplash.com/random/1000?{{ page.tags | join: "+" }}); background-size: cover; background-position: center center; min-height:200px">
+        <div class="col-lg-6" style="background-image: url(https://source.unsplash.com/random/600?{% assign stg_richtung = page.zuordnung %}{% case stg_richtung %}{% when "T" %}technology{% when "S" %}social{% when "W" %}economy{% when "G" %}design
+        {% endcase %}); background-size: cover; background-position: center center; min-height:200px">
         </div>
         <div class="col-lg-6 bg-light py-3">
           <span id="taste" class="float-right d-print-none"></span>
@@ -30,80 +39,79 @@
           <div class="table-responsive">
             <table class="table table-sm mt-3 bg-transparent">
               <tbody>
+                {% if page.zuordnung != "" %}
                 <tr>
                   <th></th>
                   <td>
-                    {% assign stg_richtung = page.studien_richtung %}
+                    {% assign stg_richtung = page.zuordnung %}
                       {% case stg_richtung %}
-                      {% when "Technik" %}{{ site.badge_technik }}
-                      {% when "Soziales" %}{{ site.badge_soziales }}
-                      {% when "Wirtschaft" %}{{ site.badge_wirtschaft }}
-                      {% when "Gestaltung" %}{{ site.badge_gestaltung }}
-                    {% endcase %}{{ site.badge_cms }}
+                      {% when "T" %}{{ site.badge_technik }}
+                      {% when "S" %}{{ site.badge_soziales }}
+                      {% when "W" %}{{ site.badge_wirtschaft }}
+                      {% when "G" %}{{ site.badge_gestaltung }}
+                    {% endcase %}{{ site.badge_p }}
                   </td>
                 </tr>
-                {% if page.studien_art != nil %}
+                {% endif %}
+                {% if page._name != nil %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Art des Studiums</th>
-                  <td>{{ page.studien_art}}{{ site.badge_cms }}</td>
+                  <td>{{ page._name}}{{ site.badge_p }}</td>
                 </tr>
                 {% endif %}
-                {% if page.dual == true %}
+                {% if page.rsem_dual != "0" %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Dual studierbar</th>
-                  <td><i class="fas fa-check-circle text-success"></i></td>
+                  <td><i class="fas fa-check-circle text-success"></i>{{ site.badge_p }}</td>
                 </tr>
                 {% endif %}
-                {% if page.studien_ort != nil %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Studienort</th>
-                  <td><span class="d-block">{{ page.studien_ort | join: '</span><span class="d-block">'}}</span></td>
+                  <td>???{{ site.badge_cms }}
+                    <!-- <span class="d-block">{{ page.studien_ort | join: '</span><span class="d-block">'}}</span> -->
+                    <br><small>z. B. Campus Pasing ODER Campus Lothstraße und Campus Karlstaße ODER Campus Pasing und Universität XYZ, Land</small>
+                  </td>
                 </tr>
-                {% endif %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Regelstudienzeit</th>
                   <td>
-                    {% if page.regelstudien_zeit.voll_zeit != nil %}
-                    <span class="d-block">{{ page.regelstudien_zeit.voll_zeit }} Semester Vollzeit</span>
+                    {% if page.rsem_vz != "0" %}
+                    <span class="d-block" title="{{ page.pvers_vz }}">{{ page.rsem_vz }} Semester Vollzeit{{ site.badge_p }}</span>
                     {% endif %}
-                    {% if page.regelstudien_zeit.teil_zeit != nil %}
-                    <span class="d-block">{{ page.regelstudien_zeit.teil_zeit }} Semester Teilzeit</span>
+                    {% if page.rsem_tz != "0" %}
+                    <span class="d-block" title="{{ page.pvers_tz }}">{{ page.rsem_tz }} Semester Teilzeit{{ site.badge_p }}</span>
+                    {% endif %}
+                    {% if page.rsem_dual != "0" %}
+                    <span class="d-block" title="{{ page.pvers_dual }}">{{ page.rsem_dual }} Semester Dual{{ site.badge_p }}</span>
                     {% endif %}
                   </td>
                 </tr>
-                {% if page.ects != nil %}
                 <tr>
                   <th scope="row" class="text-uppercase">zu erreichende <abbr title="European Credit Transfer and Accumulation System">ECTS</abbr></th>
-                  <td>{{ page.ects }}{{ site.badge_p }}</td>
+                  <td>
+                    {% if page.ects_vz != '0' %}
+                    <span class="d-block">{{ page.ects_vz }} bei Vollzeit{{ site.badge_p }}</span>
+                    {% endif %}
+                    {% if page.ects_tz != '0' %}
+                    <span class="d-block">{{ page.ects_tz }} bei Teilzeit{{ site.badge_p }}</span>
+                    {% endif %}
+                    {% if page.ects_dual != '0' %}
+                    <span class="d-block">{{ page.ects_dual }} bei Dual{{ site.badge_p }}</span>
+                    {% endif %}
+                </td>
                 </tr>
-                {% endif %}
-                {% if page.studien_begin != nil %}
                 <tr>
                   <th scope="row" class="text-uppercase">Studienbeginn</th>
-                  <td>{{ page.studien_begin  | join: " und "}}{{ site.badge_cms }}</td>
+                  <td>???</td>
                 </tr>
-                {% endif %}
-                {% if page.hzb != nil %}
                 <tr>
                   <th scope="row" class="text-uppercase">Zulassungs&shy;vorraussetzungen</th>
-                  <td>
-                    {% if page.hzb.size > 1%}
-                    <ul style="padding-left:15px">
-                      {% for item in page.hzb %}
-                      <li>{{ item }}</li>
-                      {% endfor %}
-                    </ul>
-                    {% else %}
-                    {% for item in page.hzb %}
-                    <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
-                    {% endfor %}
-                    {% endif %}
-                  </td>
+                  <td>???{{ site.badge_cms }}</td>
                 </tr>
-                {% endif %}
                 <tr>
                   <th scope="row" class="text-uppercase">Zulassungs&shy;modus</th>
-                  <td>
+                  <td>???{{ site.badge_cms }}
+                    {% comment %}
                     {% case page.zulassungs_beschraenkt %}
                       {% when 1 %}Zulassungsfrei
                       {% when 2 %}Zulassungsbeschränkt
@@ -111,83 +119,103 @@
                       {% when 4 %}Eignungsfeststellungsverfahren
                       {% when 5 %}Eignungsverfahren
                     {% endcase %}
+                    {% endcomment %}
                   </td>
                 </tr>
-                {% if page.zulassungs_beschraenkt == true %}
                 <tr>
                   <th scope="row" class="text-uppercase">Zulassungs&shy;zahlen</th>
                   <td>
-                    <a href="{{ site.zulassungszahlen_url }}" target="_blank">{{ site.zulassungszahlen_url_text }}</a>
+                    ???{{ site.badge_cms }}<br><a href="{{ site.zulassungszahlen_url }}" target="_blank">{{ site.zulassungszahlen_url_text }}</a><br><small>Nur anzeigen, wenn STG zulassungsbeschränkt!</small>
                   </td>
                 </tr>
-                {% endif %}
-                {% if page.eignungs_verfahren != nil %}
                 <tr>
                   <th scope="row" class="text-uppercase">Eignungs&shy;verfahren</th>
-                  <td>
-                    {% for item in page.eignungs_verfahren %}
-                    <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
-                    {% endfor %}
+                  <td>???{{ site.badge_cms }}<br>Welche Art von Eignungsverfahren wird durchgeführt.<br><small>Nur anzeigen, wenn STG zulassungsbeschränkt!</small>
                   </td>
                 </tr>
+                {% assign alle = page.praxis_vz | split: "|" %}
+                {% if alle[0] contains "Vorpraxis" %}
+                  {% assign alle = alle[0] | split: "#" %}
+                  {% assign praxis_vz = alle[2] %}
+                {% elsif alle[1] contains "Vorpraxis" %}
+                  {% assign alle = alle[1] | split: "#" %}
+                  {% assign praxis_vz = alle[2] %}
+                {% elsif alle[2] contains "Vorpraxis" %}
+                  {% assign alle = alle[2] | split: "#" %}
+                  {% assign praxis_vz = alle[2] %}
                 {% endif %}
-                {% if page.vor_praxis != nil %}
+                {% if praxis_vz != nil %}
                 <tr>
                   <th scope="row" class="text-uppercase">Vorpraxis (Vorpraktikum)</th>
                   <td>
-                    {% for item in page.vor_praxis %}
-                    <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
-                    {% endfor %}
-                    <span class="d-block">Die Vorpraxis (Vorpraktikum) besteht aus insgesamt {{ page.vor_praxis_wochen }}&nbsp;Wochen.</span>
+                    <span class="d-block">Die Vorpraxis (Vorpraktikum) bei einem Studium in Vollzeit besteht aus insgesamt {{ praxis_vz }}&nbsp;Wochen.</span>
                     <span class="d-block"><a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Hinweise_Vorpraktikum.pdf" target="_blank">Weitere Informationen zur Vorpraxis
                         (Vorpraktikum)</a> </span>
                   </td>
                 </tr>
                 {% endif %}
-                {% if page.sprachen.haupt_sprache != nil %}
                 <tr>
                   <th scope="row" class="text-uppercase">Hauptunterrichts&shy;sprache</th>
-                  <td>{{ page.sprachen.haupt_sprache  | join: " und "}}{{ site.badge_cms }}
-                    {% if page.sprachen.weitere_sprachen != nil %}
-                    <p>Weitere Spachen:<br>{{ page.sprachen.weitere_sprachen | join: ", " }}{{ site.badge_cms }}</p>
-                    {% endif %}
+                  <td>???{{ site.badge_cms }}
+                    <p>Weitere Spachen:<br>???</p>
                   </td>
                 </tr>
+                <!-- Praxissemester-Dauer herausfinden -->
+                {% assign alle = page.praxis_vz | split: "|" %}
+                {% if alle[0] contains "Praxissemester" %}
+                  {% assign alle = alle[0] | split: "#" %}
+                  {% assign praxis_vz_dauer = alle[2] %}
+                {% elsif alle[1] contains "Praxissemester" %}
+                  {% assign alle = alle[1] | split: "#" %}
+                  {% assign praxis_vz_dauer = alle[2] %}
+                {% elsif alle[2] contains "Praxissemester" %}
+                  {% assign alle = alle[2] | split: "#" %}
+                  {% assign praxis_vz_dauer = alle[2] %}
                 {% endif %}
-                {% if page.praxis_semester != nil %}
+                <!-- Praxissemester Semester herausfinden -->
+                {% assign alle = page.praxis_vz | split: "|" %}
+                {% if alle[0] contains "Praxissemester" %}
+                  {% assign alle = alle[0] | split: "#" %}
+                  {% assign praxis_vz_semester = alle[1] %}
+                {% elsif alle[1] contains "Praxissemester" %}
+                  {% assign alle = alle[1] | split: "#" %}
+                  {% assign praxis_vz_semester = alle[1] %}
+                {% elsif alle[2] contains "Praxissemester" %}
+                  {% assign alle = alle[2] | split: "#" %}
+                  {% assign praxis_vz_semester = alle[1] | times: 1 %}
+                {% endif %}
+                <!-- Gib es überhaupt einen Praxissemester-Dauer? -->
+                {% if praxis_vz_dauer != 0 %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Praxissemester</th>
                   <td>
-                    {% if page.praxis_semester_dauer != nil %}
-                    Im {{ page.praxis_semester }} Semester muss ein {{ page.praxis_semester_dauer }}-wöchiges Praktikum absolviert werden.
+                    {% if praxis_vz_dauer != 0 %}
+                    Im {{ praxis_vz_semester }}.&nbsp;Semester muss ein {% if praxis_vz_dauer != nil %}{{ praxis_vz_dauer }}{% else %}???{% endif %}-wöchiges Praktikum absolviert werden.
                     {% else %}
-                    Im {{ page.praxis_semester }} Semester muss ein Praktikum absolviert werden.
-                    {% endif %}
+                    Im {{ praxis_vz_semester }}.&nbsp;Semester muss ein Praktikum absolviert werden.
+                    {% endif %}{{ site.badge_p }}
                   </td>
                 </tr>
                 {% endif %}
-                {% if page.doppel_abschluss == true %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Doppelabschluss</th>
-                  <td><i class="fas fa-check-circle text-success"></i>
-                    <span class="d-block">{{ page.doppel_abschluss_partner_uni | join: '</span><span class="d-block">'}}</span>
+                  <td>
+                    ???{{ site.badge_cms }}<br>
+                    Partnerunis angeben
                   </td>
                 </tr>
-                {% endif %}
-                {% if page.auslands_semester == true %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Auslandssemester</th>
                   <td>
-                    Auslandsemester möglich{% if page.auslands_semester_semester != nil %}; empfohlen im {{ page.auslands_semester_semester}}&nbsp;Semester
-                    {% endif %}
+                    ???{{ site.badge_cms }}<br>
+                    Auslandsemester möglich; empfohlen im ???&nbsp;Semester
                   </td>
                 </tr>
-                {% endif %}
                 <tr>
                   <th scope="row" class="text-uppercase">Semesterbeiträge</th>
                   <td>
-                    <span class="d-block">Grundbeitrag Studentenwerk 75,00{{ site.badge_cms }}&nbsp;Euro</span>
-                    <span class="d-block">Solidarbeitrag Semesterticket 67,40{{ site.badge_cms }}&nbsp;Euro</span>
+                    <span class="d-block">Grundbeitrag Studentenwerk 75,00&nbsp;Euro{{ site.badge_p }}</span>
+                    <span class="d-block">Solidarbeitrag Semesterticket 67,40&nbsp;Euro{{ site.badge_p }}</span>
                   </td>
                 </tr>
                 {% if page.kosten != nil %}
@@ -195,7 +223,7 @@
                   <th scope="row" class="text-uppercase">Studiengebühren</th>
                   <!-- https://github.com/23maverick23/jekyll-humanize -->
                   <td>
-                    {{ page.kosten }}{{ site.badge_cms }}&nbsp;Euro
+                    {{ page.kosten }}{{ site.badge_p }}&nbsp;Euro
                     {% if page.kosten_intervall != nil %}
                     {{ page.kosten_intervall }}
                     {% endif %}
@@ -219,35 +247,45 @@
           </div> -->
           <div id="bewerbenSteckbriefCallTo"></div>
           <!-- <a class="btn btn-success btn-out line-success btn-block btn-lg my-3 d-print-none" href="https://www3.primuss.de/cgi-bin/bew_anmeldung/index.pl?FH=fhm" role="button" target="_blank">Jetzt bewerben</a> -->
+          <a class="btn btn-success btn-block btn-lg my-3 d-print-none" href="https://www.hm.edu/bewerbung/" role="button" target="_blank">Information zur Bewerbung</a>
         </div>
       </div>
 
+      <!-- Studienrichtung und Studienschwerpunk -->
+      {% assign studienrichtung_vz = page.studienrichtung_vz | split: ";" %}
+
+      {% if page.schwerpunkt_vz == "" %}
+        {% assign schwerpunkt_vz = page.schwerpunkt_tz | split: ";" %}
+      {% else %}
+        {% assign schwerpunkt_vz = page.schwerpunkt_vz | split: ";" %}
+      {% endif %}
+
       <div class="row my-4">
-        {% if page.studien_schwerpunkte == nil or page.studien_richtungen == nil %}
+        {% if page.schwerpunkt_vz == nil or page.studienrichtung_vz == nil %}
         <div class="col-md-12 my-2">
           <h2>Kurzbeschreibung{{ site.badge_cms }}</h2>
-          {{ page.teaser | markdownify }}
+          {{ extra[1].teaser | markdownify }}
         </div>
         {% else %}
         <div class="col-md-6 my-2">
           <h2>Kurzbeschreibung{{ site.badge_cms }}</h2>
-          {{ page.teaser | markdownify }}
+          {{ extra[1].teaser | markdownify }}
         </div>
         <div class="col-md-6 my-2">
-          {% if page.studien_schwerpunkte != nil %}
+          {% if schwerpunkt_vz != "" %}
           <h2>Studienschwerpunkte{{ site.badge_p }}</h2>
           <ul>
-            {% assign items = page.studien_schwerpunkte | sort %}
+            {% assign items = schwerpunkt_vz | sort %}
             {% for item in items %}
             <li>{{ item }}</li>
             {% endfor %}
           </ul>
-          <p>Sie müssen im laufe Ihres Studiums {{ page.studien_schwerpunkte_ablegen }} Studienschwerpunkte aus den angebotenen {{ page.studien_schwerpunkte.size }} Studienschwerpunkten belegen.</p>
+          <p>Sie müssen im laufe Ihres Studiums ???{{ site.badge_p }} Studienschwerpunkte aus den angebotenen {{ page.studien_schwerpunkte.size }} Studienschwerpunkten belegen.</p>
           {% endif %}
-          {% if page.studien_richtungen != nil %}
+          {% if page.studienrichtung_vz != "" %}
           <h2>Studienrichtungen{{ site.badge_p }}</h2>
           <ul>
-            {% assign items = page.studien_richtungen | sort %}
+            {% assign items = studienrichtung_vz | sort %}
             {% for item in items %}
             <li>{{ item }}</li>
             {% endfor %}
@@ -262,7 +300,6 @@
       </p>
 
       <div class="accordion" id="accordion_stg_informationen">
-        {% if page.studien_ziel != nil %}
         <div class="card">
           <div class="card-header" id="heading_studien_ziel">
             <h2 class="mb-0">
@@ -273,12 +310,11 @@
           </div>
           <div id="collapse_studien_ziel" class="collapse" aria-labelledby="heading_studien_ziel" data-parent="#accordion_stg_informationen">
             <div class="card-body">
-              {{ page.studien_ziel | markdownify }}
+              {{ extra[1].studien_ziel | markdownify }}
             </div>
           </div>
         </div>
-        {% endif %}
-        {% if page.studien_verlauf != nil or page.faecherkatalog != nil %}
+
         <div class="card">
           <div class="card-header" id="heading_studien_verlauf">
             <h2 class="mb-0">
@@ -304,71 +340,147 @@
               {% endif %}
 
               {{ page.studien_verlauf | markdownify }}
-              <h4>Modul-/Fächerkatalog{{ site.badge_cms}}</h4>
-              {% if page.studien_form contains "TZ" %}
-              <div class="alert alert-warning" role="alert">
-                <p>
-                  <span class="d-block font-weight-bolder">Information zum Studium in Teilzeit</span>
-                  Der Modul-/Fächerkatalog bildet immer ein Vollzeitstudium ab. Sollten Sie den Studiengang in Teilzeit studieren, können Sie die Fächer auf i.&nbsp;d.&nbsp;R. {{ page.regelstudien_zeit.teil_zeit }}&nbsp;Semester verteilen.
-                </p>
-              </div>
-              {% endif %}
+              <h4>Modul-/Fächerkatalog{{ site.badge_p}}</h4>
+
+              {% assign module = site.data.3739_modulkatalog | where_exp: "search", "search.stg_kurz == page.stg_kurz"%}
+
+              {% assign page.rsem_vz == page.rsem_vz | times: 1 %}
+              {% assign page.rsem_tz == page.rsem_tz | times: 1 %}
+              {% assign page.rsem_dual == page.rsem_dual | times: 1 %}
+
+              {% if page.rsem_vz != "0" %}
+              {% assign module = module | where_exp: "search", "search.pvers == page.pvers_vz"%}
+              <h5>Beispielhafte Darstellung für ein Studium in Vollzeit<br><small>Prüfungsordnungsversion {{ page.pvers_vz }}</small>{{ site.badge_p}}</h5>
               <div class="table-responsive">
                 <table class="table table-striped table-bordered table-sm">
                   <thead>
                     <tr>
-                      <th scope="col">Modul/Fach<span class="float-right"><small>Semester</small></span></th>
-                      {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
-                      <th scope="col" {% if i == page.praxis_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
-                        {% if i == page.praxis_semester %} <small>Praxissemester</small><br> {% endif %}{% if i == page.auslands_semester_semester %} <small>empfohlenes Auslandssemester</small><br> {% endif %}{{ i }}
+                      <th scope="col">Modul/Fach</th>
+                      <th scope="col">Studienrichtung/&#8203;Schwerpunk<span class="float-right"><small>Semester</small></span></th>
+                      {% for i in (1..page.rsem_vz) %}
+                      <th scope="col" {% if i == praxis_vz_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
+                        {% if i == praxis_vz_semester %} <small>Praxissemester</small><br> {% endif %}{% if i == page.auslands_semester_semester %} <small>empfohlenes Auslandssemester</small><br> {% endif %}{{ i }}
                       </th>
                       {% endfor %}
                     </tr>
                   </thead>
-                  {% assign items = page.faecherkatalog %}
+                  {% assign items = module %}
                   <tbody>
                     {% for item in items %}
+                    {% if item.points != 0 %}
                     <tr>
-                      {% if item[1] == nil and item[2] == nil and item[3] == nil %}
-                      <th scope="row" colspan="{{ page.regelstudien_zeit.faecherkatalog | plus: 1 }}">{{ item[0] }}</th>
-                      {% else %}
-                      <td scope="row">{{ item[0] }} <small>({{ item[3] }}&nbsp;ECTS)</small></td>
-                      {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
-                      <td align="center" {% if i == page.praxis_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
-                        {% if item[1] == i and item[2] > 0 %}
-                        {{ item[2] }}&nbsp;SWS
-                        {% elsif item[1] == i and item[2] == 0 or item[2] == nil %}
+                      <td scope="row" class="align-middle">{{ item.titelzg }} <small>({{ item.points }}&nbsp;ECTS)</small>
+                        {% if item.en_titelzg != nil %}<br><small>{{ item.en_titelzg }}</small>{% endif %}
+                      </td>
+                      <td scope="row" class="align-middle">{{ item.strichnam }}{{ item.spktnam }}{% if item.en_strnam != "" or item.en_spktnam != "" %}<br><small>{{ item.en_strnam }}{{ item.en_spktnam }}</small>{% endif %}</td>
+                      {% for i in (1..page.rsem_vz) %}
+                      <td align="center" {% if i == praxis_vz_semester %} class="table-warning text-center align-middle" {% elsif i == page.auslands_semester_semester %} class="table-info text-center align-middle" {% else %}class="text-center align-middle" {% endif %}>
+                        {% if item.regelsem == i and item.stdwpf > 0 %}
+                        {{ item.stdwpf }}&nbsp;SWS
+                        {% elsif item.regelsem == i and item.stdwpf == 0 or item.stdwpf == nil  %}
                         &#10003;
                         {% endif %}
                       </td>
                       {% endfor %}
-                      {% endif %}
                     </tr>
+                    {% endif %}
                     {% endfor %}
                   </tbody>
-                  <!-- <tfoot>
-                    <tr>
-                      <th><span class="float-right"><small>Summe Semesterwochenstunden</small></span></th>
-                      {% for i in (1..page.regelstudien_zeit.faecherkatalog) %}
-                      <th class="text-center" {% if i == page.praxis_semester %} class="table-info" {% endif %}>
-                        ##
-                      </th>
-                      {% endfor %}
-                    </tr>
-                  </tfoot> -->
                 </table>
-              </div>
             </div>
+
+            {% elsif page.rsem_tz != 0 %}
+            {% assign module = module | where_exp: "search", "search.pvers == page.pvers_tz"%}
+            <h5>Beispielhafte Darstellung für ein Studium in Teilzeit<br><small>Prüfungsordnungsversion {{ page.pvers_tz }}</small>{{ site.badge_p}}</h5>
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">Modul/Fach</th>
+                    <th scope="col">Studienrichtung/&#8203;Schwerpunk<span class="float-right"><small>Semester</small></span></th>
+                    {% for i in (1..page.rsem_tz) %}
+                    <th scope="col" {% if i == praxis_vz_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
+                      {% if i == praxis_vz_semester %} <small>Praxissemester</small><br> {% endif %}{% if i == page.auslands_semester_semester %} <small>empfohlenes Auslandssemester</small><br> {% endif %}{{ i }}
+                    </th>
+                    {% endfor %}
+                  </tr>
+                </thead>
+                {% assign items = module %}
+                <tbody>
+                  {% for item in items %}
+                  {% if item.points != 0 %}
+                  <tr>
+                    <td scope="row" class="align-middle">{{ item.titelzg }} <small>({{ item.points }}&nbsp;ECTS)</small>
+                      {% if item.en_titelzg != nil %}<br><small>{{ item.en_titelzg }}</small>{% endif %}
+                    </td>
+                    <td scope="row" class="align-middle">{{ item.strichnam }}{{ item.spktnam }}{% if item.en_strichnam != nil or item.en_stpktnam != nil %}<br><small>{{ item.en_strichnam }}{{ item.en_stpktnam }}</small>{% endif %}</td>
+                    {% for i in (1..page.rsem_tz) %}
+                    <td align="center" {% if i == praxis_vz_semester %} class="table-warning text-center align-middle" {% elsif i == page.auslands_semester_semester %} class="table-info text-center align-middle" {% else %}class="text-center align-middle" {% endif %}>
+                      {% if item.regelsem == i and item.stdwpf > 0 %}
+                      {{ item.stdwpf }}&nbsp;SWS
+                      {% elsif item.regelsem == i and item.stdwpf == 0 or item.stdwpf == nil  %}
+                      &#10003;
+                      {% endif %}
+                    </td>
+                    {% endfor %}
+                  </tr>
+                  {% endif %}
+                  {% endfor %}
+                </tbody>
+              </table>
+          </div>
+          {% elsif page.rsem_dual != 0 %}
+          {% assign module = module | where_exp: "search", "search.pvers == page.pvers_dual"%}
+          <h5>Beispielhafte Darstellung für ein Studium in Teilzeit<br><small>Prüfungsordnungsversion {{ page.pvers_dual }}</small>{{ site.badge_p}}</h5>
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">Modul/Fach</th>
+                  <th scope="col">Studienrichtung/&#8203;Schwerpunk<span class="float-right"><small>Semester</small></span></th>
+                  {% for i in (1..page.rsem_dual) %}
+                  <th scope="col" {% if i == praxis_vz_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
+                    {% if i == praxis_vz_semester %} <small>Praxissemester</small><br> {% endif %}{% if i == page.auslands_semester_semester %} <small>empfohlenes Auslandssemester</small><br> {% endif %}{{ i }}
+                  </th>
+                  {% endfor %}
+                </tr>
+              </thead>
+              {% assign items = module %}
+              <tbody>
+                {% for item in items %}
+                {% if item.points != 0 %}
+                <tr>
+                  <td scope="row" class="align-middle">{{ item.titelzg }} <small>({{ item.points }}&nbsp;ECTS)</small>
+                    {% if item.en_titelzg != nil %}<br><small>{{ item.en_titelzg }}</small>{% endif %}
+                  </td>
+                  <td scope="row" class="align-middle">{{ item.strichnam }}{{ item.spktnam }}{% if item.en_strichnam != nil or item.en_stpktnam != nil %}<br><small>{{ item.en_strichnam }}{{ item.en_stpktnam }}</small>{% endif %}</td>
+                  {% for i in (1..page.rsem_dual) %}
+                  <td align="center" {% if i == praxis_vz_semester %} class="table-warning text-center align-middle" {% elsif i == page.auslands_semester_semester %} class="table-info text-center align-middle" {% else %}class="text-center align-middle" {% endif %}>
+                    {% if item.regelsem == i and item.stdwpf > 0 %}
+                    {{ item.stdwpf }}&nbsp;SWS
+                    {% elsif item.regelsem == i and item.stdwpf == 0 or item.stdwpf == nil  %}
+                    &#10003;
+                    {% endif %}
+                  </td>
+                  {% endfor %}
+                </tr>
+                {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+        </div>
+          {% endif %}
+
           </div>
         </div>
-        {% endif %}
+      </div>
 
 
         <div class="card">
           <div class="card-header" id="heading_gebuehren">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_gebuehren" aria-expanded="true" aria-controls="collapse_gebuehren">
-                Gebühren{{ site.badge_cms }}
+                Gebühren{{ site.badge_p }}
               </button>
             </h2>
           </div>
@@ -380,7 +492,7 @@
                 {% if page.kosten_info != nil %}
                 {{ page.kosten_info | markdownify }}
                 {% else %}
-                {{ page.kosten }}{{ site.badge_cms }}&nbsp;Euro
+                {{ page.kosten }}{{ site.badge_p }}&nbsp;Euro
                 {% if page.kosten_intervall != nil %}
                 {{ page.kosten_intervall }}
                 {% endif %}
@@ -388,8 +500,8 @@
                 <p><a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a></p>
                 {% endif %}
                 <h4>Semesterbeiträge (allgemein)</h4>
-                <span class="d-block">Grundbeitrag Studentenwerk 75,00{{ site.badge_cms }}&nbsp;Euro</span>
-                <span class="d-block">Solidarbeitrag Semesterticket 67,40{{ site.badge_cms }}&nbsp;Euro</span>
+                <span class="d-block">Grundbeitrag Studentenwerk 75,00{{ site.badge_p }}&nbsp;Euro</span>
+                <span class="d-block">Solidarbeitrag Semesterticket 67,40{{ site.badge_p }}&nbsp;Euro</span>
               </div>
             </div>
           </div>
@@ -464,19 +576,19 @@
                 <div class="col-md-6 my-2">
                   <h5>Wer diesen Studiengang studieren möchte,</h5>
                   <p><strong>… bringt mit:</strong><br>
-                    {{ page.interessen.bringt_mit | join: ", " }}
+                    {{ extra[1].interessen.bringt_mit | join: ", " }}
                   </p>
                   <p><strong>… hat Spaß an:</strong><br>
-                    {{ page.interessen.hat_spass | join: ", " }}
+                    {{ extra[1].interessen.hat_spass | join: ", " }}
                   </p>
                   <p><strong>… kämpft sich durch:</strong><br>
-                    {{ page.interessen.kaempft | join: ", " }}
+                    {{ extra[1].interessen.kaempft | join: ", " }}
                   </p>
                 </div>
                 <div class="col-md-6 my-2">
                   <h5>Wer einen Abschluss in diesem Studiengang hat, arbeitet häufig</h5>
                   <ul>
-                    {% for item in page.berufs_perpektiven %}
+                    {% for item in extra[1].berufs_perpektiven %}
                     <li>{{ item }}</li>
                     {% endfor %}
                   </ul>
@@ -489,7 +601,7 @@
           <div class="card-header" id="heading_kontakt">
             <h2 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_kontakt" aria-expanded="false" aria-controls="collapse_kontakt">
-                Kontakt{{ site.badge_p }}
+                Kontakt{{ site.badge_cms }}
               </button>
             </h2>
           </div>
@@ -497,10 +609,10 @@
             <div class="card-body">
               <div class="row">
                 <!-- Fachstudienberater -->
-                {% if page.ansprechpartner.fachstudienberater != nil %}
+                {% if extra[1].ansprechpartner.fachstudienberater != nil %}
                 <div id="fachstudienberaterinnen" class="col-md-6">
                   <h3>FachstudienberaterInnen{{ site.badge_cms }}</h3>
-                  {% for item in page.ansprechpartner.fachstudienberater %}
+                  {% for item in extra[1].ansprechpartner.fachstudienberater %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
                       <img src="{{ item.bild | default: "https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/importueberarbeitet/personen_16/Silhouette_Neutral_ContactBild.png" }}" class="rounded" alt="Kontaktbild von {{ item.name }}">
@@ -534,10 +646,10 @@
                 </div>
                 {% endif %}
                 <!-- Zertifikatsleitung -->
-                {% if page.ansprechpartner.zertifikatsleitung != nil %}
+                {% if extra[1].ansprechpartner.zertifikatsleitung != nil %}
                 <div id="zertifikatsleitung" class="col-md-6">
                   <h3>Zertifikatsleitung{{ site.badge_cms }}</h3>
-                  {% for item in page.ansprechpartner.zertifikatsleitung %}
+                  {% for item in extra[1].ansprechpartner.zertifikatsleitung %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
                       <img src="{{ item.bild | default: "https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/importueberarbeitet/personen_16/Silhouette_Neutral_ContactBild.png" }}" class="rounded" alt="Kontaktbild von {{ item.name }}">
@@ -571,10 +683,10 @@
                 </div>
                 {% endif %}
                 <!-- Studiengangsrefetenten -->
-                {% if page.ansprechpartner.studiengangsreferent != nil %}
+                {% if extra[1].ansprechpartner.studiengangsreferent != nil %}
                 <div id="studiengangsrefetentinnen" class="col-md-6">
                   <h3>StudiengangsreferentInnen{{ site.badge_cms }}</h3>
-                  {% for item in page.ansprechpartner.studiengangsreferent %}
+                  {% for item in extra[1].ansprechpartner.studiengangsreferent %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
                       <img src="{{ item.bild | default: "https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/importueberarbeitet/personen_16/Silhouette_Neutral_ContactBild.png" }}" class="rounded" alt="Kontaktbild von {{ item.name }}">
@@ -611,10 +723,10 @@
                 </div>
                 {% endif %}
                 <!-- Programmassistenz -->
-                {% if page.ansprechpartner.programmassistenz != nil %}
+                {% if extra[1].ansprechpartner.programmassistenz != nil %}
                 <div id="programmassistenz" class="col-md-6">
                   <h3>Programmassistzen{{ site.badge_cms }}</h3>
-                  {% for item in page.ansprechpartner.programmassistenz %}
+                  {% for item in extra[1].ansprechpartner.programmassistenz %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
                       <img src="{{ item.bild | default: "https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/importueberarbeitet/personen_16/Silhouette_Neutral_ContactBild.png" }}" class="rounded" alt="Kontaktbild von {{ item.name }}">
@@ -651,10 +763,10 @@
                 </div>
                 {% endif %}
                 <!-- Sekretariat -->
-                {% if page.ansprechpartner.sekretariat != nil %}
+                {% if extra[1].ansprechpartner.sekretariat != nil %}
                 <div id="sekretariat" class="col-md-6">
                   <h3>Sekretariat{{ site.badge_cms }}</h3>
-                  {% for item in page.ansprechpartner.sekretariat %}
+                  {% for item in extra[1].ansprechpartner.sekretariat %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
                       <img src="{{ item.bild | default: "https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/importueberarbeitet/personen_16/Silhouette_Neutral_ContactBild.png" }}" class="rounded" alt="Kontaktbild von {{ item.name }}">
@@ -723,7 +835,7 @@
                 <div id="immatrikulation" class="col-md-6">
                   <h3>Immatrikulation{{ site.badge_cms }}</h3>
                   <p class="">
-                    {% if page.abschluss == "Bachelor" %}
+                    {% if page.aaspf_echt == "B" %}
                     <span class="d-block lead">für Bachelor-Studiengänge</span>
                     <span class="d-block">Raum: {{ site.immatrikulation.bachlor.raum | join: " & " }}</span>
                     <span class="d-block">Tel: {{ site.immatrikulation.bachelor.phone | prepend: "089 1265-" | join: " & " }}</span>
@@ -737,7 +849,7 @@
                     {% endif %}
                     {% endfor %}
                     {% endif %}
-                    {% elsif page.abschluss == "Master" %}
+                    {% elsif page.aaspf_echt == "M" %}
                     <span class="d-block lead">für Master-Studiengänge</span>
                     <span class="d-block">Raum: {{ site.immatrikulation.master.raum | join: " & " }}</span>
                     <span class="d-block">Tel: {{ site.immatrikulation.master.phone | join: " & "| prepend: "089 1265-"  }}</span>
@@ -770,34 +882,40 @@
           <div class="card-header" id="heading_weitere_info">
             <h2 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_weitere_info" aria-expanded="false" aria-controls="collapse_weitere_info">
-                Weiterführende Informationen{{ site.badge_cms }}
+                Weiterführende Informationen{{ site.badge_p }}{{ site.badge_cms }}
               </button>
             </h2>
           </div>
           <div id="collapse_weitere_info" class="collapse" aria-labelledby="heading_weitere_info" data-parent="#accordion_stg_informationen">
             <div class="card-body">
-              {% if page.url_stg != nil %}
-              <p><a href="{{ page.url_stg }}" target="_blank">Informationen zum Studiengang auf den Seiten der Fakultät</a></p>
+              {% if extra[2].url_echt != nil %}
+              <p><a href="{{ extra[2].url_echt }}" target="_blank">Informationen zum Studiengang auf den Seiten der Fakultät{{ site.badge_cms }}</a></p>
+              {% else %}
+                <p>Informationen zum Studiengang auf den Seiten der Fakultät{{ site.badge_cms }}</p>
               {% endif %}
-              {% if page.url_modulhandbuch != nil %}
-              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Modulhandbuch</a></p>
+              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Modulhandbuch{{ site.badge_cms }}</a></p>
+              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Studienplan{{ site.badge_cms }}</a></p>
+              {% if page.po_url_vz != "" %}
+              <p><a href="{{ page.po_url_vz }}" target="_blank">Studien- und Prüfungsordnung für Studium in Vollzeit</a>{{ site.badge_p }}</p>
               {% endif %}
-              {% if page.url_studienplan != nil %}
-              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Studienplan</a></p>
+              {% if page.po_url_tz != "" %}
+              <p><a href="{{ page.po_url_tz }}" target="_blank">Studien- und Prüfungsordnung für Studium in Teilzeit</a>{{ site.badge_p }}</p>
               {% endif %}
-              {% if page.url_spo != nil %}
-              <p><a href="{{ page.url_spo }}" target="_blank">Studien- und Prüfungsordnung</a></p>
+              {% if page.po_url_dual != "" %}
+              <p><a href="{{ page.po_url_dual }}" target="_blank">Studien- und Prüfungsordnung für Studium als Dual</a>{{ site.badge_p }}</p>
               {% endif %}
-              {% if page.url_satzung != nil %}
-              <p><a href="{{ page.url_satzung }}" target="_blank">Satzung</a></p>
+              {% if page.berufsbegleitend != nil %}
+              <!-- <p><a href="{{ page.url_satzung }}" target="_blank">Satzung</a></p> -->
+              <p>Satzung{{ site.badge_p }}</p>
               {% endif %}
-              {% if page.url_gebuehrenordnung != nil %}
-              <p><a href="{{ page.url_gebuehrenordnung }}" target="_blank">Gebührenordnung</a></p>
+              {% if page.berufsbegleitend != nil %}
+              <!-- <p><a href="{{ page.url_gebuehrenordnung }}" target="_blank">Gebührenordnung</a></p> -->
+              <p>Gebührenordnung{{ site.badge_p }}</p>
               {% endif %}
             </div>
           </div>
         </div>
-        {% if page.youtube-id != nil or page.vimeo-id != nil %}
+        {% if extra[1].youtube-id != nil or extra[1].vimeo-id != nil %}
         <div class="card d-print-none">
           <div class="card-header" id="heading_video">
             <h2 class="mb-0">
@@ -808,15 +926,15 @@
           </div>
           <div id="collapse_video" class="collapse" aria-labelledby="heading_video" data-parent="#accordion_stg_informationen">
             <div class="card-body row">
-              {% if page.youtube-id != nil %}
-              {% for youtube-id in page.youtube-id %}
+              {% if extra[1].youtube-id != nil %}
+              {% for youtube-id in extra[1].youtube-id %}
               <div class="embed-responsive embed-responsive-16by9 rounded mb-2 col-md-6">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ youtube-id }}?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               {% endfor %}
               {% endif %}
-              {% if page.vimeo-id != nil %}
-              {% for vimeo-id in page.vimeo-id %}
+              {% if extra[1].vimeo-id != nil %}
+              {% for vimeo-id in extra[1].vimeo-id %}
               <div class="embed-responsive embed-responsive-16by9 rounded mb-2 col-md-6">
                 <iframe src="https://player.vimeo.com/video/{{ vimeo-id }}?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
               </div>
@@ -831,6 +949,7 @@
       <div class="text-center my-5 d-print-none">
         <div class="text-muted mb-2 font-italic"><small>Testdatum: Bewerbung bis {% if page.bewerbung_bis == nil %}<u>kein Datum festgelegt</u> {% else %}<form><input type="date" class="form-control-sm col-2" id="formBewerbungBis" value="{{ page.bewerbung_bis | date:"%Y-%m-%d"}}" onChange="checkDates();"></form>{% endif %}</small></div>
         <div id="bewerbenCallTo"></div>
+        <a class="btn btn-success btn-block btn-lg my-3 d-print-none" href="https://www.hm.edu/bewerbung/" role="button" target="_blank">Information zur Bewerbung</a>
         <!-- <hr>
         <p>Die neue Bewerbungsphaste startet am {{ "15.11.2020" | date: "%e. %B" }} {{ "now" | date: "%Y" }}</p>
         <p>Die neue Bewerbungsphaste startet am {{ "2.5.2020" | date: "%e. %B %Y" }}</p>
@@ -848,6 +967,7 @@
         </p>
 
       </div>
+
   </main>
   {% include footer.html %}
 </body>

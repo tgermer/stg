@@ -1,0 +1,25 @@
+---
+layout: container
+title: "Report #3739  Modulkatalog"
+---
+
+<!-- {% assign row = site.data.3478_fachrichtung[0] %}
+{{ row | inspect }} -->
+
+<!-- https://jekyllrb.com/tutorials/csv-to-table/ -->
+<table  class="table table-striped ">
+  {% for row in site.data.3739_modulkatalog %}
+    {% if forloop.first %}
+    <thead class="table-light" style="position: sticky; top: 54px; z-index:999">
+    <tr>
+      {% for pair in row %}
+        <th>{{ pair[0] }}</th>
+      {% endfor %}
+    </tr>
+    </thead>
+    {% endif %}
+    {% tablerow pair in row %}
+      {{ pair[1] }}
+    {% endtablerow %}
+  {% endfor %}
+</table>

@@ -172,7 +172,7 @@ page_gen-dirs: true # bewirkt das alle Seiten über das jekyll-datapage_gem Plug
 
 page_gen:
   - index_files: #<<true or false>
-    data: stg
+    data: 3478_fachrichtung #stg
     template: stg
     name: dateiname #<<field used to generate the filename>>
     dir: stg #<<directory in which files are to be generated>>
@@ -180,10 +180,10 @@ page_gen:
     filter: #<<property to filter data records by>>
 
   - index_files: #<<true or false>
-    data: stg_komplett
-    template: stg_komplett
-    name: fachrich #<<field used to generate the filename>>
-    dir: studienangebot #<<directory in which files are to be generated>>
+    data: 3478_fachrichtung #stg_komplett
+    template: stg #stg_komplett
+    name: stg_kurz #fachrich #<<field used to generate the filename>>
+    dir: stg #<<directory in which files are to be generated>>
     extension: #<<extension used to generate the filename>>
     filter: #<<property to filter data records by>>
 
