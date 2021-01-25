@@ -38,52 +38,85 @@ title: Studiengangebot (STG)
 <ul class="text-muted small">
   <li><a href="{{site.url}}{{page.url}}#bachelor.dual">{{site.url}}{{page.url}}<strong>#bachelor.dual</strong></a></li>
   <li><a href="{{site.url}}{{page.url}}#master">{{site.url}}{{page.url}}<strong>#master</strong></a></li>
-  <li><a href="{{site.url}}{{page.url}}#hochschulstudium">{{site.url}}{{page.url}}<strong>#hochschulstudium</strong></a></li>
+  <li><a href="{{site.url}}{{page.url}}#fk09">{{site.url}}{{page.url}}<strong>#fk09</strong></a></li>
+  <li><a href="{{site.url}}{{page.url}}#fk09.master">{{site.url}}{{page.url}}<strong>#fk09.master</strong></a></li>
   <li><a href="{{site.url}}{{page.url}}#bw-b">{{site.url}}{{page.url}}<strong>#bw-b</strong></a> <em>Die STG-Kurzbezeichnung mit Abschluss ist ein unsichtbarer Filter für uns.</em></li>
 </ul>
 
 <div class="row">
-  <div class="col-xl-3 co-md-4 col-sm-6">
+  <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
+  <div class="col-md-4 mb-5">
+    <div class="" style="position: sticky; top: 60px; z-index:999">
+    <h3>Filter</h3>
+
+    <div class="">
+      <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-sort="order:asc"><i class="fas fa-sort-alpha-down"></i></button>
+      <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-sort="order:descending"><i class="fas fa-sort-alpha-up"></i></button>
+      <!-- <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-sort="random">Random</button> -->
+      <button type="button" class="ml-4 btn my-1 btn-sm btn-primary float-right" data-filter="all">Filter zurücksetzen</button>
+    </div>
+
+    <hr>
+
     <p class="h6 mt-4">Abschluss</p>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".bachelor">Bachelor</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".master">Master</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zertifikat">Zertifikat</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".seminar"><abbr title="Seminar anstatt 'kein Abschluss'">Seminar</abbr></button>  </div>
-  <div class="col-xl-3 co-md-4 col-sm-6">
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".bachelor">Bachelor</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".master">Master</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".zertifikat">Zertifikat</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".seminar"><abbr title="Seminar anstatt 'kein Abschluss'">Seminar</abbr></button>
+  <!-- </div> -->
+  <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
     <p class="h6 mt-4">Studienformat</p>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".vollzeit">Vollzeit</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".teilzeit">Teilzeit</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".berufsbegleitend">Berufsbegleitend</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".dual">Dual</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".weiterbildend">Weiterbildend</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".seminar">Seminar</button>
-  </div>
-  <div class="col-xl-3 co-md-4 col-sm-6">
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".vollzeit">Vollzeit</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".teilzeit">Teilzeit</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".berufsbegleitend">Berufsbegleitend</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".dual">Dual</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".weiterbildend">Weiterbildend</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".seminar">Seminar</button>
+  <!-- </div> -->
+  <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
     <p class="h6 mt-4">Studienbeginn</p>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".sommersemester" disabled>Start im Sommersemester</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".wintersemester" disabled>Start im Wintersemester</button>
-  </div>
-  <div class="col-xl-3 co-md-4 col-sm-6">
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".sommersemester" disabled>Start im Sommersemester</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".wintersemester" disabled>Start im Wintersemester</button>
+  <!-- </div> -->
+  <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
     <p class="h6 mt-4">Studienrichtung</p>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".technik">Technik</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".soziales">Soziales</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".wirtschaft">Wirtschaft</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".gestaltung">Gestaltung</button>
-  </div>
-  <div class="col-xl-3 co-md-4 col-sm-6">
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".technik">Technik</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".soziales">Soziales</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".wirtschaft">Wirtschaft</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".gestaltung">Gestaltung</button>
+  <!-- </div> -->
+  <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
     <p class="h6 mt-4">Hauptunterrichtssprache</p>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".deutsch" disabled>Deutsch</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".englisch" disabled>Englisch</button>
-  </div>
-  <div class="col-xl-3 co-md-4 col-sm-6">
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".deutsch" disabled>Deutsch</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".englisch" disabled>Englisch</button>
+  <!-- </div> -->
+  <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
     <p class="h6 mt-4 underline">Zulassungsmodus</p>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zulassungsfrei" disabled>zulassungsfrei</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".zulassungsbeschraenkt" disabled>zulassungsbeschränkt</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".eignungspruefung" disabled>Eignungsprüfung</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".eignungsfeststellungsverfahren" disabled>Eignungsfeststellungsverfahren</button>
-    <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".eignungsverfahren" disabled>Eignungsverfahren</button>
-  </div>
-</div>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".zulassungsfrei" disabled>zulassungsfrei</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".zulassungsbeschraenkt" disabled>zulassungsbeschränkt</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".eignungspruefung" disabled>Eignungsprüfung</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".eignungsfeststellungsverfahren" disabled>Eignungsfeststellungsverfahren</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".eignungsverfahren" disabled>Eignungsverfahren</button>
+  <!-- </div> -->
+  <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
+    <p class="h6 mt-4 underline">Fakultät</p>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk01" >FK01</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk02" >FK02</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk03" >FK03</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk04" >FK04</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk05" >FK05</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk06" >FK06</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk07" >FK07</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk08" >FK08</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk09" >FK09</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk10" >FK10</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk11" >FK11</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk12" >FK12</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk13" >FK13</button>
+    <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fk14" >FK14</button>
+  <!-- </div> -->
+<!-- </div> -->
+
 
 
 <!-- <form class=""> -->
@@ -97,24 +130,28 @@ title: Studiengangebot (STG)
 <!-- </form> -->
 
 <!-- <hr> -->
-<!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".allgemeine">Allgemeine Hochschulreife</button> -->
-<!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".fachgebundene">Fachgebundene Hochschulreife</button> -->
-<!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".hochschulstudium">Abgeschlossnes Hochschulstudium</button> -->
-<!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".dual">Dual studieren</button> -->
-<!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-toggle=".doppelabschluss">Doppelabschluss</button> -->
+<!-- <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".allgemeine">Allgemeine Hochschulreife</button> -->
+<!-- <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".fachgebundene">Fachgebundene Hochschulreife</button> -->
+<!-- <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".hochschulstudium">Abgeschlossnes Hochschulstudium</button> -->
+<!-- <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".dual">Dual studieren</button> -->
+<!-- <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-toggle=".doppelabschluss">Doppelabschluss</button> -->
 <hr>
 
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-sort="order:asc"><i class="fas fa-sort-alpha-down"></i></button>
-<button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-sort="order:descending"><i class="fas fa-sort-alpha-up"></i></button>
-<!-- <button type="button" class="btn my-1 btn-sm btn-outline-secondary" data-sort="random">Random</button> -->
+<button type="button" class="btn my-1 btn-sm btn-outline-dark" data-sort="order:asc"><i class="fas fa-sort-alpha-down"></i></button>
+<button type="button" class="btn my-1 btn-sm btn-outline-dark" data-sort="order:descending"><i class="fas fa-sort-alpha-up"></i></button>
+<!-- <button type="button" class="btn my-1 btn-sm btn-outline-dark" data-sort="random">Random</button> -->
 <button type="button" class="ml-4 btn my-1 btn-sm btn-primary float-right" data-filter="all">Filter zurücksetzen</button>
+</div>
+</div>
 
-
+<div class="col-md-8">
+<h3>Studiengänge</h3>
 <div id="filter" class="my-5 mix-studienangebot">
   {% for stg in site.data.3478_fachrichtung %}
   <div data-order="{{ stg.fachrich }}-{{ stg.text }} ({{ stg.titelkz_m_vz }})" class="
         mb-0 mix
         {{ stg.stg_kurz | downcase  }}
+        fk{{ stg.nummer }}
         {{ stg.text | downcase }}
         {{ stg.studien_begin | join: " " | downcase }}
         {% case stg.zuordnung %}
@@ -154,4 +191,6 @@ title: Studiengangebot (STG)
   <!-- <div class="failed" data-order="">
     Dieser Filter liefert keinen Ergebnisse zurück.
   </div> -->
+</div>
+</div>
 </div>
