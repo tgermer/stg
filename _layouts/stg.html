@@ -251,7 +251,7 @@
           </div> -->
           <div id="bewerbenSteckbriefCallTo"></div>
           <!-- <a class="btn btn-success btn-out line-success btn-block btn-lg my-3 d-print-none" href="https://www3.primuss.de/cgi-bin/bew_anmeldung/index.pl?FH=fhm" role="button" target="_blank">Jetzt bewerben</a> -->
-          <a class="btn btn-success btn-block btn-lg my-3 d-print-none" href="https://www.hm.edu/bewerbung/" role="button" target="_blank">Information zur Bewerbung</a>
+          <a class="btn btn-success btn-block btn-lg my-3 d-print-none rounded-0" href="https://www.hm.edu/bewerbung/" role="button" target="_blank">Information zur Bewerbung</a>
         </div>
       </div>
 
@@ -299,12 +299,12 @@
         {% endif %}
       </div>
 
-      <p><a href="#" class="btn btn-default btn-sm openall" style="cursor: pointer;">alle aufklappen</a> <a href="#" class="btn btn-default btn-sm closeall" style="cursor: pointer; display: none;">alle schließen</a>
+      <p><a href="#" class="btn btn-default btn-sm openall rounded-0" style="cursor: pointer;">alle aufklappen</a> <a href="#" class="btn btn-default btn-sm closeall" style="cursor: pointer; display: none;">alle schließen</a>
         <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
       </p>
 
       <div class="accordion" id="accordion_stg_informationen">
-        <div class="card">
+        <div class="card rounded-0">
           <div class="card-header" id="heading_studien_ziel">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_studien_ziel" aria-expanded="true" aria-controls="collapse_studien_ziel">
@@ -319,7 +319,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card rounded-0">
           <div class="card-header" id="heading_studien_verlauf">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_studien_verlauf" aria-expanded="true" aria-controls="collapse_studien_verlauf">
@@ -480,7 +480,7 @@
       </div>
 
 
-        <div class="card">
+        <div class="card rounded-0">
           <div class="card-header" id="heading_gebuehren">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_gebuehren" aria-expanded="true" aria-controls="collapse_gebuehren">
@@ -534,7 +534,7 @@
         </div>
 
 
-        <div class="card">
+        <div class="card rounded-0">
           <div class="card-header" id="heading_bewerbung">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_bewerbung" aria-expanded="true" aria-controls="collapse_bewerbung">
@@ -588,7 +588,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card rounded-0">
           <div class="card-header" id="heading_interesse">
             <h2 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_interesse" aria-expanded="false" aria-controls="collapse_interesse">
@@ -623,7 +623,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card rounded-0">
           <div class="card-header" id="heading_kontakt">
             <h2 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_kontakt" aria-expanded="false" aria-controls="collapse_kontakt">
@@ -904,7 +904,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card rounded-0">
           <div class="card-header" id="heading_weitere_info">
             <h2 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_weitere_info" aria-expanded="false" aria-controls="collapse_weitere_info">
@@ -975,7 +975,7 @@
       <div class="text-center my-5 d-print-none">
         <div class="text-muted mb-2 font-italic"><small>Testdatum: Bewerbung bis {% if page.bewerbung_bis == nil %}<u>kein Datum festgelegt</u> {% else %}<form><input type="date" class="form-control-sm col-2" id="formBewerbungBis" value="{{ page.bewerbung_bis | date:"%Y-%m-%d"}}" onChange="checkDates();"></form>{% endif %}</small></div>
         <div id="bewerbenCallTo"></div>
-        <a class="btn btn-success btn-block btn-lg my-3 d-print-none" href="https://www.hm.edu/bewerbung/" role="button" target="_blank">Information zur Bewerbung</a>
+        <a class="btn btn-success btn-block btn-lg my-3 d-print-none rounded-0" href="https://www.hm.edu/bewerbung/" role="button" target="_blank">Information zur Bewerbung</a>
         <!-- <hr>
         <p>Die neue Bewerbungsphaste startet am {{ "15.11.2020" | date: "%e. %B" }} {{ "now" | date: "%Y" }}</p>
         <p>Die neue Bewerbungsphaste startet am {{ "2.5.2020" | date: "%e. %B %Y" }}</p>
