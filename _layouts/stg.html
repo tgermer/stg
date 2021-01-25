@@ -79,8 +79,11 @@
         <br><small>{{ page.fachriche }}{{ site.badge_p }}</small>
       </h1>
       <div class="row my-4">
-        <div class="col-lg-6" style="background-image: url(https://source.unsplash.com/random/600?{% assign stg_richtung = page.zuordnung %}{% case stg_richtung %}{% when "T" %}technology{% when "S" %}social{% when "W" %}economy{% when "G" %}design
-        {% endcase %}); background-size: cover; background-position: center center; min-height:200px">
+        <div class="col-lg-6" style="background-image: url(https://source.unsplash.com/featured/600?munich); background-size: cover; background-position: center center; min-height:200px">
+          {% comment %}
+            {% assign stg_richtung = page.zuordnung %}{% case stg_richtung %}{% when "T" %}technology{% when "S" %}social{% when "W" %}economy{% when "G" %}design
+            {% endcase %})
+          {% endcomment %}
         </div>
         <div class="col-lg-6 bg-light py-3">
           <span id="taste" class="float-right d-print-none"></span>
