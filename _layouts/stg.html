@@ -52,7 +52,7 @@
                       {% when "S" %}{{ site.badge_soziales }}
                       {% when "W" %}{{ site.badge_wirtschaft }}
                       {% when "G" %}{{ site.badge_gestaltung }}
-                    {% endcase %}{{ site.badge_p }}
+                    {% endcase %}{{ site.badge_p }} <span class="text-muted">{{ page.stg_kurz }}</span>
                   </td>
                 </tr>
                 {% endif %}
@@ -354,7 +354,7 @@
 
               {% if page.rsem_vz != "0" %}
               {% assign module = module | where_exp: "search", "search.pvers == page.pvers_vz"%}
-              <h5>Beispielhafte Darstellung für ein Studium in Vollzeit<br><small>Prüfungsordnungsversion {{ page.pvers_vz }}</small>{{ site.badge_p}}</h5>
+              <h5>Beispielhafte Darstellung für ein Studium in Vollzeit<br><small>Prüfungsordnungsversion {{ page.pvers_vz }} <span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5>
               <div class="table-responsive">
                 <table class="table table-striped table-bordered table-sm">
                   <thead>
@@ -395,7 +395,7 @@
 
             {% elsif page.rsem_tz != 0 %}
             {% assign module = module | where_exp: "search", "search.pvers == page.pvers_tz"%}
-            <h5>Beispielhafte Darstellung für ein Studium in Teilzeit<br><small>Prüfungsordnungsversion {{ page.pvers_tz }}</small>{{ site.badge_p}}</h5>
+            <h5>Beispielhafte Darstellung für ein Studium in Teilzeit<br><small>Prüfungsordnungsversion {{ page.pvers_tz }}  <span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5>
             <div class="table-responsive">
               <table class="table table-striped table-bordered table-sm">
                 <thead>
@@ -435,7 +435,7 @@
           </div>
           {% elsif page.rsem_dual != 0 %}
           {% assign module = module | where_exp: "search", "search.pvers == page.pvers_dual"%}
-          <h5>Beispielhafte Darstellung für ein Studium in Teilzeit<br><small>Prüfungsordnungsversion {{ page.pvers_dual }}</small>{{ site.badge_p}}</h5>
+          <h5>Beispielhafte Darstellung für ein Studium in Teilzeit<br><small>Prüfungsordnungsversion {{ page.pvers_dual }}  <span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5>
           <div class="table-responsive">
             <table class="table table-striped table-bordered table-sm">
               <thead>
