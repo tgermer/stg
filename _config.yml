@@ -82,6 +82,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stg-strukturiert.netlify.app"
 url_imprint: https://www.hm.edu/sekundaer_navigation/impressum
 url_pravacy_statement: https://www.hm.edu/sekundaer_navigation/impressum/datenschutz
+url_satzung: "https://www.hm.edu/studierende/mein_studium/recht/gebuehrenordnungen.de.html"
 webmaster_email: tgermer@hm.edu
 webmaster_name: Tristan Germer
 logo: /assets/img/HM_Schriftzug_Logo_kein_Weissraum_rot_RGB.svg

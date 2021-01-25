@@ -20,6 +20,55 @@
       {% assign extra = extra | concat: gebuehren %}
 
 
+      {% assign grundbeitrag = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 1" %}
+      {% assign grundbeitrag = grundbeitrag | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+      {% for wert in grundbeitrag %}
+        {% assign grundbeitrag_betrag = wert.betrag %}
+      {% endfor %}
+
+      {% assign semesterticket = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 7" %}
+      {% assign semesterticket = semesterticket | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+      {% for wert in semesterticket %}
+        {% assign semesterticket_betrag = wert.betrag %}
+      {% endfor %}
+
+      {% assign mastergebuehr = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 4" %}
+      {% assign mastergebuehr = mastergebuehr | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+      {% for wert in mastergebuehr %}
+        {% assign mastergebuehr_betrag = wert.betrag %}
+      {% endfor %}
+      {% for wert in mastergebuehr %}
+        {% assign mastergebuehr_aufteilung_vz = wert.aufteilung_vz %}
+      {% endfor %}
+      {% for wert in mastergebuehr %}
+        {% assign mastergebuehr_aufteilung_tz = wert.aufteilung_tz %}
+      {% endfor %}
+      {% for wert in mastergebuehr %}
+        {% assign mastergebuehr_aufteilung_dual = wert.aufteilung_dual %}
+      {% endfor %}
+      {% for wert in mastergebuehr %}
+        {% assign mastergebuehr_kz_semgeb = wert.kz_semgeb %}
+      {% endfor %}
+
+      {% assign zertifikatsgebuehr = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 5" %}
+      {% assign zertifikatsgebuehr = zertifikatsgebuehr | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+      {% for wert in zertifikatsgebuehr %}
+        {% assign zertifikatsgebuehr_betrag = wert.betrag %}
+      {% endfor %}
+      {% for wert in zertifikatsgebuehr %}
+        {% assign zertifikatsgebuehr_aufteilung_vz = wert.aufteilung_vz %}
+      {% endfor %}
+      {% for wert in zertifikatsgebuehr %}
+        {% assign zertifikatsgebuehr_aufteilung_tz = wert.aufteilung_tz %}
+      {% endfor %}
+      {% for wert in zertifikatsgebuehr %}
+        {% assign zertifikatsgebuehr_aufteilung_dual = wert.aufteilung_dual %}
+      {% endfor %}
+      {% for wert in zertifikatsgebuehr %}
+        {% assign zertifikatsgebuehr_kz_semgeb = wert.kz_semgeb %}
+      {% endfor %}
+
+
       <p class="float-right d-print-none"><a href="#" class="btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="btn btn-link btn-sm hidebadges" style="cursor: pointer; display: none;">Datenherkunft
           verstecken</a>
         <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
@@ -218,21 +267,20 @@
                 <tr>
                   <th scope="row" class="text-uppercase">Semesterbeiträge</th>
                   <td>
-                    <span class="d-block">Grundbeitrag Studentenwerk 75,00&nbsp;Euro{{ site.badge_p }}</span>
-                    <span class="d-block">Solidarbeitrag Semesterticket 69,40&nbsp;Euro{{ site.badge_p }}</span>
+                    <span class="d-block">Grundbeitrag Studentenwerk {% include numf.html number=grundbeitrag_betrag %}&nbsp;Euro{{ site.badge_p }}</span>
+                    <span class="d-block">Solidarbeitrag Semesterticket {% include numf.html number=semesterticket_betrag %}&nbsp;Euro{{ site.badge_p }}</span>
                   </td>
                 </tr>
-                {% if page.kosten != nil %}
+                {% if mastergebuehr_betrag != nil or zertifikatsgebuehr_betrag != nil %}
                 <tr>
-                  <th scope="row" class="text-uppercase">Studiengebühren</th>
+                  <th scope="row" class="text-uppercase">{{ page.text }}gebühren</th>
                   <!-- https://github.com/23maverick23/jekyll-humanize -->
                   <td>
-                    {{ page.kosten }}{{ site.badge_p }}&nbsp;Euro
-                    {% if page.kosten_intervall != nil %}
-                    {{ page.kosten_intervall }}
+                    {% if mastergebuehr_betrag != nil %}
+                      {% include numf.html number=mastergebuehr_betrag %}&nbsp;Euro{{ site.badge_p }}
+                    {% elsif zertifikatsgebuehr_betrag != nil %}
+                      {% include numf.html number=zertifikatsgebuehr_betrag %}&nbsp;Euro{{ site.badge_p }}
                     {% endif %}
-                    <br>
-                    <a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a>
                   </td>
                 </tr>
                 {% endif %}
@@ -491,43 +539,78 @@
           <div id="collapse_gebuehren" class="collapse" aria-labelledby="heading_gebuehren" data-parent="#accordion_stg_informationen">
             <div class="card-body">
               <div class="">
-                {% if page.kosten != nil %}
-                <h4>Studiengebühren</h4>
-                {% if page.kosten_info != nil %}
-                {{ page.kosten_info | markdownify }}
-                {% else %}
-                {{ page.kosten }}{{ site.badge_p }}&nbsp;Euro
-                {% if page.kosten_intervall != nil %}
-                {{ page.kosten_intervall }}
-                {% endif %}
-                {% endif %}
-                <p><a href="{{ page.url_stg }}" target="_blank">Weitere Informationen bzw. Zahlungsmodalitäten</a></p>
-                {% endif %}
                 <h4>Semesterbeiträge (allgemein)</h4>
-                <span class="d-block">Grundbeitrag Studentenwerk 75,00{{ site.badge_p }}&nbsp;Euro</span>
-                <span class="d-block">Solidarbeitrag Semesterticket 69,40{{ site.badge_p }}&nbsp;Euro</span>
+                <p>Grundbeitrag Studentenwerk {% include numf.html number=grundbeitrag_betrag %}&nbsp;Euro{{ site.badge_p }}
+                  <br>
+                Solidarbeitrag Semesterticket {% include numf.html number=semesterticket_betrag %}&nbsp;Euro{{ site.badge_p }}</p>
 
-                <hr><hr>
+                {% if mastergebuehr_betrag != nil or zertifikatsgebuehr_betrag != nil %}
+                <h4>{{ page.text }}gebühren</h4>
 
-                {% assign grundbeitrag = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 1" %}
-                {% assign grundbeitrag = grundbeitrag | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+                {% if mastergebuehr_betrag != nil %}
+                  <p>Die Gesamtgebühr für das {{ page.text }}studium beträgt {% include numf.html number=mastergebuehr_betrag %}&nbsp;Euro.{{ site.badge_p }}</p>
+                {% elsif zertifikatsgebuehr_betrag != nil %}
+                  <p>Die Gesamtgebühr für das {{ page.text }} beträgt {% include numf.html number=zertifikatsgebuehr_betrag %}&nbsp;Euro.{{ site.badge_p }}</p>
+                {% endif %}
 
-                {% assign semesterticket = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 7" %}
-                {% assign semesterticket = semesterticket | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+                {% if page.rsem_vz != "0" %}
+                <h5>Aufteilung der {{ page.text }}gebühren bei Studium in Vollzeit</h5>
+                {% assign master_semester_gebuehren_vz = mastergebuehr_aufteilung_vz | split: "-" %}
+                <ol>
+                {% for master_semester_gebuehren_vz in master_semester_gebuehren_vz %}
+                  <li>
+                    {% if master_semester_gebuehren_vz != "0" %}
+                      Semester {% include numf.html number=master_semester_gebuehren_vz %}&nbsp;Euro
+                    {% else %}
+                    Semester &mdash;
+                    {% endif %}
+                    {{ site.badge_p }}
+                  </li>
+                {% endfor %}
+                </ol>
+                <p class="text-muted">{{ mastergebuehr_kz_semgeb }}{{ site.badge_p }}</p>
+                {% endif %}
 
-                {% assign mastergebuehr = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 4" %}
-                {% assign mastergebuehr = mastergebuehr | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+                {% if page.rsem_tz != "0" %}
+                <h5>Aufteilung der {{ page.text }}gebühren bei Studium in Teilzeit</h5>
+                {% assign master_semester_gebuehren_tz = mastergebuehr_aufteilung_tz | split: "-" %}
+                <ol>
+                {% for master_semester_gebuehren_tz in master_semester_gebuehren_tz %}
+                  <li>
+                    {% if master_semester_gebuehren_tz != "0" %}
+                      Semester {% include numf.html number=master_semester_gebuehren_tz %}&nbsp;Euro
+                    {% else %}
+                    Semester &mdash;
+                    {% endif %}
+                    {{ site.badge_p }}
+                  </li>
+                {% endfor %}
+                </ol>
+                <p class="text-muted">{{ mastergebuehr_kz_semgeb }}{{ site.badge_p }}</p>
+                {% endif %}
 
-                {% assign zertifikatsgebuehr = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 5" %}
-                {% assign zertifikatsgebuehr = zertifikatsgebuehr | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+                {% if page.rsem_dual != "0" %}
+                <h5>Aufteilung der {{ page.text }}gebühren bei Studium als Dual</h5>
+                {% assign master_semester_gebuehren_dual = mastergebuehr_aufteilung_dual | split: "-" %}
+                <ol>
+                {% for master_semester_gebuehren_dual in master_semester_gebuehren_dual %}
+                  <li>
+                    {% if master_semester_gebuehren_dual != "0" %}
+                      Semester {% include numf.html number=master_semester_gebuehren_dual %}&nbsp;Euro
+                    {% else %}
+                    Semester &mdash;
+                    {% endif %}
+                    {{ site.badge_p }}
+                  </li>
+                {% endfor %}
+                </ol>
+                <p class="text-muted">{{ mastergebuehr_kz_semgeb }}{{ site.badge_p }}</p>
+                {% endif %}
 
-                <b>Grundbeitrag</b> {{ grundbeitrag }}
-                <hr>
-                <b>Semesterticket</b> {{ semesterticket }}
-                <hr>
-                <b>Mastergebühr</b> {{ mastergebuehr }}
-                <hr>
-                <b>Zertifikatsgebühr</b> {{ zertifikatsgebuehr }}
+                <p><a href="{{ site.url_satzung }}#fakultaet_{{ page.nummer }}" target="_blank">Weitere Informationen finden Sie auf der Seite Gebührenordnungen</p>
+
+                {% endif %}
+
               </div>
             </div>
           </div>
