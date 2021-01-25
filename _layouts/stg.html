@@ -10,11 +10,14 @@
 
       {% assign stg = site.data.3478_fachrichtung | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
       {% assign urls = site.data.stg_urls | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+      {% assign gebuehren = site.data.3517_gebuehren | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
       {% assign extras = site.data.extra | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
       <!-- extra[1].feld -->
       {% assign extra = stg | concat: extras %}
       <!-- extra[2].feld -->
       {% assign extra = extra | concat: urls %}
+      <!-- extra[3].feld -->
+      {% assign extra = extra | concat: gebuehren %}
 
 
       <p class="float-right d-print-none"><a href="#" class="btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="btn btn-link btn-sm hidebadges" style="cursor: pointer; display: none;">Datenherkunft
@@ -211,11 +214,12 @@
                     Auslandsemester möglich; empfohlen im ???&nbsp;Semester
                   </td>
                 </tr>
+
                 <tr>
                   <th scope="row" class="text-uppercase">Semesterbeiträge</th>
                   <td>
                     <span class="d-block">Grundbeitrag Studentenwerk 75,00&nbsp;Euro{{ site.badge_p }}</span>
-                    <span class="d-block">Solidarbeitrag Semesterticket 67,40&nbsp;Euro{{ site.badge_p }}</span>
+                    <span class="d-block">Solidarbeitrag Semesterticket 69,40&nbsp;Euro{{ site.badge_p }}</span>
                   </td>
                 </tr>
                 {% if page.kosten != nil %}
@@ -501,7 +505,29 @@
                 {% endif %}
                 <h4>Semesterbeiträge (allgemein)</h4>
                 <span class="d-block">Grundbeitrag Studentenwerk 75,00{{ site.badge_p }}&nbsp;Euro</span>
-                <span class="d-block">Solidarbeitrag Semesterticket 67,40{{ site.badge_p }}&nbsp;Euro</span>
+                <span class="d-block">Solidarbeitrag Semesterticket 69,40{{ site.badge_p }}&nbsp;Euro</span>
+
+                <hr><hr>
+
+                {% assign grundbeitrag = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 1" %}
+                {% assign grundbeitrag = grundbeitrag | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+
+                {% assign semesterticket = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 7" %}
+                {% assign semesterticket = semesterticket | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+
+                {% assign mastergebuehr = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 4" %}
+                {% assign mastergebuehr = mastergebuehr | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+
+                {% assign zertifikatsgebuehr = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 5" %}
+                {% assign zertifikatsgebuehr = zertifikatsgebuehr | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+
+                <b>Grundbeitrag</b> {{ grundbeitrag }}
+                <hr>
+                <b>Semesterticket</b> {{ semesterticket }}
+                <hr>
+                <b>Mastergebühr</b> {{ mastergebuehr }}
+                <hr>
+                <b>Zertifikatsgebühr</b> {{ zertifikatsgebuehr }}
               </div>
             </div>
           </div>

@@ -71,3 +71,66 @@
         email: tgermer@hm.edu
         url: https://hm.edu/allgemein/hochschule_muenchen/zentrale_services/studienberatung_2/studienberatung_ansprechpartner/tristan_germer.de.html
         bild:
+-
+  stg_kurz: WW-M
+  teaser: |
+    Dieser Studiengang richtet sich an berufstätige Akademiker, die sich parallel zum Job weiterbilden möchten. Über zehn Jahre Erfahrung, hochqualifizierte nationale und internationale Dozenten aus Hochschule und Industrie sowie viel Engagement machen unseren Master of Business Administration and Engineering zum Erfolgsrezept für Ihre Zukunft!
+  studien_ziel: |
+    Ziel des Masterstudiums ist es, die im vorherigen Studium erworbenen Kompetenzen zu vertiefen und zu erweitern. Die Absolventinnen und Absolventen des Masterstudiengangs sind in der Lage, durch selbständige und kompetente Anwendung wissenschaftlicher und praktischer Erkenntnisse aus Technik und Wirtschaft Managementaufgaben in der betrieblichen Praxis in einem internationalen Arbeitsfeld zu übernehmen.
+
+    Die Weiterbildung ist als Teilzeitstudium in Form von Abend-, Wochenend- und Blockkursen angelegt. Die Regelstudienzeit beträgt fünf Semester.
+  studien_verlauf: |
+    Der Studienplan differiert je nach vorherigem Studium: Wir unterscheiden dabei die Vorqualifikation in einem Studium des Wirtschaftsingenieurwesens, der Ingenieur- oder Naturwissenschaften sowie des Bauingenieurwesens. Dafür bieten wir differenzierte Studienpläne an. Ihren eigenen Schwerpunkt setzen Sie durch die Belegung von Wahlpflichtmodulen aus einem breiten Angebot deutscher und internationaler (englischsprachiger) Referenten aus der Hochschule und der Praxis.
+
+    Für Studierende des Zugangstyps Wirtschaftsingenieurwesen oder Bauingenieurwesen ist der Studienstart jeweils zum Wintersemester möglich. Das Studium für den Zugangstyp Ingenieur- oder Naturwissenschaften bieten wir jedes Semester an.
+
+    Die Arbeitssprache ist i.d.R. Deutsch. Fremdsprachen (insbesondere Englisch) sind integraler Bestandteil des Studiums. Einige Materialien und einzelne Lehrveranstaltungen sind in englischer Sprache.
+
+    In der Regel finden die Vorlesungen an drei Tagen der Woche statt. Vorlesungszeiten regelmäßiger Veranstaltungen sind Montag bis Donnerstag zwischen 17:45 und 21:00 Uhr und Freitag ab 15:45 Uhr. Einzelne Kurse werden in Blockveranstaltungen am Wochenende durchgeführt. Sie sollten mit einer zeitlichen Belastung von mindestens drei Abenden pro Woche rechnen, an denen Sie möglichst auch an der Hochschule anwesend sein sollten. Unsere Dozenten wissen, dass Sie nebenberuflich studieren und gehen nicht davon aus, dass Sie an allen Vorlesungsterminen teilnehmen können.
+
+    Wir bieten die Möglichkeit zu einem **fakultativen Auslandsaufenthalt** an einer französischen Universität, mit der wir kooperieren. Dabei können Studienleistungen erbracht werden, die im Studium an der Hochschule München angerechnet werden.
+
+    Das Studium wird mit einer **wissenschaftlichen Masterarbeit** abgeschlossen, die oft in Zusammenarbeit mit einem Unternehmen entsteht.
+  interessen:
+    bringt_mit:
+      - gute analytische Fähigkeiten
+      - Grundkenntnisse der englischen Sprache
+    hat_spass:
+      - ökonomischen Fragestellungen von der Bilanzierung bis zur Unternehmensführung
+    kaempft:
+      - die mathematischen und statistischen Grundlagen der modernen Wirtschaftswissenschaft
+  youtube-id:
+    # - NtoaNge652o
+    # - NtoaNge652o
+  vimeo-id:
+    # - 207284089
+  ansprechpartner:
+    fachstudienberater:
+      - name: Prof. Dr. Andreas Englbrecht
+        raum: R 3.074
+        tel: 089 1265-3914
+        email: andreas.englbrecht@hm.edu
+        url: https://www.wi.hm.edu/02_fakultaet/personen/professorinnen/englbrecht.de.html
+        bild: https://w3-mediapool.hm.edu/mediapool/media/fk09/fk09_lokal/02_fakultaet/personen_6/professorinnen/englbrecht_1/P1100432_englbrecht_web_neu_ContactBild.jpg
+        infos: Ich freue mich auf Ihre Fragen.
+        zeiten: nine
+    studiengangsreferent:
+      - name: Tina Grangl
+        raum: R 2.065
+        tel: 089 1265-3982
+        email: andreas.englbrecht@hm.edu
+        url: https://www.wi.hm.edu/02_fakultaet/personen/mitarbeiter/grangl.de.html
+        bild: https://w3-mediapool.hm.edu/mediapool/media/fk09/fk09_lokal/02_fakultaet/personen_6/mitarbeiterinnen/grangl_1/Grangl~1_ContactBild.jpg
+        infos:
+        zeiten:
+    sekretariat:
+      - name: Monika Wünsche
+        raum: R 2.060
+        tel: 089 1265-3901
+        email: sekretariat-fk09@hm.edu
+        zeiten:
+          - ["Mo–Fr", "8:00–12:00 Uhr"]
+      - name: Doris Konrad
+        raum: R 2.060
+        tel: 089 1265-3904
+        email: sekretariat-fk09@hm.edu
