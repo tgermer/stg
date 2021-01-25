@@ -87,7 +87,7 @@
           <!-- Alte Taste -->
           <!-- <p class="float-right d-print-none"><a href="#" class="btn btn-outline-dark btn-sm showSaveStg" onclick='document.cookie="stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2023 12:00:00 GMT; SameSite=Lax"' style="cursor: pointer;"><i class="fas fa-plus mr-1"></i>Studiengang merken OLD</a><a href="#" class="btn btn-outline-dark btn-sm hideSaveStg" onclick='document.cookie="stg={{ page.stg_kurz_abschluss_kurz }};expires=Wed, 18 Dec 2000 12:00:00 GMT; SameSite=Lax"' style="cursor: pointer; display: none;"><i class="fas fa-minus mr-1"></i>von Merkzettel löschen OLD</a></p> -->
           <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
-          <h2>Steckbrief</h2>
+          <h2>Steckbrief <small><small class="text-muted" title="Nur für interne Zwecke angezeigt">{{ page.stg_kurz }}</small></small></h2>
           <div class="table-responsive">
             <table class="table table-sm mt-3 bg-transparent">
               <tbody>
@@ -101,7 +101,7 @@
                       {% when "S" %}{{ site.badge_soziales }}
                       {% when "W" %}{{ site.badge_wirtschaft }}
                       {% when "G" %}{{ site.badge_gestaltung }}
-                    {% endcase %}{{ site.badge_p }} <span class="text-muted">{{ page.stg_kurz }}</span>
+                    {% endcase %}{{ site.badge_p }}
                   </td>
                 </tr>
                 {% endif %}
@@ -560,9 +560,9 @@
                 {% for master_semester_gebuehren_vz in master_semester_gebuehren_vz %}
                   <li>
                     {% if master_semester_gebuehren_vz != "0" %}
-                      Semester {% include numf.html number=master_semester_gebuehren_vz %}&nbsp;Euro
+                      Semester <span class="ml-2">{% include numf.html number=master_semester_gebuehren_vz %}&nbsp;Euro</span>
                     {% else %}
-                    Semester &mdash;
+                    Semester <span class="ml-2">&mdash;</span>
                     {% endif %}
                     {{ site.badge_p }}
                   </li>
@@ -578,9 +578,9 @@
                 {% for master_semester_gebuehren_tz in master_semester_gebuehren_tz %}
                   <li>
                     {% if master_semester_gebuehren_tz != "0" %}
-                      Semester {% include numf.html number=master_semester_gebuehren_tz %}&nbsp;Euro
+                      Semester <span class="ml-2">{% include numf.html number=master_semester_gebuehren_tz %}&nbsp;Euro</span>
                     {% else %}
-                    Semester &mdash;
+                    Semester <span class="ml-2">&mdash;</span>
                     {% endif %}
                     {{ site.badge_p }}
                   </li>
@@ -596,9 +596,9 @@
                 {% for master_semester_gebuehren_dual in master_semester_gebuehren_dual %}
                   <li>
                     {% if master_semester_gebuehren_dual != "0" %}
-                      Semester {% include numf.html number=master_semester_gebuehren_dual %}&nbsp;Euro
+                      Semester <span class="ml-2">{% include numf.html number=master_semester_gebuehren_dual %}&nbsp;Euro</span>
                     {% else %}
-                    Semester &mdash;
+                    Semester <span class="ml-2">&mdash;</span>
                     {% endif %}
                     {{ site.badge_p }}
                   </li>
