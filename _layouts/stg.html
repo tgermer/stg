@@ -420,7 +420,7 @@
               {% assign module = module | where_exp: "search", "search.pvers == page.pvers_vz"%}
               <h5>Beispielhafte Darstellung für ein Studium in Vollzeit</h5>
               <!-- <h5>Prüfungsordnungsversion {{ page.pvers_vz }} <small><span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5> -->
-              <a role="button" class="btn btn-outline-primary btn-sm float-right mb-2 rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfVWM4H4lmAh_cFlHXpA4ZntHnolq-zqDiLSRuooPsfruLP3Q/viewform?usp=pp_url&entry.1914710992={{ page.stg_kurz | url_encode }}&entry.231045923=Vollzeit&entry.633489639={{ page.pvers_vz | url_encode }}" target="_blank">Feedback zum Modulkatalog {{ page.stg_kurz }}, {{ page.pvers_vz }} einreichen</a>
+              <a role="button" class="btn btn-outline-primary btn-sm float-right mb-2 rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfVWM4H4lmAh_cFlHXpA4ZntHnolq-zqDiLSRuooPsfruLP3Q/viewform?usp=pp_url&entry.1914710992={{ page.stg_kurz | url_encode }}&entry.231045923=Vollzeit&entry.633489639={{ page.pvers_vz | url_encode }}&entry.2138213008={{ site.url }}/stg/{{ page.stg_kurz | downcase }}" target="_blank">Feedback zum Modulkatalog {{ page.stg_kurz }}, {{ page.pvers_vz }} einreichen</a>
               <div class="table-responsive">
                 <table class="table table-sm">
                   <thead>
@@ -463,7 +463,7 @@
             {% assign module = module | where_exp: "search", "search.pvers == page.pvers_tz"%}
             <h5>Beispielhafte Darstellung für ein Studium in Teilzeit</h5>
             <!-- <h5><small>Prüfungsordnungsversion {{ page.pvers_tz }}  <span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5> -->
-            <a role="button" class="btn btn-outline-primary btn-sm float-right mb-2 rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfVWM4H4lmAh_cFlHXpA4ZntHnolq-zqDiLSRuooPsfruLP3Q/viewform?usp=pp_url&entry.1914710992={{ page.stg_kurz | url_encode }}&entry.231045923=Teilzeit&entry.633489639={{ page.pvers_tz | url_encode }}" target="_blank">Feedback zum Modulkatalog {{ page.stg_kurz }}, {{ page.pvers_tz }} einreichen</a>
+            <a role="button" class="btn btn-outline-primary btn-sm float-right mb-2 rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfVWM4H4lmAh_cFlHXpA4ZntHnolq-zqDiLSRuooPsfruLP3Q/viewform?usp=pp_url&entry.1914710992={{ page.stg_kurz | url_encode }}&entry.231045923=Teilzeit&entry.633489639={{ page.pvers_tz | url_encode }}&entry.2138213008={{ site.url }}/stg/{{ page.stg_kurz | downcase }}" target="_blank">Feedback zum Modulkatalog {{ page.stg_kurz }}, {{ page.pvers_tz }} einreichen</a>
             <div class="table-responsive">
               <table class="table table-striped table-bordered table-sm">
                 <thead>
@@ -505,7 +505,7 @@
           {% assign module = module | where_exp: "search", "search.pvers == page.pvers_dual"%}
           <h5>Beispielhafte Darstellung für ein Studium in Teilzeit</h5>
           <!-- <h5><small>Prüfungsordnungsversion {{ page.pvers_dual }}  <span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5> -->
-          <a role="button" class="btn btn-outline-primary btn-sm float-right mb-2 rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfVWM4H4lmAh_cFlHXpA4ZntHnolq-zqDiLSRuooPsfruLP3Q/viewform?usp=pp_url&entry.1914710992={{ page.stg_kurz | url_encode }}&entry.231045923=Dual&entry.633489639={{ page.pvers_dual | url_encode }}" target="_blank">Feedback zum Modulkatalog {{ page.stg_kurz }}, {{ page.pvers_dual }} einreichen</a>
+          <a role="button" class="btn btn-outline-primary btn-sm float-right mb-2 rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfVWM4H4lmAh_cFlHXpA4ZntHnolq-zqDiLSRuooPsfruLP3Q/viewform?usp=pp_url&entry.1914710992={{ page.stg_kurz | url_encode }}&entry.231045923=Dual&entry.633489639={{ page.pvers_dual | url_encode }}&entry.2138213008={{ site.url }}/stg/{{ page.stg_kurz | downcase }}" target="_blank">Feedback zum Modulkatalog {{ page.stg_kurz }}, {{ page.pvers_dual }} einreichen</a>
           <div class="table-responsive">
             <table class="table table-striped table-bordered table-sm">
               <thead>
