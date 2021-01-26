@@ -183,10 +183,10 @@ title: Studiengangebot (STG)
           {% assign stg_richtung = stg.zuordnung %}
           {% if stg_richtung != "" %}
             {% case stg_richtung %}
-              {% when "T" %}bg-info
-              {% when "S" %}bg-warning
-              {% when "W" %}bg-secondary
-              {% when "G" %}bg-light
+              {% when "T" %}bg-hm-blau
+              {% when "S" %}bg-hm-gelb
+              {% when "W" %}bg-hm-gruen
+              {% when "G" %}bg-hm-hellgrau
             {% endcase %}
           {% else %}
             bg-dark
@@ -203,7 +203,9 @@ title: Studiengangebot (STG)
                     {% when "W" %}{{ site.badge_wirtschaft }}
                     {% when "G" %}{{ site.badge_gestaltung }}
                     {% endcase %}
-                  </small></p>
+                  </small>
+                  <span class="float-right text-muted"><small>FK{{ stg.nummer }}</small></span>
+                </p>
                 <h5 class="card-title"><small>{{ stg.text | upcase }}{% if stg.titelkz_m_vz != "" %}&nbsp;({{ stg.titelkz_m_vz }}){% else %}{% endif %}</small><br>{{ stg.fachrich }}</h5>
                 <!-- <p class="card-text">{{ stg._name }}</p> -->
                 <a href="{{ stg.dateiname | datapage_url: 'stg' }}" class="btn rounded-0 btn-sm btn-outline-dark stretched-link">Studiengangsdetails aufrufen</a>
@@ -212,9 +214,9 @@ title: Studiengangebot (STG)
           </div>
         </div>
         {% endfor %}
-        <div class="failed" data-order="">
+        <!-- <div class="failed" data-order="">
           Dieser Filter liefert keinen Ergebnisse zurück.
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

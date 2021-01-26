@@ -2,7 +2,7 @@
 <html lang="de">
 {% include head.html %}
 
-<body onLoad="checkCookieNEW(); checkDates();">
+<body onLoad="checkCookieNEW(); checkDates();" style="padding-top: 54px !important">
   <!-- <body> -->
   {% include nav.html %}
   <main>
@@ -69,21 +69,30 @@
       {% endfor %}
 
 
-      <p class="float-right d-print-none"><a href="#" class="btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="btn btn-link btn-sm hidebadges" style="cursor: pointer; display: none;">Datenherkunft
-          verstecken</a>
-        <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
-      </p>
 
-
-      <h1>{{ page.fachrich }} ({{ page.text }}{% if page.titelkz_m_vz != "" %}, {{ page.titelkz_m_vz }}{% else %}{% endif %}) {{ site.badge_p }}
-        <br><small>{{ page.fachriche }}{{ site.badge_p }}</small>
-      </h1>
-      <div class="row my-4">
-        <div class="col-lg-6" style="background-image: url(https://source.unsplash.com/featured/600?munich); background-size: cover; background-position: center center; min-height:200px">
+      <div class="row">
+        <div class="col-lg-6 py-2
+        {% if page.zuordnung != "" %}
+          {% case page.zuordnung %}
+            {% when "T" %}bg-hm-blau
+            {% when "S" %}bg-hm-gelb
+            {% when "W" %}bg-hm-gruen
+            {% when "G" %}bg-hm-hellgrau
+          {% endcase %}
+        {% else %}
+          bg-dark
+        {% endif %}
+        ">
           {% comment %}
+            background-image: url(https://source.unsplash.com/featured/600?munich); background-size: cover; background-position: center center
+
             {% assign stg_richtung = page.zuordnung %}{% case stg_richtung %}{% when "T" %}technology{% when "S" %}social{% when "W" %}economy{% when "G" %}design
             {% endcase %})
           {% endcomment %}
+
+          <h1 {% if page.zuordnung == "" %} class="text-white"{% endif %}><small>{{ page.text | upcase }}{% if page.titelkz_m_vz != "" %}&nbsp;({{ page.titelkz_m_vz }}){% else %}{% endif %}</small><br>{{ page.fachrich }}{{ site.badge_p }}
+            <br><small>{{ page.fachriche }}{{ site.badge_p }}</small>
+          </h1>
         </div>
         <div class="col-lg-6 bg-light py-3">
           <span id="taste" class="float-right d-print-none"></span>
@@ -94,20 +103,24 @@
           <div class="table-responsive">
             <table class="table table-sm mt-3 bg-transparent">
               <tbody>
-                {% if page.zuordnung != "" %}
                 <tr>
                   <th></th>
                   <td>
-                    {% assign stg_richtung = page.zuordnung %}
-                      {% case stg_richtung %}
+                      {% case page.zuordnung %}
                       {% when "T" %}{{ site.badge_technik }}
                       {% when "S" %}{{ site.badge_soziales }}
                       {% when "W" %}{{ site.badge_wirtschaft }}
                       {% when "G" %}{{ site.badge_gestaltung }}
                     {% endcase %}{{ site.badge_p }}
+
+                    <a href="#" class="float-right d-print-none btn btn-link btn-sm showbadges" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="float-right d-print-none btn btn-link btn-sm hidebadges" style="cursor: pointer; display: none;">Datenherkunft
+                        verstecken</a>
+                      <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
+
+                    <!-- <p class="float-right d-print-none">
+                    </p> -->
                   </td>
                 </tr>
-                {% endif %}
                 {% if page._name != nil %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Art des Studiums</th>
@@ -356,11 +369,11 @@
 
       <div class="accordion" id="accordion_stg_informationen">
         <div class="card rounded-0">
-          <div class="card-header" id="heading_studien_ziel">
+          <div class="card-header bg-white" id="heading_studien_ziel">
             <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_studien_ziel" aria-expanded="true" aria-controls="collapse_studien_ziel">
+              <a class="text-body" role="button" data-toggle="collapse" data-target="#collapse_studien_ziel" aria-expanded="true" aria-controls="collapse_studien_ziel" style="cursor: pointer">
                 Studienziel{{ site.badge_cms }}
-              </button>
+              </a>
             </h2>
           </div>
           <div id="collapse_studien_ziel" class="collapse" aria-labelledby="heading_studien_ziel" data-parent="#accordion_stg_informationen">
@@ -371,11 +384,11 @@
         </div>
 
         <div class="card rounded-0">
-          <div class="card-header" id="heading_studien_verlauf">
+          <div class="card-header bg-white" id="heading_studien_verlauf">
             <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_studien_verlauf" aria-expanded="true" aria-controls="collapse_studien_verlauf">
+              <a class="text-body" role="button" data-toggle="collapse" data-target="#collapse_studien_verlauf" aria-expanded="true" aria-controls="collapse_studien_verlauf" style="cursor: pointer">
                 Studienverlauf{{ site.badge_cms }}
-              </button>
+              </a>
             </h2>
           </div>
           <div id="collapse_studien_verlauf" class="collapse" aria-labelledby="heading_studien_verlauf" data-parent="#accordion_stg_informationen">
@@ -405,9 +418,11 @@
 
               {% if page.rsem_vz != "0" %}
               {% assign module = module | where_exp: "search", "search.pvers == page.pvers_vz"%}
-              <h5>Beispielhafte Darstellung für ein Studium in Vollzeit<br><small>Prüfungsordnungsversion {{ page.pvers_vz }} <span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5>
+              <h5>Beispielhafte Darstellung für ein Studium in Vollzeit</h5>
+              <!-- <h5>Prüfungsordnungsversion {{ page.pvers_vz }} <small><span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5> -->
+              <a role="button" class="btn btn-outline-primary btn-sm float-right mb-2 rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfVWM4H4lmAh_cFlHXpA4ZntHnolq-zqDiLSRuooPsfruLP3Q/viewform?usp=pp_url&entry.1914710992={{ page.stg_kurz | url_encode }}&entry.231045923=Vollzeit&entry.633489639={{ page.pvers_vz | url_encode }}" target="_blank">Feedback zum Modulkatalog {{ page.stg_kurz }}, {{ page.pvers_vz }} einreichen</a>
               <div class="table-responsive">
-                <table class="table table-striped table-bordered table-sm">
+                <table class="table table-sm">
                   <thead>
                     <tr>
                       <th scope="col">Modul/Fach</th>
@@ -446,7 +461,9 @@
 
             {% elsif page.rsem_tz != 0 %}
             {% assign module = module | where_exp: "search", "search.pvers == page.pvers_tz"%}
-            <h5>Beispielhafte Darstellung für ein Studium in Teilzeit<br><small>Prüfungsordnungsversion {{ page.pvers_tz }}  <span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5>
+            <h5>Beispielhafte Darstellung für ein Studium in Teilzeit</h5>
+            <!-- <h5><small>Prüfungsordnungsversion {{ page.pvers_tz }}  <span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5> -->
+            <a role="button" class="btn btn-outline-primary btn-sm float-right mb-2 rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfVWM4H4lmAh_cFlHXpA4ZntHnolq-zqDiLSRuooPsfruLP3Q/viewform?usp=pp_url&entry.1914710992={{ page.stg_kurz | url_encode }}&entry.231045923=Teilzeit&entry.633489639={{ page.pvers_tz | url_encode }}" target="_blank">Feedback zum Modulkatalog {{ page.stg_kurz }}, {{ page.pvers_tz }} einreichen</a>
             <div class="table-responsive">
               <table class="table table-striped table-bordered table-sm">
                 <thead>
@@ -486,7 +503,9 @@
           </div>
           {% elsif page.rsem_dual != 0 %}
           {% assign module = module | where_exp: "search", "search.pvers == page.pvers_dual"%}
-          <h5>Beispielhafte Darstellung für ein Studium in Teilzeit<br><small>Prüfungsordnungsversion {{ page.pvers_dual }}  <span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5>
+          <h5>Beispielhafte Darstellung für ein Studium in Teilzeit</h5>
+          <!-- <h5><small>Prüfungsordnungsversion {{ page.pvers_dual }}  <span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5> -->
+          <a role="button" class="btn btn-outline-primary btn-sm float-right mb-2 rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfVWM4H4lmAh_cFlHXpA4ZntHnolq-zqDiLSRuooPsfruLP3Q/viewform?usp=pp_url&entry.1914710992={{ page.stg_kurz | url_encode }}&entry.231045923=Dual&entry.633489639={{ page.pvers_dual | url_encode }}" target="_blank">Feedback zum Modulkatalog {{ page.stg_kurz }}, {{ page.pvers_dual }} einreichen</a>
           <div class="table-responsive">
             <table class="table table-striped table-bordered table-sm">
               <thead>
@@ -532,11 +551,11 @@
 
 
         <div class="card rounded-0">
-          <div class="card-header" id="heading_gebuehren">
+          <div class="card-header bg-white" id="heading_gebuehren">
             <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_gebuehren" aria-expanded="true" aria-controls="collapse_gebuehren">
+              <a class="text-body" role="button" data-toggle="collapse" data-target="#collapse_gebuehren" aria-expanded="true" aria-controls="collapse_gebuehren" style="cursor: pointer">
                 Gebühren{{ site.badge_p }}
-              </button>
+              </a>
             </h2>
           </div>
           <div id="collapse_gebuehren" class="collapse" aria-labelledby="heading_gebuehren" data-parent="#accordion_stg_informationen">
@@ -621,11 +640,11 @@
 
 
         <div class="card rounded-0">
-          <div class="card-header" id="heading_bewerbung">
+          <div class="card-header bg-white" id="heading_bewerbung">
             <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_bewerbung" aria-expanded="true" aria-controls="collapse_bewerbung">
+              <a class="text-body" role="button" data-toggle="collapse" data-target="#collapse_bewerbung" aria-expanded="true" aria-controls="collapse_bewerbung" style="cursor: pointer">
                 Bewerbungsvorraussetzungen und -modalitäten{{ site.badge_cms }}
-              </button>
+              </a>
             </h2>
           </div>
           <div id="collapse_bewerbung" class="collapse" aria-labelledby="heading_bewerbung" data-parent="#accordion_stg_informationen">
@@ -675,11 +694,11 @@
           </div>
         </div>
         <div class="card rounded-0">
-          <div class="card-header" id="heading_interesse">
+          <div class="card-header bg-white" id="heading_interesse">
             <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_interesse" aria-expanded="false" aria-controls="collapse_interesse">
+              <a class="text-body collapsed" role="button" data-toggle="collapse" data-target="#collapse_interesse" aria-expanded="false" aria-controls="collapse_interesse" style="cursor: pointer">
                 Zu wem passt der Studiengang?{{ site.badge_cms }}
-              </button>
+              </a>
             </h2>
           </div>
           <div id="collapse_interesse" class="collapse" aria-labelledby="heading_interesse" data-parent="#accordion_stg_informationen">
@@ -710,11 +729,11 @@
           </div>
         </div>
         <div class="card rounded-0">
-          <div class="card-header" id="heading_kontakt">
+          <div class="card-header bg-white" id="heading_kontakt">
             <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_kontakt" aria-expanded="false" aria-controls="collapse_kontakt">
+              <a class="text-body collapsed" role="button" data-toggle="collapse" data-target="#collapse_kontakt" aria-expanded="false" aria-controls="collapse_kontakt" style="cursor: pointer">
                 Kontakt{{ site.badge_cms }}
-              </button>
+              </a>
             </h2>
           </div>
           <div id="collapse_kontakt" class="collapse" aria-labelledby="heading_kontakt" data-parent="#accordion_stg_informationen">
@@ -991,12 +1010,12 @@
         </div>
 
         <div class="card rounded-0">
-          <div class="card-header" id="heading_weitere_info">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_weitere_info" aria-expanded="false" aria-controls="collapse_weitere_info">
+          <div class="card-header bg-white" id="heading_weitere_info">
+            <h3 class="mb-0">
+              <a class="text-body collapsed" role="button" data-toggle="collapse" data-target="#collapse_weitere_info" aria-expanded="false" aria-controls="collapse_weitere_info" style="cursor: pointer">
                 Weiterführende Informationen{{ site.badge_p }}{{ site.badge_cms }}
-              </button>
-            </h2>
+              </a>
+            </h3>
           </div>
           <div id="collapse_weitere_info" class="collapse" aria-labelledby="heading_weitere_info" data-parent="#accordion_stg_informationen">
             <div class="card-body">
@@ -1029,7 +1048,7 @@
         </div>
         {% if extra[1].youtube-id != nil or extra[1].vimeo-id != nil %}
         <div class="card d-print-none">
-          <div class="card-header" id="heading_video">
+          <div class="card-header bg-white" id="heading_video">
             <h2 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_video" aria-expanded="false" aria-controls="collapse_video">
                 Videos zum und über den Studiengang{{ site.badge_cms }}
