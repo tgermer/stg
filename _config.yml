@@ -176,6 +176,8 @@ page_gen:
     data: 3478_fachrichtung #stg
     template: stg
     name: dateiname #<<field used to generate the filename>>
+    #title: dateiname #[field used to generate the page title]
+    title_expr: record['fachrich'] + " " + record['titel_m_vz'] + " - " + record['fachriche'] + " " + record['titelkz_m_vz'] #[a Ruby expression to generate the filename (alternative to title)]
     dir: stg #<<directory in which files are to be generated>>
     extension: #<<extension used to generate the filename>>
     filter: #<<property to filter data records by>>
@@ -184,6 +186,8 @@ page_gen:
     data: 3478_fachrichtung #stg_komplett
     template: stg #stg_komplett
     name: stg_kurz #fachrich #<<field used to generate the filename>>
+    #title: dateiname #[field used to generate the page title]
+    title_expr: record['fachrich'] + " " + record['titel_m_vz'] + " - " + record['fachriche'] + " " + record['titelkz_m_vz'] #[a Ruby expression to generate the filename (alternative to title)]
     dir: stg #<<directory in which files are to be generated>>
     extension: #<<extension used to generate the filename>>
     filter: #<<property to filter data records by>>
