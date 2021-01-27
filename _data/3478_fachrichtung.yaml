@@ -5,7 +5,7 @@
     text: Bachelor
     fachrich: Augenoptik/Optometrie
     fachriche: 'Ophthalmic Optics and Optometry'
-    dateiname: augenoptik_optometrie_bachelor
+    dateiname: 'Augenoptik/Optometrie Bachelor'
     stg_kurz: AO-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -21,14 +21,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Sc.
+    titel_m_vz: 'Bachelor of Science'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Sc.
+    titel_m_dual: 'Bachelor of Science'
     titelkz_w_vz: B.Sc.
+    titel_w_vz: 'Bachelor of Science'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Sc.
-    praxis_vz: '---#0#|---#0#|Praxissemester#6#'
+    titel_w_dual: 'Bachelor of Science'
+    praxis_vz: '---~0~|---~0~|Praxissemester~6~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#6#'
+    praxis_dual: '---~0~|---~0~|Praxissemester~6~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -62,7 +68,7 @@
     text: Bachelor
     fachrich: Architektur
     fachriche: Architecture
-    dateiname: architektur_bachelor
+    dateiname: 'Architektur Bachelor'
     stg_kurz: AR-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -78,14 +84,20 @@
     ects_tz: '0'
     ects_dual: '180'
     titelkz_m_vz: B.A.
+    titel_m_vz: 'Bachelor of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.A.
+    titel_m_dual: 'Bachelor of Arts'
     titelkz_w_vz: B.A.
+    titel_w_vz: 'Bachelor of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.A.
-    praxis_vz: Vorpraxis#0#8|---#0#|---#0#
+    titel_w_dual: 'Bachelor of Arts'
+    praxis_vz: Vorpraxis~0~8|---~0~|---~0~
     praxis_tz: ""
-    praxis_dual: Vorpraxis#0#8|---#0#|---#0#
+    praxis_dual: Vorpraxis~0~8|---~0~|---~0~
     statdat: AD
     zuordnung: T
     berufsbegleitend: N
@@ -119,7 +131,7 @@
     text: Master
     fachrich: Architektur
     fachriche: Architecture
-    dateiname: architektur_master
+    dateiname: 'Architektur Master'
     stg_kurz: AR-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -135,12 +147,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: M.A.
+    titel_m_vz: 'Master of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.A.
+    titel_w_vz: 'Master of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: AD
@@ -176,7 +194,7 @@
     text: Bachelor
     fachrich: 'Wirtschaftsingenieurwesen Automobilindustrie'
     fachriche: 'Automotive Industry'
-    dateiname: wirtschaftsingenieurwesen_automobilindustrie_bachelor
+    dateiname: 'Wirtschaftsingenieurwesen Automobilindustrie Bachelor'
     stg_kurz: AU-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -192,14 +210,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#|Vorpraxis#0#10|Praxissemester#6#20'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|Vorpraxis~0~10|Praxissemester~6~20'
     praxis_tz: ""
-    praxis_dual: '---#0#|Vorpraxis#0#10|Praxissemester#6#20'
+    praxis_dual: '---~0~|Vorpraxis~0~10|Praxissemester~6~20'
     statdat: WW
     zuordnung: T
     berufsbegleitend: N
@@ -233,7 +257,7 @@
     text: 'kein Abschluss'
     fachrich: 'Allgemeinwissenschaften (Fakultät 13)'
     fachriche: ""
-    dateiname: allgemeinwissenschaften_fakultaet_13_kein_abschluss
+    dateiname: 'Allgemeinwissenschaften (Fakultät 13) kein Abschluss'
     stg_kurz: AW-
     stgart: ""
     name: ""
@@ -249,11 +273,17 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -290,7 +320,7 @@
     text: Bachelor
     fachrich: Bauingenieurwesen
     fachriche: 'Civil Engineering'
-    dateiname: bauingenieurwesen_bachelor
+    dateiname: 'Bauingenieurwesen Bachelor'
     stg_kurz: BI-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -306,14 +336,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: Vorpraxis#4#6|---#0#|Praxissemester#5#16
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: Vorpraxis~4~6|---~0~|Praxissemester~5~16
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#5#16'
+    praxis_dual: '---~0~|---~0~|Praxissemester~5~16'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -347,7 +383,7 @@
     text: Master
     fachrich: 'Allgemeiner Ingenieurbau'
     fachriche: 'General Civil Engineering'
-    dateiname: allgemeiner_ingenieurbau_master
+    dateiname: 'Allgemeiner Ingenieurbau Master'
     stg_kurz: BI-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -363,13 +399,19 @@
     ects_tz: '90'
     ects_dual: '0'
     titelkz_m_vz: ""
-    titelkz_m_tz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: M.Eng.
+    titel_m_tz: 'Master of Engineering'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
-    titelkz_w_tz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: M.Eng.
+    titel_w_tz: 'Master of Engineering'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -404,7 +446,7 @@
     text: Master
     fachrich: Bauingenieurwesen
     fachriche: 'Civil Engineering'
-    dateiname: bauingenieurwesen_master
+    dateiname: 'Bauingenieurwesen Master'
     stg_kurz: BN-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -419,14 +461,20 @@
     ects_vz: '90'
     ects_tz: '90'
     ects_dual: '0'
-    titelkz_m_vz: ""
-    titelkz_m_tz: ""
+    titelkz_m_vz: M.Eng.
+    titel_m_vz: 'Master of Engineering'
+    titelkz_m_tz: M.Eng.
+    titel_m_tz: 'Master of Engineering'
     titelkz_m_dual: ""
-    titelkz_w_vz: ""
-    titelkz_w_tz: ""
+    titel_m_dual: ""
+    titelkz_w_vz: M.Eng.
+    titel_w_vz: 'Master of Engineering'
+    titelkz_w_tz: M.Eng.
+    titel_w_tz: 'Master of Engineering'
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -461,7 +509,7 @@
     text: Bachelor
     fachrich: Bioingenieurwesen
     fachriche: Bioengineering
-    dateiname: bioingenieurwesen_bachelor
+    dateiname: 'Bioingenieurwesen Bachelor'
     stg_kurz: BO-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -477,12 +525,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: Vorpraxis#0#|---#0#|Praxissemester#5#
+    titel_w_dual: ""
+    praxis_vz: Vorpraxis~0~|---~0~|Praxissemester~5~
     praxis_tz: ""
     praxis_dual: ""
     statdat: BW
@@ -518,7 +572,7 @@
     text: Master
     fachrich: Biotechnologie/Bioingenieurwesen
     fachriche: Biotechnology/Bioengineering
-    dateiname: biotechnologie_bioingenieurwesen_master
+    dateiname: 'Biotechnologie/Bioingenieurwesen Master'
     stg_kurz: BO-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -534,12 +588,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -575,7 +635,7 @@
     text: Master
     fachrich: 'Betriebliche Steuerlehre'
     fachriche: Taxation
-    dateiname: betriebliche_steuerlehre_master
+    dateiname: 'Betriebliche Steuerlehre Master'
     stg_kurz: BS-M
     stgart: '690'
     name: 'Weiterbildungsstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -591,12 +651,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: M.A.
+    titel_m_vz: 'Master of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.A.
+    titel_w_vz: 'Master of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: WW
@@ -632,7 +698,7 @@
     text: Zertifikat
     fachrich: 'Bahntechnik - Antrieb, Bremse, Fahrdynamik'
     fachriche: ""
-    dateiname: bahntechnik_antrieb_bremse_fahrdynamik_zertifikat
+    dateiname: 'Bahntechnik - Antrieb, Bremse, Fahrdynamik Zertifikat'
     stg_kurz: BT-Z
     stgart: '694'
     name: 'Weiterbildungsstudium Abschlusszeugnis/Zertifikat'
@@ -648,11 +714,17 @@
     ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -689,7 +761,7 @@
     text: Bachelor
     fachrich: Betriebswirtschaft
     fachriche: 'Business Administration'
-    dateiname: betriebswirtschaft_bachelor
+    dateiname: 'Betriebswirtschaft Bachelor'
     stg_kurz: BW-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -705,14 +777,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.A.
+    titel_m_vz: 'Bachelor of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.A.
+    titel_m_dual: 'Bachelor of Arts'
     titelkz_w_vz: B.A.
+    titel_w_vz: 'Bachelor of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.A.
-    praxis_vz: '---#0#|---#0#|Praxissemester#4#18'
+    titel_w_dual: 'Bachelor of Arts'
+    praxis_vz: '---~0~|---~0~|Praxissemester~4~18'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#4#18'
+    praxis_dual: '---~0~|---~0~|Praxissemester~4~18'
     statdat: WW
     zuordnung: W
     berufsbegleitend: N
@@ -746,7 +824,7 @@
     text: Master
     fachrich: Betriebswirtschaft
     fachriche: 'Business Administration'
-    dateiname: betriebswirtschaft_master
+    dateiname: 'Betriebswirtschaft Master'
     stg_kurz: BW-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -762,14 +840,20 @@
     ects_tz: '0'
     ects_dual: '90'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|---#0#'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: WW
     zuordnung: W
     berufsbegleitend: N
@@ -803,7 +887,7 @@
     text: Zertifikat
     fachrich: 'Courses in English'
     fachriche: 'Courses in English'
-    dateiname: courses_in_english_zertifikat
+    dateiname: 'Courses in English Zertifikat'
     stg_kurz: CE-Z
     stgart: '494'
     name: 'Ergänzungs-, Erweiterungs- und Zusatzstudium Abschlusszeugnis/Zertifikat'
@@ -819,11 +903,17 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -860,7 +950,7 @@
     text: Bachelor
     fachrich: 'Chemische Technik'
     fachriche: 'Chemical Engineering'
-    dateiname: chemische_technik_bachelor
+    dateiname: 'Chemische Technik Bachelor'
     stg_kurz: CH-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -876,14 +966,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#19'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~19'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#5#19'
+    praxis_dual: '---~0~|---~0~|Praxissemester~5~19'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -917,7 +1013,7 @@
     text: Bachelor
     fachrich: 'Data Science & Scientific Computing'
     fachriche: 'Data Science & Scientific Computing'
-    dateiname: data_science_und_scientific_computing_bachelor
+    dateiname: 'Data Science & Scientific Computing Bachelor'
     stg_kurz: DC-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -932,13 +1028,19 @@
     ects_vz: '210'
     ects_tz: '0'
     ects_dual: '0'
-    titelkz_m_vz: ""
+    titelkz_m_vz: B.Sc.
+    titel_m_vz: 'Bachelor of Science'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
-    titelkz_w_vz: ""
+    titel_m_dual: ""
+    titelkz_w_vz: B.Sc.
+    titel_w_vz: 'Bachelor of Science'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|Praxissemester#4#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|Praxissemester~4~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IM
@@ -974,7 +1076,7 @@
     text: Master
     fachrich: 'Management Digitales Publizieren'
     fachriche: 'Management Digital Publishing'
-    dateiname: management_digitales_publizieren_master
+    dateiname: 'Management Digitales Publizieren Master'
     stg_kurz: DP-M
     stgart: '690'
     name: 'Weiterbildungsstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -990,11 +1092,17 @@
     ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -1031,7 +1139,7 @@
     text: Bachelor
     fachrich: 'Druck- und Medientechnik'
     fachriche: 'Print and Media Technology'
-    dateiname: druck_und_medientechnik_bachelor
+    dateiname: 'Druck- und Medientechnik Bachelor'
     stg_kurz: DR-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -1047,14 +1155,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#20'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~20'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#5#20'
+    praxis_dual: '---~0~|---~0~|Praxissemester~5~20'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1088,7 +1202,7 @@
     text: Bachelor
     fachrich: Design
     fachriche: Design
-    dateiname: design_bachelor
+    dateiname: 'Design Bachelor'
     stg_kurz: DS-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -1103,13 +1217,19 @@
     ects_vz: '210'
     ects_tz: '0'
     ects_dual: '0'
-    titelkz_m_vz: ""
+    titelkz_m_vz: B.A.
+    titel_m_vz: 'Bachelor of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
-    titelkz_w_vz: ""
+    titel_m_dual: ""
+    titelkz_w_vz: B.A.
+    titel_w_vz: 'Bachelor of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#18'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~18'
     praxis_tz: ""
     praxis_dual: ""
     statdat: AD
@@ -1145,7 +1265,7 @@
     text: Master
     fachrich: 'Advanced Design'
     fachriche: 'Advanced Design'
-    dateiname: advanced_design_master
+    dateiname: 'Advanced Design Master'
     stg_kurz: DS-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -1161,12 +1281,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: M.A.
+    titel_m_vz: 'Master of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.A.
+    titel_w_vz: 'Master of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: AD
@@ -1202,7 +1328,7 @@
     text: Master
     fachrich: 'Entrepreneurship and Digital Transformation'
     fachriche: 'Entrepreneurship and Digital Transformation'
-    dateiname: entrepreneurship_and_digital_transformation_master
+    dateiname: 'Entrepreneurship and Digital Transformation Master'
     stg_kurz: DT-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -1218,12 +1344,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: M.A.
+    titel_m_vz: 'Master of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.A.
+    titel_w_vz: 'Master of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: WW
@@ -1259,7 +1391,7 @@
     text: Master
     fachrich: 'Electrical Engineering'
     fachriche: 'Electrical Engineering'
-    dateiname: electrical_engineering_master
+    dateiname: 'Electrical Engineering Master'
     stg_kurz: EE-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -1275,11 +1407,17 @@
     ects_tz: ""
     ects_dual: ""
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -1316,7 +1454,7 @@
     text: Bachelor
     fachrich: 'Elektrotechnik und Informationstechnik'
     fachriche: 'Electrical Engineering and Information Technology'
-    dateiname: elektrotechnik_und_informationstechnik_bachelor
+    dateiname: 'Elektrotechnik und Informationstechnik Bachelor'
     stg_kurz: EI-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -1332,14 +1470,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#5#'
+    praxis_dual: '---~0~|---~0~|Praxissemester~5~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1373,7 +1517,7 @@
     text: Master
     fachrich: Elektrotechnik
     fachriche: 'Electrical Engineering'
-    dateiname: elektrotechnik_master
+    dateiname: 'Elektrotechnik Master'
     stg_kurz: EL-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -1389,14 +1533,20 @@
     ects_tz: '90'
     ects_dual: '90'
     titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: M.Sc.
+    titel_m_tz: 'Master of Science'
     titelkz_m_dual: M.Sc.
+    titel_m_dual: 'Master of Science'
     titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: M.Sc.
+    titel_w_tz: 'Master of Science'
     titelkz_w_dual: M.Sc.
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
-    praxis_dual: '---#0#|---#0#|---#0#'
+    titel_w_dual: 'Master of Science'
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1430,7 +1580,7 @@
     text: Bachelor
     fachrich: 'Elektrotechnik - Elektromobilität'
     fachriche: 'Electrical Engineering - Electromobility'
-    dateiname: elektrotechnik_elektromobilitaet_bachelor
+    dateiname: 'Elektrotechnik - Elektromobilität Bachelor'
     stg_kurz: EM-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -1446,14 +1596,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#5#'
+    praxis_dual: '---~0~|---~0~|Praxissemester~5~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1487,7 +1643,7 @@
     text: Bachelor
     fachrich: Fahrzeugtechnik
     fachriche: 'Automotive and Aeronautical Engineering'
-    dateiname: fahrzeugtechnik_bachelor
+    dateiname: 'Fahrzeugtechnik Bachelor'
     stg_kurz: FA-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -1502,15 +1658,21 @@
     ects_vz: '210'
     ects_tz: '0'
     ects_dual: '210'
-    titelkz_m_vz: ""
+    titelkz_m_vz: B.Sc.
+    titel_m_vz: 'Bachelor of Science'
     titelkz_m_tz: ""
-    titelkz_m_dual: ""
-    titelkz_w_vz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: B.Sc.
+    titel_m_dual: 'Bachelor of Science'
+    titelkz_w_vz: B.Sc.
+    titel_w_vz: 'Bachelor of Science'
     titelkz_w_tz: ""
-    titelkz_w_dual: ""
-    praxis_vz: Vorpraxis#0#12|---#0#|Praxissemester#5#20
+    titel_w_tz: ""
+    titelkz_w_dual: B.Sc.
+    titel_w_dual: 'Bachelor of Science'
+    praxis_vz: Vorpraxis~0~12|---~0~|Praxissemester~5~20
     praxis_tz: ""
-    praxis_dual: Vorpraxis#0#12|---#0#|Praxissemester#5#20
+    praxis_dual: Vorpraxis~0~12|---~0~|Praxissemester~5~20
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1544,7 +1706,7 @@
     text: 'Diplom (FH)'
     fachrich: 'Fahrzeugtechnik und Flugzeugtechnik'
     fachriche: 'Automotive and Aeronautical Engineering'
-    dateiname: fahrzeugtechnik_und_flugzeugtechnik_diplom_fh_
+    dateiname: 'Fahrzeugtechnik und Flugzeugtechnik Diplom (FH)'
     stg_kurz: FA-D
     stgart: '151'
     name: 'Erststudium Diplom (FH)'
@@ -1560,12 +1722,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: 'Dipl.-Ing. (FH)'
+    titel_m_vz: 'Diplom-Ingenieur (FH)'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: 'Dipl.-Ing. (FH)'
+    titel_w_vz: 'Diplom-Ingenieurin (FH)'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|1.Praxissemester#3#|2.Praxissemester#6#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|1.Praxissemester~3~|2.Praxissemester~6~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -1601,7 +1769,7 @@
     text: Master
     fachrich: Fahrzeugtechnik
     fachriche: 'Automotive and Aeronautical Engineering'
-    dateiname: fahrzeugtechnik_master
+    dateiname: 'Fahrzeugtechnik Master'
     stg_kurz: FA-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -1617,14 +1785,20 @@
     ects_tz: '90'
     ects_dual: '90'
     titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: M.Sc.
+    titel_m_tz: 'Master of Science'
     titelkz_m_dual: M.Sc.
+    titel_m_dual: 'Master of Science'
     titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: M.Sc.
+    titel_w_tz: 'Master of Science'
     titelkz_w_dual: M.Sc.
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
-    praxis_dual: '---#0#|---#0#|---#0#'
+    titel_w_dual: 'Master of Science'
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1658,7 +1832,7 @@
     text: Master
     fachrich: Fahrzeugmechatronik
     fachriche: 'Automotive Mechatronics'
-    dateiname: fahrzeugmechatronik_master
+    dateiname: 'Fahrzeugmechatronik Master'
     stg_kurz: FE-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -1674,13 +1848,19 @@
     ects_tz: '90'
     ects_dual: '0'
     titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: M.Sc.
+    titel_m_tz: 'Master of Science'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: M.Sc.
+    titel_w_tz: 'Master of Science'
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -1715,7 +1895,7 @@
     text: Zertifikat
     fachrich: Gaststudium
     fachriche: ""
-    dateiname: gaststudium_zertifikat
+    dateiname: 'Gaststudium Zertifikat'
     stg_kurz: GA-Z
     stgart: '997'
     name: 'Keine Abschlussprüfung möglich bzw. angestrebt'
@@ -1731,11 +1911,17 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -1746,7 +1932,7 @@
     erst_sem: X
     hoeheres_sem: ""
     start_1: 11/15/20
-    end_1: 1/15/21
+    end_1: 2/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -1772,7 +1958,7 @@
     text: Bachelor
     fachrich: 'Angewandte Geodäsie und Geoinformatik'
     fachriche: 'Angewandte Geodäsie und Geoinformatik'
-    dateiname: angewandte_geodaesie_und_geoinformatik_bachelor
+    dateiname: 'Angewandte Geodäsie und Geoinformatik Bachelor'
     stg_kurz: GD-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -1788,14 +1974,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#|---#0#|Praxissemester#6#18'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|---~0~|Praxissemester~6~18'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#6#18'
+    praxis_dual: '---~0~|---~0~|Praxissemester~6~18'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1829,7 +2021,7 @@
     text: Master
     fachrich: 'Gesellschaftlicher Wandel und Teilhabe'
     fachriche: 'Social Changes and Participation'
-    dateiname: gesellschaftlicher_wandel_und_teilhabe_master
+    dateiname: 'Gesellschaftlicher Wandel und Teilhabe Master'
     stg_kurz: GE-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -1845,12 +2037,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: M.A.
+    titel_m_vz: 'Master of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.A.
+    titel_w_vz: 'Master of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: SW
@@ -1886,7 +2084,7 @@
     text: Bachelor
     fachrich: 'Geoinformatik und Satellitenpositionierung'
     fachriche: 'Geoinformatics and Satellite Positioning'
-    dateiname: geoinformatik_und_satellitenpositionierung_bachelor
+    dateiname: 'Geoinformatik und Satellitenpositionierung Bachelor'
     stg_kurz: GI-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -1902,11 +2100,17 @@
     ects_tz: '0'
     ects_dual: ""
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -1943,7 +2147,7 @@
     text: Bachelor
     fachrich: 'Geoinformatik und Navigation'
     fachriche: 'Geoinformatics and Navigation'
-    dateiname: geoinformatik_und_navigation_bachelor
+    dateiname: 'Geoinformatik und Navigation Bachelor'
     stg_kurz: GN-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -1959,14 +2163,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#18'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~18'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#5#18'
+    praxis_dual: '---~0~|---~0~|Praxissemester~5~18'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -2000,7 +2210,7 @@
     text: Bachelor
     fachrich: 'Geotelematik und Navigation'
     fachriche: 'Geotelematics and Navigation'
-    dateiname: geotelematik_und_navigation_bachelor
+    dateiname: 'Geotelematik und Navigation Bachelor'
     stg_kurz: GO-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -2016,11 +2226,17 @@
     ects_tz: '0'
     ects_dual: ""
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -2057,7 +2273,7 @@
     text: Master
     fachrich: Geomatik
     fachriche: Geomatics
-    dateiname: geomatik_master
+    dateiname: 'Geomatik Master'
     stg_kurz: GO-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -2073,14 +2289,20 @@
     ects_tz: '90'
     ects_dual: '90'
     titelkz_m_vz: M.Eng.
+    titel_m_vz: 'Master of Engineering'
     titelkz_m_tz: M.Eng.
+    titel_m_tz: 'Master of Engineering'
     titelkz_m_dual: M.Eng.
+    titel_m_dual: 'Master of Engineering'
     titelkz_w_vz: M.Eng.
+    titel_w_vz: 'Master of Engineering'
     titelkz_w_tz: M.Eng.
+    titel_w_tz: 'Master of Engineering'
     titelkz_w_dual: M.Eng.
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
-    praxis_dual: '---#0#|---#0#|---#0#'
+    titel_w_dual: 'Master of Engineering'
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -2114,7 +2336,7 @@
     text: Master
     fachrich: 'Green Economy and Digital Innovation'
     fachriche: 'Green Economy and Digital Innovation'
-    dateiname: green_economy_and_digital_innovation_master
+    dateiname: 'Green Economy and Digital Innovation Master'
     stg_kurz: GR-M
     stgart: '690'
     name: 'Weiterbildungsstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -2130,11 +2352,17 @@
     ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -2171,7 +2399,7 @@
     text: Zertifikat
     fachrich: 'Gründung eines eigenen Start-ups'
     fachriche: 'Founding your own start-up'
-    dateiname: gruendung_eines_eigenen_start_ups_zertifikat
+    dateiname: 'Gründung eines eigenen Start-ups Zertifikat'
     stg_kurz: GS-Z
     stgart: '494'
     name: 'Ergänzungs-, Erweiterungs- und Zusatzstudium Abschlusszeugnis/Zertifikat'
@@ -2187,13 +2415,19 @@
     ects_tz: '10'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: 'Abschluß (FH) sonstiger Art'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: 'Abschluß (FH) sonstiger Art'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: WW
     zuordnung: ""
@@ -2228,7 +2462,7 @@
     text: Master
     fachrich: Gebäudetechnik
     fachriche: 'Building Services Engineering'
-    dateiname: gebaeudetechnik_master
+    dateiname: 'Gebäudetechnik Master'
     stg_kurz: GT-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -2244,14 +2478,20 @@
     ects_tz: '0'
     ects_dual: '90'
     titelkz_m_vz: M.Eng.
+    titel_m_vz: 'Master of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: M.Eng.
+    titel_m_dual: 'Master of Engineering'
     titelkz_w_vz: M.Eng.
+    titel_w_vz: 'Master of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: M.Eng.
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: 'Master of Engineering'
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|---#0#'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -2285,7 +2525,7 @@
     text: Master
     fachrich: 'Gemeinwesenentwicklung, Quartiersmanagement und Lokale Ökonomie'
     fachriche: 'Community Development and Local Economy'
-    dateiname: gemeinwesenentwicklung_quartiersmanagement_und_lokale_oekonomie_master
+    dateiname: 'Gemeinwesenentwicklung, Quartiersmanagement und Lokale Ökonomie Master'
     stg_kurz: GW-M
     stgart: '690'
     name: 'Weiterbildungsstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -2301,13 +2541,19 @@
     ects_tz: '120'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: M.C.D.
+    titel_m_tz: 'Master of Community Development'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: M.C.D.
+    titel_w_tz: 'Master of Community Development'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -2342,7 +2588,7 @@
     text: Master
     fachrich: Ingenieurakustik
     fachriche: Ingenieurakustik
-    dateiname: ingenieurakustik_master
+    dateiname: 'Ingenieurakustik Master'
     stg_kurz: IA-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -2358,11 +2604,17 @@
     ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -2399,7 +2651,7 @@
     text: Zertifikat
     fachrich: 'Ingenieurakustik (Modulstudium)'
     fachriche: 'Ingenieurakustik (Modulstudium)'
-    dateiname: ingenieurakustik_modulstudium_zertifikat
+    dateiname: 'Ingenieurakustik (Modulstudium) Zertifikat'
     stg_kurz: IA-Z
     stgart: '694'
     name: 'Weiterbildungsstudium Abschlusszeugnis/Zertifikat'
@@ -2415,11 +2667,17 @@
     ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -2456,7 +2714,7 @@
     text: Bachelor
     fachrich: Wirtschaftsinformatik
     fachriche: 'Information Systems and Management'
-    dateiname: wirtschaftsinformatik_bachelor
+    dateiname: 'Wirtschaftsinformatik Bachelor'
     stg_kurz: IB-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -2472,14 +2730,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Sc.
+    titel_m_vz: 'Bachelor of Science'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Sc.
+    titel_m_dual: 'Bachelor of Science'
     titelkz_w_vz: B.Sc.
+    titel_w_vz: 'Bachelor of Science'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Sc.
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
+    titel_w_dual: 'Bachelor of Science'
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#5#'
+    praxis_dual: '---~0~|---~0~|Praxissemester~5~'
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
@@ -2513,7 +2777,7 @@
     text: Bachelor
     fachrich: 'Scientific Computing'
     fachriche: 'Scientific Computing'
-    dateiname: scientific_computing_bachelor
+    dateiname: 'Scientific Computing Bachelor'
     stg_kurz: IC-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -2529,14 +2793,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Sc.
+    titel_m_vz: 'Bachelor of Science'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Sc.
+    titel_m_dual: 'Bachelor of Science'
     titelkz_w_vz: B.Sc.
+    titel_w_vz: 'Bachelor of Science'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Sc.
-    praxis_vz: '---#0#|---#0#|Praxissemester#4#'
+    titel_w_dual: 'Bachelor of Science'
+    praxis_vz: '---~0~|---~0~|Praxissemester~4~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#4#'
+    praxis_dual: '---~0~|---~0~|Praxissemester~4~'
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
@@ -2570,7 +2840,7 @@
     text: Bachelor
     fachrich: Informatik
     fachriche: 'Computer Science'
-    dateiname: informatik_bachelor
+    dateiname: 'Informatik Bachelor'
     stg_kurz: IF-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -2586,14 +2856,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Sc.
+    titel_m_vz: 'Bachelor of Science'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Sc.
+    titel_m_dual: 'Bachelor of Science'
     titelkz_w_vz: B.Sc.
+    titel_w_vz: 'Bachelor of Science'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Sc.
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
+    titel_w_dual: 'Bachelor of Science'
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#5#'
+    praxis_dual: '---~0~|---~0~|Praxissemester~5~'
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
@@ -2627,7 +2903,7 @@
     text: Master
     fachrich: Informatik
     fachriche: 'Computer Science'
-    dateiname: informatik_master
+    dateiname: 'Informatik Master'
     stg_kurz: IG-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -2643,14 +2919,20 @@
     ects_tz: '90'
     ects_dual: '90'
     titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: M.Sc.
+    titel_m_tz: 'Master of Science'
     titelkz_m_dual: M.Sc.
+    titel_m_dual: 'Master of Science'
     titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: M.Sc.
+    titel_w_tz: 'Master of Science'
     titelkz_w_dual: M.Sc.
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
-    praxis_dual: '---#0#|---#0#|---#0#'
+    titel_w_dual: 'Master of Science'
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
@@ -2684,7 +2966,7 @@
     text: Master
     fachrich: 'Interkulturelle Kommunikation und Kooperation'
     fachriche: 'Intercultural Communication and Cooperation'
-    dateiname: interkulturelle_kommunikation_und_kooperation_master
+    dateiname: 'Interkulturelle Kommunikation und Kooperation Master'
     stg_kurz: IK-M
     stgart: '690'
     name: 'Weiterbildungsstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -2700,13 +2982,19 @@
     ects_tz: '90'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: M.A.
+    titel_m_tz: 'Master of Arts'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: M.A.
+    titel_w_tz: 'Master of Arts'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: IM
     zuordnung: T
@@ -2741,7 +3029,7 @@
     text: Zertifikat
     fachrich: 'Interkulturelle Kommunikation und Kooperation'
     fachriche: 'Intercultural Communication and Cooperation'
-    dateiname: interkulturelle_kommunikation_und_kooperation_zertifikat
+    dateiname: 'Interkulturelle Kommunikation und Kooperation Zertifikat'
     stg_kurz: IK-Z
     stgart: '494'
     name: 'Ergänzungs-, Erweiterungs- und Zusatzstudium Abschlusszeugnis/Zertifikat'
@@ -2757,13 +3045,19 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: 'Abschluß (FH) sonstiger Art'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: 'Abschluß (FH) sonstiger Art'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: IM
     zuordnung: ""
@@ -2772,7 +3066,7 @@
     erst_sem: X
     hoeheres_sem: ""
     start_1: 11/15/20
-    end_1: 1/15/21
+    end_1: 2/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -2798,7 +3092,7 @@
     text: Master
     fachrich: Wirtschaftsinformatik
     fachriche: 'Information Systems and Management'
-    dateiname: wirtschaftsinformatik_master
+    dateiname: 'Wirtschaftsinformatik Master'
     stg_kurz: IN-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -2814,14 +3108,20 @@
     ects_tz: '90'
     ects_dual: '90'
     titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: M.Sc.
+    titel_m_tz: 'Master of Science'
     titelkz_m_dual: M.Sc.
+    titel_m_dual: 'Master of Science'
     titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: M.Sc.
+    titel_w_tz: 'Master of Science'
     titelkz_w_dual: M.Sc.
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
-    praxis_dual: '---#0#|---#0#|---#0#'
+    titel_w_dual: 'Master of Science'
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
@@ -2855,7 +3155,7 @@
     text: Master
     fachrich: 'Stochastic Engineering in Business and Finance'
     fachriche: 'Stochastic Engineering in Business and Finance'
-    dateiname: stochastic_engineering_in_business_and_finance_master
+    dateiname: 'Stochastic Engineering in Business and Finance Master'
     stg_kurz: IS-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -2871,13 +3171,19 @@
     ects_tz: '90'
     ects_dual: '0'
     titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: M.Sc.
+    titel_m_tz: 'Master of Science'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: M.Sc.
+    titel_w_tz: 'Master of Science'
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: IM
     zuordnung: T
@@ -2912,7 +3218,7 @@
     text: Master
     fachrich: IT-Sicherheit
     fachriche: 'IT Security'
-    dateiname: it_sicherheit_master
+    dateiname: 'IT-Sicherheit Master'
     stg_kurz: IT-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -2927,14 +3233,20 @@
     ects_vz: '90'
     ects_tz: '90'
     ects_dual: '0'
-    titelkz_m_vz: ""
-    titelkz_m_tz: ""
+    titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
+    titelkz_m_tz: M.Sc.
+    titel_m_tz: 'Master of Science'
     titelkz_m_dual: ""
-    titelkz_w_vz: ""
-    titelkz_w_tz: ""
+    titel_m_dual: ""
+    titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
+    titelkz_w_tz: M.Sc.
+    titel_w_tz: 'Master of Science'
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: IM
     zuordnung: T
@@ -2969,7 +3281,7 @@
     text: Bachelor
     fachrich: 'Kartographie und Geomedientechnik'
     fachriche: 'Cartography and Geomedia-Technology'
-    dateiname: kartographie_und_geomedientechnik_bachelor
+    dateiname: 'Kartographie und Geomedientechnik Bachelor'
     stg_kurz: KA-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -2985,12 +3297,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#20'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~20'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -3026,7 +3344,7 @@
     text: Bachelor
     fachrich: Kartographie|Geomedientechnik
     fachriche: 'Cartography|Geomedia Technology'
-    dateiname: kartographie_geomedientechnik_bachelor
+    dateiname: 'Kartographie|Geomedientechnik Bachelor'
     stg_kurz: KG-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -3042,12 +3360,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#19'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~19'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -3083,7 +3407,7 @@
     text: Bachelor
     fachrich: 'Wirtschaftsingenieurwesen Logistik'
     fachriche: 'Logistics Management'
-    dateiname: wirtschaftsingenieurwesen_logistik_bachelor
+    dateiname: 'Wirtschaftsingenieurwesen Logistik Bachelor'
     stg_kurz: LM-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -3099,14 +3423,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#|Vorpraxis#0#10|Praxissemester#5#20'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|Vorpraxis~0~10|Praxissemester~5~20'
     praxis_tz: ""
-    praxis_dual: '---#0#|Vorpraxis#0#10|Praxissemester#5#20'
+    praxis_dual: '---~0~|Vorpraxis~0~10|Praxissemester~5~20'
     statdat: WW
     zuordnung: T
     berufsbegleitend: N
@@ -3140,7 +3470,7 @@
     text: Bachelor
     fachrich: 'Luft- und Raumfahrttechnik'
     fachriche: 'Aerospace Engineering'
-    dateiname: luft_und_raumfahrttechnik_bachelor
+    dateiname: 'Luft- und Raumfahrttechnik Bachelor'
     stg_kurz: LR-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -3155,15 +3485,21 @@
     ects_vz: '210'
     ects_tz: '0'
     ects_dual: '210'
-    titelkz_m_vz: ""
+    titelkz_m_vz: B.Sc.
+    titel_m_vz: 'Bachelor of Science'
     titelkz_m_tz: ""
-    titelkz_m_dual: ""
-    titelkz_w_vz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: B.Sc.
+    titel_m_dual: 'Bachelor of Science'
+    titelkz_w_vz: B.Sc.
+    titel_w_vz: 'Bachelor of Science'
     titelkz_w_tz: ""
-    titelkz_w_dual: ""
-    praxis_vz: Vorpraxis#0#12|---#0#|Praxissemester#5#20
+    titel_w_tz: ""
+    titelkz_w_dual: B.Sc.
+    titel_w_dual: 'Bachelor of Science'
+    praxis_vz: Vorpraxis~0~12|---~0~|Praxissemester~5~20
     praxis_tz: ""
-    praxis_dual: Vorpraxis#0#12|---#0#|Praxissemester#5#20
+    praxis_dual: Vorpraxis~0~12|---~0~|Praxissemester~5~20
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -3197,7 +3533,7 @@
     text: Master
     fachrich: 'Luft- und Raumfahrttechnik'
     fachriche: 'Aerospace Engineering'
-    dateiname: luft_und_raumfahrttechnik_master
+    dateiname: 'Luft- und Raumfahrttechnik Master'
     stg_kurz: LR-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -3213,13 +3549,19 @@
     ects_tz: '90'
     ects_dual: '0'
     titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: M.Sc.
+    titel_m_tz: 'Master of Science'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: M.Sc.
+    titel_w_tz: 'Master of Science'
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -3254,7 +3596,7 @@
     text: Bachelor
     fachrich: Maschinenbau
     fachriche: 'Mechanical Engineering'
-    dateiname: maschinenbau_bachelor
+    dateiname: 'Maschinenbau Bachelor'
     stg_kurz: MB-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -3270,14 +3612,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Sc.
+    titel_m_vz: 'Bachelor of Science'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Sc.
+    titel_m_dual: 'Bachelor of Science'
     titelkz_w_vz: B.Sc.
+    titel_w_vz: 'Bachelor of Science'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Sc.
-    praxis_vz: Vorpraxis#0#12|---#0#|Praxissemester#5#20
+    titel_w_dual: 'Bachelor of Science'
+    praxis_vz: Vorpraxis~0~12|---~0~|Praxissemester~5~20
     praxis_tz: ""
-    praxis_dual: Vorpraxis#0#12|---#0#|Praxissemester#5#20
+    praxis_dual: Vorpraxis~0~12|---~0~|Praxissemester~5~20
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -3311,7 +3659,7 @@
     text: 'Diplom (FH)'
     fachrich: Maschinenbau
     fachriche: 'Mechanical Engineering'
-    dateiname: maschinenbau_diplom_fh_
+    dateiname: 'Maschinenbau Diplom (FH)'
     stg_kurz: MB-D
     stgart: '151'
     name: 'Erststudium Diplom (FH)'
@@ -3326,13 +3674,19 @@
     ects_vz: '0'
     ects_tz: '0'
     ects_dual: '0'
-    titelkz_m_vz: B.Sc.
+    titelkz_m_vz: 'Dipl.-Ing. (FH)'
+    titel_m_vz: 'Diplom-Ingenieur (FH)'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
-    titelkz_w_vz: B.Sc.
+    titel_m_dual: ""
+    titelkz_w_vz: 'Dipl.-Ing. (FH)'
+    titel_w_vz: 'Diplom-Ingenieurin (FH)'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|1.Praxissemester#3#|2.Praxissemester#6#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|1.Praxissemester~3~|2.Praxissemester~6~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -3368,7 +3722,7 @@
     text: Master
     fachrich: Maschinenbau
     fachriche: 'Mechanical Engineering'
-    dateiname: maschinenbau_master
+    dateiname: 'Maschinenbau Master'
     stg_kurz: MB-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -3384,14 +3738,20 @@
     ects_tz: '90'
     ects_dual: '90'
     titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: M.Sc.
+    titel_m_tz: 'Master of Science'
     titelkz_m_dual: M.Sc.
+    titel_m_dual: 'Master of Science'
     titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: M.Sc.
+    titel_w_tz: 'Master of Science'
     titelkz_w_dual: M.Sc.
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
-    praxis_dual: '---#0#|---#0#|---#0#'
+    titel_w_dual: 'Master of Science'
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -3425,7 +3785,7 @@
     text: Bachelor
     fachrich: Mechatronik/Feinwerktechnik
     fachriche: 'Mechatronics/Precision Engineering'
-    dateiname: mechatronik_feinwerktechnik_bachelor
+    dateiname: 'Mechatronik/Feinwerktechnik Bachelor'
     stg_kurz: MF-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -3441,14 +3801,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#0|---#0#|2.Praxissemester#6#'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~0|---~0~|2.Praxissemester~6~'
     praxis_tz: ""
-    praxis_dual: '---#0#0|---#0#|2.Praxissemester#6#'
+    praxis_dual: '---~0~0|---~0~|2.Praxissemester~6~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -3482,7 +3848,7 @@
     text: Master
     fachrich: Mechatronik/Feinwerktechnik
     fachriche: 'Mechatronics/Precision Engineering'
-    dateiname: mechatronik_feinwerktechnik_master
+    dateiname: 'Mechatronik/Feinwerktechnik Master'
     stg_kurz: MF-M
     stgart: '290'
     name: 'Zweitstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -3498,14 +3864,20 @@
     ects_tz: '90'
     ects_dual: '90'
     titelkz_m_vz: M.Eng.
+    titel_m_vz: 'Master of Engineering'
     titelkz_m_tz: M.Eng.
+    titel_m_tz: 'Master of Engineering'
     titelkz_m_dual: M.Eng.
+    titel_m_dual: 'Master of Engineering'
     titelkz_w_vz: M.Eng.
+    titel_w_vz: 'Master of Engineering'
     titelkz_w_tz: M.Eng.
+    titel_w_tz: 'Master of Engineering'
     titelkz_w_dual: M.Eng.
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
-    praxis_dual: '---#0#|---#0#|---#0#'
+    titel_w_dual: 'Master of Engineering'
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -3539,7 +3911,7 @@
     text: Master
     fachrich: 'Mikro- und Nanotechnik'
     fachriche: 'Micro- and Nanotechnology'
-    dateiname: mikro_und_nanotechnik_master
+    dateiname: 'Mikro- und Nanotechnik Master'
     stg_kurz: MN-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -3555,14 +3927,20 @@
     ects_tz: ""
     ects_dual: '90'
     titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: M.Sc.
+    titel_m_dual: 'Master of Science'
     titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: M.Sc.
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: 'Master of Science'
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|---#0#'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -3596,7 +3974,7 @@
     text: Master
     fachrich: 'MBA Management & Business Strategy'
     fachriche: 'MBA Management & Business Strategy'
-    dateiname: mba_management_und_business_strategy_master
+    dateiname: 'MBA Management & Business Strategy Master'
     stg_kurz: MS-M
     stgart: '690'
     name: 'Weiterbildungsstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -3612,11 +3990,17 @@
     ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -3653,7 +4037,7 @@
     text: Bachelor
     fachrich: 'Mechatronik/Feinwerktechnik (Teilzeitstudium)'
     fachriche: 'Mechatronics/Precision Engineering'
-    dateiname: mechatronik_feinwerktechnik_teilzeitstudium_bachelor
+    dateiname: 'Mechatronik/Feinwerktechnik (Teilzeitstudium) Bachelor'
     stg_kurz: MT-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -3669,13 +4053,19 @@
     ects_tz: '210'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: B.Eng.
+    titel_m_tz: 'Bachelor of Engineering'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: B.Eng.
+    titel_w_tz: 'Bachelor of Engineering'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|Praxissemester#9#'
+    praxis_tz: '---~0~|---~0~|Praxissemester~9~'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -3710,7 +4100,7 @@
     text: Bachelor
     fachrich: 'Produktion und Automatisierung (international)'
     fachriche: 'Production and Automation'
-    dateiname: produktion_und_automatisierung_international_bachelor
+    dateiname: 'Produktion und Automatisierung (international) Bachelor'
     stg_kurz: PA-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -3726,12 +4116,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|Praxisphase 1#3#|Praxisphase 2#6#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|Praxisphase 1~3~|Praxisphase 2~6~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -3767,7 +4163,7 @@
     text: Master
     fachrich: 'Produktion und Automatisierung (international)'
     fachriche: 'Production and Automation'
-    dateiname: produktion_und_automatisierung_international_master
+    dateiname: 'Produktion und Automatisierung (international) Master'
     stg_kurz: PA-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -3783,12 +4179,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: M.Eng.
+    titel_m_vz: 'Master of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.Eng.
+    titel_w_vz: 'Master of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -3824,7 +4226,7 @@
     text: Bachelor
     fachrich: Produktionstechnik
     fachriche: 'Production Engineering'
-    dateiname: produktionstechnik_bachelor
+    dateiname: 'Produktionstechnik Bachelor'
     stg_kurz: PD-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -3840,11 +4242,17 @@
     ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -3881,7 +4289,7 @@
     text: Bachelor
     fachrich: Pflege
     fachriche: 'Nursing Studies'
-    dateiname: pflege_bachelor
+    dateiname: 'Pflege Bachelor'
     stg_kurz: PF-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -3897,14 +4305,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Sc.
+    titel_m_dual: 'Bachelor of Science'
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Sc.
+    titel_w_dual: 'Bachelor of Science'
     praxis_vz: ""
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|2.Praxissemester#0#'
+    praxis_dual: '---~0~|---~0~|2.Praxissemester~0~'
     statdat: SW
     zuordnung: S
     berufsbegleitend: N
@@ -3938,7 +4352,7 @@
     text: Master
     fachrich: 'Advanced Nursing Practice'
     fachriche: 'Advanced Nursing Practice'
-    dateiname: advanced_nursing_practice_master
+    dateiname: 'Advanced Nursing Practice Master'
     stg_kurz: PF-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -3954,13 +4368,19 @@
     ects_tz: '90'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: M.Sc.
+    titel_m_tz: 'Master of Science'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: M.Sc.
+    titel_w_tz: 'Master of Science'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -3995,7 +4415,7 @@
     text: Modulstudium
     fachrich: 'Advanced Nursing Practice (Modulstudium)'
     fachriche: 'Advanced Nursing Practice (Modulstudium)'
-    dateiname: advanced_nursing_practice_modulstudium_modulstudium
+    dateiname: 'Advanced Nursing Practice (Modulstudium) Modulstudium'
     stg_kurz: PF-Z
     stgart: '494'
     name: 'Ergänzungs-, Erweiterungs- und Zusatzstudium Abschlusszeugnis/Zertifikat'
@@ -4011,11 +4431,17 @@
     ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -4052,7 +4478,7 @@
     text: Bachelor
     fachrich: 'Physikalische Technik'
     fachriche: 'Engineering Physics'
-    dateiname: physikalische_technik_bachelor
+    dateiname: 'Physikalische Technik Bachelor'
     stg_kurz: PH-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -4068,14 +4494,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Sc.
+    titel_m_vz: 'Bachelor of Science'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Sc.
+    titel_m_dual: 'Bachelor of Science'
     titelkz_w_vz: B.Sc.
+    titel_w_vz: 'Bachelor of Science'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Sc.
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
+    titel_w_dual: 'Bachelor of Science'
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#5#'
+    praxis_dual: '---~0~|---~0~|Praxissemester~5~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -4109,7 +4541,7 @@
     text: Bachelor
     fachrich: 'Internationales Projektmanagement'
     fachriche: 'International Project Management'
-    dateiname: internationales_projektmanagement_bachelor
+    dateiname: 'Internationales Projektmanagement Bachelor'
     stg_kurz: PI-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -4125,13 +4557,19 @@
     ects_tz: '210'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: B.A.
+    titel_m_tz: 'Bachelor of Arts'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: B.A.
+    titel_w_tz: 'Bachelor of Arts'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|1.Praxissemester#9#|2.Praxissemester#10#'
+    praxis_tz: '---~0~|1.Praxissemester~9~|2.Praxissemester~10~'
     praxis_dual: ""
     statdat: WW
     zuordnung: W
@@ -4166,7 +4604,7 @@
     text: Master
     fachrich: 'Paper Technology (konsekutiv)'
     fachriche: 'Paper Technology (consecutive)'
-    dateiname: paper_technology_konsekutiv_master
+    dateiname: 'Paper Technology (konsekutiv) Master'
     stg_kurz: PK-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -4182,13 +4620,19 @@
     ects_tz: '90'
     ects_dual: '0'
     titelkz_m_vz: M.Eng.
+    titel_m_vz: 'Master of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.Eng.
+    titel_w_vz: 'Master of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -4223,7 +4667,7 @@
     text: Master
     fachrich: Personalmanagement
     fachriche: 'Human Resource Management'
-    dateiname: personalmanagement_master
+    dateiname: 'Personalmanagement Master'
     stg_kurz: PM-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -4239,11 +4683,17 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -4280,7 +4730,7 @@
     text: Bachelor
     fachrich: 'Produktion und Automatisierung'
     fachriche: 'Production and Automation'
-    dateiname: produktion_und_automatisierung_bachelor
+    dateiname: 'Produktion und Automatisierung Bachelor'
     stg_kurz: PN-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -4296,14 +4746,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#|1.Praxissemester#3#|2.Praxissemester#6#'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|1.Praxissemester~3~|2.Praxissemester~6~'
     praxis_tz: ""
-    praxis_dual: '---#0#|1.Praxissemester#3#|2.Praxissemester#6#'
+    praxis_dual: '---~0~|1.Praxissemester~3~|2.Praxissemester~6~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -4337,7 +4793,7 @@
     text: Master
     fachrich: Photonik
     fachriche: Photonics
-    dateiname: photonik_master
+    dateiname: 'Photonik Master'
     stg_kurz: PO-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -4353,14 +4809,20 @@
     ects_tz: ""
     ects_dual: '90'
     titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: M.Sc.
+    titel_m_dual: 'Master of Science'
     titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: M.Sc.
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: 'Master of Science'
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|---#0#'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -4394,7 +4856,7 @@
     text: Master
     fachrich: 'Printmedien, Technologie und Management'
     fachriche: 'Print Media, Technology and Management'
-    dateiname: printmedien_technologie_und_management_master
+    dateiname: 'Printmedien, Technologie und Management Master'
     stg_kurz: PR-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -4410,12 +4872,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: M.Eng.
+    titel_m_vz: 'Master of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.Eng.
+    titel_w_vz: 'Master of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -4451,7 +4919,7 @@
     text: Bachelor
     fachrich: 'Technische Physik'
     fachriche: ""
-    dateiname: technische_physik_bachelor
+    dateiname: 'Technische Physik Bachelor'
     stg_kurz: PT-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -4467,11 +4935,17 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -4508,7 +4982,7 @@
     text: Master
     fachrich: 'Paper Technology (Weiterbildung)'
     fachriche: 'Paper Technology (post-graduate)'
-    dateiname: paper_technology_weiterbildung_master
+    dateiname: 'Paper Technology (Weiterbildung) Master'
     stg_kurz: PW-M
     stgart: '690'
     name: 'Weiterbildungsstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -4524,13 +4998,19 @@
     ects_tz: '120'
     ects_dual: '0'
     titelkz_m_vz: M.Eng.
+    titel_m_vz: 'Master of Engineering'
     titelkz_m_tz: M.Eng.
+    titel_m_tz: 'Master of Engineering'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.Eng.
+    titel_w_vz: 'Master of Engineering'
     titelkz_w_tz: M.Eng.
+    titel_w_tz: 'Master of Engineering'
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -4565,7 +5045,7 @@
     text: Master
     fachrich: 'Psychotherapie mit Schwerpunkt Verhaltenstherapie'
     fachriche: 'Psychotherapy Specialized in Cognitive-Behavioral Therapy'
-    dateiname: psychotherapie_mit_schwerpunkt_verhaltenstherapie_master
+    dateiname: 'Psychotherapie mit Schwerpunkt Verhaltenstherapie Master'
     stg_kurz: PY-M
     stgart: '690'
     name: 'Weiterbildungsstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -4581,13 +5061,19 @@
     ects_tz: '60'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: M.A.
+    titel_m_tz: 'Master of Arts'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: M.A.
+    titel_w_tz: 'Master of Arts'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -4622,7 +5108,7 @@
     text: Zertifikat
     fachrich: 'International Project Management Certificate'
     fachriche: 'International Project Management Certificate'
-    dateiname: international_project_management_certificate_zertifikat
+    dateiname: 'International Project Management Certificate Zertifikat'
     stg_kurz: PZ-Z
     stgart: '494'
     name: 'Ergänzungs-, Erweiterungs- und Zusatzstudium Abschlusszeugnis/Zertifikat'
@@ -4638,11 +5124,17 @@
     ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -4679,7 +5171,7 @@
     text: Bachelor
     fachrich: 'Regenerative Energien - Elektrotechnik'
     fachriche: 'Renewable Energies - Energy Technology'
-    dateiname: regenerative_energien_elektrotechnik_bachelor
+    dateiname: 'Regenerative Energien - Elektrotechnik Bachelor'
     stg_kurz: RE-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -4695,14 +5187,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#5#'
+    praxis_dual: '---~0~|---~0~|Praxissemester~5~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -4736,7 +5234,7 @@
     text: Master
     fachrich: 'Applied Research in Engineering Sciences'
     fachriche: 'Applied Research in Engineering Sciences'
-    dateiname: applied_research_in_engineering_sciences_master
+    dateiname: 'Applied Research in Engineering Sciences Master'
     stg_kurz: RS-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -4751,13 +5249,19 @@
     ects_vz: '90'
     ects_tz: '0'
     ects_dual: '0'
-    titelkz_m_vz: ""
+    titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
-    titelkz_w_vz: ""
+    titel_m_dual: ""
+    titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -4793,7 +5297,7 @@
     text: Zertifikat
     fachrich: 'Applied Research in Engineering Sciences (Modulstudium)'
     fachriche: 'Applied Research in Engineering Sciences (Modulstudium)'
-    dateiname: applied_research_in_engineering_sciences_modulstudium_zertifikat
+    dateiname: 'Applied Research in Engineering Sciences (Modulstudium) Zertifikat'
     stg_kurz: RS-Z
     stgart: '494'
     name: 'Ergänzungs-, Erweiterungs- und Zusatzstudium Abschlusszeugnis/Zertifikat'
@@ -4809,11 +5313,17 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -4850,7 +5360,7 @@
     text: Bachelor
     fachrich: 'Soziale Arbeit BASA-Online'
     fachriche: 'Social Work - basa-online'
-    dateiname: soziale_arbeit_basa_online_bachelor
+    dateiname: 'Soziale Arbeit BASA-Online Bachelor'
     stg_kurz: SB-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -4866,12 +5376,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: B.A.
+    titel_m_vz: 'Bachelor of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: B.A.
+    titel_w_vz: 'Bachelor of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: SW
@@ -4907,7 +5423,7 @@
     text: Zertifikat
     fachrich: 'Summer School'
     fachriche: 'Summer School'
-    dateiname: summer_school_zertifikat
+    dateiname: 'Summer School Zertifikat'
     stg_kurz: SC-Z
     stgart: '997'
     name: 'Keine Abschlussprüfung möglich bzw. angestrebt'
@@ -4923,11 +5439,17 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -4964,7 +5486,7 @@
     text: Master
     fachrich: 'Diagnostik, Beratung und Intervention'
     fachriche: 'Diagnosis, Counselling and Intervention'
-    dateiname: diagnostik_beratung_und_intervention_master
+    dateiname: 'Diagnostik, Beratung und Intervention Master'
     stg_kurz: SD-M
     stgart: '690'
     name: 'Weiterbildungsstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -4980,13 +5502,19 @@
     ects_tz: '90'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: M.A.
+    titel_m_tz: 'Master of Arts'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: M.A.
+    titel_w_tz: 'Master of Arts'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -5021,7 +5549,7 @@
     text: Zertifikat
     fachrich: 'Soziale Arbeit in der Einwanderungsgesellschaft'
     fachriche: ""
-    dateiname: soziale_arbeit_in_der_einwanderungsgesellschaft_zertifikat
+    dateiname: 'Soziale Arbeit in der Einwanderungsgesellschaft Zertifikat'
     stg_kurz: SE-Z
     stgart: '694'
     name: 'Weiterbildungsstudium Abschlusszeugnis/Zertifikat'
@@ -5037,11 +5565,17 @@
     ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -5078,7 +5612,7 @@
     text: Master
     fachrich: 'Angewandte Forschung in der Sozialen Arbeit'
     fachriche: 'Applied Research in Social Work'
-    dateiname: angewandte_forschung_in_der_sozialen_arbeit_master
+    dateiname: 'Angewandte Forschung in der Sozialen Arbeit Master'
     stg_kurz: SF-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -5094,13 +5628,19 @@
     ects_tz: '90'
     ects_dual: '0'
     titelkz_m_vz: M.A.
+    titel_m_vz: 'Master of Arts'
     titelkz_m_tz: M.A.
+    titel_m_tz: 'Master of Arts'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.A.
+    titel_w_vz: 'Master of Arts'
     titelkz_w_tz: M.A.
+    titel_w_tz: 'Master of Arts'
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -5135,7 +5675,7 @@
     text: Bachelor
     fachrich: 'Management Sozialer Innovationen'
     fachriche: 'Management of Social Innovations'
-    dateiname: management_sozialer_innovationen_bachelor
+    dateiname: 'Management Sozialer Innovationen Bachelor'
     stg_kurz: SI-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -5151,12 +5691,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: B.A.
+    titel_m_vz: 'Bachelor of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: B.A.
+    titel_w_vz: 'Bachelor of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: SW
@@ -5192,7 +5738,7 @@
     text: Bachelor
     fachrich: 'Bildung und Erziehung im Kindesalter-BEKI'
     fachriche: 'Childhood education (age 0 - 12)'
-    dateiname: bildung_und_erziehung_im_kindesalter_beki_bachelor
+    dateiname: 'Bildung und Erziehung im Kindesalter-BEKI Bachelor'
     stg_kurz: SK-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -5208,12 +5754,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: B.A.
+    titel_m_vz: 'Bachelor of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: B.A.
+    titel_w_vz: 'Bachelor of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|Praxisphase 1#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|Praxisphase 1~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: SW
@@ -5249,7 +5801,7 @@
     text: Master
     fachrich: 'Systems Engineering'
     fachriche: 'Systems Engineering'
-    dateiname: systems_engineering_master
+    dateiname: 'Systems Engineering Master'
     stg_kurz: SM-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -5265,13 +5817,19 @@
     ects_tz: '90'
     ects_dual: '0'
     titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: M.Sc.
+    titel_m_tz: 'Master of Science'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: M.Sc.
+    titel_w_tz: 'Master of Science'
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
-    praxis_tz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -5306,7 +5864,7 @@
     text: Master
     fachrich: Sozialmanagement
     fachriche: 'Social Work and Social Economy'
-    dateiname: sozialmanagement_master
+    dateiname: 'Sozialmanagement Master'
     stg_kurz: SO-M
     stgart: '690'
     name: 'Weiterbildungsstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -5322,13 +5880,19 @@
     ects_tz: '120'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: M.S.M.
+    titel_m_tz: 'Master of Social Management'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: M.S.M.
+    titel_w_tz: 'Master of Social Management'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -5363,7 +5927,7 @@
     text: Bachelor
     fachrich: 'Soziale Arbeit (Teilzeitstudium)'
     fachriche: 'Social Work (Part-Time)'
-    dateiname: soziale_arbeit_teilzeitstudium_bachelor
+    dateiname: 'Soziale Arbeit (Teilzeitstudium) Bachelor'
     stg_kurz: SR-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -5379,13 +5943,19 @@
     ects_tz: '210'
     ects_dual: '0'
     titelkz_m_vz: ""
-    titelkz_m_tz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: B.A.
+    titel_m_tz: 'Bachelor of Arts'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
-    titelkz_w_tz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: B.A.
+    titel_w_tz: 'Bachelor of Arts'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|2.Praxissemester#9#'
+    praxis_tz: '---~0~|---~0~|2.Praxissemester~9~'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -5420,7 +5990,7 @@
     text: Bachelor
     fachrich: 'Soziale Arbeit'
     fachriche: 'Social Work'
-    dateiname: soziale_arbeit_bachelor
+    dateiname: 'Soziale Arbeit Bachelor'
     stg_kurz: SW-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -5436,12 +6006,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: B.A.
+    titel_m_vz: 'Bachelor of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: B.A.
+    titel_w_vz: 'Bachelor of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: SW
@@ -5477,7 +6053,7 @@
     text: Master
     fachrich: 'Mental Health (Psychische Gesundheit)'
     fachriche: 'Mental Health'
-    dateiname: mental_health_psychische_gesundheit_master
+    dateiname: 'Mental Health (Psychische Gesundheit) Master'
     stg_kurz: SY-M
     stgart: '690'
     name: 'Weiterbildungsstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -5493,13 +6069,19 @@
     ects_tz: '90'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: MMH
+    titel_m_tz: 'Master of Mental Health'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: MMH
+    titel_w_tz: 'Master of Mental Health'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -5534,7 +6116,7 @@
     text: Master
     fachrich: 'Computational Engineering'
     fachriche: 'Computational Engineering'
-    dateiname: computational_engineering_master
+    dateiname: 'Computational Engineering Master'
     stg_kurz: TB-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -5550,12 +6132,18 @@
     ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: M.Sc.
+    titel_m_vz: 'Master of Science'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.Sc.
+    titel_w_vz: 'Master of Science'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -5591,7 +6179,7 @@
     text: Master
     fachrich: 'Hospitality Management'
     fachriche: 'Hospitality Management'
-    dateiname: hospitality_management_master
+    dateiname: 'Hospitality Management Master'
     stg_kurz: TH-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -5607,12 +6195,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: M.A.
+    titel_m_vz: 'Master of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.A.
+    titel_w_vz: 'Master of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: WW
@@ -5648,7 +6242,7 @@
     text: Zertifikat
     fachrich: 'Technische/r Redakteur/in'
     fachriche: ""
-    dateiname: technische_r_redakteur_in_zertifikat
+    dateiname: 'Technische/r Redakteur/in Zertifikat'
     stg_kurz: TK-Z
     stgart: '494'
     name: 'Ergänzungs-, Erweiterungs- und Zusatzstudium Abschlusszeugnis/Zertifikat'
@@ -5664,11 +6258,17 @@
     ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -5705,7 +6305,7 @@
     text: Bachelor
     fachrich: 'Technische Redaktion und Kommunikation'
     fachriche: 'Technical Writing/Technical Communication'
-    dateiname: technische_redaktion_und_kommunikation_bachelor
+    dateiname: 'Technische Redaktion und Kommunikation Bachelor'
     stg_kurz: TN-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -5721,14 +6321,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: Vorpraxis#0#6|---#0#|Praxissemester#5#18
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: Vorpraxis~0~6|---~0~|Praxissemester~5~18
     praxis_tz: ""
-    praxis_dual: Vorpraxis#0#6|---#0#|Praxissemester#5#18
+    praxis_dual: Vorpraxis~0~6|---~0~|Praxissemester~5~18
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -5762,7 +6368,7 @@
     text: Bachelor
     fachrich: Tourismus-Management
     fachriche: 'Tourism Management'
-    dateiname: tourismus_management_bachelor
+    dateiname: 'Tourismus-Management Bachelor'
     stg_kurz: TR-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -5778,14 +6384,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.A.
+    titel_m_vz: 'Bachelor of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.A.
+    titel_m_dual: 'Bachelor of Arts'
     titelkz_w_vz: B.A.
+    titel_w_vz: 'Bachelor of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.A.
-    praxis_vz: '---#0#|---#0#|Praxissemester#4#'
+    titel_w_dual: 'Bachelor of Arts'
+    praxis_vz: '---~0~|---~0~|Praxissemester~4~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#4#'
+    praxis_dual: '---~0~|---~0~|Praxissemester~4~'
     statdat: IW
     zuordnung: W
     berufsbegleitend: N
@@ -5819,7 +6431,7 @@
     text: Master
     fachrich: Tourismus-Management
     fachriche: 'Tourism Management'
-    dateiname: tourismus_management_master
+    dateiname: 'Tourismus-Management Master'
     stg_kurz: TR-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -5835,12 +6447,18 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: M.A.
+    titel_m_vz: 'Master of Arts'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.A.
+    titel_w_vz: 'Master of Arts'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: ""
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
     praxis_dual: ""
     statdat: WW
@@ -5876,7 +6494,7 @@
     text: Bachelor
     fachrich: 'Betriebswirtschaftslehre und Unternehmensführung'
     fachriche: 'Business Management'
-    dateiname: betriebswirtschaftslehre_und_unternehmensfuehrung_bachelor
+    dateiname: 'Betriebswirtschaftslehre und Unternehmensführung Bachelor'
     stg_kurz: UB-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -5892,13 +6510,19 @@
     ects_tz: '210'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: WW
     zuordnung: W
@@ -5933,7 +6557,7 @@
     text: Bachelor
     fachrich: Unternehmensführung
     fachriche: 'Business Management'
-    dateiname: unternehmensfuehrung_bachelor
+    dateiname: 'Unternehmensführung Bachelor'
     stg_kurz: UF-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -5949,11 +6573,17 @@
     ects_tz: ""
     ects_dual: ""
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -5990,7 +6620,7 @@
     text: Bachelor
     fachrich: 'Papier- und Verpackungstechnik'
     fachriche: 'Paper and Packaging Technology'
-    dateiname: papier_und_verpackungstechnik_bachelor
+    dateiname: 'Papier- und Verpackungstechnik Bachelor'
     stg_kurz: VF-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -6006,11 +6636,17 @@
     ects_tz: '0'
     ects_dual: ""
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -6047,7 +6683,7 @@
     text: Master
     fachrich: Verpackungstechnik
     fachriche: 'Packaging Technology'
-    dateiname: verpackungstechnik_master
+    dateiname: 'Verpackungstechnik Master'
     stg_kurz: VF-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -6063,14 +6699,20 @@
     ects_tz: '0'
     ects_dual: '90'
     titelkz_m_vz: M.Eng.
+    titel_m_vz: 'Master of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: M.Eng.
+    titel_m_dual: 'Master of Engineering'
     titelkz_w_vz: M.Eng.
+    titel_w_vz: 'Master of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: M.Eng.
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_dual: 'Master of Engineering'
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|---#0#'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -6104,7 +6746,7 @@
     text: Bachelor
     fachrich: 'Energie- und Gebäudetechnik'
     fachriche: 'Building Services Engineering'
-    dateiname: energie_und_gebaeudetechnik_bachelor
+    dateiname: 'Energie- und Gebäudetechnik Bachelor'
     stg_kurz: VS-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -6120,14 +6762,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#24'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~24'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#5#24'
+    praxis_dual: '---~0~|---~0~|Praxissemester~5~24'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -6161,7 +6809,7 @@
     text: Bachelor
     fachrich: 'Verpackungstechnik und Verfahrenstechnik Papier'
     fachriche: 'Packaging Technology and Paper Process Engingeering'
-    dateiname: verpackungstechnik_und_verfahrenstechnik_papier_bachelor
+    dateiname: 'Verpackungstechnik und Verfahrenstechnik Papier Bachelor'
     stg_kurz: VV-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -6176,15 +6824,21 @@
     ects_vz: '210'
     ects_tz: '0'
     ects_dual: '210'
-    titelkz_m_vz: ""
+    titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
-    titelkz_m_dual: ""
-    titelkz_w_vz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
+    titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
-    titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#18'
+    titel_w_tz: ""
+    titelkz_w_dual: B.Eng.
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|---~0~|Praxissemester~5~18'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|Praxissemester#5#18'
+    praxis_dual: '---~0~|---~0~|Praxissemester~5~18'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -6218,7 +6872,7 @@
     text: Bachelor
     fachrich: Wirtschaftsingenieurwesen
     fachriche: 'Engineering and Management'
-    dateiname: wirtschaftsingenieurwesen_bachelor
+    dateiname: 'Wirtschaftsingenieurwesen Bachelor'
     stg_kurz: WI-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
@@ -6234,14 +6888,20 @@
     ects_tz: '0'
     ects_dual: '210'
     titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
     titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: B.Eng.
-    praxis_vz: '---#0#|Vorpraxis#0#10|Praxissemester#6#20'
+    titel_w_dual: 'Bachelor of Engineering'
+    praxis_vz: '---~0~|Vorpraxis~0~10|Praxissemester~6~20'
     praxis_tz: ""
-    praxis_dual: '---#0#|Vorpraxis#0#10|Praxissemester#6#20'
+    praxis_dual: '---~0~|Vorpraxis~0~10|Praxissemester~6~20'
     statdat: WW
     zuordnung: T
     berufsbegleitend: N
@@ -6275,7 +6935,7 @@
     text: Master
     fachrich: 'Wirtschaftsingenieurwesen (konsekutiv)'
     fachriche: 'Engineering and Management'
-    dateiname: wirtschaftsingenieurwesen_konsekutiv_master
+    dateiname: 'Wirtschaftsingenieurwesen (konsekutiv) Master'
     stg_kurz: WI-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -6290,15 +6950,21 @@
     ects_vz: '90'
     ects_tz: '0'
     ects_dual: '90'
-    titelkz_m_vz: ""
+    titelkz_m_vz: M.Eng.
+    titel_m_vz: 'Master of Engineering'
     titelkz_m_tz: ""
-    titelkz_m_dual: ""
-    titelkz_w_vz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: M.Eng.
+    titel_m_dual: 'Master of Engineering'
+    titelkz_w_vz: M.Eng.
+    titel_w_vz: 'Master of Engineering'
     titelkz_w_tz: ""
-    titelkz_w_dual: ""
-    praxis_vz: '---#0#|---#0#|---#0#'
+    titel_w_tz: ""
+    titelkz_w_dual: M.Eng.
+    titel_w_dual: 'Master of Engineering'
+    praxis_vz: '---~0~|---~0~|---~0~'
     praxis_tz: ""
-    praxis_dual: '---#0#|---#0#|---#0#'
+    praxis_dual: '---~0~|---~0~|---~0~'
     statdat: WW
     zuordnung: T
     berufsbegleitend: N
@@ -6332,7 +6998,7 @@
     text: Master
     fachrich: 'Wirtschaftsingenieurwesen (Weiterbildung)'
     fachriche: 'Business Administration and Engineering'
-    dateiname: wirtschaftsingenieurwesen_weiterbildung_master
+    dateiname: 'Wirtschaftsingenieurwesen (Weiterbildung) Master'
     stg_kurz: WW-M
     stgart: '690'
     name: 'Weiterbildungsstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
@@ -6348,13 +7014,19 @@
     ects_tz: '90'
     ects_dual: '0'
     titelkz_m_vz: ""
-    titelkz_m_tz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: 'MBA and Eng.'
+    titel_m_tz: 'Master of Business Administration and Engineering'
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
-    titelkz_w_tz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: 'MBA and Eng.'
+    titel_w_tz: 'Master of Business Administration and Engineering'
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---~0~|---~0~|---~0~'
     praxis_dual: ""
     statdat: WW
     zuordnung: T
@@ -6389,7 +7061,7 @@
     text: Bachelor
     fachrich: Sonderstudium
     fachriche: ""
-    dateiname: sonderstudium_bachelor
+    dateiname: 'Sonderstudium Bachelor'
     stg_kurz: ZA-B
     stgart: '494'
     name: 'Ergänzungs-, Erweiterungs- und Zusatzstudium Abschlusszeugnis/Zertifikat'
@@ -6405,11 +7077,17 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
@@ -6446,7 +7124,7 @@
     text: Bachelor
     fachrich: 'Interdisziplinäre Studien (Schwerpunkt Ingenieurwissenschaften)'
     fachriche: ""
-    dateiname: interdisziplinaere_studien_schwerpunkt_ingenieurwissenschaften_bachelor
+    dateiname: 'Interdisziplinäre Studien (Schwerpunkt Ingenieurwissenschaften) Bachelor'
     stg_kurz: ZD-B
     stgart: '284'
     name: 'Zweitstudium Bachelor an Fachhochschulen'
@@ -6462,11 +7140,17 @@
     ects_tz: '0'
     ects_dual: '0'
     titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
+    titel_m_tz: ""
     titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
+    titel_w_tz: ""
     titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: ""
     praxis_tz: ""
     praxis_dual: ""
