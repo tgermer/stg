@@ -181,6 +181,7 @@ page_gen:
     dir: stg #<<directory in which files are to be generated>>
     extension: #<<extension used to generate the filename>>
     filter: #<<property to filter data records by>>
+    filter_condition: record['nummer'] != "99" #[a Ruby expression to filter data]
 
   - index_files: #<<true or false>
     data: 3478_fachrichtung #stg_komplett
@@ -191,6 +192,7 @@ page_gen:
     dir: stg #<<directory in which files are to be generated>>
     extension: #<<extension used to generate the filename>>
     filter: #<<property to filter data records by>>
+    filter_condition: record['nummer'] != "99" #[a Ruby expression to filter data]
 
 
 # gems:
