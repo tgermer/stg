@@ -91,7 +91,7 @@ logo_nav: /assets/img/HM_Logo_kein_Weissraum_rot_RGB.svg   #logoLinks.svg
 # logo_white: /assets/img/Studieninformationstag 2020 links white.svg   #logoLinks.svg
 
 badge_p: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-danger ml-1" title="Daten aus PRIMUSS">PRIMUSS</span></small></sup>'
-badge_cms: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-dark ml-1" title="Daten im CMS eingegeben">CMS</span></small></sup>'
+badge_db: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-dark ml-1" title="Daten im DB eingegeben">DB</span></small></sup>'
 badge_technik: <span class="badge badge-hm-blau text-uppercase">Technik</span>
 badge_soziales: <span class="badge badge-hm-gelb text-uppercase">Soziales</span>
 badge_wirtschaft: <span class="badge badge-hm-gruen text-uppercase">Wirtschaft</span>

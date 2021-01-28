@@ -135,7 +135,7 @@
                 {% endif %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Studienort</th>
-                  <td>???{{ site.badge_cms }}
+                  <td>???{{ site.badge_db }}
                     <!-- <span class="d-block">{{ page.studien_ort | join: '</span><span class="d-block">'}}</span> -->
                     <br><small>z. B. Campus Pasing ODER Campus Lothstraße und Campus Karlstaße ODER Campus Pasing und Universität XYZ, Land</small>
                   </td>
@@ -170,15 +170,15 @@
                 </tr>
                 <tr>
                   <th scope="row" class="text-uppercase">Studienbeginn</th>
-                  <td>???{{ site.badge_cms }}</td>
+                  <td>???{{ site.badge_db }}</td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-uppercase">Zulassungs&shy;vorraussetzungen</th>
-                  <td>???{{ site.badge_cms }}</td>
+                  <td>???{{ site.badge_db }}</td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-uppercase">Zulassungs&shy;modus</th>
-                  <td>???{{ site.badge_cms }}
+                  <td>???{{ site.badge_db }}
                     {% comment %}
                     {% case page.zulassungs_beschraenkt %}
                       {% when 1 %}Zulassungsfrei
@@ -193,12 +193,12 @@
                 <tr>
                   <th scope="row" class="text-uppercase">Zulassungs&shy;zahlen</th>
                   <td>
-                    ???{{ site.badge_cms }}<br><a href="{{ site.zulassungszahlen_url }}" target="_blank">{{ site.zulassungszahlen_url_text }}</a><br><small>Nur anzeigen, wenn STG zulassungsbeschränkt!</small>
+                    ???{{ site.badge_db }}<br><a href="{{ site.zulassungszahlen_url }}" target="_blank">{{ site.zulassungszahlen_url_text }}</a><br><small>Nur anzeigen, wenn STG zulassungsbeschränkt!</small>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-uppercase">Eignungs&shy;verfahren</th>
-                  <td>???{{ site.badge_cms }}<br>Welche Art von Eignungsverfahren wird durchgeführt.<br><small>Nur anzeigen, wenn STG zulassungsbeschränkt!</small>
+                  <td>???{{ site.badge_db }}<br>Welche Art von Eignungsverfahren wird durchgeführt.<br><small>Nur anzeigen, wenn STG zulassungsbeschränkt!</small>
                   </td>
                 </tr>
                 {% assign alle = page.praxis_vz | split: "|" %}
@@ -224,7 +224,7 @@
                 {% endif %}
                 <tr>
                   <th scope="row" class="text-uppercase">Hauptunterrichts&shy;sprache</th>
-                  <td>???{{ site.badge_cms }}
+                  <td>???{{ site.badge_db }}
                     <p>Weitere Spachen:<br>???</p>
                   </td>
                 </tr>
@@ -268,14 +268,14 @@
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Doppelabschluss</th>
                   <td>
-                    ???{{ site.badge_cms }}<br>
+                    ???{{ site.badge_db }}<br>
                     Partnerunis angeben
                   </td>
                 </tr>
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Auslandssemester</th>
                   <td>
-                    ???{{ site.badge_cms }}<br>
+                    ???{{ site.badge_db }}<br>
                     Auslandsemester möglich; empfohlen im ???&nbsp;Semester
                   </td>
                 </tr>
@@ -331,12 +331,12 @@
       <div class="row my-4">
         {% if page.schwerpunkt_vz == nil or page.studienrichtung_vz == nil %}
         <div class="col-md-12 my-2">
-          <h2>Kurzbeschreibung{{ site.badge_cms }}</h2>
+          <h2>Kurzbeschreibung{{ site.badge_db }}</h2>
           {{ extra[1].teaser | markdownify }}
         </div>
         {% else %}
         <div class="col-md-6 my-2">
-          <h2>Kurzbeschreibung{{ site.badge_cms }}</h2>
+          <h2>Kurzbeschreibung{{ site.badge_db }}</h2>
           {{ extra[1].teaser | markdownify }}
         </div>
         <div class="col-md-6 my-2">
@@ -372,7 +372,7 @@
           <div class="card-header bg-white" id="heading_studien_ziel">
             <h3 class="mb-0">
               <a class="text-body" role="button" data-toggle="collapse" data-target="#collapse_studien_ziel" aria-expanded="true" aria-controls="collapse_studien_ziel" style="cursor: pointer">
-                Studienziel{{ site.badge_cms }}
+                Studienziel{{ site.badge_db }}
               </a>
             </h3>
           </div>
@@ -387,7 +387,7 @@
           <div class="card-header bg-white" id="heading_studien_verlauf">
             <h3 class="mb-0">
               <a class="text-body" role="button" data-toggle="collapse" data-target="#collapse_studien_verlauf" aria-expanded="true" aria-controls="collapse_studien_verlauf" style="cursor: pointer">
-                Studienverlauf{{ site.badge_cms }}
+                Studienverlauf{{ site.badge_db }}
               </a>
             </h3>
           </div>
@@ -482,7 +482,8 @@
                   {% for item in items %}
                   {% if item.points != 0 %}
                   <tr>
-                    <td scope="row" class="align-middle">{{ item.titelzg }} <small>({{ item.points }}&nbsp;ECTS)</small>
+                    <td scope="row" class="align-middle">
+                      {{ item.titelzg }} <small>({{ item.points }}&nbsp;ECTS)</small>
                       {% if item.en_titelzg != nil %}<br><small>{{ item.en_titelzg }}</small>{% endif %}
                     </td>
                     <td scope="row" class="align-middle">{{ item.strichnam }}{{ item.spktnam }}{% if item.en_strichnam != nil or item.en_stpktnam != nil %}<br><small>{{ item.en_strichnam }}{{ item.en_stpktnam }}</small>{% endif %}</td>
@@ -643,7 +644,7 @@
           <div class="card-header bg-white" id="heading_bewerbung">
             <h3 class="mb-0">
               <a class="text-body" role="button" data-toggle="collapse" data-target="#collapse_bewerbung" aria-expanded="true" aria-controls="collapse_bewerbung" style="cursor: pointer">
-                Bewerbungsvorraussetzungen und -modalitäten{{ site.badge_cms }}
+                Bewerbungsvorraussetzungen und -modalitäten{{ site.badge_db }}
               </a>
             </h3>
           </div>
@@ -662,7 +663,7 @@
                 </ul>
                 {% else %}
                 {% for item in page.hzb %}
-                <span class="d-block">{{ item }}{{ site.badge_cms }}</span>
+                <span class="d-block">{{ item }}{{ site.badge_db }}</span>
                 {% endfor %}
                 {% endif %}
                 {% endif %}
@@ -697,7 +698,7 @@
           <div class="card-header bg-white" id="heading_interesse">
             <h3 class="mb-0">
               <a class="text-body collapsed" role="button" data-toggle="collapse" data-target="#collapse_interesse" aria-expanded="false" aria-controls="collapse_interesse" style="cursor: pointer">
-                Zu wem passt der Studiengang?{{ site.badge_cms }}
+                Zu wem passt der Studiengang?{{ site.badge_db }}
               </a>
             </h3>
           </div>
@@ -732,7 +733,7 @@
           <div class="card-header bg-white" id="heading_kontakt">
             <h3 class="mb-0">
               <a class="text-body collapsed" role="button" data-toggle="collapse" data-target="#collapse_kontakt" aria-expanded="false" aria-controls="collapse_kontakt" style="cursor: pointer">
-                Kontakt{{ site.badge_cms }}
+                Kontakt{{ site.badge_db }}
               </a>
             </h3>
           </div>
@@ -742,7 +743,7 @@
                 <!-- Fachstudienberater -->
                 {% if extra[1].ansprechpartner.fachstudienberater != nil %}
                 <div id="fachstudienberaterinnen" class="col-md-6">
-                  <h3>FachstudienberaterInnen{{ site.badge_cms }}</h3>
+                  <h3>FachstudienberaterInnen{{ site.badge_db }}</h3>
                   {% for item in extra[1].ansprechpartner.fachstudienberater %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
@@ -779,7 +780,7 @@
                 <!-- Zertifikatsleitung -->
                 {% if extra[1].ansprechpartner.zertifikatsleitung != nil %}
                 <div id="zertifikatsleitung" class="col-md-6">
-                  <h3>Zertifikatsleitung{{ site.badge_cms }}</h3>
+                  <h3>Zertifikatsleitung{{ site.badge_db }}</h3>
                   {% for item in extra[1].ansprechpartner.zertifikatsleitung %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
@@ -816,7 +817,7 @@
                 <!-- Studiengangsrefetenten -->
                 {% if extra[1].ansprechpartner.studiengangsreferent != nil %}
                 <div id="studiengangsrefetentinnen" class="col-md-6">
-                  <h3>StudiengangsreferentInnen{{ site.badge_cms }}</h3>
+                  <h3>StudiengangsreferentInnen{{ site.badge_db }}</h3>
                   {% for item in extra[1].ansprechpartner.studiengangsreferent %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
@@ -856,7 +857,7 @@
                 <!-- Programmassistenz -->
                 {% if extra[1].ansprechpartner.programmassistenz != nil %}
                 <div id="programmassistenz" class="col-md-6">
-                  <h3>Programmassistzen{{ site.badge_cms }}</h3>
+                  <h3>Programmassistzen{{ site.badge_db }}</h3>
                   {% for item in extra[1].ansprechpartner.programmassistenz %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
@@ -896,7 +897,7 @@
                 <!-- Sekretariat -->
                 {% if extra[1].ansprechpartner.sekretariat != nil %}
                 <div id="sekretariat" class="col-md-6">
-                  <h3>Sekretariat{{ site.badge_cms }}</h3>
+                  <h3>Sekretariat{{ site.badge_db }}</h3>
                   {% for item in extra[1].ansprechpartner.sekretariat %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
@@ -934,7 +935,7 @@
                 </div>
                 {% endif %}
                 <div id="studienberatung" class="col-md-6">
-                  <h3>Zentrale Studienberatung{{ site.badge_cms }}</h3>
+                  <h3>Zentrale Studienberatung{{ site.badge_db }}</h3>
                   <p class="">
                     <span class="d-block lead">Erstanlaufstelle</span>
                     <span class="d-block">STUDIENINFORMATION in der Lothstraße&nbsp;34</span>
@@ -964,7 +965,7 @@
                   </p>
                 </div>
                 <div id="immatrikulation" class="col-md-6">
-                  <h3>Immatrikulation{{ site.badge_cms }}</h3>
+                  <h3>Immatrikulation{{ site.badge_db }}</h3>
                   <p class="">
                     {% if page.aaspf_echt == "B" %}
                     <span class="d-block lead">für Bachelor-Studiengänge</span>
@@ -998,7 +999,7 @@
                   </p>
                 </div>
                 <div id="pruefungsamt" class="col-md-6">
-                  <h3>Prüfung und Praktikum{{ site.badge_cms }}</h3>
+                  <h3>Prüfung und Praktikum{{ site.badge_db }}</h3>
                   <p class="">
                     Sie studieren den Studiengang {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) schon und haben Fragen zu Prüfungen oder Praktikum? Dann nutzen Sie bitte die Seite <a href="https://www.hm.edu/pruefung-praktikum"
                       target="_blank">www.hm.edu/pruefung-praktikum</a>
@@ -1013,19 +1014,19 @@
           <div class="card-header bg-white" id="heading_weitere_info">
             <h3 class="mb-0">
               <a class="text-body collapsed" role="button" data-toggle="collapse" data-target="#collapse_weitere_info" aria-expanded="false" aria-controls="collapse_weitere_info" style="cursor: pointer">
-                Weiterführende Informationen{{ site.badge_p }}{{ site.badge_cms }}
+                Weiterführende Informationen{{ site.badge_p }}{{ site.badge_db }}
               </a>
             </h3>
           </div>
           <div id="collapse_weitere_info" class="collapse" aria-labelledby="heading_weitere_info" data-parent="#accordion_stg_informationen">
             <div class="card-body">
               {% if extra[2].url_echt != nil %}
-              <p><a href="{{ extra[2].url_echt }}" target="_blank">Informationen zum Studiengang auf den Seiten der Fakultät{{ site.badge_cms }}</a></p>
+              <p><a href="{{ extra[2].url_echt }}" target="_blank">Informationen zum Studiengang auf den Seiten der Fakultät{{ site.badge_db }}</a></p>
               {% else %}
-                <p>Informationen zum Studiengang auf den Seiten der Fakultät{{ site.badge_cms }}</p>
+                <p>Informationen zum Studiengang auf den Seiten der Fakultät{{ site.badge_db }}</p>
               {% endif %}
-              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Modulhandbuch{{ site.badge_cms }}</a></p>
-              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Studienplan{{ site.badge_cms }}</a></p>
+              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Modulhandbuch{{ site.badge_db }}</a></p>
+              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Studienplan{{ site.badge_db }}</a></p>
               {% if page.po_url_vz != "" %}
               <p><a href="{{ page.po_url_vz }}" target="_blank">Studien- und Prüfungsordnung für Studium in Vollzeit</a>{{ site.badge_p }}</p>
               {% endif %}
@@ -1051,7 +1052,7 @@
           <div class="card-header bg-white" id="heading_video">
             <h2 class="mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_video" aria-expanded="false" aria-controls="collapse_video">
-                Videos zum und über den Studiengang{{ site.badge_cms }}
+                Videos zum und über den Studiengang{{ site.badge_db }}
               </button>
             </h2>
           </div>

@@ -30,7 +30,7 @@ title: Studiengänge vergleichen (Merkliste)
     </thead>
     <tbody>
       <tr>
-        <th scope="row" class="text-uppercase">Art des Studiums{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Art des Studiums{{ site.badge_db }}</th>
         {% for item in site.data.stg %}
         <td>{{ item.studien_art }}</td>
         {% endfor %}
@@ -79,13 +79,13 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Studienbeginn{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Studienbeginn{{ site.badge_db }}</th>
         {% for item in site.data.stg %}
         <td>{{ item.studien_begin | join: " und "}}</td>
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Zulassungs&shy;vorraussetzungen{{ site.badge_cms }}
+        <th scope="row" class="text-uppercase">Zulassungs&shy;vorraussetzungen{{ site.badge_db }}
           <br><small><em>Ein punkt muss zutreffen</em></small>
         </th>
         {% for item in site.data.stg %}
@@ -102,7 +102,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Zulassungmodus{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Zulassungmodus{{ site.badge_db }}</th>
         {% for item in site.data.stg %}
         <td>
           {% case item.zulassungs_beschraenkt %}
@@ -128,7 +128,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase"><abbr title="Möglichkeit einer Eignungsprüfung, eines Eignungsfeststellungsverfahrens bzw. eines Eignungsgesprächs.">Eignungs&shy;verfahren</abbr>{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase"><abbr title="Möglichkeit einer Eignungsprüfung, eines Eignungsfeststellungsverfahrens bzw. eines Eignungsgesprächs.">Eignungs&shy;verfahren</abbr>{{ site.badge_db }}</th>
         {% for item in site.data.stg %}
         <td>
           {% if item.eignungs_verfahren != nil %}
@@ -142,7 +142,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Vorpraxis (Vorpraktikum){{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Vorpraxis (Vorpraktikum){{ site.badge_db }}</th>
         {% for item in site.data.stg %}
         <td>
           {% if item.vor_praxis != nil %}
@@ -161,7 +161,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Hauptunterrichts&shy;sprache{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Hauptunterrichts&shy;sprache{{ site.badge_db }}</th>
         {% for item in site.data.stg %}
         <td>{{ item.sprachen.haupt_sprache  | join: " und "}}
           {% if item.sprachen.weitere_sprachen != nil %}
@@ -202,7 +202,7 @@ title: Studiengänge vergleichen (Merkliste)
       </tr>
 
       <tr class="col-md-6">
-        <th scope="row" class="text-uppercase">Auslandssemester{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Auslandssemester{{ site.badge_db }}</th>
         {% for item in site.data.stg %}
         <td>
           {% if item.auslands_semester == true %}
@@ -215,7 +215,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Semesterbeiträge{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Semesterbeiträge{{ site.badge_db }}</th>
         {% for item in site.data.stg %}
         <td>
           <span class="d-block">Grundbeitrag Studentenwerk 75,00&nbsp;Euro</span>
@@ -224,7 +224,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Studiengebühren{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Studiengebühren{{ site.badge_db }}</th>
         <!-- https://github.com/23maverick23/jekyll-humanize -->
         {% for item in site.data.stg %}
         <td>
@@ -242,7 +242,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Studienschwerpunkte{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Studienschwerpunkte{{ site.badge_db }}</th>
         {% for item in site.data.stg %}
         {% assign items = item.studien_schwerpunkte %}
         <td>
@@ -260,7 +260,7 @@ title: Studiengänge vergleichen (Merkliste)
         {% endfor %}
       </tr>
       <tr>
-        <th scope="row" class="text-uppercase">Studienrichtungen{{ site.badge_cms }}</th>
+        <th scope="row" class="text-uppercase">Studienrichtungen{{ site.badge_db }}</th>
         {% for item in site.data.stg %}
         {% assign items = item.studien_richtungen %}
         <td>
