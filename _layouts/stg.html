@@ -425,8 +425,10 @@
                 <table class="table table-sm">
                   <thead>
                     <tr>
-                      <th scope="col">Modul/Fach</th>
+                      <th scope="col">Modul/Fach{% if page.studienrichtung_vz != "" or page.schwerpunkt_vz != "" %}{% else %}<span class="float-right"><small>Semester</small></span>{% endif %}</th>
+                      {% if page.studienrichtung_vz != "" or page.schwerpunkt_vz != "" %}
                       <th scope="col">Studienrichtung/&#8203;Schwerpunk<span class="float-right"><small>Semester</small></span></th>
+                      {% endif %}
                       {% for i in (1..page.rsem_vz) %}
                       <th scope="col" style="min-width:50px" {% if i == praxis_vz_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
                         {% if i == praxis_vz_semester %} <small>Praxissemester</small><br> {% endif %}{% if i == page.auslands_semester_semester %} <small>empfohlenes Auslandssemester</small><br> {% endif %}{{ i }}
@@ -442,7 +444,9 @@
                       <td scope="row" class="align-middle">{{ item.titelzg }} <small>({{ item.points }}&nbsp;ECTS)</small>
                         {% if item.en_titelzg != nil %}<br><small>{{ item.en_titelzg }}</small>{% endif %}
                       </td>
+                      {% if page.studienrichtung_vz != "" or page.schwerpunkt_vz != "" %}
                       <td scope="row" class="align-middle">{{ item.strichnam }}{{ item.spktnam }}{% if item.en_strnam != "" or item.en_spktnam != "" %}<br><small>{{ item.en_strnam }}{{ item.en_spktnam }}</small>{% endif %}</td>
+                      {% endif %}
                       {% for i in (1..page.rsem_vz) %}
                       <td align="center" {% if i == praxis_vz_semester %} class="table-warning text-center align-middle" {% elsif i == page.auslands_semester_semester %} class="table-info text-center align-middle" {% else %}class="text-center align-middle" {% endif %}>
                         {% if item.regelsem == i and item.stdwpf > 0 %}
@@ -468,8 +472,10 @@
               <table class="table table-sm">
                 <thead>
                   <tr>
-                    <th scope="col">Modul/Fach</th>
+                    <th scope="col">Modul/Fach{% if page.studienrichtung_vz != "" or page.schwerpunkt_vz != "" %}{% else %}<span class="float-right"><small>Semester</small></span>{% endif %}</th>
+                    {% if page.studienrichtung_tz != "" or page.schwerpunkt_tz != "" %}
                     <th scope="col">Studienrichtung/&#8203;Schwerpunk<span class="float-right"><small>Semester</small></span></th>
+                    {% endif %}
                     {% for i in (1..page.rsem_tz) %}
                     <th scope="col" {% if i == praxis_vz_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
                       {% if i == praxis_vz_semester %} <small>Praxissemester</small><br> {% endif %}{% if i == page.auslands_semester_semester %} <small>empfohlenes Auslandssemester</small><br> {% endif %}{{ i }}
@@ -486,7 +492,9 @@
                       {{ item.titelzg }} <small>({{ item.points }}&nbsp;ECTS)</small>
                       {% if item.en_titelzg != nil %}<br><small>{{ item.en_titelzg }}</small>{% endif %}
                     </td>
+                    {% if page.studienrichtung_tz != "" or page.schwerpunkt_tz != "" %}
                     <td scope="row" class="align-middle">{{ item.strichnam }}{{ item.spktnam }}{% if item.en_strichnam != nil or item.en_stpktnam != nil %}<br><small>{{ item.en_strichnam }}{{ item.en_stpktnam }}</small>{% endif %}</td>
+                    {% endif %}
                     {% for i in (1..page.rsem_tz) %}
                     <td align="center" {% if i == praxis_vz_semester %} class="table-warning text-center align-middle" {% elsif i == page.auslands_semester_semester %} class="table-info text-center align-middle" {% else %}class="text-center align-middle" {% endif %}>
                       {% if item.regelsem == i and item.stdwpf > 0 %}
@@ -511,8 +519,10 @@
             <table class="table table-sm">
               <thead>
                 <tr>
-                  <th scope="col">Modul/Fach</th>
+                  <th scope="col">Modul/Fach{% if page.studienrichtung_vz != "" or page.schwerpunkt_vz != "" %}{% else %}<span class="float-right"><small>Semester</small></span>{% endif %}</th>
+                  {% if page.studienrichtung_tz != "" or page.schwerpunkt_tz != "" %}
                   <th scope="col">Studienrichtung/&#8203;Schwerpunk<span class="float-right"><small>Semester</small></span></th>
+                  {% endif %}
                   {% for i in (1..page.rsem_dual) %}
                   <th scope="col" {% if i == praxis_vz_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
                     {% if i == praxis_vz_semester %} <small>Praxissemester</small><br> {% endif %}{% if i == page.auslands_semester_semester %} <small>empfohlenes Auslandssemester</small><br> {% endif %}{{ i }}
@@ -528,7 +538,9 @@
                   <td scope="row" class="align-middle">{{ item.titelzg }} <small>({{ item.points }}&nbsp;ECTS)</small>
                     {% if item.en_titelzg != nil %}<br><small>{{ item.en_titelzg }}</small>{% endif %}
                   </td>
+                  {% if page.studienrichtung_tz != "" or page.schwerpunkt_tz != "" %}
                   <td scope="row" class="align-middle">{{ item.strichnam }}{{ item.spktnam }}{% if item.en_strichnam != nil or item.en_stpktnam != nil %}<br><small>{{ item.en_strichnam }}{{ item.en_stpktnam }}</small>{% endif %}</td>
+                  {% endif %}
                   {% for i in (1..page.rsem_dual) %}
                   <td align="center" {% if i == praxis_vz_semester %} class="table-warning text-center align-middle" {% elsif i == page.auslands_semester_semester %} class="table-info text-center align-middle" {% else %}class="text-center align-middle" {% endif %}>
                     {% if item.regelsem == i and item.stdwpf > 0 %}
