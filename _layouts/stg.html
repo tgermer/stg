@@ -428,7 +428,7 @@
                       <th scope="col">Modul/Fach</th>
                       <th scope="col">Studienrichtung/&#8203;Schwerpunk<span class="float-right"><small>Semester</small></span></th>
                       {% for i in (1..page.rsem_vz) %}
-                      <th scope="col" {% if i == praxis_vz_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
+                      <th scope="col" style="min-width:50px" {% if i == praxis_vz_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
                         {% if i == praxis_vz_semester %} <small>Praxissemester</small><br> {% endif %}{% if i == page.auslands_semester_semester %} <small>empfohlenes Auslandssemester</small><br> {% endif %}{{ i }}
                       </th>
                       {% endfor %}
