@@ -1,0 +1,65 @@
+---
+layout: container
+title: "Gruppierung Modulfächer"
+stg: BW-B
+---
+
+
+
+
+
+{% assign items_grouped = site.data.3739_modulkatalog | where_exp: "search", "search.stg_kurz == 'BW-B'" | group_by: 'spktnam' | sort: 'regelsem' | sort: 'spktnam' %}
+{{ items_grouped }}
+<h2>{{ items_grouped[0].stg_kurz }}</h2>
+  {% for group in items_grouped %}
+    <hr>
+    <p class="lead">{{ group.name }}</p>
+    {% for item in group.items %}
+        <p>{{ item.regelsem }} - {{ item.titelzg }}<br><i>{{ item.en_titelzg }}</i></p>
+    {% endfor %}
+  {% endfor %}
+
+{% assign items_grouped = site.data.3739_modulkatalog | where_exp: "search", "search.stg_kurz == 'BW-M'" | group_by: 'spktnam' %}
+{{ items_grouped }}
+<h2>{{ items_grouped[0].stg_kurz }}</h2>
+  {% for group in items_grouped %}
+    <hr>
+    <p class="lead">{{ group.name }}</p>
+    {% for item in group.items %}
+        <p>{{ item.titelzg }}<br><i>{{ item.en_titelzg }}</i></p>
+    {% endfor %}
+  {% endfor %}
+
+
+
+{% comment %}
+
+
+
+{% assign items_grouped = site.data.3739_modulkatalog | where_exp: "search", "search.stg == BW" %}
+
+{% assign items_grouped = items_grouped | group_by: 'kzstr' %}
+
+{{items_grouped}}
+
+
+{% assign module = site.data.3739_modulkatalog | where_exp: "search", "search.stg == BW" %}
+
+{% assign module_grouped = module | group_by: 'kzstr' %}
+
+{% for group in module_grouped %}
+  {% comment %} Create the items within the groups, now sorting by the criteria you want them sorted {% endcomment %}
+
+  <h4>{{ group.strichnam }}</h4>
+
+  {% assign items = item.items %}
+  {% comment %} Loop through the items {% endcomment %}
+
+  {% for item in items  %}
+
+    <p>{{ item.titelzg }}</p>
+
+  {% endfor %}
+{% endfor %}
+
+{% endcomment %}
