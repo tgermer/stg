@@ -2282,26 +2282,26 @@
     rsem_tz: '6'
     rsem_dual: '3'
     wie: 'Vollzeit / Teilzeit / Dual'
-    pvers_vz: 212M
-    pvers_tz: 111M
-    pvers_dual: 212M
+    pvers_vz: 220M
+    pvers_tz: ""
+    pvers_dual: 220M
     ects_vz: '90'
-    ects_tz: '90'
+    ects_tz: ""
     ects_dual: '90'
-    titelkz_m_vz: M.Eng.
-    titel_m_vz: 'Master of Engineering'
-    titelkz_m_tz: M.Eng.
-    titel_m_tz: 'Master of Engineering'
-    titelkz_m_dual: M.Eng.
-    titel_m_dual: 'Master of Engineering'
-    titelkz_w_vz: M.Eng.
-    titel_w_vz: 'Master of Engineering'
-    titelkz_w_tz: M.Eng.
-    titel_w_tz: 'Master of Engineering'
-    titelkz_w_dual: M.Eng.
-    titel_w_dual: 'Master of Engineering'
+    titelkz_m_vz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: ""
+    titel_m_dual: ""
+    titelkz_w_vz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: ""
+    titel_w_tz: ""
+    titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: ""
     praxis_dual: '---~0~|---~0~|---~0~'
     statdat: IW
     zuordnung: T
@@ -2318,17 +2318,17 @@
     akkreditiert_bis: ""
     akkreditiert_agentur: ""
     anz_sp_vz: '1'
-    anz_sp_tz: '3'
+    anz_sp_tz: ""
     anz_sp_dual: '1'
     studienrichtung_vz: ""
     studienrichtung_tz: ""
     studienrichtung_dual: ""
-    schwerpunkt_vz: 'Angewandte Geodäsie;Kartographie/Geomedientechnik;Navigation'
-    schwerpunkt_tz: 'Angewandte Geodäsie;Kartographie/Geomedientechnik;Navigation'
-    schwerpunkt_dual: 'Angewandte Geodäsie;Kartographie/Geomedientechnik;Navigation'
-    po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GOM_212_SPO.pdf'
-    po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GOM_111_SPO.pdf'
-    po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GOM_212_SPO.pdf'
+    schwerpunkt_vz: 'Angewandte Geodäsie;Kartographie|Geomedientechnik;Navigation'
+    schwerpunkt_tz: ""
+    schwerpunkt_dual: 'Angewandte Geodäsie;Kartographie|Geomedientechnik;Navigation'
+    po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GOM_220_SPO.pdf'
+    po_url_tz: ""
+    po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GOM_220_SPO.pdf'
 -
     nummer: '10'
     stg: GR
