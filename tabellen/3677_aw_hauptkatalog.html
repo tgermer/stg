@@ -3,6 +3,17 @@ layout: container-fluid
 title: "Report #3677 AW Hauptkatalog"
 ---
 
+<h2>Kategorien</h2>
+
+ {% assign titles = site.data.3677_aw_hauptkatalog | map: 'kategorie' | uniq %}
+ <ul> {% for item in titles %}
+   <li>{{ item }}</li>
+   {% endfor %}
+ </ul>
+
+
+<h2>Daten</h2>
+
 <!-- {% assign row = site.data.3478_fachrichtung[0] %}
 {{ row | inspect }} -->
 

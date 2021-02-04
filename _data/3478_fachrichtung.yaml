@@ -32,9 +32,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Sc.
     titel_w_dual: 'Bachelor of Science'
-    praxis_vz: '---~0~|---~0~|Praxissemester~6~'
+    praxis_vz: '---#0#|---#0#|Praxissemester#6#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~6~'
+    praxis_dual: '---#0#|---#0#|Praxissemester#6#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -95,9 +95,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.A.
     titel_w_dual: 'Bachelor of Arts'
-    praxis_vz: Vorpraxis~0~8|---~0~|---~0~
+    praxis_vz: 'Vorpraxis#0#8|---#0#|---#0#'
     praxis_tz: ""
-    praxis_dual: Vorpraxis~0~8|---~0~|---~0~
+    praxis_dual: 'Vorpraxis#0#8|---#0#|---#0#'
     statdat: AD
     zuordnung: T
     berufsbegleitend: N
@@ -158,7 +158,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: AD
@@ -221,9 +221,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|Vorpraxis~0~10|Praxissemester~6~20'
+    praxis_vz: '---#0#|Vorpraxis#0#10|Praxissemester#6#20'
     praxis_tz: ""
-    praxis_dual: '---~0~|Vorpraxis~0~10|Praxissemester~6~20'
+    praxis_dual: '---#0#|Vorpraxis#0#10|Praxissemester#6#20'
     statdat: WW
     zuordnung: T
     berufsbegleitend: N
@@ -347,9 +347,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: Vorpraxis~4~6|---~0~|Praxissemester~5~16
+    praxis_vz: 'Vorpraxis#4#6|---#0#|Praxissemester#5#16'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~5~16'
+    praxis_dual: '---#0#|---#0#|Praxissemester#5#16'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -411,7 +411,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -473,8 +473,8 @@
     titel_w_tz: 'Master of Engineering'
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -536,7 +536,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: Vorpraxis~0~|---~0~|Praxissemester~5~
+    praxis_vz: 'Vorpraxis#0#|---#0#|Praxissemester#5#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: BW
@@ -599,7 +599,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -662,7 +662,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: WW
@@ -788,9 +788,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.A.
     titel_w_dual: 'Bachelor of Arts'
-    praxis_vz: '---~0~|---~0~|Praxissemester~4~18'
+    praxis_vz: '---#0#|---#0#|Praxissemester#4#18'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~4~18'
+    praxis_dual: '---#0#|---#0#|Praxissemester#4#18'
     statdat: WW
     zuordnung: W
     berufsbegleitend: N
@@ -851,9 +851,9 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: WW
     zuordnung: W
     berufsbegleitend: N
@@ -977,9 +977,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~19'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#19'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~5~19'
+    praxis_dual: '---#0#|---#0#|Praxissemester#5#19'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1040,7 +1040,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|Praxissemester~4~'
+    praxis_vz: '---#0#|---#0#|Praxissemester#4#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IM
@@ -1166,9 +1166,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~20'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#20'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~5~20'
+    praxis_dual: '---#0#|---#0#|Praxissemester#5#20'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1229,7 +1229,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~18'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#18'
     praxis_tz: ""
     praxis_dual: ""
     statdat: AD
@@ -1292,7 +1292,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: AD
@@ -1355,7 +1355,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: WW
@@ -1481,9 +1481,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~5~'
+    praxis_dual: '---#0#|---#0#|Praxissemester#5#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1544,9 +1544,9 @@
     titel_w_tz: 'Master of Science'
     titelkz_w_dual: M.Sc.
     titel_w_dual: 'Master of Science'
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1607,9 +1607,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~5~'
+    praxis_dual: '---#0#|---#0#|Praxissemester#5#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1670,9 +1670,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Sc.
     titel_w_dual: 'Bachelor of Science'
-    praxis_vz: Vorpraxis~0~12|---~0~|Praxissemester~5~20
+    praxis_vz: 'Vorpraxis#0#12|---#0#|Praxissemester#5#20'
     praxis_tz: ""
-    praxis_dual: Vorpraxis~0~12|---~0~|Praxissemester~5~20
+    praxis_dual: 'Vorpraxis#0#12|---#0#|Praxissemester#5#20'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1733,7 +1733,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|1.Praxissemester~3~|2.Praxissemester~6~'
+    praxis_vz: '---#0#|1.Praxissemester#3#|2.Praxissemester#6#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -1796,9 +1796,9 @@
     titel_w_tz: 'Master of Science'
     titelkz_w_dual: M.Sc.
     titel_w_dual: 'Master of Science'
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -1859,8 +1859,8 @@
     titel_w_tz: 'Master of Science'
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -1967,27 +1967,27 @@
     rsem_tz: '0'
     rsem_dual: '7'
     wie: 'Vollzeit / Dual'
-    pvers_vz: 216B
+    pvers_vz: 220B
     pvers_tz: '-'
-    pvers_dual: 216B
+    pvers_dual: 220B
     ects_vz: '210'
     ects_tz: '0'
     ects_dual: '210'
-    titelkz_m_vz: B.Eng.
-    titel_m_vz: 'Bachelor of Engineering'
+    titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
     titel_m_tz: ""
-    titelkz_m_dual: B.Eng.
-    titel_m_dual: 'Bachelor of Engineering'
-    titelkz_w_vz: B.Eng.
-    titel_w_vz: 'Bachelor of Engineering'
+    titelkz_m_dual: ""
+    titel_m_dual: ""
+    titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
     titel_w_tz: ""
-    titelkz_w_dual: B.Eng.
-    titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|---~0~|Praxissemester~6~18'
+    titelkz_w_dual: ""
+    titel_w_dual: ""
+    praxis_vz: '---#0#|---#0#|Praxissemester#6#18'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~6~18'
+    praxis_dual: '---#0#|---#0#|Praxissemester#6#18'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -2011,9 +2011,9 @@
     schwerpunkt_vz: ""
     schwerpunkt_tz: ""
     schwerpunkt_dual: ""
-    po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GDB_216_SPO.pdf'
+    po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GDB_220_SPO.pdf'
     po_url_tz: ""
-    po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GDB_216_SPO.pdf'
+    po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GDB_220_SPO.pdf'
 -
     nummer: '11'
     stg: GE
@@ -2048,7 +2048,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: SW
@@ -2174,9 +2174,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~18'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#18'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~5~18'
+    praxis_dual: '---#0#|---#0#|Praxissemester#5#18'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -2283,10 +2283,10 @@
     rsem_dual: '3'
     wie: 'Vollzeit / Teilzeit / Dual'
     pvers_vz: 220M
-    pvers_tz: ""
+    pvers_tz: 121M
     pvers_dual: 220M
     ects_vz: '90'
-    ects_tz: ""
+    ects_tz: '90'
     ects_dual: '90'
     titelkz_m_vz: ""
     titel_m_vz: ""
@@ -2300,9 +2300,9 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -2318,16 +2318,16 @@
     akkreditiert_bis: ""
     akkreditiert_agentur: ""
     anz_sp_vz: '1'
-    anz_sp_tz: ""
+    anz_sp_tz: '1'
     anz_sp_dual: '1'
     studienrichtung_vz: ""
     studienrichtung_tz: ""
     studienrichtung_dual: ""
     schwerpunkt_vz: 'Angewandte Geodäsie;Kartographie|Geomedientechnik;Navigation'
-    schwerpunkt_tz: ""
+    schwerpunkt_tz: 'Angewandte Geodäsie;Kartographie|Geomedientechnik;Navigation'
     schwerpunkt_dual: 'Angewandte Geodäsie;Kartographie|Geomedientechnik;Navigation'
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GOM_220_SPO.pdf'
-    po_url_tz: ""
+    po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GOM_220_SPO.pdf'
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GOM_220_SPO.pdf'
 -
     nummer: '10'
@@ -2427,7 +2427,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: WW
     zuordnung: ""
@@ -2489,9 +2489,9 @@
     titel_w_tz: ""
     titelkz_w_dual: M.Eng.
     titel_w_dual: 'Master of Engineering'
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -2553,7 +2553,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -2741,9 +2741,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Sc.
     titel_w_dual: 'Bachelor of Science'
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~5~'
+    praxis_dual: '---#0#|---#0#|Praxissemester#5#'
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
@@ -2804,9 +2804,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Sc.
     titel_w_dual: 'Bachelor of Science'
-    praxis_vz: '---~0~|---~0~|Praxissemester~4~'
+    praxis_vz: '---#0#|---#0#|Praxissemester#4#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~4~'
+    praxis_dual: '---#0#|---#0#|Praxissemester#4#'
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
@@ -2867,9 +2867,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Sc.
     titel_w_dual: 'Bachelor of Science'
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~5~'
+    praxis_dual: '---#0#|---#0#|Praxissemester#5#'
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
@@ -2930,9 +2930,9 @@
     titel_w_tz: 'Master of Science'
     titelkz_w_dual: M.Sc.
     titel_w_dual: 'Master of Science'
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
@@ -2994,7 +2994,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: IM
     zuordnung: T
@@ -3057,7 +3057,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: IM
     zuordnung: ""
@@ -3119,9 +3119,9 @@
     titel_w_tz: 'Master of Science'
     titelkz_w_dual: M.Sc.
     titel_w_dual: 'Master of Science'
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
@@ -3182,8 +3182,8 @@
     titel_w_tz: 'Master of Science'
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: IM
     zuordnung: T
@@ -3245,8 +3245,8 @@
     titel_w_tz: 'Master of Science'
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: IM
     zuordnung: T
@@ -3308,7 +3308,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~20'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#20'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -3371,7 +3371,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~19'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#19'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -3434,9 +3434,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|Vorpraxis~0~10|Praxissemester~5~20'
+    praxis_vz: '---#0#|Vorpraxis#0#10|Praxissemester#5#20'
     praxis_tz: ""
-    praxis_dual: '---~0~|Vorpraxis~0~10|Praxissemester~5~20'
+    praxis_dual: '---#0#|Vorpraxis#0#10|Praxissemester#5#20'
     statdat: WW
     zuordnung: T
     berufsbegleitend: N
@@ -3497,9 +3497,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Sc.
     titel_w_dual: 'Bachelor of Science'
-    praxis_vz: Vorpraxis~0~12|---~0~|Praxissemester~5~20
+    praxis_vz: 'Vorpraxis#0#12|---#0#|Praxissemester#5#20'
     praxis_tz: ""
-    praxis_dual: Vorpraxis~0~12|---~0~|Praxissemester~5~20
+    praxis_dual: 'Vorpraxis#0#12|---#0#|Praxissemester#5#20'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -3560,8 +3560,8 @@
     titel_w_tz: 'Master of Science'
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -3623,9 +3623,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Sc.
     titel_w_dual: 'Bachelor of Science'
-    praxis_vz: Vorpraxis~0~12|---~0~|Praxissemester~5~20
+    praxis_vz: 'Vorpraxis#0#12|---#0#|Praxissemester#5#20'
     praxis_tz: ""
-    praxis_dual: Vorpraxis~0~12|---~0~|Praxissemester~5~20
+    praxis_dual: 'Vorpraxis#0#12|---#0#|Praxissemester#5#20'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -3686,7 +3686,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|1.Praxissemester~3~|2.Praxissemester~6~'
+    praxis_vz: '---#0#|1.Praxissemester#3#|2.Praxissemester#6#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -3749,9 +3749,9 @@
     titel_w_tz: 'Master of Science'
     titelkz_w_dual: M.Sc.
     titel_w_dual: 'Master of Science'
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -3812,9 +3812,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~0|---~0~|2.Praxissemester~6~'
+    praxis_vz: '---#0#0|---#0#|2.Praxissemester#6#'
     praxis_tz: ""
-    praxis_dual: '---~0~0|---~0~|2.Praxissemester~6~'
+    praxis_dual: '---#0#0|---#0#|2.Praxissemester#6#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -3875,9 +3875,9 @@
     titel_w_tz: 'Master of Engineering'
     titelkz_w_dual: M.Eng.
     titel_w_dual: 'Master of Engineering'
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -3938,9 +3938,9 @@
     titel_w_tz: ""
     titelkz_w_dual: M.Sc.
     titel_w_dual: 'Master of Science'
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -4065,7 +4065,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|Praxissemester~9~'
+    praxis_tz: '---#0#|---#0#|Praxissemester#9#'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -4127,7 +4127,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|Praxisphase 1~3~|Praxisphase 2~6~'
+    praxis_vz: '---#0#|Praxisphase 1#3#|Praxisphase 2#6#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -4190,7 +4190,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -4318,7 +4318,7 @@
     titel_w_dual: 'Bachelor of Science'
     praxis_vz: ""
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|2.Praxissemester~0~'
+    praxis_dual: '---#0#|---#0#|2.Praxissemester#0#'
     statdat: SW
     zuordnung: S
     berufsbegleitend: N
@@ -4380,7 +4380,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -4505,9 +4505,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Sc.
     titel_w_dual: 'Bachelor of Science'
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~5~'
+    praxis_dual: '---#0#|---#0#|Praxissemester#5#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -4569,7 +4569,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|1.Praxissemester~9~|2.Praxissemester~10~'
+    praxis_tz: '---#0#|1.Praxissemester#9#|2.Praxissemester#10#'
     praxis_dual: ""
     statdat: WW
     zuordnung: W
@@ -4631,8 +4631,8 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -4757,9 +4757,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|1.Praxissemester~3~|2.Praxissemester~6~'
+    praxis_vz: '---#0#|1.Praxissemester#3#|2.Praxissemester#6#'
     praxis_tz: ""
-    praxis_dual: '---~0~|1.Praxissemester~3~|2.Praxissemester~6~'
+    praxis_dual: '---#0#|1.Praxissemester#3#|2.Praxissemester#6#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -4820,9 +4820,9 @@
     titel_w_tz: ""
     titelkz_w_dual: M.Sc.
     titel_w_dual: 'Master of Science'
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -4883,7 +4883,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -5009,8 +5009,8 @@
     titel_w_tz: 'Master of Engineering'
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -5073,7 +5073,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -5198,9 +5198,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~5~'
+    praxis_dual: '---#0#|---#0#|Praxissemester#5#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -5261,7 +5261,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -5387,7 +5387,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: SW
@@ -5514,7 +5514,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -5639,8 +5639,8 @@
     titel_w_tz: 'Master of Arts'
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -5702,7 +5702,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: SW
@@ -5765,7 +5765,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|Praxisphase 1~0~|---~0~'
+    praxis_vz: '---#0#|Praxisphase 1#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: SW
@@ -5828,8 +5828,8 @@
     titel_w_tz: 'Master of Science'
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: IW
     zuordnung: T
@@ -5892,7 +5892,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -5955,7 +5955,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|2.Praxissemester~9~'
+    praxis_tz: '---#0#|---#0#|2.Praxissemester#9#'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -6017,7 +6017,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: SW
@@ -6081,7 +6081,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: SW
     zuordnung: S
@@ -6143,7 +6143,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
@@ -6206,7 +6206,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: WW
@@ -6332,9 +6332,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: Vorpraxis~0~6|---~0~|Praxissemester~5~18
+    praxis_vz: 'Vorpraxis#0#6|---#0#|Praxissemester#5#18'
     praxis_tz: ""
-    praxis_dual: Vorpraxis~0~6|---~0~|Praxissemester~5~18
+    praxis_dual: 'Vorpraxis#0#6|---#0#|Praxissemester#5#18'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -6395,9 +6395,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.A.
     titel_w_dual: 'Bachelor of Arts'
-    praxis_vz: '---~0~|---~0~|Praxissemester~4~'
+    praxis_vz: '---#0#|---#0#|Praxissemester#4#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~4~'
+    praxis_dual: '---#0#|---#0#|Praxissemester#4#'
     statdat: IW
     zuordnung: W
     berufsbegleitend: N
@@ -6458,7 +6458,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: WW
@@ -6522,7 +6522,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: WW
     zuordnung: W
@@ -6710,9 +6710,9 @@
     titel_w_tz: ""
     titelkz_w_dual: M.Eng.
     titel_w_dual: 'Master of Engineering'
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -6773,9 +6773,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~24'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#24'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~5~24'
+    praxis_dual: '---#0#|---#0#|Praxissemester#5#24'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -6836,9 +6836,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|---~0~|Praxissemester~5~18'
+    praxis_vz: '---#0#|---#0#|Praxissemester#5#18'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|Praxissemester~5~18'
+    praxis_dual: '---#0#|---#0#|Praxissemester#5#18'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
@@ -6899,9 +6899,9 @@
     titel_w_tz: ""
     titelkz_w_dual: B.Eng.
     titel_w_dual: 'Bachelor of Engineering'
-    praxis_vz: '---~0~|Vorpraxis~0~10|Praxissemester~6~20'
+    praxis_vz: '---#0#|Vorpraxis#0#10|Praxissemester#6#20'
     praxis_tz: ""
-    praxis_dual: '---~0~|Vorpraxis~0~10|Praxissemester~6~20'
+    praxis_dual: '---#0#|Vorpraxis#0#10|Praxissemester#6#20'
     statdat: WW
     zuordnung: T
     berufsbegleitend: N
@@ -6962,9 +6962,9 @@
     titel_w_tz: ""
     titelkz_w_dual: M.Eng.
     titel_w_dual: 'Master of Engineering'
-    praxis_vz: '---~0~|---~0~|---~0~'
+    praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
-    praxis_dual: '---~0~|---~0~|---~0~'
+    praxis_dual: '---#0#|---#0#|---#0#'
     statdat: WW
     zuordnung: T
     berufsbegleitend: N
@@ -7026,7 +7026,7 @@
     titelkz_w_dual: ""
     titel_w_dual: ""
     praxis_vz: ""
-    praxis_tz: '---~0~|---~0~|---~0~'
+    praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: ""
     statdat: WW
     zuordnung: T

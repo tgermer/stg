@@ -1,0 +1,91 @@
+{
+  "list": {
+    "entry": [{
+      "recordId": 2,
+      "createdBy": "tgermer",
+      "created": 1610706896405,
+      "id": "2958f1b4-4d12-4497-8d68-20dbb31099f3",
+      "fields": {
+        "datum": "1618473600000-1618664400000",
+        "titel": "Studieninformationstage",
+        "teilnehmer": "[{\"id\":\"phetzel\"},{\"id\":\"eder7\"},{\"id\":\"lukasz\"},{\"id\":\"mlutsch\"},{\"id\":\"nkipp\"}]",
+        "kategorie": "inHouse",
+        "class": "fields",
+        "veranstalter": "Hochschule München, Studienberatung",
+        "url": "www.hm.edu/studieninformationstage"
+      },
+      "ownedBy": "tgermer"
+    }, {
+      "recordId": 4,
+      "createdBy": "tgermer",
+      "created": 1610713003483,
+      "id": "502cb9b3-1af2-4f3a-8eca-4b60bdd472c4",
+      "fields": {
+        "datum": "1607986800000-1610749800000",
+        "titel": "Zulassungsbeschränkte Studiengänge mit Teilnahme DoSV",
+        "kategorie": "bewerbung",
+        "class": "fields"
+      },
+      "ownedBy": "tgermer"
+    }, {
+      "recordId": 6,
+      "createdBy": "lukasz",
+      "created": 1611238784410,
+      "id": "e834dca8-fb4e-4da9-be4c-277b5fa014d9",
+      "fields": {
+        "datum": "1615453200000-1615467600000",
+        "titel": "Fit für den Einstieg",
+        "kategorie": "inHouse",
+        "information": "Überfakultäre Erstsemesterveranstaltung Online",
+        "class": "fields",
+        "veranstalter": "Studienberatung",
+        "url": "www.hm.edu/fit"
+      },
+      "ownedBy": "lukasz"
+    }, {
+      "recordId": 7,
+      "createdBy": "lukasz",
+      "created": 1611239113048,
+      "id": "83c7602c-e45d-4818-9327-7f0ddbfbeb81",
+      "fields": {
+        "datum": "1612854000000-1612886400000",
+        "titel": "Hochschulzugangsprüfung",
+        "kategorie": "inHouse",
+        "information": "Die Prüfung findet im Raum G0.01 statt",
+        "class": "fields",
+        "veranstalter": "Studienberatung"
+      },
+      "ownedBy": "lukasz"
+    }, {
+      "recordId": 8,
+      "createdBy": "lukasz",
+      "created": 1611241140693,
+      "id": "2b19b646-c73f-42c4-b407-3b91a212639b",
+      "fields": {
+        "datum": "1614585600000-1615561200000",
+        "titel": "Mathematik Vorkurs",
+        "kategorie": "kursOnline",
+        "information": "Der Kurs findet komplett Online statt, die Kosten belaufen sich auf 208 Euro, die Anmeldung läuft über die MVHS",
+        "class": "fields",
+        "veranstalter": "HM & MVHS",
+        "url": "https://www.hm.edu/studieninteressiert/studienorientierung/durchstarten/mathe-vorkurs.de.html"
+      },
+      "ownedBy": "lukasz"
+    }, {
+      "recordId": 9,
+      "createdBy": "lukasz",
+      "created": 1611582971464,
+      "id": "5ebf5aa8-ce54-4059-a52d-e20a92b509d2",
+      "fields": {
+        "datum": "1612958400000-1612974600000",
+        "titel": "Studienberatung Design",
+        "kategorie": "bewerbung",
+        "information": "Online Studienberatung für alle drei Studienrichtungen",
+        "class": "fields",
+        "veranstalter": "Fakultät für Design",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeQJ5hqlITmfkxTQCU-qRtMUqXGsc2u9XMqaTLMQChe0iyGbQ/viewform"
+      },
+      "ownedBy": "lukasz"
+    }]
+  }
+}

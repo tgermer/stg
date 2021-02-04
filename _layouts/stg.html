@@ -20,6 +20,13 @@
       {% assign extra = extra | concat: gebuehren %}
 
 
+      {% assign extra_teaser = site.data.extra_teaser | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
+      {% for wert in extra_teaser %}
+        {% assign teaser = wert.teaser %}
+      {% endfor %}
+
+
+
       {% assign grundbeitrag = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 1" %}
       {% assign grundbeitrag = grundbeitrag | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
       {% for wert in grundbeitrag %}
@@ -204,19 +211,19 @@
                 {% assign alle = page.praxis_vz | split: "|" %}
                 {% if alle[0] contains "Vorpraxis" %}
                   {% assign alle = alle[0] | split: "#" %}
-                  {% assign praxis_vz = alle[2] %}
+                  {% assign vorpraxis_dauer_vz = alle[2] %}
                 {% elsif alle[1] contains "Vorpraxis" %}
                   {% assign alle = alle[1] | split: "#" %}
-                  {% assign praxis_vz = alle[2] %}
+                  {% assign vorpraxis_dauer_vz = alle[2] %}
                 {% elsif alle[2] contains "Vorpraxis" %}
                   {% assign alle = alle[2] | split: "#" %}
-                  {% assign praxis_vz = alle[2] %}
+                  {% assign vorpraxis_dauer_vz = alle[2] %}
                 {% endif %}
-                {% if praxis_vz != nil %}
+                {% if vorpraxis_dauer_vz != nil %}
                 <tr>
                   <th scope="row" class="text-uppercase">Vorpraxis (Vorpraktikum)</th>
                   <td>
-                    <span class="d-block">Die Vorpraxis (Vorpraktikum) bei einem Studium in Vollzeit besteht aus insgesamt {{ praxis_vz }}&nbsp;Wochen.</span>
+                    <span class="d-block">Die Vorpraxis (Vorpraktikum) bei einem Studium in Vollzeit besteht aus insgesamt {{ vorpraxis_dauer_vz }}&nbsp;Wochen.</span>
                     <span class="d-block"><a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Hinweise_Vorpraktikum.pdf" target="_blank">Weitere Informationen zur Vorpraxis
                         (Vorpraktikum)</a> </span>
                   </td>
@@ -253,7 +260,7 @@
                   {% assign praxis_vz_semester = alle[1] | times: 1 %}
                 {% endif %}
                 <!-- Gib es überhaupt einen Praxissemester-Dauer? -->
-                {% if praxis_vz_dauer != 0 %}
+                {% if praxis_vz_dauer != nil %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Praxissemester</th>
                   <td>
@@ -332,12 +339,12 @@
         {% if page.schwerpunkt_vz == nil or page.studienrichtung_vz == nil %}
         <div class="col-md-12 my-2">
           <h2>Kurzbeschreibung{{ site.badge_db }}</h2>
-          {{ extra[1].teaser | markdownify }}
+          {{ teaser | markdownify }}
         </div>
         {% else %}
         <div class="col-md-6 my-2">
           <h2>Kurzbeschreibung{{ site.badge_db }}</h2>
-          {{ extra[1].teaser | markdownify }}
+          {{ teaser | markdownify }}
         </div>
         <div class="col-md-6 my-2">
           {% if schwerpunkt_vz != "" %}
@@ -348,7 +355,7 @@
             <li>{{ item }}</li>
             {% endfor %}
           </ul>
-          <p>Sie müssen im laufe Ihres Studiums ???{{ site.badge_p }} Studienschwerpunkte aus den angebotenen {{ page.studien_schwerpunkte.size }} Studienschwerpunkten belegen.</p>
+          <p>Sie müssen im laufe Ihres Studiums {{ page.anz_sp_vz }}{{ site.badge_p }} Studienschwerpunkte aus den angebotenen {{ schwerpunkt_vz.size }} Studienschwerpunkten belegen.</p>
           {% endif %}
           {% if page.studienrichtung_vz != "" %}
           <h2>Studienrichtungen{{ site.badge_p }}</h2>
