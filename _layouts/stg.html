@@ -338,7 +338,7 @@
       {% endif %}
 
       <div class="row my-4">
-        {% if page.schwerpunkt_vz == nil or page.studienrichtung_vz == nil %}
+        {% if page.schwerpunkt_vz == "" or page.studienrichtung_vz == "" %}
         <div class="col-md-12 my-2">
           <h2>Kurzbeschreibung{{ site.badge_db }}</h2>
           {{ teaser | markdownify }}
@@ -349,7 +349,7 @@
           {{ teaser | markdownify }}
         </div>
         <div class="col-md-6 my-2">
-          {% if schwerpunkt_vz != "" %}
+          {% if page.schwerpunkt_vz != "" %}
           <h2>Studienschwerpunkte{{ site.badge_p }}</h2>
           <ul>
             {% assign items = schwerpunkt_vz | sort %}
