@@ -1095,27 +1095,37 @@
             </div>
           </div>
         </div>
-        {% if extra[1].youtube-id != nil or extra[1].vimeo-id != nil %}
-        <div class="card d-print-none">
+        {% comment %}
+          {% i f extra[1].youtube-id != nil or extra[1].vimeo-id != nil %}
+        {% endcomment %}
+        <div class="card rounded-0 d-print-none">
           <div class="card-header bg-white" id="heading_video">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_video" aria-expanded="false" aria-controls="collapse_video">
+            <h3 class="mb-0">
+              <a class="text-body collapsed" role="button" data-toggle="collapse" data-target="#collapse_video" aria-expanded="false" aria-controls="collapse_video">
                 Videos zum und über den Studiengang{{ site.badge_db }}
               </button>
-            </h2>
+            </h3>
           </div>
           <div id="collapse_video" class="collapse" aria-labelledby="heading_video" data-parent="#accordion_stg_informationen">
             <div class="card-body row">
               {% if extra[1].youtube-id != nil %}
               {% for youtube-id in extra[1].youtube-id %}
-              <div class="embed-responsive embed-responsive-16by9 rounded mb-2 col-md-6">
+              <div class="embed-responsive embed-responsive-16by9 mb-2 col-md-6">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ youtube-id }}?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               {% endfor %}
+              {% else %}
+              <div class="embed-responsive embed-responsive-16by9 mb-2 col-md-6">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nLyC7U850Xs?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="mb-2 col-md-6">
+                <p>Dieses Video dient nur als Beispiel …</p>
+                <p>Angedacht ist, dass Videos über YouTube, Vimeo und unseren HM Streaming-Server eingebettet werden können.</p>
+              </div>
               {% endif %}
               {% if extra[1].vimeo-id != nil %}
               {% for vimeo-id in extra[1].vimeo-id %}
-              <div class="embed-responsive embed-responsive-16by9 rounded mb-2 col-md-6">
+              <div class="embed-responsive embed-responsive-16by9 mb-2 col-md-6">
                 <iframe src="https://player.vimeo.com/video/{{ vimeo-id }}?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
               </div>
               {% endfor %}
@@ -1123,7 +1133,9 @@
             </div>
           </div>
         </div>
-        {% endif %}
+        {% comment %}
+          {% endif %}
+        {% endcomment %}
       </div>
 
       <div class="text-center my-5 d-print-none">
