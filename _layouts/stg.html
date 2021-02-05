@@ -387,7 +387,13 @@
           </div>
           <div id="collapse_studien_ziel" class="collapse" aria-labelledby="heading_studien_ziel" data-parent="#accordion_stg_informationen">
             <div class="card-body">
-              {{ extra[1].studien_ziel | markdownify }}
+              {% if extra[1].studien_ziel != nil %}
+                {{ extra[1].studien_ziel | markdownify }}
+              {% else %}
+              <p>Hier kann das Studienziel des Studiengangs näher beschrieben werden.</p>
+              {% capture my_include %}{% include fuelltext.md %}{% endcapture %}
+              {{ my_include | markdownify }}
+            {% endif %}
             </div>
           </div>
         </div>
