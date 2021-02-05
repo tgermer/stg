@@ -5,8 +5,12 @@
 <body onLoad="checkCookieNEW(); checkDates();">
   <!-- <body> -->
   {% include nav.html %}
+  {% include feedback.html %}
   <main>
     <div class="container">
+
+      <!-- Feedback-Link für die komplette Seite
+      https://docs.google.com/forms/d/e/1FAIpQLScgrCnkqt1WwfQXYoq97iSmQbR4f18qqyVJGuvweDUP2RP1yg/viewform?usp=pp_url&entry.777908021={{ page.stg_kurz | url_encode }}&entry.1218807596={{ site.url }}/stg/{{ page.stg_kurz | downcase }} -->
 
       {% assign stg = site.data.3478_fachrichtung | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
       {% assign urls = site.data.stg_urls | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
