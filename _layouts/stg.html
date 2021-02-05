@@ -29,8 +29,6 @@
         {% assign teaser = wert.teaser %}
       {% endfor %}
 
-
-
       {% assign grundbeitrag = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 1" %}
       {% assign grundbeitrag = grundbeitrag | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
       {% for wert in grundbeitrag %}

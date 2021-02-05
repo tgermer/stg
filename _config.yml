@@ -22,10 +22,9 @@ email: beratung@hm.edu
 phone: 089 1265-1121
 opening_hours: 10:00–15:00
 description: >- # this means to ignore newlines until "baseurl:"
-  Lerne die Hochschule München kennen und erkundige Dich über die Möglichkeiten
-  eines Bachelor- oder Masterstudiums. Nächster Studieninformationstag am 28. März 2020.
+  Erkundige Dich über unsere breit gefächerte Auswahl an Studiengängen. Ganz sicher ist auch etwas für Dich dabei.
 company: Hochschule&nbsp;München
-author: Studienberatung, Hochschule&nbsp;München
+author: Tristan Germer, Hochschule&nbsp;München
 editorial: Studienberatung
 publisher: |
   Hochschule München<br>
@@ -138,7 +137,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/FB_01_1200x630.png # Allgemeines OpenGraph Bild
+      image: /assets/img/icon/android-chrome-512x512.png # Allgemeines OpenGraph Bild
   # jekyll-seo-tag ENDE
 
 
