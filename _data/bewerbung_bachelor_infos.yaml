@@ -37,6 +37,21 @@
   nicht_stg_kurz: BI-B
 -
   titel: Antrag auf Anrechnung von Prüfungsleistung
-  untertitel: zur Bewerbung in ein höheres Semester im Studiengang Bauingenieurwesen
+  untertitel: zur Bewerbung in ein höheres Semester <b>im Studiengang Bauingenieurwesen</b>
   url: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Antrag_Anrechnung_FK02.pdf
   stg_kurz: BI-B
+-
+  titel: Informationen zum Bachelorstudiengang Architektur
+  untertitel: Der Studienbeginn ist nur im Wintersemester möglich
+  url: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Architektur_Info_NEU.pdf
+  stg_kurz: AR-B
+-
+  titel: Informationen zum Bachelorstudiengang Design
+  untertitel:
+  url: https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Info_DesignNEU.pdf
+  stg_kurz: DS-B
+-
+  titel: Duals Studium
+  untertitel: Verbundstudium und Studium mit vertiefter Praxis
+  url: https://www.hm.edu/allgemein/studienangebote/dual/index.de.jsp
+  stg_kurz: DS-B

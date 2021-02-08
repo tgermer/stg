@@ -120,8 +120,11 @@
                       {% when "S" %}{{ site.badge_soziales }}
                       {% when "W" %}{{ site.badge_wirtschaft }}
                       {% when "G" %}{{ site.badge_gestaltung }}
-                    {% endcase %}{{ site.badge_p }}
-
+                    {% endcase %}
+                    {% if page.mint == "X" %}
+                      <span class="badge badge-info">MINT</span>
+                    {% endif %}
+                    {{ site.badge_p }}
                     <a href="#" class="float-right d-print-none btn btn-link btn-sm showbadges p-0" style="cursor: pointer;">Datenherkunft anzeigen</a> <a href="#" class="float-right d-print-none btn btn-link btn-sm hidebadges p-0" style="cursor: pointer; display: none;">Datenherkunft
                         verstecken</a>
                       <!-- Beispiel für alle öffnen und schließen: https://www.bootply.com/peFUdnwOpZ# -->
@@ -187,7 +190,7 @@
                 </tr>
                 <tr>
                   <th scope="row" class="text-uppercase">Zulassungs&shy;modus</th>
-                  <td>???{{ site.badge_db }}
+                  <td>
                     {% comment %}
                     {% case page.zulassungs_beschraenkt %}
                       {% when 1 %}Zulassungsfrei
@@ -197,6 +200,11 @@
                       {% when 5 %}Eignungsverfahren
                     {% endcase %}
                     {% endcomment %}
+                    {% if page.dosv == "X" %}
+                      Zulassungsbeschränkt (<abbr title="Dialogorientiertes Serviceverfahren durch Hochschulstart">DoSV</abbr>){{ site.badge_p }}
+                    {% else %}
+                      ???{{ site.badge_db }}
+                    {% endif %}
                   </td>
                 </tr>
                 <tr>
@@ -711,12 +719,16 @@
                 </p>
 
                 <h4>Zusätzliche Informationen</h4>
-                <h4>Informationen zur Immatrikulation</h4>
+                <h5>Informationen zur Immatrikulation</h5>
                   <p><a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Informationen_zur_Immatrikulation.pdf" target="_blank">Immatrikulation zum Sommersemester 2021 ></a></p>
-                <h4>Informationen zu <abbr title="Dialogorientiertes Serviceverfahren durch Hochschulstart">DoSV</abbr></h4>
+                {% if page.dosv == "X" %}
+                <h5>Informationen zu <abbr title="Dialogorientiertes Serviceverfahren durch Hochschulstart">DoSV</abbr>
+                  <img src="{{ site.url }}/assets/img/sfh-logo.svg" class="float-right" style="max-width: 100px;" alt="Stiftung für Hochschulzulassung hochschulstart.de">
+                </h5>
                   <p><a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/DoSVmitGrafik.pdf" target="_blank">Informationen zum DoSV in zulassungsbeschränkten Studiengängen</a></p>
-                  <p><a href="http://www.hochschulstart.de/dosv" target="_blank">Direkt zu DoSV www.hochschulstart.de/dosv</a></p>
-                <h4>Allgemeine Informationen</h4>
+                  <p><a href="http://www.hochschulstart.de/" target="_blank">Direkt zu DoSV www.hochschulstart.de</a></p>
+                {% endif %}
+                <h5>Allgemeine Informationen</h5>
                 {% if page.aaspf_echt == "B" %}
                   {% for item in site.data.bewerbung_bachelor_infos %}
                     {% if item.stg_kurz == nil %}
@@ -739,11 +751,51 @@
                     {% endif %}
                   {% endfor %}
                 {% else %}
-                  <!-- Masterspezifisches -->
+                  <!-- Masterspezifisches und Zertifikate -->
+                  {% for item in site.data.bewerbung_master_infos %}
+                    {% if item.stg_kurz == nil %}
+                      {% if item.nicht_stg_kurz contains page.stg_kurz %}
+                      {% else %}
+                      <p>
+                        <a href="{{ item.url}}" target="_blank">{{ item.titel }}</a>
+                        {% if item.untertitel != nil %}
+                          <br><i>{{ item.untertitel }}</i>
+                        {% endif %}
+                      </p>
+                    {% endif %}
+                    {% elsif item.stg_kurz contains page.stg_kurz %}
+                    <p>
+                      <a href="{{ item.url}}" target="_blank">{{ item.titel }}</a>
+                      {% if item.untertitel != nil %}
+                        <br><i>{{ item.untertitel }}</i>
+                      {% endif %}
+                  </p>
+                    {% endif %}
+                  {% endfor %}
                 {% endif %}
-                <h4>Spezielle Informationen</h4>
-
-                <h4>Satzung</h4>
+                <!-- <h5>Spezielle Informationen</h5> -->
+                <!-- Satzungen -->
+                <h5>Satzung</h5>
+                {% for item in site.data.bewerbung_satzung %}
+                  {% if item.stg_kurz == nil %}
+                    {% if item.nicht_stg_kurz contains page.stg_kurz %}
+                    {% else %}
+                    <p>
+                      <a href="{{ item.url}}" target="_blank">{{ item.titel }}</a>
+                      {% if item.untertitel != nil %}
+                        <br><i>{{ item.untertitel }}</i>
+                      {% endif %}
+                    </p>
+                  {% endif %}
+                  {% elsif item.stg_kurz contains page.stg_kurz %}
+                  <p>
+                    <a href="{{ item.url}}" target="_blank">{{ item.titel }}</a>
+                    {% if item.untertitel != nil %}
+                      <br><i>{{ item.untertitel }}</i>
+                    {% endif %}
+                </p>
+                  {% endif %}
+                {% endfor %}
               </div>
             </div>
           </div>

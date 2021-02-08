@@ -93,10 +93,15 @@ title: Studiengangebot (STG)
       <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
       <p class="h6 mt-4 underline">Zulassungsmodus</p>
       <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".zulassungsfrei" disabled>zulassungsfrei</button>
-      <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".zulassungsbeschraenkt" disabled>zulassungsbeschränkt</button>
+      <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".zulassungsbeschraenkt" >zulassungsbeschränkt</button>
       <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".eignungspruefung" disabled>Eignungsprüfung</button>
       <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".eignungsfeststellungsverfahren" disabled>Eignungsfeststellungsverfahren</button>
       <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".eignungsverfahren" disabled>Eignungsverfahren</button>
+      <!-- </div> -->
+      <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
+      <p class="h6 mt-4 underline">Sonstiges</p>
+      <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".mint">MINT</button>
+      <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".dosv"><abbr title="Dialogorientiertes Serviceverfahren durch Hochschulstart">DoSV</abbr></button>
       <!-- </div> -->
       <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
       <p class="h6 mt-4 underline">Fakultät</p>
@@ -155,13 +160,22 @@ title: Studiengangebot (STG)
         fk{{ stg.nummer }}
         {{ stg.text | downcase }}
         {{ stg.studien_begin | join: " " | downcase }}
+        {% if stg.mint == "X" %}
+          mint
+        {% endif %}
         {% case stg.zuordnung %}
           {% when "T" %}technik
           {% when "W" %}wirtschaft
           {% when "S" %}soziales
           {% when "G" %}gestaltung
         {% endcase %}
-        {{ stg.sprachen.haupt_sprache | join: " " | downcase }}
+         {{ stg.sprachen.haupt_sprache | join: " " | downcase }}
+         {% if stg.dosv == "X" %}
+           zulassungsbeschraenkt
+         {% endif %}
+         {% if stg.dosv == "X" %}
+           dosv
+         {% endif %}
         {% case stg.zulassungs_beschraenkt %}
           {% when 1 %}zulassungsfrei
           {% when 2 %}zulassungsbeschraenkt
@@ -204,6 +218,9 @@ title: Studiengangebot (STG)
                     {% when "W" %}{{ site.badge_wirtschaft }}
                     {% when "G" %}{{ site.badge_gestaltung }}
                     {% endcase %}
+                    {% if stg.mint == "X" %}
+                      <span class="badge badge-info">MINT</span>
+                    {% endif %}
                   </small>
                   <span class="float-right text-muted"><small>FK{{ stg.nummer }}</small></span>
                 </p>
