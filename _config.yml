@@ -90,7 +90,9 @@ logo_nav: /assets/img/HM_Logo_kein_Weissraum_rot_RGB.svg   #logoLinks.svg
 # logo_white: /assets/img/Studieninformationstag 2020 links white.svg   #logoLinks.svg
 
 badge_p: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-danger ml-1" title="Daten aus PRIMUSS">PRIMUSS</span></small></sup>'
-badge_db: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-dark ml-1" title="Daten im DB eingegeben">DB</span></small></sup>'
+badge_mw_imma: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-success ml-1" title="Daten in Middleware von Imma eingegeben">MW-Imma</span></small></sup>'
+badge_mw_fk: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-warning ml-1" title="Daten von Fakultät in Middleware eingegeben">MW-Fakultät</span></small></sup>'
+badge_mw_ber: '<sup class="toggle" style="display: none"><small><span class="badge badge-pill badge-info ml-1" title="Daten von Studienberatung in Middleware eingegeben">MW-ST-Beratung</span></small></sup>'
 badge_technik: <span class="badge badge-hm-blau text-uppercase">Technik</span>
 badge_soziales: <span class="badge badge-hm-gelb text-uppercase">Soziales</span>
 badge_wirtschaft: <span class="badge badge-hm-gruen text-uppercase">Wirtschaft</span>

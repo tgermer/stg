@@ -147,7 +147,7 @@
                 {% endif %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Studienort</th>
-                  <td>???{{ site.badge_db }}
+                  <td>???{{ site.badge_mw_fk }}
                     <!-- <span class="d-block">{{ page.studien_ort | join: '</span><span class="d-block">'}}</span> -->
                     <br><small>z. B. Campus Pasing ODER Campus Lothstraße und Campus Karlstaße ODER Campus Pasing und Universität XYZ, Land</small>
                   </td>
@@ -182,11 +182,17 @@
                 </tr>
                 <tr>
                   <th scope="row" class="text-uppercase">Studienbeginn</th>
-                  <td>???{{ site.badge_db }}</td>
+                  <td>???{{ site.badge_mw_imma }}</td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-uppercase">Zulassungs&shy;vorraussetzungen</th>
-                  <td>???{{ site.badge_db }}</td>
+                  <td>
+                    <ul style="padding-left:15px" class="mb-0">
+                    {% for i in (1..3) %}
+                    <li>Zulassungsvorraussetzungen {{ i }}{{ site.badge_mw_imma }}</li>
+                    {% endfor %}
+                  </ul>
+                </td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-uppercase">Zulassungs&shy;modus</th>
@@ -203,19 +209,19 @@
                     {% if page.dosv == "X" %}
                       Zulassungsbeschränkt (<abbr title="Dialogorientiertes Serviceverfahren durch Hochschulstart">DoSV</abbr>){{ site.badge_p }}
                     {% else %}
-                      ???{{ site.badge_db }}
+                      ???{{ site.badge_mw_imma }}
                     {% endif %}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-uppercase">Zulassungs&shy;zahlen</th>
                   <td>
-                    ???{{ site.badge_db }}<br><a href="{{ site.zulassungszahlen_url }}" target="_blank">{{ site.zulassungszahlen_url_text }}</a><br><small>Nur anzeigen, wenn STG zulassungsbeschränkt!</small>
+                    ???{{ site.badge_mw_imma }}<br><a href="{{ site.zulassungszahlen_url }}" target="_blank">{{ site.zulassungszahlen_url_text }}</a><br><small>Nur anzeigen, wenn STG zulassungsbeschränkt!</small>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-uppercase">Eignungs&shy;verfahren</th>
-                  <td>???{{ site.badge_db }}<br>Welche Art von Eignungsverfahren wird durchgeführt.<br><small>Nur anzeigen, wenn STG zulassungsbeschränkt!</small>
+                  <td>???{{ site.badge_mw_imma }}<br>Welche Art von Eignungsverfahren wird durchgeführt.<br><small>Nur anzeigen, wenn STG zulassungsbeschränkt!</small>
                   </td>
                 </tr>
                 {% assign alle = page.praxis_vz | split: "|" %}
@@ -241,7 +247,7 @@
                 {% endif %}
                 <tr>
                   <th scope="row" class="text-uppercase">Hauptunterrichts&shy;sprache</th>
-                  <td>???{{ site.badge_db }}
+                  <td>???{{ site.badge_mw_fk }}
                     <p>Weitere Spachen:<br>???</p>
                   </td>
                 </tr>
@@ -285,14 +291,14 @@
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Doppelabschluss</th>
                   <td>
-                    ???{{ site.badge_db }}<br>
+                    ???{{ site.badge_mw_fk }}<br>
                     Partnerunis angeben
                   </td>
                 </tr>
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Auslandssemester</th>
                   <td>
-                    ???{{ site.badge_db }}<br>
+                    ???{{ site.badge_mw_fk }}<br>
                     Auslandsemester möglich; empfohlen im ???&nbsp;Semester
                   </td>
                 </tr>
@@ -348,12 +354,12 @@
       <div class="row my-4">
         {% if page.schwerpunkt_vz == "" or page.studienrichtung_vz == "" %}
         <div class="col-md-12 my-2">
-          <h2>Kurzbeschreibung{{ site.badge_db }}</h2>
+          <h2>Kurzbeschreibung{{ site.badge_mw_fk }}</h2>
           {{ teaser | markdownify }}
         </div>
         {% else %}
         <div class="col-md-6 my-2">
-          <h2>Kurzbeschreibung{{ site.badge_db }}</h2>
+          <h2>Kurzbeschreibung{{ site.badge_mw_fk }}</h2>
           {{ teaser | markdownify }}
         </div>
         <div class="col-md-6 my-2">
@@ -389,7 +395,7 @@
           <div class="card-header bg-white" id="heading_studien_ziel">
             <h3 class="mb-0">
               <a class="text-body" role="button" data-toggle="collapse" data-target="#collapse_studien_ziel" aria-expanded="true" aria-controls="collapse_studien_ziel" style="cursor: pointer">
-                Studienziel{{ site.badge_db }}
+                Studienziel{{ site.badge_mw_fk }}
               </a>
             </h3>
           </div>
@@ -410,7 +416,7 @@
           <div class="card-header bg-white" id="heading_studien_verlauf">
             <h3 class="mb-0">
               <a class="text-body" role="button" data-toggle="collapse" data-target="#collapse_studien_verlauf" aria-expanded="true" aria-controls="collapse_studien_verlauf" style="cursor: pointer">
-                Studienverlauf{{ site.badge_db }}
+                Studienverlauf{{ site.badge_p }}{{ site.badge_mw_fk }}
               </a>
             </h3>
           </div>
@@ -442,6 +448,7 @@
               {% if page.rsem_vz != "0" %}
               {% assign module = module | where_exp: "search", "search.pvers == page.pvers_vz"%}
               <h5>Beispielhafte Darstellung für ein Studium in Vollzeit</h5>
+              {% include exemplarische_darstellung.html %}
               <!-- <h5>Prüfungsordnungsversion {{ page.pvers_vz }} <small><span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5> -->
               <a role="button" class="btn btn-outline-primary btn-sm float-right mb-2 rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfVWM4H4lmAh_cFlHXpA4ZntHnolq-zqDiLSRuooPsfruLP3Q/viewform?usp=pp_url&entry.1914710992={{ page.stg_kurz | url_encode }}&entry.231045923=Vollzeit&entry.633489639={{ page.pvers_vz | url_encode }}&entry.2138213008={{ site.url }}/stg/{{ page.stg_kurz | downcase }}" target="_blank">Feedback zum Modulkatalog {{ page.stg_kurz }}, {{ page.pvers_vz }} einreichen</a>
               <div class="table-responsive">
@@ -489,6 +496,7 @@
             {% elsif page.rsem_tz != 0 %}
             {% assign module = module | where_exp: "search", "search.pvers == page.pvers_tz"%}
             <h5>Beispielhafte Darstellung für ein Studium in Teilzeit</h5>
+            {% include exemplarische_darstellung.html %}
             <!-- <h5><small>Prüfungsordnungsversion {{ page.pvers_tz }}  <span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5> -->
             <a role="button" class="btn btn-outline-primary btn-sm float-right mb-2 rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfVWM4H4lmAh_cFlHXpA4ZntHnolq-zqDiLSRuooPsfruLP3Q/viewform?usp=pp_url&entry.1914710992={{ page.stg_kurz | url_encode }}&entry.231045923=Teilzeit&entry.633489639={{ page.pvers_tz | url_encode }}&entry.2138213008={{ site.url }}/stg/{{ page.stg_kurz | downcase }}" target="_blank">Feedback zum Modulkatalog {{ page.stg_kurz }}, {{ page.pvers_tz }} einreichen</a>
             <div class="table-responsive">
@@ -536,6 +544,7 @@
           {% elsif page.rsem_dual != 0 %}
           {% assign module = module | where_exp: "search", "search.pvers == page.pvers_dual"%}
           <h5>Beispielhafte Darstellung für ein Studium in Teilzeit</h5>
+          {% include exemplarische_darstellung.html %}
           <!-- <h5><small>Prüfungsordnungsversion {{ page.pvers_dual }}  <span class="text-muted">{{ page.stg_kurz }}</span></small>{{ site.badge_p}}</h5> -->
           <a role="button" class="btn btn-outline-primary btn-sm float-right mb-2 rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfVWM4H4lmAh_cFlHXpA4ZntHnolq-zqDiLSRuooPsfruLP3Q/viewform?usp=pp_url&entry.1914710992={{ page.stg_kurz | url_encode }}&entry.231045923=Dual&entry.633489639={{ page.pvers_dual | url_encode }}&entry.2138213008={{ site.url }}/stg/{{ page.stg_kurz | downcase }}" target="_blank">Feedback zum Modulkatalog {{ page.stg_kurz }}, {{ page.pvers_dual }} einreichen</a>
           <div class="table-responsive">
@@ -679,22 +688,21 @@
           <div class="card-header bg-white" id="heading_bewerbung">
             <h3 class="mb-0">
               <a class="text-body" role="button" data-toggle="collapse" data-target="#collapse_bewerbung" aria-expanded="true" aria-controls="collapse_bewerbung" style="cursor: pointer">
-                Bewerbungsvorraussetzungen und -modalitäten{{ site.badge_db }}
+                Bewerbungsvorraussetzungen und -modalitäten{{ site.badge_mw_imma }}
               </a>
             </h3>
           </div>
           <div id="collapse_bewerbung" class="collapse" aria-labelledby="heading_bewerbung" data-parent="#accordion_stg_informationen">
             <div class="card-body">
               <div class="">
-                <h4>Zulassungs&shy;vorraussetzungen</h4>
-                <p><i>Hier könnten aufgelistet die Zulassungsvorraussetzungen für diesen Studiengang stehen. Diese müssten von der Immatrikulation individuell je STG in der DB gepflegt werden.</i>{{ site.badge_db }}</p>
+                <h4>Zulassungs&shy;vorraussetzungen{{ site.badge_mw_imma }}</h4>
+                <p><i>Hier könnten aufgelistet die Zulassungsvorraussetzungen für diesen Studiengang stehen. Diese müssten von der Immatrikulation individuell je STG in der DB gepflegt werden.</i>badge_mw_imma</p>
                 <ul style="padding-left:15px">
                   {% for i in (1..3) %}
-                  <li>Zulassungsvorraussetzungen {{ i }}</li>
+                  <li>Zulassungsvorraussetzungen {{ i }}{{ site.badge_mw_imma }}</li>
                   {% endfor %}
                 </ul>
-
-                <h4>Wichtige Termine</h4>
+                <h4>Wichtige Termine{{ site.badge_mw_imma }}</h4>
                 <p>
                   {% if page.stg_kurz_abschluss_kurz == "AR-B" %}
                   {{ site.begin_arb }}
@@ -718,17 +726,17 @@
                   {% endif %}
                 </p>
 
-                <h4>Zusätzliche Informationen</h4>
-                <h5>Informationen zur Immatrikulation</h5>
+                <h4>Zusätzliche Informationen{{ site.badge_mw_imma }}</h4>
+                <h5>Informationen zur Immatrikulation{{ site.badge_mw_imma }}</h5>
                   <p><a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Informationen_zur_Immatrikulation.pdf" target="_blank">Immatrikulation zum Sommersemester 2021 ></a></p>
                 {% if page.dosv == "X" %}
-                <h5>Informationen zu <abbr title="Dialogorientiertes Serviceverfahren durch Hochschulstart">DoSV</abbr>
+                <h5>Informationen zu <abbr title="Dialogorientiertes Serviceverfahren durch Hochschulstart">DoSV</abbr>{{ site.badge_mw_imma }}
                   <img src="{{ site.url }}/assets/img/sfh-logo.svg" class="float-right" style="max-width: 100px;" alt="Stiftung für Hochschulzulassung hochschulstart.de">
                 </h5>
                   <p><a href="https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/DoSVmitGrafik.pdf" target="_blank">Informationen zum DoSV in zulassungsbeschränkten Studiengängen</a></p>
                   <p><a href="http://www.hochschulstart.de/" target="_blank">Direkt zu DoSV www.hochschulstart.de</a></p>
                 {% endif %}
-                <h5>Allgemeine Informationen</h5>
+                <h5>Allgemeine Informationen{{ site.badge_mw_imma }}</h5>
                 {% if page.aaspf_echt == "B" %}
                   {% for item in site.data.bewerbung_bachelor_infos %}
                     {% if item.stg_kurz == nil %}
@@ -775,7 +783,7 @@
                 {% endif %}
                 <!-- <h5>Spezielle Informationen</h5> -->
                 <!-- Satzungen -->
-                <h5>Satzung</h5>
+                <h5>Satzung{{ site.badge_mw_imma }}</h5>
                 {% for item in site.data.bewerbung_satzung %}
                   {% if item.stg_kurz == nil %}
                     {% if item.nicht_stg_kurz contains page.stg_kurz %}
@@ -804,7 +812,7 @@
           <div class="card-header bg-white" id="heading_interesse">
             <h3 class="mb-0">
               <a class="text-body collapsed" role="button" data-toggle="collapse" data-target="#collapse_interesse" aria-expanded="false" aria-controls="collapse_interesse" style="cursor: pointer">
-                Zu wem passt der Studiengang?{{ site.badge_db }}
+                Zu wem passt {% if page.aaspf_echt != "Z" %}der Studiengang{% else %}das Zertifikat{% endif %}?{{ site.badge_mw_fk }}
               </a>
             </h3>
           </div>
@@ -812,7 +820,7 @@
             <div class="card-body">
               <div class="row mb-4">
                 <div class="col-md-6 my-2">
-                  <h5>Wer diesen Studiengang studieren möchte,</h5>
+                  <h5>Wer {% if page.aaspf_echt != "Z" %}diesen Studiengang{% else %}dieses Zertifikat{% endif %} studieren möchte,</h5>
                   <p><strong>… bringt mit:</strong><br>
                     {{ extra[1].interessen.bringt_mit | join: ", " }}
                   </p>
@@ -824,7 +832,7 @@
                   </p>
                 </div>
                 <div class="col-md-6 my-2">
-                  <h5>Wer einen Abschluss in diesem Studiengang hat, arbeitet häufig</h5>
+                  <h5>Wer einen Abschluss in diesem {% if page.aaspf_echt != "Z" %}Studiengang{% else %}Zertifikat{% endif %} hat, arbeitet häufig</h5>
                   <ul>
                     {% for item in extra[1].berufs_perpektiven %}
                     <li>{{ item }}</li>
@@ -839,7 +847,7 @@
           <div class="card-header bg-white" id="heading_kontakt">
             <h3 class="mb-0">
               <a class="text-body collapsed" role="button" data-toggle="collapse" data-target="#collapse_kontakt" aria-expanded="false" aria-controls="collapse_kontakt" style="cursor: pointer">
-                Kontakt{{ site.badge_db }}
+                Kontakt{{ site.badge_mw_imma }}{{ site.badge_mw_fk }}
               </a>
             </h3>
           </div>
@@ -849,7 +857,7 @@
                 <!-- Fachstudienberater -->
                 {% if extra[1].ansprechpartner.fachstudienberater != nil %}
                 <div id="fachstudienberaterinnen" class="col-md-6">
-                  <h3>FachstudienberaterInnen{{ site.badge_db }}</h3>
+                  <h3>FachstudienberaterInnen{{ site.badge_mw_fk }}</h3>
                   {% for item in extra[1].ansprechpartner.fachstudienberater %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
@@ -886,7 +894,7 @@
                 <!-- Zertifikatsleitung -->
                 {% if extra[1].ansprechpartner.zertifikatsleitung != nil %}
                 <div id="zertifikatsleitung" class="col-md-6">
-                  <h3>Zertifikatsleitung{{ site.badge_db }}</h3>
+                  <h3>Zertifikatsleitung{{ site.badge_mw_fk }}</h3>
                   {% for item in extra[1].ansprechpartner.zertifikatsleitung %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
@@ -923,7 +931,7 @@
                 <!-- Studiengangsrefetenten -->
                 {% if extra[1].ansprechpartner.studiengangsreferent != nil %}
                 <div id="studiengangsrefetentinnen" class="col-md-6">
-                  <h3>StudiengangsreferentInnen{{ site.badge_db }}</h3>
+                  <h3>StudiengangsreferentInnen{{ site.badge_mw_fk }}</h3>
                   {% for item in extra[1].ansprechpartner.studiengangsreferent %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
@@ -963,7 +971,7 @@
                 <!-- Programmassistenz -->
                 {% if extra[1].ansprechpartner.programmassistenz != nil %}
                 <div id="programmassistenz" class="col-md-6">
-                  <h3>Programmassistzen{{ site.badge_db }}</h3>
+                  <h3>Programmassistezen{{ site.badge_mw_fk }}</h3>
                   {% for item in extra[1].ansprechpartner.programmassistenz %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
@@ -1003,7 +1011,7 @@
                 <!-- Sekretariat -->
                 {% if extra[1].ansprechpartner.sekretariat != nil %}
                 <div id="sekretariat" class="col-md-6">
-                  <h3>Sekretariat{{ site.badge_db }}</h3>
+                  <h3>Sekretariat{{ site.badge_mw_fk }}</h3>
                   {% for item in extra[1].ansprechpartner.sekretariat %}
                   <div class="row">
                     <div class="col-lg-4 col-xl-3">
@@ -1041,7 +1049,7 @@
                 </div>
                 {% endif %}
                 <div id="studienberatung" class="col-md-6">
-                  <h3>Zentrale Studienberatung{{ site.badge_db }}</h3>
+                  <h3>Zentrale Studienberatung{{ site.badge_mw_ber }}</h3>
                   <p class="">
                     <span class="d-block lead">Erstanlaufstelle</span>
                     <span class="d-block">STUDIENINFORMATION in der Lothstraße&nbsp;34</span>
@@ -1071,7 +1079,7 @@
                   </p>
                 </div>
                 <div id="immatrikulation" class="col-md-6">
-                  <h3>Immatrikulation{{ site.badge_db }}</h3>
+                  <h3>Immatrikulation{{ site.badge_mw_imma }}</h3>
                   <p class="">
                     {% if page.aaspf_echt == "B" %}
                     <span class="d-block lead">für Bachelor-Studiengänge</span>
@@ -1105,9 +1113,9 @@
                   </p>
                 </div>
                 <div id="pruefungsamt" class="col-md-6">
-                  <h3>Prüfung und Praktikum{{ site.badge_db }}</h3>
+                  <h3>Prüfung und Praktikum{{ site.badge_mw_ber }}</h3>
                   <p class="">
-                    Sie studieren den Studiengang {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) schon und haben Fragen zu Prüfungen oder Praktikum? Dann nutzen Sie bitte die Seite <a href="https://www.hm.edu/pruefung-praktikum"
+                    Sie studieren {% if page.aaspf_echt != "Z" %}den Studiengang{% else %}das Zertifikat{% endif %} {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) schon und haben Fragen zu Prüfungen oder Praktikum? Dann nutzen Sie bitte die Seite <a href="https://www.hm.edu/pruefung-praktikum"
                       target="_blank">www.hm.edu/pruefung-praktikum</a>
                   </p>
                 </div>
@@ -1120,19 +1128,19 @@
           <div class="card-header bg-white" id="heading_weitere_info">
             <h3 class="mb-0">
               <a class="text-body collapsed" role="button" data-toggle="collapse" data-target="#collapse_weitere_info" aria-expanded="false" aria-controls="collapse_weitere_info" style="cursor: pointer">
-                Weiterführende Informationen{{ site.badge_p }}{{ site.badge_db }}
+                Weiterführende Informationen{{ site.badge_p }}{{ site.badge_mw_fk }}
               </a>
             </h3>
           </div>
           <div id="collapse_weitere_info" class="collapse" aria-labelledby="heading_weitere_info" data-parent="#accordion_stg_informationen">
             <div class="card-body">
               {% if extra[2].url_echt != nil %}
-              <p><a href="{{ extra[2].url_echt }}" target="_blank">Informationen zum Studiengang auf den Seiten der Fakultät{{ site.badge_db }}</a></p>
+              <p><a href="{{ extra[2].url_echt }}" target="_blank">Informationen zum {% if page.aaspf_echt != "Z" %}Studiengang{% else %}Zertifikat{% endif %} auf den Seiten der Fakultät{{ site.badge_mw_fk }}</a></p>
               {% else %}
-                <p>Informationen zum Studiengang auf den Seiten der Fakultät{{ site.badge_db }}</p>
+                <p>Informationen zum {% if page.aaspf_echt != "Z" %}Studiengang{% else %}Zertifikat{% endif %} auf den Seiten der Fakultät{{ site.badge_mw_fk }}</p>
               {% endif %}
-              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Modulhandbuch{{ site.badge_db }}</a></p>
-              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Studienplan{{ site.badge_db }}</a></p>
+              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Modulhandbuch{{ site.badge_mw_fk }}</a></p>
+              <p><a href="{{ page.url_modulhandbuch }}" target="_blank">Studienplan{{ site.badge_mw_fk }}</a></p>
               {% if page.po_url_vz != "" %}
               <p><a href="{{ page.po_url_vz }}" target="_blank">Studien- und Prüfungsordnung für Studium in Vollzeit</a>{{ site.badge_p }}</p>
               {% endif %}
@@ -1148,7 +1156,7 @@
               {% endif %}
               {% if page.berufsbegleitend != nil %}
               <!-- <p><a href="{{ page.url_gebuehrenordnung }}" target="_blank">Gebührenordnung</a></p> -->
-              <p>Gebührenordnung{{ site.badge_p }}</p>
+              <p>Gebührenordnung{{ site.badge_mw_imma }}</p>
               {% endif %}
             </div>
           </div>
@@ -1160,7 +1168,7 @@
           <div class="card-header bg-white" id="heading_video">
             <h3 class="mb-0">
               <a class="text-body collapsed" role="button" data-toggle="collapse" data-target="#collapse_video" aria-expanded="false" aria-controls="collapse_video">
-                Videos zum und über den Studiengang{{ site.badge_db }}
+                Videos zum und über {% if page.aaspf_echt != "Z" %}den Studiengang{% else %}das Zertifikat{% endif %}{{ site.badge_mw_fk }}
               </button>
             </h3>
           </div>
