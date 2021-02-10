@@ -469,9 +469,9 @@
                   {% assign items = module %}
                   <tbody>
                     {% for item in items %}
-                    {% if item.points != 0 %}
+                    {% if item.points != 0 or item.titelzg contains "Konto" %}
                     <tr>
-                      <td scope="row" class="align-middle">{{ item.titelzg }} <small>({{ item.points }}&nbsp;ECTS)</small>
+                      <td scope="row" class="align-middle">{{ item.titelzg | replace: ".00", "" }} {% if item.titelzg contains "Konto" %}{% else %}<small>({{ item.points }}&nbsp;ECTS)</small>{% endif %}
                         {% if item.en_titelzg != nil %}<br><small>{{ item.en_titelzg }}</small>{% endif %}
                       </td>
                       {% if page.studienrichtung_vz != "" or page.schwerpunkt_vz != "" %}
@@ -517,10 +517,9 @@
                 {% assign items = module %}
                 <tbody>
                   {% for item in items %}
-                  {% if item.points != 0 %}
+                  {% if item.points != 0 or item.titelzg contains "Konto" %}
                   <tr>
-                    <td scope="row" class="align-middle">
-                      {{ item.titelzg }} <small>({{ item.points }}&nbsp;ECTS)</small>
+                    <td scope="row" class="align-middle">{{ item.titelzg | replace: ".00", "" }} {% if item.titelzg contains "Konto" %}{% else %}<small>({{ item.points }}&nbsp;ECTS)</small>{% endif %}
                       {% if item.en_titelzg != nil %}<br><small>{{ item.en_titelzg }}</small>{% endif %}
                     </td>
                     {% if page.studienrichtung_tz != "" or page.schwerpunkt_tz != "" %}
@@ -565,9 +564,9 @@
               {% assign items = module %}
               <tbody>
                 {% for item in items %}
-                {% if item.points != 0 %}
+                {% if item.points != 0 or item.titelzg contains "Konto" %}
                 <tr>
-                  <td scope="row" class="align-middle">{{ item.titelzg }} <small>({{ item.points }}&nbsp;ECTS)</small>
+                  <td scope="row" class="align-middle">{{ item.titelzg | replace: ".00", "" }} {% if item.titelzg contains "Konto" %}{% else %}<small>({{ item.points }}&nbsp;ECTS)</small>{% endif %}
                     {% if item.en_titelzg != nil %}<br><small>{{ item.en_titelzg }}</small>{% endif %}
                   </td>
                   {% if page.studienrichtung_tz != "" or page.schwerpunkt_tz != "" %}
