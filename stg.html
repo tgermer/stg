@@ -152,7 +152,8 @@ title: Studiengangebot (STG)
   <div class="col-md-8">
     <h3>Studiengänge</h3>
     <div id="filter" class="my-5 mix-studienangebot">
-      {% assign stg = site.data.3478_fachrichtung | where_exp: "search", "search.nummer != '99'" %}
+      {% assign stg = site.data.3478_fachrichtung | where_exp: "search", "search.nummer != '99'" | where_exp: "search", "search.aaspf_echt != ''" | where_exp: "search", "search.aaspf_echt != 'D'" %}
+      {% assign stg = stg  | sort: "fachrich" %}
       {% for stg in stg %}
       <div data-order="{{ stg.fachrich }}-{{ stg.text }} ({{ stg.titelkz_m_vz }})" class="
         mb-0 mix
