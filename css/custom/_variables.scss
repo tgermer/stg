@@ -42,9 +42,20 @@ footer {
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-
+// @font-face {
+//   font-family: 'UntitledSans-Regular';
+//   src: url('../assets/fonts/UntitledSans-Regular.otf');
+// }
+// @font-face {
+//   font-family: 'UntitledSans-Medium';
+//   src: url('../assets/fonts/UntitledSans-Medium.otf');
+// }
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:       Arial, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// $font-family-sans-serif:       "UntitledSans-Regular", Arial, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// $headings-font-family:        "UntitledSans-Medium" !default;
+// $headings-font-weight:        null !default;
+// $headings-line-height:        1.2 !default;
 
 $line-height-base:            1.2 !default;
 
