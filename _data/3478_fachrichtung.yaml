@@ -61,7 +61,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_AOB_214_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_AOB_214_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '01'
@@ -126,7 +126,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/01_ARB_219_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/01_ARB_219_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '01'
@@ -191,7 +191,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/01_ARM_219_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '09'
@@ -256,7 +256,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/09_AUB_218_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/09_AUB_218_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: X
 -
     nummer: '13'
@@ -386,7 +386,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/02_BIB_219B_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/02_BIB_319B_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '02'
@@ -451,7 +451,7 @@
     po_url_vz: ""
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/02_BIM_212_SPO.pdf'
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '02'
@@ -516,7 +516,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/02_BNM_219M_SPO.pdf'
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/02_BNM_319M_SPO.pdf'
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '06'
@@ -581,7 +581,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_BOB_216_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '06'
@@ -1036,7 +1036,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_CHB_219_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_CHB_219_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '07'
@@ -1101,7 +1101,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_DCB_220_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '05'
@@ -1166,7 +1166,7 @@
     po_url_vz: ""
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '05'
@@ -1231,7 +1231,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_DRB_120_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_DRB_120_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '12'
@@ -1401,7 +1401,7 @@
     praxis_tz: ""
     praxis_dual: ""
     statdat: WW
-    zuordnung: ""
+    zuordnung: W
     berufsbegleitend: N
     sem: ""
     erst_sem: ""
@@ -1426,7 +1426,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/09_DTM_219_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '04'
@@ -1556,7 +1556,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/04_EIB_216_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/04_EIB_216_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: X
 -
     nummer: '04'
@@ -1686,7 +1686,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/04_EMB_216_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/04_EMB_216_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: X
 -
     nummer: '03'
@@ -1751,7 +1751,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_FAB_220_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_FAB_220_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: X
 -
     nummer: '03'
@@ -1816,7 +1816,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_FAD_211_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '03'
@@ -1881,7 +1881,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_FAM_118_SPO.pdf'
     po_url_tz: 'https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_FAM_118_SPO.pdf'
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_FAM_118_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '03'
@@ -1946,7 +1946,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_FEM_220_SPO.pdf'
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_FEM_220_SPO.pdf'
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '99'
@@ -2206,7 +2206,7 @@
     po_url_vz: ""
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '08'
@@ -2271,7 +2271,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GNB_220_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GNB_220_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '08'
@@ -2336,7 +2336,7 @@
     po_url_vz: ""
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '08'
@@ -2401,7 +2401,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GOM_220_SPO.pdf'
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GOM_220_SPO.pdf'
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GOM_220_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '10'
@@ -2441,7 +2441,7 @@
     praxis_tz: ""
     praxis_dual: ""
     statdat: WW
-    zuordnung: ""
+    zuordnung: W
     berufsbegleitend: N
     sem: ""
     erst_sem: ""
@@ -2596,7 +2596,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_GTM_115_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_GTM_115_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '11'
@@ -2921,7 +2921,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_ICB_217_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_ICB_217_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '07'
@@ -2986,7 +2986,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_IFB_212_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_IFB_212_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '07'
@@ -3051,7 +3051,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_IGM_110_SPO.pdf'
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_IGM_119_SPO.pdf'
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_IGM_110_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '13'
@@ -3311,7 +3311,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_ISM_117_SPO.pdf'
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_ISM_117_SPO.pdf'
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '07'
@@ -3335,14 +3335,14 @@
     ects_vz: '90'
     ects_tz: '90'
     ects_dual: '0'
-    titelkz_m_vz: M.Sc.
-    titel_m_vz: 'Master of Science'
+    titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: M.Sc.
     titel_m_tz: 'Master of Science'
     titelkz_m_dual: ""
     titel_m_dual: ""
-    titelkz_w_vz: M.Sc.
-    titel_w_vz: 'Master of Science'
+    titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: M.Sc.
     titel_w_tz: 'Master of Science'
     titelkz_w_dual: ""
@@ -3376,7 +3376,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_ITM_220_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '08'
@@ -3441,7 +3441,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_KAB_111_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '08'
@@ -3459,20 +3459,20 @@
     rsem_tz: '0'
     rsem_dual: '0'
     wie: Vollzeit
-    pvers_vz: 216B
+    pvers_vz: 220B
     pvers_tz: '-'
     pvers_dual: '-'
     ects_vz: '210'
     ects_tz: '0'
     ects_dual: '0'
-    titelkz_m_vz: B.Eng.
-    titel_m_vz: 'Bachelor of Engineering'
+    titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
     titel_m_tz: ""
     titelkz_m_dual: ""
     titel_m_dual: ""
-    titelkz_w_vz: B.Eng.
-    titel_w_vz: 'Bachelor of Engineering'
+    titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
     titel_w_tz: ""
     titelkz_w_dual: ""
@@ -3503,10 +3503,10 @@
     schwerpunkt_vz: ""
     schwerpunkt_tz: ""
     schwerpunkt_dual: ""
-    po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_KGB_216_SPO.pdf'
+    po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_KGB_220_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '09'
@@ -3636,7 +3636,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_LRB_220_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_LRB_220_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: X
 -
     nummer: '03'
@@ -3766,7 +3766,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_MBB_220_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_MBB_220_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: X
 -
     nummer: '03'
@@ -3831,7 +3831,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_MBD_111_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '03'
@@ -3961,7 +3961,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_MFB_215_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_MFB_215_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '06'
@@ -4026,7 +4026,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_MFM_115_SPO.pdf'
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_MFM_215_SPO.pdf'
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_MFM_115_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '06'
@@ -4091,7 +4091,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_MNM_114_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_MNM_114_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '10'
@@ -4286,7 +4286,7 @@
     po_url_vz: ""
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '06'
@@ -4351,7 +4351,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_PAM_114_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '03'
@@ -4676,7 +4676,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_PHB_217_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_PHB_217_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '13'
@@ -4806,7 +4806,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_PKM_213_SPO.pdf'
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_PKM_213_SPO.pdf'
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '10'
@@ -4936,7 +4936,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_PNB_115_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_PNB_115_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '06'
@@ -5001,7 +5001,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_POM_113_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_POM_113_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '05'
@@ -5066,7 +5066,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_PRM_119_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '06'
@@ -5196,7 +5196,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_PWM_115_SPO.pdf'
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_PWM_115_SPO.pdf'
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '11'
@@ -5391,7 +5391,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/04_REB_216_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/04_REB_216_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: X
 -
     nummer: '03'
@@ -5456,7 +5456,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_RSM_120_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '03'
@@ -6041,7 +6041,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/04_SMM_216_SPO.pdf'
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/04_SMM_216_SPO.pdf'
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '11'
@@ -6207,7 +6207,7 @@
     titel_w_tz: ""
     titelkz_w_dual: ""
     titel_w_dual: ""
-    praxis_vz: '---#0#|---#0#|Praxissemester#5#'
+    praxis_vz: '---#0#|---#0#|---#5#'
     praxis_tz: ""
     praxis_dual: ""
     statdat: SW
@@ -6366,7 +6366,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_TBM_220_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '14'
@@ -6561,7 +6561,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_TNB_218_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_TNB_218_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: X
 -
     nummer: '14'
@@ -6886,7 +6886,7 @@
     po_url_vz: ""
     po_url_tz: ""
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '05'
@@ -6951,7 +6951,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_VFM_118_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_VFM_118_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '05'
@@ -7016,7 +7016,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_VSB_210_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_VSB_210_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '05'
@@ -7146,7 +7146,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/09_WIB_120_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/09_WIB_120_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: X
 -
     nummer: '09'
@@ -7211,7 +7211,7 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/09_WIM_120_SPO.pdf'
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/09_WIM_120_SPO.pdf'
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '09'
@@ -7276,7 +7276,7 @@
     po_url_vz: ""
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/09_WWM_120_SPO.pdf'
     po_url_dual: ""
-    mint: ""
+    mint: X
     dosv: ""
 -
     nummer: '99'
