@@ -32,49 +32,49 @@
       {% assign grundbeitrag = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 1" %}
       {% assign grundbeitrag = grundbeitrag | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
       {% for wert in grundbeitrag %}
-        {% assign grundbeitrag_betrag = wert.betrag %}
+        {% assign grundbeitrag_betrag = wert.betrag | replace: ",", "." %}
       {% endfor %}
 
       {% assign semesterticket = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 7" %}
       {% assign semesterticket = semesterticket | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
       {% for wert in semesterticket %}
-        {% assign semesterticket_betrag = wert.betrag %}
+        {% assign semesterticket_betrag = wert.betrag | replace: ",", "." %}
       {% endfor %}
 
       {% assign mastergebuehr = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 4" %}
       {% assign mastergebuehr = mastergebuehr | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
       {% for wert in mastergebuehr %}
-        {% assign mastergebuehr_betrag = wert.betrag %}
+        {% assign mastergebuehr_betrag = wert.betrag | replace: ",", "." %}
       {% endfor %}
       {% for wert in mastergebuehr %}
-        {% assign mastergebuehr_aufteilung_vz = wert.aufteilung_vz %}
+        {% assign mastergebuehr_aufteilung_vz = wert.aufteilung_vz | replace: ",", "." %}
       {% endfor %}
       {% for wert in mastergebuehr %}
-        {% assign mastergebuehr_aufteilung_tz = wert.aufteilung_tz %}
+        {% assign mastergebuehr_aufteilung_tz = wert.aufteilung_tz | replace: ",", "." %}
       {% endfor %}
       {% for wert in mastergebuehr %}
-        {% assign mastergebuehr_aufteilung_dual = wert.aufteilung_dual %}
+        {% assign mastergebuehr_aufteilung_dual = wert.aufteilung_dual | replace: ",", "." %}
       {% endfor %}
       {% for wert in mastergebuehr %}
-        {% assign mastergebuehr_kz_semgeb = wert.kz_semgeb %}
+        {% assign mastergebuehr_kz_semgeb = wert.kz_semgeb | replace: ",", "." %}
       {% endfor %}
 
       {% assign zertifikatsgebuehr = site.data.3517_gebuehren | where_exp: "search", "search.kz_gebart == 5" %}
       {% assign zertifikatsgebuehr = zertifikatsgebuehr | where_exp: "search", "search.stg_kurz == page.stg_kurz" %}
       {% for wert in zertifikatsgebuehr %}
-        {% assign zertifikatsgebuehr_betrag = wert.betrag %}
+        {% assign zertifikatsgebuehr_betrag = wert.betrag | replace: ",", "." %}
       {% endfor %}
       {% for wert in zertifikatsgebuehr %}
-        {% assign zertifikatsgebuehr_aufteilung_vz = wert.aufteilung_vz %}
+        {% assign zertifikatsgebuehr_aufteilung_vz = wert.aufteilung_vz | replace: ",", "." %}
       {% endfor %}
       {% for wert in zertifikatsgebuehr %}
-        {% assign zertifikatsgebuehr_aufteilung_tz = wert.aufteilung_tz %}
+        {% assign zertifikatsgebuehr_aufteilung_tz = wert.aufteilung_tz | replace: ",", "." %}
       {% endfor %}
       {% for wert in zertifikatsgebuehr %}
-        {% assign zertifikatsgebuehr_aufteilung_dual = wert.aufteilung_dual %}
+        {% assign zertifikatsgebuehr_aufteilung_dual = wert.aufteilung_dual | replace: ",", "." %}
       {% endfor %}
       {% for wert in zertifikatsgebuehr %}
-        {% assign zertifikatsgebuehr_kz_semgeb = wert.kz_semgeb %}
+        {% assign zertifikatsgebuehr_kz_semgeb = wert.kz_semgeb | replace: ",", "." %}
       {% endfor %}
 
 
@@ -308,6 +308,7 @@
                   <td>
                     <span class="d-block">Grundbeitrag Studentenwerk {% include numf.html number=grundbeitrag_betrag %}Euro{{ site.badge_p }}</span>
                     <span class="d-block">Solidarbeitrag Semesterticket {% include numf.html number=semesterticket_betrag %}Euro{{ site.badge_p }}</span>
+                    <br>{{ semesterticket_betrag }}
                   </td>
                 </tr>
                 {% if mastergebuehr_betrag != nil or zertifikatsgebuehr_betrag != nil %}
