@@ -185,12 +185,11 @@ title: Studiengangebot (STG)
           {% when 5 %}eignungsverfahren
         {% endcase %}
         {{ stg.hzb | join: " " | downcase }}
-        {% if stg.dual == true %}dual{% endif %}
+        {% if stg.stg_kurz == "BI-B" %}dual{% endif %}
         {% if stg.doppel_abschluss == true %}doppelabschluss{% endif %}
         {% if stg.berufsbegleitend == "B" %}berufsbegleitend{% endif %}
         {% if stg.rsem_tz	!= "0" %}teilzeit{% endif %}
         {% if stg.rsem_vz != "0" %}vollzeit{% endif %}
-        {% if stg.rsem_dual != "0" %}dual{% endif %}
         {% if stg.fachrich contains "eiterbild" %}weiterbildend{% endif %}
       ">
         <div class="card mb-3 rounded-0">
@@ -225,7 +224,7 @@ title: Studiengangebot (STG)
                   </small>
                   <span class="float-right text-muted"><small>FK{{ stg.nummer }}</small></span>
                 </p>
-                <h5 class="card-title"><small>{{ stg.text | upcase }}{% if stg.titelkz_m_vz != "" %}&nbsp;({{ stg.titelkz_m_vz }}){% else %}{% endif %}</small><br>{{ stg.fachrich }}</h5>
+                <h5 class="card-title hyphens"><small>{{ stg.text | upcase }}{% if stg.titelkz_m_vz != "" %}&nbsp;({{ stg.titelkz_m_vz }}){% else %}{% endif %}</small><br>{{ stg.fachrich }}</h5>
                 <!-- <p class="card-text">{{ stg._name }}</p> -->
                 <a href="{{ stg.dateiname | datapage_url: 'stg' }}" class="btn rounded-0 btn-sm btn-outline-dark stretched-link">Studiengangsdetails aufrufen</a>
               </div>

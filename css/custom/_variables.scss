@@ -39,6 +39,26 @@ footer {
   padding: 10px 0 2px;
 }
 
+p, .hyphens {
+	hyphens: auto;
+	-moz-hyphens: auto;
+	-o-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	-hyphens: auto;
+	hyphenate-limit-chars: auto 3;
+	hyphenate-limit-lines: 2;
+}
+
+.no-hyphens {
+	hyphens: none;
+	-moz-hyphens: none;
+	-o-hyphens: none;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	-hyphens: none;
+}
+
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.

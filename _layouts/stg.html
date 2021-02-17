@@ -99,7 +99,7 @@
             {% endcase %})
           {% endcomment %}
 
-          <h1 {% if page.zuordnung == "" or page.zuordnung == "T" %} class="text-white"{% endif %}><small>{{ page.text | upcase }}{% if page.titelkz_m_vz != "" %}&nbsp;(<abbr title="{{ page.titel_m_vz }}">{{ page.titelkz_m_vz }}</abbr>){% else %}{% endif %}{{ site.badge_p }}</small><br>{{ page.fachrich }}{{ site.badge_p }}
+          <h1 {% if page.zuordnung == "" or page.zuordnung == "T" %} class="text-white hyphens"{% endif %}><small>{{ page.text | upcase }}{% if page.titelkz_m_vz != "" %}&nbsp;(<abbr title="{{ page.titel_m_vz }}">{{ page.titelkz_m_vz }}</abbr>){% else %}{% endif %}{{ site.badge_p }}</small><br>{{ page.fachrich }}{{ site.badge_p }}
             <br><small>{{ page.fachriche }}{{ site.badge_p }}</small>
           </h1>
         </div>
@@ -139,7 +139,7 @@
                   <td>{{ page._name}}{{ site.badge_p }}</td>
                 </tr>
                 {% endif %}
-                {% if page.rsem_dual != "0" %}
+                {% if page.rsem_dual != "0" and page.stg_kurz == "BI-B" %}
                 <tr class="col-md-6">
                   <th scope="row" class="text-uppercase">Dual studierbar</th>
                   <td><i class="fas fa-check-circle text-success"></i>{{ site.badge_p }}</td>
@@ -161,7 +161,7 @@
                     {% if page.rsem_tz != "0" %}
                     <span class="d-block" title="{{ page.pvers_tz }}">{{ page.rsem_tz }} Semester Teilzeit{{ site.badge_p }}</span>
                     {% endif %}
-                    {% if page.rsem_dual != "0" %}
+                    {% if page.rsem_dual != "0" and page.stg_kurz == "BI-B" %}
                     <span class="d-block" title="{{ page.pvers_dual }}">{{ page.rsem_dual }} Semester Dual{{ site.badge_p }}</span>
                     {% endif %}
                   </td>
@@ -175,7 +175,7 @@
                     {% if page.ects_tz != '0' %}
                     <span class="d-block">{{ page.ects_tz }} bei Teilzeit{{ site.badge_p }}</span>
                     {% endif %}
-                    {% if page.ects_dual != '0' %}
+                    {% if page.ects_dual != '0' and page.stg_kurz == "BI-B" %}
                     <span class="d-block">{{ page.ects_dual }} bei Dual{{ site.badge_p }}</span>
                     {% endif %}
                 </td>
