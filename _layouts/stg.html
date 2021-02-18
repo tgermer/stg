@@ -182,7 +182,21 @@
                 </tr>
                 <tr>
                   <th scope="row" class="text-uppercase">Studienbeginn</th>
-                  <td>???{{ site.badge_mw_imma }}</td>
+                  <td>
+                    {% if page.aaspf_echt == "B" or page.aaspf_echt == "M" %}
+                    <!-- Bachelor und Master -->
+                    {% if site.stg_begin_sose contains page.stg_kurz%}
+                      Sommersemester
+                    {% elsif site.stg_begin_wise contains page.stg_kurz %}
+                      Wintersemester
+                    {% else %}
+                      Winter- und Sommersemester
+                    {% endif %}
+                    <!-- Zertifikat -->
+                    {% elsif page.aaspf_echt == "Z" %}
+
+                    {% endif %}
+                    {{ site.badge_mw_imma }}</td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-uppercase">Zulassungs&shy;vorraussetzungen</th>
@@ -684,6 +698,61 @@
 
 
         <div class="card rounded-0">
+          <div class="card-header bg-white" id="heading_termine">
+            <h3 class="mb-0">
+              <a class="text-body" role="button" data-toggle="collapse" data-target="#collapse_termine" aria-expanded="true" aria-controls="collapse_termine" style="cursor: pointer">
+                Wichtige Termine{{ site.badge_p }}
+              </a>
+            </h3>
+          </div>
+          <div id="collapse_termine" class="collapse" aria-labelledby="heading_termine" data-parent="#accordion_stg_informationen">
+            <div class="card-body">
+                {% if page.aaspf_echt == "B" or page.aaspf_echt == "M" %}
+                <!-- Bachelor und Master -->
+                {% if site.stg_begin_soso contains page.stg_kurz%}
+                  <h4>Studienbeginn</h4>
+                  <!-- <p><b>Studienbeginn</b></p> -->
+                  <p>Der Studienbeginn ist vrsl. zum Sommersemester möglich.</p>
+                  <h4>Bewerbung</h4>
+                  <!-- <p><b>Bewerbung</b></p> -->
+                  <p>Die Bewerbung für das Sommersemester erfolgt von Mitte November bis 15. Januar eines Jahres.
+                {% elsif site.stg_begin_wise contains page.stg_kurz %}
+                <h4>Studienbeginn</h4>
+                <!-- <p><b>Studienbeginn</b></p> -->
+                  <p>Der Studienbeginn ist vrsl. zum Wintersemester möglich.</p>
+                  <h4>Bewerbung</h4>
+                  <!-- <p><b>Bewerbung</b></p> -->
+                  <p>Die Bewerbung für das Wintersemester erfolgt von Anfang Mai bis 15. Juli eines Jahres.
+                {% else %}
+                <h4>Studienbeginn</h4>
+                <!-- <p><b>Studienbeginn</b></p> -->
+                  <p>Der Studienbeginn ist vrsl. zum Winter- und Sommersemester möglich.</p>
+                  <h4>Bewerbung</h4>
+                  <!-- <p><b>Bewerbung</b></p> -->
+                  <p>Die Bewerbung für das Sommersemester erfolgt von Mitte November bis 15. Januar, für das Wintersemester von Anfang Mai bis 15. Juli eines Jahres.
+                {% endif %}
+                  <br>Die Bewerbung erfolgt ausschließlich online unter <a href="https://www.hm.edu/{{ page.text | downcase }}-bewerbung" target="
+                  ">www.hm.edu/{{ page.text | downcase }}-bewerbung</a>
+                  {% if page.stg_kurz == "DS-B" %}
+                    <br>{{ site.begin_dsb_zusatz | markdownify }}
+                  {% elsif page.stg_kurz == "AR-B" %}
+                    <br>{{ site.begin_arb_zusatz | markdownify }}
+                  {% endif %}
+                </p>
+
+                <!-- Zertifikat -->
+                {% elsif page.aaspf_echt == "Z" %}
+
+                {% endif %}
+              <h4>Zusetzliche Informationen durch die Studiengangsleitung (optional)</h4>
+              <!-- <p><b>Zusetzliche Informationen durch die Studiengangsleitung (optional)</b></p> -->
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card rounded-0">
           <div class="card-header bg-white" id="heading_bewerbung">
             <h3 class="mb-0">
               <a class="text-body" role="button" data-toggle="collapse" data-target="#collapse_bewerbung" aria-expanded="true" aria-controls="collapse_bewerbung" style="cursor: pointer">
@@ -701,29 +770,6 @@
                   <li>Zulassungsvorraussetzungen {{ i }}{{ site.badge_mw_imma }}</li>
                   {% endfor %}
                 </ul>
-                <h4>Wichtige Termine{{ site.badge_mw_imma }}</h4>
-                <p>
-                  {% if page.stg_kurz_abschluss_kurz == "AR-B" %}
-                  {{ site.begin_arb }}
-                  {% elsif page.stg_kurz_abschluss_kurz == "DS-B"%}
-                  {{ site.begin_dsb }}
-                  {% else %}
-                  {% assign begin = page.studien_begin | join: " " %}
-                  {% if begin == "Sommersemester" %}
-                  {{ site.begin_sose }}
-                  {% elsif begin == "Wintersemester" %}
-                  {{ site.begin_wise }}
-                  {% else  %}
-                  {{ site.begin_sose_wise }}
-                  {% endif %}
-                  {% endif %}
-                  <br>
-                  Die Bewerbung erfolgt ausschließlich online unter <a href="https://www.hm.edu/{{ page.abschluss | downcase }}-bewerbung" target="
-                  ">www.hm.edu/{{ page.abschluss | downcase }}-bewerbung</a>
-                  {% if page.stg_kurz_abschluss_kurz == "DS-B" %}
-                  {{ site.begin_arb_zusatz }}
-                  {% endif %}
-                </p>
 
                 <h4>Zusätzliche Informationen{{ site.badge_mw_imma }}</h4>
                 <h5>Informationen zur Immatrikulation{{ site.badge_mw_imma }}</h5>

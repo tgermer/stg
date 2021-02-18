@@ -75,8 +75,8 @@ title: Studiengangebot (STG)
       <!-- </div> -->
       <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
       <p class="h6 mt-4">Studienbeginn</p>
-      <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".sommersemester" disabled>Start im Sommersemester</button>
-      <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".wintersemester" disabled>Start im Wintersemester</button>
+      <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".sommersemester" >Start im Sommersemester</button>
+      <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".wintersemester" >Start im Wintersemester</button>
       <!-- </div> -->
       <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
       <p class="h6 mt-4">Studienrichtung</p>
@@ -191,6 +191,17 @@ title: Studiengangebot (STG)
         {% if stg.rsem_tz	!= "0" %}teilzeit{% endif %}
         {% if stg.rsem_vz != "0" %}vollzeit{% endif %}
         {% if stg.fachrich contains "eiterbild" %}weiterbildend{% endif %}
+
+        {% if stg.aaspf_echt == "B" or stg.aaspf_echt == "M" %}
+        {% if site.stg_begin_sose contains stg.stg_kurz %}
+          sommersemester
+        {% elsif site.stg_begin_wise contains stg.stg_kurz %}
+          wntersemester
+        {% else %}
+          sommersemester wintersemester
+        {% endif %}
+        {% elsif stg.aaspf_echt == "Z" %}
+        {% endif %}
       ">
         <div class="card mb-3 rounded-0">
           <div class="row no-gutters">
