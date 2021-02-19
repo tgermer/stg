@@ -357,16 +357,47 @@
       </div>
 
       <!-- Studienrichtung und Studienschwerpunk -->
-      {% assign studienrichtung_vz = page.studienrichtung_vz | split: ";" %}
-
-      {% if page.schwerpunkt_vz == "" %}
-        {% assign schwerpunkt_vz = page.schwerpunkt_tz | split: ";" %}
+      {% if page.studienrichtung_vz != "" %}
+        {% assign studienrichtung = page.studienrichtung_vz | split: ";" %}
+      {% elsif page.studienrichtung_tz != "" %}
+        {% assign studienrichtung = page.studienrichtung_tz | split: ";" %}
+      {% elsif page.studienrichtung_dual != "" %}
+        {% assign studienrichtung = page.studienrichtung_dual | split: ";" %}
       {% else %}
-        {% assign schwerpunkt_vz = page.schwerpunkt_vz | split: ";" %}
+        {% assign studienrichtung = '-' %}
       {% endif %}
 
+      {% if page.schwerpunkt_vz != "" %}
+        {% assign schwerpunkt = page.schwerpunkt_vz | split: ";" %}
+      {% elsif page.schwerpunkt_tz != "" %}
+        {% assign schwerpunkt = page.schwerpunkt_tz | split: ";" %}
+      {% elsif page.schwerpunkt_dual != "" %}
+        {% assign schwerpunkt = page.schwerpunkt_dual | split: ";" %}
+      {% else %}
+        {% assign schwerpunkt = '-' %}
+      {% endif %}
+
+      {% if studienrichtung != '-' %}
+        {% assign richtungschwerpunkt = studienrichtung %}
+      {% elsif schwerpunkt != '-' %}
+        {% assign richtungschwerpunkt = schwerpunkt %}
+      {% endif %}
+
+
       <div class="row my-4">
-        {% if page.schwerpunkt_vz == "" or page.studienrichtung_vz == "" %}
+        <div class="col-md-12 my-2 d-none">
+          <b>Studienrichtungen: </b>{{ studienrichtung }}
+          <hr>
+          <b>Schwerpunkte: </b>{{ schwerpunkt }}
+          <hr>
+          <b>Schwerpunkte VZ: </b>{{ page.schwerpunkt_vz }}
+          <br><b>Schwerpunkte TZ: </b>{{ page.schwerpunkt_tz }}
+          <br><b>Schwerpunkte Dual: </b>{{ page.schwerpunkt_dual }}
+          <br><b>Richtungen VZ: </b>{{ page.studienrichtung_vz }}
+          <br><b>Richtungen TZ: </b>{{ page.studienrichtung_tz }}
+          <br><b>Richtungen Dual: </b>{{ page.studienrichtung_dual }}
+        </div>
+        {% if richtungschwerpunkt == nil %}
         <div class="col-md-12 my-2">
           <h2>Kurzbeschreibung{{ site.badge_mw_fk }}</h2>
           {{ teaser | markdownify }}
@@ -377,20 +408,22 @@
           {{ teaser | markdownify }}
         </div>
         <div class="col-md-6 my-2">
-          {% if page.schwerpunkt_vz != "" %}
+          {% if schwerpunkt != "-" %}
           <h2>Studienschwerpunkte{{ site.badge_p }}</h2>
           <ul>
-            {% assign items = schwerpunkt_vz | sort %}
+            {% assign items = schwerpunkt | sort %}
             {% for item in items %}
             <li>{{ item }}</li>
             {% endfor %}
           </ul>
-          <p>Sie müssen im laufe Ihres Studiums {{ page.anz_sp_vz }}{{ site.badge_p }} Studienschwerpunkte aus den angebotenen {{ schwerpunkt_vz.size }} Studienschwerpunkten belegen.</p>
+          {% if page.anz_sp_vz != "0" %}
+            <p>Sie müssen im laufe Ihres Studiums {{ page.anz_sp_vz }}{{ site.badge_p }} Studienschwerpunkte aus den angebotenen {{ schwerpunkt_vz.size }} Studienschwerpunkten belegen.</p>
+            {% endif %}
           {% endif %}
-          {% if page.studienrichtung_vz != "" %}
+          {% if studienrichtung != "-" %}
           <h2>Studienrichtungen{{ site.badge_p }}</h2>
           <ul>
-            {% assign items = studienrichtung_vz | sort %}
+            {% assign items = studienrichtung | sort %}
             {% for item in items %}
             <li>{{ item }}</li>
             {% endfor %}
@@ -437,17 +470,25 @@
           <div id="collapse_studien_verlauf" class="collapse" aria-labelledby="heading_studien_verlauf" data-parent="#accordion_stg_informationen">
             <div class="card-body">
 
-              {% if page.praxis_semester != nil %}
-              <h4>Praxissemester</h4>
-              <p>
-                {% if page.praxis_semester != nil %}
-                Im {{ page.praxis_semester }} Semester muss ein
-                {% if page.praxis_semester_dauer != nil %}
-                {{ page.praxis_semester_dauer }}-wöchiges
-                {% endif %}
-                Praktikum absolviert werden.
-                {% endif %}
-              </p>
+              {% if praxis_vz_dauer != nil %}
+                <h4>Praxissemester{{ site.badge_p }}</h4>
+                <p>
+                  {% if praxis_vz_dauer != 0 %}
+                  Im {{ praxis_vz_semester }}.&nbsp;Semester muss ein {% if praxis_vz_dauer != nil %}{{ praxis_vz_dauer }}{% else %}???{% endif %}-wöchiges Praktikum absolviert werden.
+                  {% else %}
+                  Im {{ praxis_vz_semester }}.&nbsp;Semester muss ein Praktikum absolviert werden.
+                  {% endif %}
+                </p>
+              {% endif %}
+
+              {% if page.aaspf_echt == "B" %}
+                <h4>Allgemeinwissenschaftliche Wahlpflichtfächer <span class="text-muted">AW-Fächer</span>{{ site.badge_ }}</h4>
+                <p>
+                  Jeder Bachelor-Studiengang sieht 2 Pflicht-AW-Fächer vor.
+                </p>
+                <p><a href="https://www.gs.hm.edu/mein_studium/awfachbelegung/Index.de.html" target="_blank">Weitere Informationen zu AW-Fächern und Volesungsverzeichnis</a>
+                </p>
+                <p class="text-muted">Weiterhin besteht die Möglichkeit AW-Fächer freiwillig (<abbr title="Freiwillige Allgemeinwissenschaftliche Wahlpflichtfächer">FAW-Fächer</abbr>) zu belegen. Das Prüfungsergebnis geht dabei nicht in die Abschlussnote ein.</p>
               {% endif %}
 
               {{ page.studien_verlauf | markdownify }}
@@ -517,7 +558,7 @@
               <table class="table table-sm">
                 <thead>
                   <tr>
-                    <th scope="col">Modul/Fach{% if page.studienrichtung_vz != "" or page.schwerpunkt_vz != "" %}{% else %}<span class="float-right"><small>Semester</small></span>{% endif %}</th>
+                    <th scope="col">Modul/Fach{% if page.studienrichtung_tz != "" or page.schwerpunkt_tz != "" %}{% else %}<span class="float-right"><small>Semester</small></span>{% endif %}</th>
                     {% if page.studienrichtung_tz != "" or page.schwerpunkt_tz != "" %}
                     <th scope="col">Studienrichtung/&#8203;Schwerpunk<span class="float-right"><small>Semester</small></span></th>
                     {% endif %}
@@ -564,13 +605,13 @@
             <table class="table table-sm">
               <thead>
                 <tr>
-                  <th scope="col">Modul/Fach{% if page.studienrichtung_vz != "" or page.schwerpunkt_vz != "" %}{% else %}<span class="float-right"><small>Semester</small></span>{% endif %}</th>
-                  {% if page.studienrichtung_tz != "" or page.schwerpunkt_tz != "" %}
+                  <th scope="col">Modul/Fach{% if page.studienrichtung_dual != "" or page.schwerpunkt_dual != "" %}{% else %}<span class="float-right"><small>Semester</small></span>{% endif %}</th>
+                  {% if page.studienrichtung_dual != "" or page.schwerpunkt_dual != "" %}
                   <th scope="col">Studienrichtung/&#8203;Schwerpunk<span class="float-right"><small>Semester</small></span></th>
                   {% endif %}
                   {% for i in (1..page.rsem_dual) %}
                   <th scope="col" {% if i == praxis_vz_semester %} class="table-warning text-center" {% elsif i == page.auslands_semester_semester %} class="table-info text-center" {% else %}class="text-center" {% endif %}>
-                    {% if i == praxis_vz_semester %} <small>Praxissemester</small><br> {% endif %}{% if i == page.auslands_semester_semester %} <small>empfohlenes Auslandssemester</small><br> {% endif %}{{ i }}
+                    {% if i == praxis_dual_semester %} <small>Praxissemester</small><br> {% endif %}{% if i == page.auslands_semester_semester %} <small>empfohlenes Auslandssemester</small><br> {% endif %}{{ i }}
                   </th>
                   {% endfor %}
                 </tr>
@@ -1160,7 +1201,7 @@
                 <div id="pruefungsamt" class="col-md-6">
                   <h3>Prüfung und Praktikum{{ site.badge_mw_ber }}</h3>
                   <p class="">
-                    Sie studieren {% if page.aaspf_echt != "Z" %}den Studiengang{% else %}das Zertifikat{% endif %} {{ page.fachrich | upcase }} ({{ page.grade_kurz | upcase }}) schon und haben Fragen zu Prüfungen oder Praktikum? Dann nutzen Sie bitte die Seite <a href="https://www.hm.edu/pruefung-praktikum"
+                    Sie studieren {% if page.aaspf_echt != "Z" %}den Studiengang{% else %}das Zertifikat{% endif %} {{ page.fachrich | upcase }}{% if page.titelkz_m_vz != "" %}&nbsp;(<abbr title="{{ page.titel_m_vz }}">{{ page.titelkz_m_vz }}</abbr>){% else %}{% endif %} schon und haben Fragen zu Prüfungen oder Praktikum? Dann nutzen Sie bitte die Seite <a href="https://www.hm.edu/pruefung-praktikum"
                       target="_blank">www.hm.edu/pruefung-praktikum</a>
                   </p>
                 </div>
