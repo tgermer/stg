@@ -123,11 +123,11 @@ Dazu haben wir zur besseren „Validierung“ einen Prototypen gebaut, welchen w
 
 Damit Sie sich einen ersten Eindruck von unserem Prototyp machen können, gebe ich Ihnen die Möglichkeit diesen schon vorweg zu begutachten. Wir haben zu Testzwecken die drei Studiengängen Architektur Bachelor, Betriebswirtschaft Bachelor und Wirtschaftsingenieurwesen (Weiterbildung)-Master (MBA & Eng.) eingebunden.
 
-*   [Betriebswirtschaftslehre BACHELOR (B.A.)]({{site.url}}/stg/betriebswirtschaftslehre-bachelor/)
-*   [Architektur BACHELOR (B.A.)]({{site.url}}/stg/architektur-bachelor/)
-*   [Wirtschaftsingenieurwesen (Weiterbildung) MASTER (MBA & Eng.)]({{site.url}}/stg/wirtschaftsingenieurwesen-weiterbildung-master/)
-*   [Bahntechnik - Antrieb, Bremse, Fahrdynamik ZERTIFIKAT (Hochschulzertifikat)]({{site.url}}/stg/bahntechnik-antrieb-bremse-fahrdynamik-hochschulzertifikat/)
-*   [Fahrzeugakustik ZERTIFIKAT (Hochschulzertifikat)]({{site.url}}/stg/fahrzeugakustik-modulstudium-aus-ingenierakustik-hochschulzertifikat/)
+*   [Betriebswirtschaftslehre BACHELOR (B.A.)]({{site.url}}/stg/bw-b/)
+*   [Architektur BACHELOR (B.A.)]({{site.url}}/stg/ar-b/)
+*   [Wirtschaftsingenieurwesen (Weiterbildung) MASTER (MBA & Eng.)]({{site.url}}/stg/ww-m/)
+*   [Bahntechnik - Antrieb, Bremse, Fahrdynamik ZERTIFIKAT (Hochschulzertifikat)]({{site.url}}/stg/bt-z/)
+<!-- *   [Fahrzeugakustik ZERTIFIKAT (Hochschulzertifikat)]({{site.url}}/stg//) -->
 
 
 *   [Studiengänge vergleichen (Merkliste))]({{site.url}}/vergleichen.html)
@@ -140,10 +140,13 @@ Damit Sie sich einen ersten Eindruck von unserem Prototyp machen können, gebe i
 
 Wir haben den Button `Datensatzherkunf anzeigen` sowohl oben rechts als auch unten hinzugefügt, um zu zeigen, wo unserer Meinung nach die Daten herkommen.
 
-{{ site.badge_p }} PRIMUSS = PRIMUSS
+{{ site.badge_p }} PRIMUSS = Daten kommen aus PRIMUSS
 
-{{ site.badge_cms }} CMS = Content Management System, das heißt, diese müssten von der Fakultät gepflegt werden.
+{{ site.badge_mw_imm }} MW-Imma = Wird von der Immatrikulation in der Middleware gepflegt
 
+{{ site.badge_mw_fk }} MW-Fakultät = Wird von der Immatrikulation in der Middleware gepflegt
+
+{{ site.badge_mw_ber }} MW-ST-Beratung = Wird von der Studienberatung in der Middleware gepflegt
 
 **Studiengang merken**
 
