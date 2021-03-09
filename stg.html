@@ -237,8 +237,13 @@ title: Studiengangebot (STG)
                   </small>
                   <span class="float-right text-muted"><small>FK{{ stg.nummer }}</small></span>
                 </p>
-                <h5 class="card-title hyphens"><small>{{ stg.text | upcase }}{% if stg.titelkz_m_vz != "" %}&nbsp;({{ stg.titelkz_m_vz }}){% else %}{% endif %}</small><br>{{ stg.fachrich }}</h5>
+                <h5 class="card-title hyphens mb-0"><small>{{ stg.text | upcase }}{% if stg.titelkz_m_vz != "" %}&nbsp;({{ stg.titelkz_m_vz }}){% else %}{% endif %}</small><br>{{ stg.fachrich }}</h5>
                 <!-- <p class="card-text">{{ stg._name }}</p> -->
+                {% if stg.bew_str_de != "" or stgbew_sp_de != "" %}
+                  <p class="card-text">
+                    {{ stg.bew_str_de | replace: "#", ", " }}{{ stg.bew_sp_de | replace: "#", ", " }}{{ site.badge_p }}
+                  </p>
+                {% endif %}
                 <a href="{{ stg.dateiname | datapage_url: 'stg' }}" class="btn rounded-0 btn-sm btn-outline-dark stretched-link">Studiengangsdetails aufrufen</a>
               </div>
             </div>
