@@ -104,6 +104,8 @@ title: Studiengangebot (STG)
       <p class="h6 mt-4 underline">Sonstiges</p>
       <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".mint">MINT</button>
       <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".dosv"><abbr title="Dialogorientiertes Serviceverfahren durch Hochschulstart">DoSV</abbr></button>
+      <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".bewStr"><abbr title="Bewerbung auf bestimmte Studienrichtung">Bewerbung auf Studienrichtung</abbr></button>
+      <button type="button" class="btn rounded-0 my-1 btn-sm btn-outline-dark" data-toggle=".bewSp"><abbr title="Bewerbung auf bestimmten Studienschwerpunkt">Bewerbung auf Studienschwerpunkt</abbr></button>
       <!-- </div> -->
       <!-- <div class="col-xl-3 co-md-4 col-sm-6"> -->
       <p class="h6 mt-4 underline">Fakultät</p>
@@ -163,6 +165,12 @@ title: Studiengangebot (STG)
         fk{{ stg.nummer }}
         {{ stg.text | downcase }}
         {{ stg.studien_begin | join: " " | downcase }}
+        {% if stg.bew_str_de != ""%}
+          bewStr
+        {% endif %}
+        {% if stg.bew_sp_de != "" %}
+          bewSp
+        {% endif %}
         {% if stg.mint == "X" %}
           mint
         {% endif %}
@@ -239,7 +247,7 @@ title: Studiengangebot (STG)
                 </p>
                 <h5 class="card-title hyphens mb-0"><small>{{ stg.text | upcase }}{% if stg.titelkz_m_vz != "" %}&nbsp;({{ stg.titelkz_m_vz }}){% else %}{% endif %}</small><br>{{ stg.fachrich }}</h5>
                 <!-- <p class="card-text">{{ stg._name }}</p> -->
-                {% if stg.bew_str_de != "" or stgbew_sp_de != "" %}
+                {% if stg.bew_str_de != "" or stg.bew_sp_de != "" %}
                   <p class="card-text">
                     {{ stg.bew_str_de | replace: "#", ", " }}{{ stg.bew_sp_de | replace: "#", ", " }}{{ site.badge_p }}
                   </p>
