@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixe d-top py-3">
 		<div class="container">
-			<a class="navbar-brand" href="{{ site.url }}/"><img src="{{ site.url }}{{ site.logo }}" height="50" alt="" loading="lazy" class="mr-3">{{ site.tit le }}</a>
+			<a class="navbar-brand" href="/"><img src="{{ site.logo }}" height="50" alt="" loading="lazy" class="mr-3">{{ site.tit le }}</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -8,40 +8,40 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 
-					<li class="nav-item {% if page.url == "/einfuehrung.html" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/einfuehrung.html">Einführung</a>
+					<li class="nav-item {% if page.url == "/einfuehrung.html" %}active{% endif %}"><a class="nav-link" href="/einfuehrung.html">Einführung</a>
 					</li>
-					<li class="nav-item {% if page.url == "/stg.html" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/stg.html">Studienangebote</a>
+					<li class="nav-item {% if page.url == "/stg.html" %}active{% endif %}"><a class="nav-link" href="/stg.html">Studienangebote</a>
 					</li>
 
 					<!-- <li class="nav-item dropdown {% if page.url == "/stg.html" %}active{% endif %}">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Studienangebote (STG)</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item {% if page.url == "/stg.html" %}active{% endif %}" href="{{ site.url }}/stg.html">Übersicht</a>
+							<a class="dropdown-item {% if page.url == "/stg.html" %}active{% endif %}" href="/stg.html">Übersicht</a>
 							{% for item in site.data.stg %}
 							<a class="dropdown-item {% if page.url == "{{ item.dateiname | datapage_url: 'stg' }}" %}active{% endif %}" href="{{ item.dateiname | datapage_url: 'stg' }}">{{ item.fachrich }} ({{ item.grade_kurz }})</a>
 							{% endfor %}
 					</li> -->
 
-					<li class="nav-item {% if page.url == "/vergleichen.html" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/vergleichen.html">Vergleichen (Merkliste)</a>
+					<li class="nav-item {% if page.url == "/vergleichen.html" %}active{% endif %}"><a class="nav-link" href="/vergleichen.html">Vergleichen (Merkliste)</a>
 					</li>
 
-					<!-- <li class="nav-item {% if page.url == "/stg.html" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/stg.html">Studienangebote (STG)</a>
+					<!-- <li class="nav-item {% if page.url == "/stg.html" %}active{% endif %}"><a class="nav-link" href="/stg.html">Studienangebote (STG)</a>
 					</li> -->
 
-					<!-- <li class="nav-item {% if page.url == "/studienangebot.html" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/studienangebot.html">Studienangebote</a>
+					<!-- <li class="nav-item {% if page.url == "/studienangebot.html" %}active{% endif %}"><a class="nav-link" href="/studienangebot.html">Studienangebote</a>
 					</li> -->
 
-					<!-- <li class="nav-item {% if page.url == "/thema/" %}active{% endif %}"><a class="nav-link" href="{{ site.url }}/thema">{{ site.slogan }}</a>
+					<!-- <li class="nav-item {% if page.url == "/thema/" %}active{% endif %}"><a class="nav-link" href="/thema">{{ site.slogan }}</a>
 					</li> -->
 					<li class="nav-item dropdown {% if page.dir contains "/tabellen/" %}active{% endif %}">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tabellen</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item {% if page.url == "/tabellen/3478_fachrichtung/" %}active{% endif %}" href="{{ site.url }}/tabellen/3478_fachrichtung">#3478 Fachrichtung</a>
-							<a class="dropdown-item {% if page.url == "/tabellen/3739_modulkatalog/" %}active{% endif %}" href="{{ site.url }}/tabellen/3739_modulkatalog">#3739 Modulkatalog</a>
-							<a class="dropdown-item {% if page.url == "/tabellen/3517_gebuehren/" %}active{% endif %}" href="{{ site.url }}/tabellen/3517_gebuehren">#3517 Gebühren</a>
-							<a class="dropdown-item {% if page.url == "/tabellen/extra/" %}active{% endif %}" href="{{ site.url }}/tabellen/extra">Extra (Middleware)</a>
-							<a class="dropdown-item {% if page.url == "/tabellen/3677_aw_hauptkatalog/" %}active{% endif %}" href="{{ site.url }}/tabellen/3677_aw_hauptkatalog">#3677 AW Hauptkatalog</a>
-							<a class="dropdown-item {% if page.url == "/tabellen/3676_aw_faecherkatalog_panm/" %}active{% endif %}" href="{{ site.url }}/tabellen/3676_aw_faecherkatalog_panm">#3676 AW Fächerkatalog PANM</a>
+							<a class="dropdown-item {% if page.url == "/tabellen/3478_fachrichtung/" %}active{% endif %}" href="/tabellen/3478_fachrichtung">#3478 Fachrichtung</a>
+							<a class="dropdown-item {% if page.url == "/tabellen/3739_modulkatalog/" %}active{% endif %}" href="/tabellen/3739_modulkatalog">#3739 Modulkatalog</a>
+							<a class="dropdown-item {% if page.url == "/tabellen/3517_gebuehren/" %}active{% endif %}" href="/tabellen/3517_gebuehren">#3517 Gebühren</a>
+							<a class="dropdown-item {% if page.url == "/tabellen/extra/" %}active{% endif %}" href="/tabellen/extra">Extra (Middleware)</a>
+							<a class="dropdown-item {% if page.url == "/tabellen/3677_aw_hauptkatalog/" %}active{% endif %}" href="/tabellen/3677_aw_hauptkatalog">#3677 AW Hauptkatalog</a>
+							<a class="dropdown-item {% if page.url == "/tabellen/3676_aw_faecherkatalog_panm/" %}active{% endif %}" href="/tabellen/3676_aw_faecherkatalog_panm">#3676 AW Fächerkatalog PANM</a>
 						</div>
 					</li>
 				</ul>

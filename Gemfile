@@ -9,3 +9,4 @@ gem 'jekyll-sitemap'
 # gem "jekyll-pdf", :git => 'https://github.com/jekyll-pdf/jekyll-pdf.git', branch: 'master'
 
 gem "jekyll", "~> 4.0"
+gem "webrick"

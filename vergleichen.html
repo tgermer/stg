@@ -14,7 +14,7 @@ title: Studiengänge vergleichen (Merkliste)
         <th scope="col" width="25%" style="min-width:250px">{{ site.badge_p }}</th>
         {% for item in site.data.stg %}
         <th scope="col" width="25%" style="min-width:250px">
-          <a href="{{ site.url }}/stg/{{ item.dateiname }}" class="">
+          <a href="/stg/{{ item.dateiname | downcase }}" class="">
             {{ item.fachrich }} ({{ item.grade_kurz | replace: " ", "&nbsp;" }})
           </a>
           <br><small>{{ item.fachriche }}</small>
@@ -280,7 +280,7 @@ title: Studiengänge vergleichen (Merkliste)
       <tr>
         <th scope="row" class="text-uppercase"></th>
         {% for item in site.data.stg %}
-        <td><a href="{{ site.url }}/stg/{{ item.dateiname }}" class="">
+        <td><a href="/stg/{{ item.dateiname }}" class="">
             Studiengang im Detail anzeigen
           </a></td>
         {% endfor %}

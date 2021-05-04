@@ -1,4 +1,4 @@
-- fachrich: Betriebswirtschaftslehre
+- fachrich: Betriebswirtschaft
   fachriche: Business Administration
   stg_kurz: &stg_kurz BW
   abschluss: Bachelor
@@ -6,7 +6,7 @@
   grade: Bachelor of Arts
   grade_kurz: B.A.
   stg_kurz_abschluss_kurz: BW-B #[*stg_kurz, '-', *abschluss_kurz]
-  dateiname: Betriebswirtschaftslehre-Bachelor
+  dateiname: Betriebswirtschaft-Bachelor
   bewerbung_bis: 27.07.2020 23:59:00
   # bewerbung_bis: 2020-07-28 23:59:00 GMT+0200 (CEST)
   dosv: true

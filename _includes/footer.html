@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-3 col-sm-6">
           <p class="mt-1">
-            <img src="{{ site.url }}{{ site.logo }}" alt="{{ site.title }}" class="img-responsive" style="max-widt h:150px" role="image">
+            <img src="{{ site.logo }}" alt="{{ site.title }}" class="img-responsive" style="max-widt h:150px" role="image">
           </p>
           <p>&copy; 2014–{{ "now" | date: "%Y" }}</p>
           <p>
@@ -21,7 +21,7 @@
         <div class="col-md-3 col-sm-6" id="footer">
           <h4>Navigation</h4>
           {% for item in site.data.navigation %}
-          <a href="{{ site.url }}{{ item.link }}">{{ item.name }}</a>
+          <a href="{{ item.link }}">{{ item.name }}</a>
           <br>
           {% endfor %}
         </div>
@@ -36,7 +36,7 @@
           </p>
           <!-- <p>Eine Informations­veranstaltung der
             <br>
-            <a href="https://www.hm.edu" target="_blank"><img src="{{ site.url }}{{ site.logo_nav }}" class="img-responsive" alt="Hochschule München" title="Hochschule München" style="max-width:150px; margin: 0 auto">
+            <a href="https://www.hm.edu" target="_blank"><img src="{{ site.logo_nav }}" class="img-responsive" alt="Hochschule München" title="Hochschule München" style="max-width:150px; margin: 0 auto">
             </a>
           </p> -->
         </div>
@@ -82,20 +82,20 @@
 <!-- Parse, validate, manipulate, and display dates and times in JavaScript. -->
 <!-- https://momentjs.com/ -->
 <!-- https://t3n.de/news/momentjs-zeitberechnungen-mint-javascript-562592/ -->
-<script src="{{ site.url }}/assets/js/moment.js" type="text/javascript"></script>
+<script src="/assets/js/moment.js" type="text/javascript"></script>
 <script>
   moment.locale('de');
 </script>
 
-<!-- <script src="{{ site.url }}/assets/js/cardHoverShadow.js" type="text/javascript"></script> -->
+<!-- <script src="/assets/js/cardHoverShadow.js" type="text/javascript"></script> -->
 
-<script src="{{ site.url }}/assets/js/openCloseAll.js" type="text/javascript"></script>
-<script src="{{ site.url }}/assets/js/badgesData.js" type="text/javascript"></script>
+<script src="/assets/js/openCloseAll.js" type="text/javascript"></script>
+<script src="/assets/js/badgesData.js" type="text/javascript"></script>
 
-<script src="{{ site.url }}/assets/js/saveStg.js" type="text/javascript"></script>
+<script src="/assets/js/saveStg.js" type="text/javascript"></script>
 
 <!-- Filter mit MixItUp https://www.kunkalabs.com/mixitup/docs/get-started/ -->
-<script src="{{ site.url }}/assets/js/mixitup.min.js" type="text/javascript"></script>
+<script src="/assets/js/mixitup.min.js" type="text/javascript"></script>
 
 <!-- <script>
   var containerEl = document.querySelector('.mix-studienangebot');
