@@ -38,13 +38,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -66,7 +66,7 @@
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_AOB_214_SPO.pdf'
     mint: X
-    dosv: ""
+    dosv: X
 -
     nummer: '11'
     stg: AP
@@ -107,11 +107,11 @@
     statdat: ""
     zuordnung: ""
     berufsbegleitend: N
-    sem: ""
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -176,13 +176,13 @@
     statdat: AD
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -245,11 +245,11 @@
     statdat: AD
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -314,13 +314,13 @@
     statdat: WW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: X
+    sem: '121'
+    erst_sem: ""
     hoeheres_sem: X
-    start_1: 12/1/20
-    end_1: 1/15/21
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: ""
+    end_1: ""
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -342,7 +342,7 @@
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/09_AUB_218_SPO.pdf'
     mint: X
-    dosv: X
+    dosv: ""
 -
     nummer: '13'
     stg: AW
@@ -383,7 +383,7 @@
     statdat: ""
     zuordnung: ""
     berufsbegleitend: N
-    sem: ""
+    sem: '121'
     erst_sem: ""
     hoeheres_sem: ""
     start_1: ""
@@ -452,13 +452,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -480,7 +480,7 @@
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/02_BIB_319B_SPO.pdf'
     mint: X
-    dosv: ""
+    dosv: X
 -
     nummer: '02'
     stg: BI
@@ -590,11 +590,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -659,13 +659,13 @@
     statdat: BW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -683,11 +683,11 @@
     schwerpunkt_vz: ""
     schwerpunkt_tz: ""
     schwerpunkt_dual: ""
-    po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_BOB_216_SPO.pdf'
+    po_url_vz: 'https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/06_bob_aktuell_spo.pdf'
     po_url_tz: ""
     po_url_dual: ""
     mint: X
-    dosv: ""
+    dosv: X
 -
     nummer: '06'
     stg: BO
@@ -797,13 +797,13 @@
     statdat: WW
     zuordnung: W
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: ""
-    end_h: ""
+    start_1: 5/2/21
+    end_1: 6/15/21
+    start_h: 5/2/21
+    end_h: 6/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -821,7 +821,7 @@
     schwerpunkt_vz: ""
     schwerpunkt_tz: ""
     schwerpunkt_dual: ""
-    po_url_vz: ""
+    po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/10_BSM_220_SPO.pdf'
     po_url_tz: ""
     po_url_dual: ""
     mint: ""
@@ -866,11 +866,11 @@
     statdat: IW
     zuordnung: ""
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -935,13 +935,13 @@
     statdat: WW
     zuordnung: W
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: 12/1/20
-    end_1: 1/15/21
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -1004,11 +1004,11 @@
     statdat: WW
     zuordnung: W
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 5/31/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -1142,13 +1142,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -1170,7 +1170,7 @@
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_CHB_219_SPO.pdf'
     mint: X
-    dosv: ""
+    dosv: X
 -
     nummer: '07'
     stg: DC
@@ -1211,13 +1211,13 @@
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -1236,6 +1236,75 @@
     schwerpunkt_tz: ""
     schwerpunkt_dual: ""
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_DCB_220_SPO.pdf'
+    po_url_tz: ""
+    po_url_dual: ""
+    mint: X
+    dosv: X
+-
+    nummer: '21'
+    stg: DE
+    aaspf_echt: B
+    text: Bachelor
+    fachrich: 'Digital Engineering'
+    fachriche: 'Digital Engineering'
+    dateiname: 'Digital Engineering Bachelor'
+    stg_kurz: DE-B
+    stgart: '184'
+    name: 'Erststudium Bachelor an Fachhochschulen'
+    teilzeit: '1'
+    rsem_vz: '7'
+    rsem_tz: '0'
+    rsem_dual: '0'
+    wie: Vollzeit
+    pvers_vz: ""
+    pvers_tz: '-'
+    pvers_dual: '-'
+    ects_vz: ""
+    ects_tz: '0'
+    ects_dual: '0'
+    titelkz_m_vz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: ""
+    titel_m_dual: ""
+    titelkz_w_vz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: ""
+    titel_w_tz: ""
+    titelkz_w_dual: ""
+    titel_w_dual: ""
+    praxis_vz: ""
+    praxis_tz: ""
+    praxis_dual: ""
+    statdat: IM
+    zuordnung: T
+    berufsbegleitend: N
+    sem: '121'
+    erst_sem: ""
+    hoeheres_sem: ""
+    start_1: ""
+    end_1: ""
+    start_h: ""
+    end_h: ""
+    vorpraxis: ""
+    bew_str_de: ""
+    bew_str_en: ""
+    bew_sp_de: ""
+    bew_sp_en: ""
+    akkreditiert_von: ""
+    akkreditiert_bis: ""
+    akkreditiert_agentur: ""
+    anz_sp_vz: ""
+    anz_sp_tz: '0'
+    anz_sp_dual: '0'
+    studienrichtung_vz: ""
+    studienrichtung_tz: ""
+    studienrichtung_dual: ""
+    schwerpunkt_vz: ""
+    schwerpunkt_tz: ""
+    schwerpunkt_dual: ""
+    po_url_vz: ""
     po_url_tz: ""
     po_url_dual: ""
     mint: X
@@ -1349,13 +1418,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -1418,13 +1487,13 @@
     statdat: AD
     zuordnung: G
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
+    start_h: 5/2/21
+    end_h: 6/15/21
     vorpraxis: ""
     bew_str_de: 'Kommunikationsdesign#Industrie Design#Foto Design'
     bew_str_en: '##'
@@ -1487,11 +1556,11 @@
     statdat: AD
     zuordnung: G
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: ""
+    end_1: ""
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -1556,11 +1625,11 @@
     statdat: WW
     zuordnung: W
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -1694,13 +1763,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: 12/1/20
-    end_1: 1/15/21
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -1763,11 +1832,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -1832,13 +1901,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: 12/1/20
-    end_1: 3/3/21
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -1901,13 +1970,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: 12/1/20
-    end_1: 1/15/21
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -2039,11 +2108,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -2108,11 +2177,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -2177,11 +2246,11 @@
     statdat: ""
     zuordnung: ""
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 2/15/21
+    start_1: 5/2/21
+    end_1: 8/31/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -2228,31 +2297,31 @@
     ects_vz: '210'
     ects_tz: '0'
     ects_dual: '210'
-    titelkz_m_vz: ""
-    titel_m_vz: ""
+    titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
     titel_m_tz: ""
-    titelkz_m_dual: ""
-    titel_m_dual: ""
-    titelkz_w_vz: ""
-    titel_w_vz: ""
+    titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
+    titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
     titel_w_tz: ""
-    titelkz_w_dual: ""
-    titel_w_dual: ""
+    titelkz_w_dual: B.Eng.
+    titel_w_dual: 'Bachelor of Engineering'
     praxis_vz: '---#0#|---#0#|Praxissemester#6#18'
     praxis_tz: ""
     praxis_dual: '---#0#|---#0#|Praxissemester#6#18'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -2315,11 +2384,11 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -2435,31 +2504,31 @@
     ects_vz: '210'
     ects_tz: '0'
     ects_dual: '210'
-    titelkz_m_vz: ""
-    titel_m_vz: ""
+    titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
     titel_m_tz: ""
-    titelkz_m_dual: ""
-    titel_m_dual: ""
-    titelkz_w_vz: ""
-    titel_w_vz: ""
+    titelkz_m_dual: B.Eng.
+    titel_m_dual: 'Bachelor of Engineering'
+    titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
     titel_w_tz: ""
-    titelkz_w_dual: ""
-    titel_w_dual: ""
+    titelkz_w_dual: B.Eng.
+    titel_w_dual: 'Bachelor of Engineering'
     praxis_vz: '---#0#|---#0#|Praxissemester#5#18'
     praxis_tz: ""
     praxis_dual: '---#0#|---#0#|Praxissemester#5#18'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -2481,7 +2550,7 @@
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/08_GNB_220_SPO.pdf'
     mint: X
-    dosv: ""
+    dosv: X
 -
     nummer: '08'
     stg: GO
@@ -2573,29 +2642,29 @@
     ects_vz: '90'
     ects_tz: '90'
     ects_dual: '90'
-    titelkz_m_vz: ""
-    titel_m_vz: ""
-    titelkz_m_tz: ""
-    titel_m_tz: ""
-    titelkz_m_dual: ""
-    titel_m_dual: ""
-    titelkz_w_vz: ""
-    titel_w_vz: ""
-    titelkz_w_tz: ""
-    titel_w_tz: ""
-    titelkz_w_dual: ""
-    titel_w_dual: ""
+    titelkz_m_vz: M.Eng.
+    titel_m_vz: 'Master of Engineering'
+    titelkz_m_tz: M.Eng.
+    titel_m_tz: 'Master of Engineering'
+    titelkz_m_dual: M.Eng.
+    titel_m_dual: 'Master of Engineering'
+    titelkz_w_vz: M.Eng.
+    titel_w_vz: 'Master of Engineering'
+    titelkz_w_tz: M.Eng.
+    titel_w_tz: 'Master of Engineering'
+    titelkz_w_dual: M.Eng.
+    titel_w_dual: 'Master of Engineering'
     praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: '---#0#|---#0#|---#0#'
     praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -2659,12 +2728,12 @@
     praxis_dual: ""
     statdat: WW
     zuordnung: W
-    berufsbegleitend: N
-    sem: ""
-    erst_sem: ""
+    berufsbegleitend: B
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 5/31/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -2729,11 +2798,11 @@
     statdat: WW
     zuordnung: ""
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 2/23/21
+    start_1: 5/2/21
+    end_1: 8/22/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -2798,11 +2867,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -2826,6 +2895,75 @@
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_GTM_115_SPO.pdf'
     mint: X
+    dosv: ""
+-
+    nummer: '05'
+    stg: GT
+    aaspf_echt: Z
+    text: Zertifikat
+    fachrich: 'Gebäudetechnik (Modulzertifikat)'
+    fachriche: ""
+    dateiname: 'Gebäudetechnik (Modulzertifikat) Zertifikat'
+    stg_kurz: GT-Z
+    stgart: '494'
+    name: 'Ergänzungs-, Erweiterungs- und Zusatzstudium Abschlusszeugnis/Zertifikat'
+    teilzeit: '2'
+    rsem_vz: '0'
+    rsem_tz: '1'
+    rsem_dual: '0'
+    wie: Teilzeit
+    pvers_vz: '-'
+    pvers_tz: ""
+    pvers_dual: '-'
+    ects_vz: '0'
+    ects_tz: ""
+    ects_dual: '0'
+    titelkz_m_vz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: ""
+    titel_m_dual: ""
+    titelkz_w_vz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: ""
+    titel_w_tz: ""
+    titelkz_w_dual: ""
+    titel_w_dual: ""
+    praxis_vz: ""
+    praxis_tz: ""
+    praxis_dual: ""
+    statdat: IW
+    zuordnung: ""
+    berufsbegleitend: N
+    sem: ""
+    erst_sem: ""
+    hoeheres_sem: ""
+    start_1: ""
+    end_1: ""
+    start_h: ""
+    end_h: ""
+    vorpraxis: ""
+    bew_str_de: ""
+    bew_str_en: ""
+    bew_sp_de: ""
+    bew_sp_en: ""
+    akkreditiert_von: ""
+    akkreditiert_bis: ""
+    akkreditiert_agentur: ""
+    anz_sp_vz: '0'
+    anz_sp_tz: ""
+    anz_sp_dual: '0'
+    studienrichtung_vz: ""
+    studienrichtung_tz: ""
+    studienrichtung_dual: ""
+    schwerpunkt_vz: ""
+    schwerpunkt_tz: ""
+    schwerpunkt_dual: ""
+    po_url_vz: ""
+    po_url_tz: ""
+    po_url_dual: ""
+    mint: ""
     dosv: ""
 -
     nummer: '11'
@@ -2867,11 +3005,11 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -3005,7 +3143,7 @@
     statdat: IW
     zuordnung: ""
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
     start_1: ""
@@ -3074,13 +3212,13 @@
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -3102,7 +3240,7 @@
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_IBB_217_SPO.pdf'
     mint: ""
-    dosv: ""
+    dosv: X
 -
     nummer: '07'
     stg: IC
@@ -3143,7 +3281,7 @@
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: ""
     hoeheres_sem: ""
     start_1: ""
@@ -3171,6 +3309,75 @@
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_ICB_217_SPO.pdf'
     mint: X
+    dosv: ""
+-
+    nummer: '21'
+    stg: ID
+    aaspf_echt: B
+    text: Bachelor
+    fachrich: 'Informatik und Design'
+    fachriche: 'Informatics and Design'
+    dateiname: 'Informatik und Design Bachelor'
+    stg_kurz: ID-B
+    stgart: '184'
+    name: 'Erststudium Bachelor an Fachhochschulen'
+    teilzeit: '1'
+    rsem_vz: '7'
+    rsem_tz: '0'
+    rsem_dual: '0'
+    wie: Vollzeit
+    pvers_vz: ""
+    pvers_tz: '-'
+    pvers_dual: '-'
+    ects_vz: ""
+    ects_tz: '0'
+    ects_dual: '0'
+    titelkz_m_vz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: ""
+    titel_m_dual: ""
+    titelkz_w_vz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: ""
+    titel_w_tz: ""
+    titelkz_w_dual: ""
+    titel_w_dual: ""
+    praxis_vz: ""
+    praxis_tz: ""
+    praxis_dual: ""
+    statdat: ""
+    zuordnung: ""
+    berufsbegleitend: N
+    sem: '121'
+    erst_sem: ""
+    hoeheres_sem: ""
+    start_1: ""
+    end_1: ""
+    start_h: ""
+    end_h: ""
+    vorpraxis: ""
+    bew_str_de: ""
+    bew_str_en: ""
+    bew_sp_de: ""
+    bew_sp_en: ""
+    akkreditiert_von: ""
+    akkreditiert_bis: ""
+    akkreditiert_agentur: ""
+    anz_sp_vz: ""
+    anz_sp_tz: '0'
+    anz_sp_dual: '0'
+    studienrichtung_vz: ""
+    studienrichtung_tz: ""
+    studienrichtung_dual: ""
+    schwerpunkt_vz: ""
+    schwerpunkt_tz: ""
+    schwerpunkt_dual: ""
+    po_url_vz: ""
+    po_url_tz: ""
+    po_url_dual: ""
+    mint: ""
     dosv: ""
 -
     nummer: '07'
@@ -3212,13 +3419,13 @@
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -3240,7 +3447,7 @@
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/07_IFB_212_SPO.pdf'
     mint: X
-    dosv: ""
+    dosv: X
 -
     nummer: '07'
     stg: IG
@@ -3281,11 +3488,11 @@
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -3350,11 +3557,11 @@
     statdat: IM
     zuordnung: T
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -3419,11 +3626,11 @@
     statdat: IM
     zuordnung: ""
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 3/2/21
+    start_1: ""
+    end_1: ""
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -3488,11 +3695,11 @@
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -3557,11 +3764,11 @@
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -3626,11 +3833,11 @@
     statdat: IM
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -3746,14 +3953,14 @@
     ects_vz: '210'
     ects_tz: '0'
     ects_dual: '0'
-    titelkz_m_vz: ""
-    titel_m_vz: ""
+    titelkz_m_vz: B.Eng.
+    titel_m_vz: 'Bachelor of Engineering'
     titelkz_m_tz: ""
     titel_m_tz: ""
     titelkz_m_dual: ""
     titel_m_dual: ""
-    titelkz_w_vz: ""
-    titel_w_vz: ""
+    titelkz_w_vz: B.Eng.
+    titel_w_vz: 'Bachelor of Engineering'
     titelkz_w_tz: ""
     titel_w_tz: ""
     titelkz_w_dual: ""
@@ -3764,13 +3971,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -3833,13 +4040,13 @@
     statdat: WW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -3861,7 +4068,7 @@
     po_url_tz: ""
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/09_LMB_219_SPO.pdf'
     mint: ""
-    dosv: ""
+    dosv: X
 -
     nummer: '03'
     stg: LR
@@ -3902,13 +4109,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: 12/1/20
-    end_1: 1/15/21
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -3971,11 +4178,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -4040,13 +4247,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: 12/1/20
-    end_1: 1/15/21
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -4152,37 +4359,37 @@
     teilzeit: '3'
     rsem_vz: '3'
     rsem_tz: '6'
-    rsem_dual: '3'
-    wie: 'Vollzeit / Teilzeit / Dual'
+    rsem_dual: '0'
+    wie: 'Vollzeit / Teilzeit'
     pvers_vz: 118M
     pvers_tz: 218M
-    pvers_dual: 118M
+    pvers_dual: '-'
     ects_vz: '90'
     ects_tz: '90'
-    ects_dual: '90'
+    ects_dual: '0'
     titelkz_m_vz: M.Sc.
     titel_m_vz: 'Master of Science'
     titelkz_m_tz: M.Sc.
     titel_m_tz: 'Master of Science'
-    titelkz_m_dual: M.Sc.
-    titel_m_dual: 'Master of Science'
+    titelkz_m_dual: ""
+    titel_m_dual: ""
     titelkz_w_vz: M.Sc.
     titel_w_vz: 'Master of Science'
     titelkz_w_tz: M.Sc.
     titel_w_tz: 'Master of Science'
-    titelkz_w_dual: M.Sc.
-    titel_w_dual: 'Master of Science'
+    titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: '---#0#|---#0#|---#0#'
-    praxis_dual: '---#0#|---#0#|---#0#'
+    praxis_dual: ""
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -4204,7 +4411,145 @@
     schwerpunkt_dual: ""
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_MBM_118_SPO.pdf'
     po_url_tz: 'https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_MBM_118_SPO.pdf'
-    po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/03_MBM_118_SPO.pdf'
+    po_url_dual: ""
+    mint: X
+    dosv: ""
+-
+    nummer: '06'
+    stg: ME
+    aaspf_echt: B
+    text: Bachelor
+    fachrich: Mechatronik
+    fachriche: Mechatronics
+    dateiname: 'Mechatronik Bachelor'
+    stg_kurz: ME-B
+    stgart: '184'
+    name: 'Erststudium Bachelor an Fachhochschulen'
+    teilzeit: '1'
+    rsem_vz: '7'
+    rsem_tz: '0'
+    rsem_dual: '7'
+    wie: 'Vollzeit / Dual'
+    pvers_vz: ""
+    pvers_tz: '-'
+    pvers_dual: ""
+    ects_vz: ""
+    ects_tz: '0'
+    ects_dual: ""
+    titelkz_m_vz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: ""
+    titel_m_dual: ""
+    titelkz_w_vz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: ""
+    titel_w_tz: ""
+    titelkz_w_dual: ""
+    titel_w_dual: ""
+    praxis_vz: ""
+    praxis_tz: ""
+    praxis_dual: ""
+    statdat: IW
+    zuordnung: T
+    berufsbegleitend: N
+    sem: '121'
+    erst_sem: X
+    hoeheres_sem: ""
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: ""
+    end_h: ""
+    vorpraxis: ""
+    bew_str_de: ""
+    bew_str_en: ""
+    bew_sp_de: ""
+    bew_sp_en: ""
+    akkreditiert_von: ""
+    akkreditiert_bis: ""
+    akkreditiert_agentur: ""
+    anz_sp_vz: ""
+    anz_sp_tz: '0'
+    anz_sp_dual: ""
+    studienrichtung_vz: ""
+    studienrichtung_tz: ""
+    studienrichtung_dual: ""
+    schwerpunkt_vz: ""
+    schwerpunkt_tz: ""
+    schwerpunkt_dual: ""
+    po_url_vz: ""
+    po_url_tz: ""
+    po_url_dual: ""
+    mint: X
+    dosv: ""
+-
+    nummer: '06'
+    stg: ME
+    aaspf_echt: M
+    text: Master
+    fachrich: Mechatronik
+    fachriche: Mechatronics
+    dateiname: 'Mechatronik Master'
+    stg_kurz: ME-M
+    stgart: '290'
+    name: 'Zweitstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
+    teilzeit: '3'
+    rsem_vz: '3'
+    rsem_tz: '6'
+    rsem_dual: '3'
+    wie: 'Vollzeit / Teilzeit / Dual'
+    pvers_vz: ""
+    pvers_tz: ""
+    pvers_dual: ""
+    ects_vz: ""
+    ects_tz: ""
+    ects_dual: ""
+    titelkz_m_vz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: ""
+    titel_m_dual: ""
+    titelkz_w_vz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: ""
+    titel_w_tz: ""
+    titelkz_w_dual: ""
+    titel_w_dual: ""
+    praxis_vz: ""
+    praxis_tz: ""
+    praxis_dual: ""
+    statdat: IW
+    zuordnung: T
+    berufsbegleitend: N
+    sem: '121'
+    erst_sem: X
+    hoeheres_sem: ""
+    start_1: 5/2/21
+    end_1: 6/15/21
+    start_h: ""
+    end_h: ""
+    vorpraxis: ""
+    bew_str_de: ""
+    bew_str_en: ""
+    bew_sp_de: ""
+    bew_sp_en: ""
+    akkreditiert_von: ""
+    akkreditiert_bis: ""
+    akkreditiert_agentur: ""
+    anz_sp_vz: ""
+    anz_sp_tz: ""
+    anz_sp_dual: ""
+    studienrichtung_vz: ""
+    studienrichtung_tz: ""
+    studienrichtung_dual: ""
+    schwerpunkt_vz: ""
+    schwerpunkt_tz: ""
+    schwerpunkt_dual: ""
+    po_url_vz: ""
+    po_url_tz: ""
+    po_url_dual: ""
     mint: X
     dosv: ""
 -
@@ -4247,13 +4592,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: ""
     hoeheres_sem: X
     start_1: ""
     end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -4316,11 +4661,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: ""
+    end_1: ""
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -4343,6 +4688,75 @@
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_MFM_115_SPO.pdf'
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_MFM_215_SPO.pdf'
     po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/06_MFM_115_SPO.pdf'
+    mint: X
+    dosv: ""
+-
+    nummer: '06'
+    stg: MK
+    aaspf_echt: B
+    text: Bachelor
+    fachrich: 'Mechatronik (Teilzeitstudium)'
+    fachriche: Mechatronics
+    dateiname: 'Mechatronik (Teilzeitstudium) Bachelor'
+    stg_kurz: MK-B
+    stgart: '184'
+    name: 'Erststudium Bachelor an Fachhochschulen'
+    teilzeit: '2'
+    rsem_vz: '0'
+    rsem_tz: '11'
+    rsem_dual: '0'
+    wie: Teilzeit
+    pvers_vz: '-'
+    pvers_tz: ""
+    pvers_dual: '-'
+    ects_vz: '0'
+    ects_tz: ""
+    ects_dual: '0'
+    titelkz_m_vz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: ""
+    titel_m_dual: ""
+    titelkz_w_vz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: ""
+    titel_w_tz: ""
+    titelkz_w_dual: ""
+    titel_w_dual: ""
+    praxis_vz: ""
+    praxis_tz: ""
+    praxis_dual: ""
+    statdat: IW
+    zuordnung: T
+    berufsbegleitend: N
+    sem: '121'
+    erst_sem: X
+    hoeheres_sem: ""
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: ""
+    end_h: ""
+    vorpraxis: ""
+    bew_str_de: ""
+    bew_str_en: ""
+    bew_sp_de: ""
+    bew_sp_en: ""
+    akkreditiert_von: ""
+    akkreditiert_bis: ""
+    akkreditiert_agentur: ""
+    anz_sp_vz: '0'
+    anz_sp_tz: ""
+    anz_sp_dual: '0'
+    studienrichtung_vz: ""
+    studienrichtung_tz: ""
+    studienrichtung_dual: ""
+    schwerpunkt_vz: ""
+    schwerpunkt_tz: ""
+    schwerpunkt_dual: ""
+    po_url_vz: ""
+    po_url_tz: ""
+    po_url_dual: ""
     mint: X
     dosv: ""
 -
@@ -4385,11 +4799,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -4454,11 +4868,11 @@
     statdat: WW
     zuordnung: W
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -4523,13 +4937,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: ""
     hoeheres_sem: X
     start_1: ""
     end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -4592,13 +5006,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -4799,7 +5213,7 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: ""
     hoeheres_sem: ""
     start_1: ""
@@ -4868,11 +5282,11 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -4937,7 +5351,7 @@
     statdat: SW
     zuordnung: ""
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
     start_1: ""
@@ -5006,13 +5420,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: ""
     hoeheres_sem: X
     start_1: ""
     end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -5075,13 +5489,13 @@
     statdat: WW
     zuordnung: W
     berufsbegleitend: B
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: 'Wirtschaftsinformatik#Unternehmensführung#Management Sozialer Innovationen#Kultur'
     bew_str_en: '###'
@@ -5144,11 +5558,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -5282,13 +5696,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -5351,11 +5765,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -5420,11 +5834,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -5448,75 +5862,6 @@
     po_url_tz: ""
     po_url_dual: ""
     mint: X
-    dosv: ""
--
-    nummer: '06'
-    stg: PT
-    aaspf_echt: B
-    text: Bachelor
-    fachrich: 'Technische Physik'
-    fachriche: ""
-    dateiname: 'Technische Physik Bachelor'
-    stg_kurz: PT-B
-    stgart: '184'
-    name: 'Erststudium Bachelor an Fachhochschulen'
-    teilzeit: '1'
-    rsem_vz: '0'
-    rsem_tz: '0'
-    rsem_dual: '0'
-    wie: '?'
-    pvers_vz: '-'
-    pvers_tz: '-'
-    pvers_dual: '-'
-    ects_vz: '0'
-    ects_tz: '0'
-    ects_dual: '0'
-    titelkz_m_vz: ""
-    titel_m_vz: ""
-    titelkz_m_tz: ""
-    titel_m_tz: ""
-    titelkz_m_dual: ""
-    titel_m_dual: ""
-    titelkz_w_vz: ""
-    titel_w_vz: ""
-    titelkz_w_tz: ""
-    titel_w_tz: ""
-    titelkz_w_dual: ""
-    titel_w_dual: ""
-    praxis_vz: ""
-    praxis_tz: ""
-    praxis_dual: ""
-    statdat: ""
-    zuordnung: ""
-    berufsbegleitend: N
-    sem: ""
-    erst_sem: ""
-    hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
-    start_h: ""
-    end_h: ""
-    vorpraxis: ""
-    bew_str_de: ""
-    bew_str_en: ""
-    bew_sp_de: ""
-    bew_sp_en: ""
-    akkreditiert_von: ""
-    akkreditiert_bis: ""
-    akkreditiert_agentur: ""
-    anz_sp_vz: '0'
-    anz_sp_tz: '0'
-    anz_sp_dual: '0'
-    studienrichtung_vz: ""
-    studienrichtung_tz: ""
-    studienrichtung_dual: ""
-    schwerpunkt_vz: ""
-    schwerpunkt_tz: ""
-    schwerpunkt_dual: ""
-    po_url_vz: ""
-    po_url_tz: ""
-    po_url_dual: ""
-    mint: ""
     dosv: ""
 -
     nummer: '05'
@@ -5558,11 +5903,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -5627,11 +5972,11 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -5652,7 +5997,7 @@
     schwerpunkt_tz: ""
     schwerpunkt_dual: ""
     po_url_vz: ""
-    po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/11_PYM_215_SPO.pdf'
+    po_url_tz: 'https://w3-mediapool.hm.edu/mediapool/media/dachmarke/dm_transfer/download_13/spo_6/spo_aktuell/11_pym_aktuell_spo.pdf'
     po_url_dual: ""
     mint: ""
     dosv: ""
@@ -5696,7 +6041,7 @@
     statdat: ""
     zuordnung: ""
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: ""
     hoeheres_sem: ""
     start_1: ""
@@ -5765,13 +6110,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: 12/1/20
-    end_1: 1/15/21
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -5834,11 +6179,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -5901,9 +6246,9 @@
     praxis_tz: ""
     praxis_dual: ""
     statdat: IW
-    zuordnung: T
+    zuordnung: ""
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: ""
     hoeheres_sem: ""
     start_1: ""
@@ -5920,6 +6265,75 @@
     akkreditiert_agentur: ""
     anz_sp_vz: ""
     anz_sp_tz: ""
+    anz_sp_dual: '0'
+    studienrichtung_vz: ""
+    studienrichtung_tz: ""
+    studienrichtung_dual: ""
+    schwerpunkt_vz: ""
+    schwerpunkt_tz: ""
+    schwerpunkt_dual: ""
+    po_url_vz: ""
+    po_url_tz: ""
+    po_url_dual: ""
+    mint: ""
+    dosv: ""
+-
+    nummer: '11'
+    stg: SA
+    aaspf_echt: M
+    text: Master
+    fachrich: 'Soziale Arbeit, Forschung und Digitalisierung'
+    fachriche: ""
+    dateiname: 'Soziale Arbeit, Forschung und Digitalisierung Master'
+    stg_kurz: SA-M
+    stgart: '790'
+    name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
+    teilzeit: '1'
+    rsem_vz: '3'
+    rsem_tz: '0'
+    rsem_dual: '0'
+    wie: Vollzeit
+    pvers_vz: ""
+    pvers_tz: '-'
+    pvers_dual: '-'
+    ects_vz: ""
+    ects_tz: '0'
+    ects_dual: '0'
+    titelkz_m_vz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: ""
+    titel_m_dual: ""
+    titelkz_w_vz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: ""
+    titel_w_tz: ""
+    titelkz_w_dual: ""
+    titel_w_dual: ""
+    praxis_vz: ""
+    praxis_tz: ""
+    praxis_dual: ""
+    statdat: SW
+    zuordnung: S
+    berufsbegleitend: N
+    sem: '121'
+    erst_sem: X
+    hoeheres_sem: ""
+    start_1: 5/2/21
+    end_1: 6/15/21
+    start_h: ""
+    end_h: ""
+    vorpraxis: ""
+    bew_str_de: ""
+    bew_str_en: ""
+    bew_sp_de: ""
+    bew_sp_en: ""
+    akkreditiert_von: ""
+    akkreditiert_bis: ""
+    akkreditiert_agentur: ""
+    anz_sp_vz: ""
+    anz_sp_tz: '0'
     anz_sp_dual: '0'
     studienrichtung_vz: ""
     studienrichtung_tz: ""
@@ -5972,13 +6386,13 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -6000,7 +6414,7 @@
     po_url_tz: ""
     po_url_dual: ""
     mint: ""
-    dosv: ""
+    dosv: X
 -
     nummer: '99'
     stg: SC
@@ -6110,11 +6524,11 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -6179,11 +6593,11 @@
     statdat: SW
     zuordnung: ""
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -6248,7 +6662,7 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
     start_1: ""
@@ -6317,13 +6731,13 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -6345,7 +6759,7 @@
     po_url_tz: ""
     po_url_dual: ""
     mint: ""
-    dosv: ""
+    dosv: X
 -
     nummer: '11'
     stg: SK
@@ -6386,13 +6800,13 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -6455,11 +6869,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -6524,11 +6938,11 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -6593,13 +7007,13 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -6621,7 +7035,7 @@
     po_url_tz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/11_SRB_218_SPO.pdf'
     po_url_dual: ""
     mint: ""
-    dosv: ""
+    dosv: X
 -
     nummer: '11'
     stg: SW
@@ -6662,13 +7076,13 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -6690,7 +7104,7 @@
     po_url_tz: ""
     po_url_dual: ""
     mint: ""
-    dosv: ""
+    dosv: X
 -
     nummer: '11'
     stg: SY
@@ -6731,11 +7145,11 @@
     statdat: SW
     zuordnung: S
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -6800,11 +7214,11 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -6840,16 +7254,16 @@
     stg_kurz: TH-M
     stgart: '790'
     name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
-    teilzeit: '1'
+    teilzeit: '3'
     rsem_vz: '3'
-    rsem_tz: '0'
+    rsem_tz: '5'
     rsem_dual: '0'
-    wie: Vollzeit
+    wie: 'Vollzeit / Teilzeit'
     pvers_vz: 212M
-    pvers_tz: '-'
+    pvers_tz: ""
     pvers_dual: '-'
     ects_vz: '90'
-    ects_tz: '0'
+    ects_tz: ""
     ects_dual: '0'
     titelkz_m_vz: M.A.
     titel_m_vz: 'Master of Arts'
@@ -6869,11 +7283,11 @@
     statdat: WW
     zuordnung: W
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -6885,7 +7299,7 @@
     akkreditiert_bis: ""
     akkreditiert_agentur: ""
     anz_sp_vz: '0'
-    anz_sp_tz: '0'
+    anz_sp_tz: ""
     anz_sp_dual: '0'
     studienrichtung_vz: ""
     studienrichtung_tz: ""
@@ -6938,11 +7352,11 @@
     statdat: IW
     zuordnung: ""
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -7007,13 +7421,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: 12/1/20
-    end_1: 1/15/21
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -7037,6 +7451,75 @@
     mint: X
     dosv: X
 -
+    nummer: '06'
+    stg: TP
+    aaspf_echt: B
+    text: Bachelor
+    fachrich: 'Technische Physik'
+    fachriche: ""
+    dateiname: 'Technische Physik Bachelor'
+    stg_kurz: TP-B
+    stgart: '184'
+    name: 'Erststudium Bachelor an Fachhochschulen'
+    teilzeit: '1'
+    rsem_vz: '7'
+    rsem_tz: '0'
+    rsem_dual: '7'
+    wie: 'Vollzeit / Dual'
+    pvers_vz: ""
+    pvers_tz: '-'
+    pvers_dual: ""
+    ects_vz: ""
+    ects_tz: '0'
+    ects_dual: ""
+    titelkz_m_vz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: ""
+    titel_m_dual: ""
+    titelkz_w_vz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: ""
+    titel_w_tz: ""
+    titelkz_w_dual: ""
+    titel_w_dual: ""
+    praxis_vz: ""
+    praxis_tz: ""
+    praxis_dual: ""
+    statdat: IW
+    zuordnung: T
+    berufsbegleitend: N
+    sem: '121'
+    erst_sem: X
+    hoeheres_sem: ""
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: ""
+    end_h: ""
+    vorpraxis: ""
+    bew_str_de: ""
+    bew_str_en: ""
+    bew_sp_de: ""
+    bew_sp_en: ""
+    akkreditiert_von: ""
+    akkreditiert_bis: ""
+    akkreditiert_agentur: ""
+    anz_sp_vz: ""
+    anz_sp_tz: '0'
+    anz_sp_dual: ""
+    studienrichtung_vz: ""
+    studienrichtung_tz: ""
+    studienrichtung_dual: ""
+    schwerpunkt_vz: ""
+    schwerpunkt_tz: ""
+    schwerpunkt_dual: ""
+    po_url_vz: ""
+    po_url_tz: ""
+    po_url_dual: ""
+    mint: X
+    dosv: ""
+-
     nummer: '14'
     stg: TR
     aaspf_echt: B
@@ -7047,7 +7530,7 @@
     stg_kurz: TR-B
     stgart: '184'
     name: 'Erststudium Bachelor an Fachhochschulen'
-    teilzeit: '1'
+    teilzeit: '3'
     rsem_vz: '7'
     rsem_tz: '0'
     rsem_dual: '7'
@@ -7076,13 +7559,13 @@
     statdat: IW
     zuordnung: W
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: 12/1/20
-    end_1: 1/15/21
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -7145,11 +7628,11 @@
     statdat: WW
     zuordnung: W
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: ""
-    end_1: ""
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -7170,6 +7653,75 @@
     schwerpunkt_tz: ""
     schwerpunkt_dual: ""
     po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/14_TRM_216_SPO.pdf'
+    po_url_tz: ""
+    po_url_dual: ""
+    mint: ""
+    dosv: ""
+-
+    nummer: '14'
+    stg: TS
+    aaspf_echt: M
+    text: Master
+    fachrich: 'Strategie und Innovation im Tourismus'
+    fachriche: 'Strategy an Innovation in Tourism'
+    dateiname: 'Strategie und Innovation im Tourismus Master'
+    stg_kurz: TS-M
+    stgart: '790'
+    name: 'Konsekutives Masterstudium Master an Fachhochschulen (Abschlussprüfung vorausgesetzt)'
+    teilzeit: '2'
+    rsem_vz: '0'
+    rsem_tz: '5'
+    rsem_dual: '0'
+    wie: Teilzeit
+    pvers_vz: '-'
+    pvers_tz: ""
+    pvers_dual: '-'
+    ects_vz: '0'
+    ects_tz: ""
+    ects_dual: '0'
+    titelkz_m_vz: ""
+    titel_m_vz: ""
+    titelkz_m_tz: ""
+    titel_m_tz: ""
+    titelkz_m_dual: ""
+    titel_m_dual: ""
+    titelkz_w_vz: ""
+    titel_w_vz: ""
+    titelkz_w_tz: ""
+    titel_w_tz: ""
+    titelkz_w_dual: ""
+    titel_w_dual: ""
+    praxis_vz: ""
+    praxis_tz: ""
+    praxis_dual: ""
+    statdat: WW
+    zuordnung: W
+    berufsbegleitend: N
+    sem: '121'
+    erst_sem: X
+    hoeheres_sem: ""
+    start_1: 5/2/21
+    end_1: 6/15/21
+    start_h: ""
+    end_h: ""
+    vorpraxis: ""
+    bew_str_de: ""
+    bew_str_en: ""
+    bew_sp_de: ""
+    bew_sp_en: ""
+    akkreditiert_von: ""
+    akkreditiert_bis: ""
+    akkreditiert_agentur: ""
+    anz_sp_vz: '0'
+    anz_sp_tz: ""
+    anz_sp_dual: '0'
+    studienrichtung_vz: ""
+    studienrichtung_tz: ""
+    studienrichtung_dual: ""
+    schwerpunkt_vz: ""
+    schwerpunkt_tz: ""
+    schwerpunkt_dual: ""
+    po_url_vz: ""
     po_url_tz: ""
     po_url_dual: ""
     mint: ""
@@ -7214,13 +7766,13 @@
     statdat: WW
     zuordnung: W
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: 11/15/20
-    end_1: 2/14/21
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -7397,35 +7949,35 @@
     rsem_tz: '0'
     rsem_dual: '3'
     wie: 'Vollzeit / Dual'
-    pvers_vz: 118M
+    pvers_vz: 121M
     pvers_tz: '-'
-    pvers_dual: 118M
+    pvers_dual: 121M
     ects_vz: '90'
     ects_tz: '0'
     ects_dual: '90'
-    titelkz_m_vz: M.Eng.
-    titel_m_vz: 'Master of Engineering'
+    titelkz_m_vz: ""
+    titel_m_vz: ""
     titelkz_m_tz: ""
     titel_m_tz: ""
-    titelkz_m_dual: M.Eng.
-    titel_m_dual: 'Master of Engineering'
-    titelkz_w_vz: M.Eng.
-    titel_w_vz: 'Master of Engineering'
+    titelkz_m_dual: ""
+    titel_m_dual: ""
+    titelkz_w_vz: ""
+    titel_w_vz: ""
     titelkz_w_tz: ""
     titel_w_tz: ""
-    titelkz_w_dual: M.Eng.
-    titel_w_dual: 'Master of Engineering'
+    titelkz_w_dual: ""
+    titel_w_dual: ""
     praxis_vz: '---#0#|---#0#|---#0#'
     praxis_tz: ""
     praxis_dual: '---#0#|---#0#|---#0#'
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -7445,9 +7997,9 @@
     schwerpunkt_vz: ""
     schwerpunkt_tz: ""
     schwerpunkt_dual: ""
-    po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_VFM_118_SPO.pdf'
+    po_url_vz: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_VFM_121_SPO.pdf'
     po_url_tz: ""
-    po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_VFM_118_SPO.pdf'
+    po_url_dual: 'https://w3-mediapool.hm.edu/media/dachmarke/dm_transfer/download_13/spo_6/spo_versionen/05_VFM_121_SPO.pdf'
     mint: X
     dosv: ""
 -
@@ -7490,13 +8042,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -7559,13 +8111,13 @@
     statdat: IW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
-    erst_sem: ""
+    sem: '121'
+    erst_sem: X
     hoeheres_sem: X
-    start_1: ""
-    end_1: ""
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: 'Verpackungstechnologie und Nachhaltigkeit#Verfahrenstechnik Papier und Biofasern'
     bew_str_en: 'Packaging Technology and Sustainability#Paper and Biofibre Process Engineering'
@@ -7628,13 +8180,13 @@
     statdat: WW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: X
-    start_1: 12/1/20
-    end_1: 1/15/21
-    start_h: 11/15/20
-    end_h: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/31/21
+    start_h: 5/2/21
+    end_h: 7/15/21
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -7697,11 +8249,11 @@
     statdat: WW
     zuordnung: T
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 7/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -7766,11 +8318,11 @@
     statdat: WW
     zuordnung: T
     berufsbegleitend: B
-    sem: '220'
+    sem: '121'
     erst_sem: X
     hoeheres_sem: ""
-    start_1: 11/15/20
-    end_1: 1/15/21
+    start_1: 5/2/21
+    end_1: 6/15/21
     start_h: ""
     end_h: ""
     vorpraxis: ""
@@ -7835,13 +8387,13 @@
     statdat: ""
     zuordnung: ""
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: ""
     hoeheres_sem: X
     start_1: ""
     end_1: ""
     start_h: ""
-    end_h: 1/15/21
+    end_h: ""
     vorpraxis: ""
     bew_str_de: ""
     bew_str_en: ""
@@ -7904,7 +8456,7 @@
     statdat: IW
     zuordnung: ""
     berufsbegleitend: N
-    sem: '220'
+    sem: '121'
     erst_sem: ""
     hoeheres_sem: ""
     start_1: ""
